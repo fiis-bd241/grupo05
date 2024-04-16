@@ -1,6 +1,6 @@
 # MODULOS 
 
-## MÓDULO DE LOGEO
+## MÓDULO DE LOGIN
 
 Este módulo se encarga de gestionar el proceso de inicio de sesión de los usuarios (empleados y administradores) y a su vez validar este mismo proceso, validar los datos de loggeo. También servirá de dar las funcionalidades respectivas al usuario dependiendo de qué datos se ingresen y per la recuperación de contraseñas en caso de olvidos de los usuarios
 
