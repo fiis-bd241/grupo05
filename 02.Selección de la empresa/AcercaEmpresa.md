@@ -12,6 +12,8 @@ Somos una organización comprometida con la satisfacción de gustos muy exigente
 
 Ser la empresa peruana líder en la industria textil, tanto en la fabricación como en la comercialización de prendas de vestir para el mercado local y extranjero. Empresa reconocida en el mercado nacional e internacional por su calidad, buen servicio y atención personalizada a nuestros diferentes clientes.
 
+## Organigrama de ingeniería
+
 ## Principales productos
 
 Topitop se encarga de hacer diferentes tipo de ropa para diferentes ocaciones, sus principales son:
