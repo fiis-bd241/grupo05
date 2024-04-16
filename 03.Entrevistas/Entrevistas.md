@@ -1,6 +1,6 @@
 # Entrevistas
 
-* En este apartado se monstrarán las entrevistas realizadas al contacto con la empresa.
+* En este apartado se mostrarán las entrevistas realizadas al contacto con la empresa.
 
 # Link Drive
 
