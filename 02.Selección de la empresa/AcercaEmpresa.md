@@ -13,7 +13,7 @@ Somos una organización comprometida con la satisfacción de gustos muy exigente
 Ser la empresa peruana líder en la industria textil, tanto en la fabricación como en la comercialización de prendas de vestir para el mercado local y extranjero. Empresa reconocida en el mercado nacional e internacional por su calidad, buen servicio y atención personalizada a nuestros diferentes clientes.
 
 ## Organigrama de ingeniería
-<img src="organigrama.jpg" alt="02.Selección de la empresa" style="width: 50%; height: auto;" />
+<img src="organigrama.jpg" alt="02.Selección de la empresa" style="width: 100%; height: auto;" />
 
 ## Principales productos
 
