@@ -2,7 +2,7 @@
 
 ### 1. Requerimientos funcionales
 
-#### **Caso de uso N°1: Abastecimiento de la materia prima**
+#### **Caso de uso N°1: Abastecimiento de insumos**
 
 | **Objetivo:** | Coordinar y gestionar el flujo de materiales desde el almacén hasta las líneas de producción, asegurando que se satisfagan las necesidades de producción de manera oportuna y eficiente. |
 |------|--------|
