@@ -23,3 +23,7 @@ El jefe de ingenieria puede corroborar la actividad de los operarios como la fec
 ## Solicitud de herramienta 
 El jefe de ingeniería atiende las solicitudes para el uso de herramientas y maquinarias de los trabajadores, aceptarlos si hay disponibilidad.
 <img src="interfaz 5.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+
+[Selección de la empresa](SeleccionEmpresa.md)
+
+[Regresar al índice](../README.md)
