@@ -36,7 +36,7 @@ Topitop es una empresa peruana que ofrece una amplia gama de servicios, incluyen
 2. Ofrece prendas de vestir para diversas ocasiones, desde ropa casual hasta trajes formales.
 3. Tiene una variedad de productos que van desde prendas básicas hasta artículos de moda más exclusivos.
 4. Además de ropa, también pueden ofrecer otros productos relacionados con la moda, como calzado y accesorios.
-5. Algunas tiendas Topitop también pueden ofrecer servicios adicionales, como atención al cliente y asesoramiento de moda.
+5. Algunas tiendas Topitop también pueden ofrecer servicios adicionales, como por ejemplo atención al cliente y asesoramiento de moda.
 
    
 [Selección de la empresa](SeleccionEmpresa.md)
