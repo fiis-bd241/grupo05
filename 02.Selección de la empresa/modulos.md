@@ -40,26 +40,6 @@ Es una pieza fundamental para garantizar la excelencia en los productos fabricad
 5. Definición de Estándares de Calidad: Permite establecer y mantener los estándares de calidad para los productos y materiales. Esto implica definir los criterios de aceptación y rechazo, así como los procedimientos de prueba y los niveles de tolerancia para cada aspecto de la calidad.
 
 
-## MÓDULO DE GESTIÓN DE PRODUCTOS
-Este modulo es esencial para garantizar un flujo eficiente de materiales dentro de la cadena de producción en la empresa Topitop. A continuación, exploraremos los aspectos clave de este módulo:
-
-1. Recepción de Productos:
-   - La recepción es el proceso mediante el cual los productos llegan al almacén desde la fuente de suministro (proveedores o fábricas).
-   - En esta etapa, los productos se clasifican, controlan y se introducen en el Sistema de Gestión de Almacén (SGA).
-   - El objetivo es ubicarlos dentro de las instalaciones de almacenamiento para que estén listos para su posterior envío al cliente o consumidor final según los requerimientos de entrega.
-
-2. Control de Entradas y Salidas:
-   - Los productos recibidos se desagrupan (si previamente se han consolidado) y se empaquetan.
-   - Luego, se depositan en el almacén a la espera de ser recogidos por los transportistas para su distribución.
-
-3. Optimización de Zonas del Almacén:
-   - El almacén se divide en diferentes zonas, como la recepción, expedición o preparación de pedidos.
-   - Estas zonas ayudan a optimizar el flujo de movimientos y garantizar operaciones logísticas eficientes.
-
-4. Importancia y Objetivos:
-   - La gestión de productos en el almacén depende de los fundamentos y principios de la gestión de inventarios.
-   - El objetivo principal es asegurar el suministro continuo y oportuno de los materiales y medios de producción necesarios para mantener los servicios de manera ininterrumpida y rítmica
-
 # INTERACCIONES ENTRE LOS MODULOS
 
 ## MÓDULO DE ABASTECIMIENTO CON MÓDULO DE SELECCION DE HERRAMIENTAS Y MAQUINARIAS
