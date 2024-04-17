@@ -127,7 +127,7 @@
 | 3    |subir cambios ya sea en letra o un archivo png|       
 | 4    |dar confirmación del cambio|
 | 5    |caso terminado|
-#### **Caso de uso N°11: depuración de cuenta**:
+#### **Caso de uso N°10: depuración de cuenta**:
 | **Objetivo:** |permite la eliminación total de la cuenta de la base de datos , esto incluye datos personales , usuario y contraseña|
 |------|--------|
 | **Descripción:** | el responsable se encarga de eliminar la cuenta ya sea por renuncia o despido
