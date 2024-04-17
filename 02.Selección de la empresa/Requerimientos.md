@@ -102,19 +102,47 @@
 
 #### **Caso de uso N°7: Reportes**
 #### **Caso de uso N°8: registro de usuario**:
-| **Objetivo:** |Permitir al usuario ingresar con su usario y contraseña al sistema |
+| **Objetivo:** |Permitir al gestor de la producción u operario ingresar con su usario y contraseña al sistema |
 |------|--------|
 | **Descripción:** |  El usario ingresará al sistema y se topará con "el inicio de sesión" junto con dos espacios para completar , el usuario deberá ingresar sus datos y podrá acceder al sistema. 
-| **Actor Primario:** |Usuario (operario, gestor de producción)| 
+| **Actor Primario:** |Usuario (operario o gestor de producción)| 
 | **Actor Secundario :** |no hay actor secundario | 
 | **Precondiciones:** | los datos a ingresar deben ser unos que esten registrados enla base de datos, de lo contrario  no se podrá acceder al sistema 
 | Paso | Acción |
-| 1    | El usuario ingresa al inicio de sesión sistema.. |
-| 2    | El usuario digita su usuario|
-| 3    | El usuario digita su contraseña|
+| 1    | El operario o gestor de la producción ingresa al inicio de sesión sistema.. |
+| 2    | El operario o gestor de la producción digita su usuario|
+| 3    | El operario o gestor de la producción digita su contraseña|
 | 4    | Se revisa si existe dicho usuario y contraseña en la base de datos|
-| 5    |si los datos concuerdan con la algún valor de la base de datos se da accerso al sistema de lo contrario se envía un mensaje de "usuario o contraseña invalidos"|
+| 5    |si los datos concuerdan con la algún valor de la base de datos se da acceso al sistema de lo contrario se envía un mensaje de "usuario o contraseña invalidos"|
 | 6    |  Caso terminado.|
+#### **Caso de uso N°9: cambio de contraseña**:
+| **Objetivo:** |Permitir al operario o gestor de producción ingresar con su usario y contraseña al sistema |
+|------|--------|
+| **Descripción:** | Se le da la facilidad al usuario de poder modificar la contraseña si se conoce su usario y una palabra clave que pedirá el sistema. 
+| **Actor Primario:** |Usuario (operario o gestor de producción)| 
+| **Actor Secundario :** |no hay actor secundario | 
+| **Precondiciones:** | se requiere el saber la palabra clave 
+| Paso | Acción |
+| 1    | El operario o gestor de la producción dentro del inicio de sesión irá a la opción de ¿olvidaste la contraseña?|
+| 2    | Se le pedirá al operario o gestor de la producción que dijite su usario |
+| 3    | Se le hará una pregunta , como ¿cual es tu mejor amigo? , ¿cual es tu comida favorita?, entre otras|
+| 4    | Se revisa si la respuesta termina siendo correcta|
+| 5    | si los datos concuerdan con la algún valor de la base de datos se procede a cambiar la contraseña|
+| 6    |  Caso terminado.|
+#### **Caso de uso N°9: Edición del perfil**:
+| **Objetivo:** |Permitir al operario o gestor de producción cambiar algunos datos que se tengan registrado en el sistema|
+|------|--------|
+| **Descripción:** | el usuario tendrá la opción de editar algunos datos como , el telefono celulqar , el correo, la foto de perfil. 
+| **Actor Primario:** |Usuario (operario o gestor de producción)| 
+| **Actor Secundario :** |no hay actor secundario | 
+| **Precondiciones:** | no hay condiciones
+| Paso | Acción |
+| 1    |       |
+| 2    |         |
+| 3    |       |       
+| 4    |        |
+| 5    |        |
+| 6    |       |
 ### 2. Requerimientos de atributos de calidad
 * Seguridad: El sistema debe garantizar la confidencialidad e integridad de los datos almacenados y transmitidos. Para ello, el sistema solo permitirá acceso a los usuarios que están registrados y que cumplan un rol en la empresa, y solicitará que los usuarios proporcionen dos formas de autenticación: una contraseña y un código enviado a su dispositivo móvil.
 * Escalabilidad: El sistema debe ser capaz de manejar grandes volúmenes de datos y usuarios en tiempo real.
