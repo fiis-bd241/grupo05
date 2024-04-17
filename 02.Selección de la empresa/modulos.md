@@ -35,6 +35,13 @@ Interacción con otros módulos:
    - Notifica cuando una herramienta o maquinaria presenta un número alto de usos, lo que puede afectar la calidad del producto
 
 2. Módulo de Registro de Tareas:
+   - Recibe información sobre las tareas realizadas por los empleados para verificar si se están siguiendo los procedimientos de calidad establecidos.
+   - Analiza el avance en medidas de producción para evaluar la eficiencia y calidad del trabajo realizado.
+
+3. Módulo de Reportes:
+   - Genera reportes individuales de calidad para cada empleado, destacando su desempeño en términos de calidad.
+   - Produce reportes específicos sobre la calidad de las herramientas y maquinarias utilizadas.
+   - Contribuye con información para la generación de reportes macro que permiten analizar el desempeño de los trabajadores bajo la supervisión de ciertos supervisores o de la empresa en general.
 
 
 
