@@ -23,7 +23,7 @@ Si el usuario desea realizar un nuevo reclamo, le aparecerán opciones para conc
 
 ## Solicitud de Pedido:
 El operario se dirige al apartado de solicitud de pedido, el cual le muestra el historial de sus pedidos realizados. Este historial le muestra datos como fecha de pedido, tipo de insumo, descripción, si la solicitud fue aprobado o desaprobada, y el estado de la solicitud en caso haya sido aprobada.
-<img src="InterfazSolicitudPedido1.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" /
+<img src="InterfazSolicitudPedido1.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
 # USUARIO: GESTOR DE PRODUCCIÓN
 
