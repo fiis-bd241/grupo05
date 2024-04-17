@@ -16,10 +16,10 @@ El operario se registra en la pagina web, va al apartado de registro de activida
 
 ## Plataforma de Quejas y Reclamos:
 El empleado se dirige al apartado de quejas y reclamos, el cual ofrece la opción de realizar un nuevo reclamo y presenta el historial de reclamos realizados. Dicho historial muestra datos como la fecha del reclamo, la categoría del reclamo, el motivo del reclamo y el estado en el que se encuentra dicho reclamo.
-<img src="interfaz 6.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+<img src="interfaz reclamos op1.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
 Si el usuario desea realizar un nuevo reclamo, le aparecerán opciones para concretar dicha operación, como la selección de la categoría del reclamo y el motivo de dicho reclamo. Una vez completados dichos campos, el usuario deberá seleccionar la opción "enviar reclamo" para el envío y procesamiento del reclamo.
-<img src="interfaz 7.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+<img src="interfaz reclamos op2.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
 # USUARIO: GESTOR DE PRODUCCIÓN
 
@@ -33,7 +33,7 @@ El gestor de producción se registra en la pagina web, va al apartado de registr
 
 ## Plataforma de Quejas y Reclamos:
 El gestor de producción se dirige al apartado de quejas y reclamos, el cual le muestra el historial de reclamos realizados por los operarios. Además, le permite filtrar dichos reclamos por operario, categoría, fecha y estado de los reclamos.
-<img src="interfaz reclamos.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+<img src="interfaz reclamos gp.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
 [Selección de la empresa](SeleccionEmpresa.md)
 
