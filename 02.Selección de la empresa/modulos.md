@@ -30,23 +30,17 @@ Este módulo se encarga de registar las actividades o trabajos asignados a cada 
 ## MÓDULO DE SOLICITUD DE PEDIDOS DE INSUMOS 
 
 ## MÓDULO DE REGISTRO DE CALIDAD
-El módulo de Registro de Calidad se encarga de supervisar y garantizar que los productos textiles cumplan con los estándares de calidad establecidos por la empresa. Este módulo registra y analiza los datos relacionados con la calidad de los productos, tanto en términos de materiales como de procesos de producción.
 
-Interacción con otros módulos:
+Este módulo se encarga de gestionar y mantener un registro detallado de la calidad de los productos o servicios producidos por la empresa. Su objetivo principal es garantizar que los estándares de calidad se cumplan y se mantengan a lo largo del tiempo. El módulo de Registro de Calidad consiste en los siguientes elementos:
 
-1. Módulo de Herramientas y Maquinarias: 
-   - Utiliza información sobre el estado de las herramientas y maquinarias para garantizar que estén en condiciones óptimas y no afecten la calidad del producto.
-   - Notifica cuando una herramienta o maquinaria presenta un número alto de usos, lo que puede afectar la calidad del producto
+1. Definición de Estándares de Calidad:
+Permite establecer y registrar los estándares de calidad que deben cumplir los productos o servicios de la empresa. Esto incluye criterios como dimensiones, materiales, procesos, entre otros.
 
-2. Módulo de Registro de Tareas:
-   - Recibe información sobre las tareas realizadas por los empleados para verificar si se están siguiendo los procedimientos de calidad establecidos.
-   - Analiza el avance en medidas de producción para evaluar la eficiencia y calidad del trabajo realizado.
+2. Inspección de Productos/Servicios:
+Facilita la realización de inspecciones periódicas a los productos o servicios para verificar su calidad. Se pueden registrar los resultados de las inspecciones, incluyendo observaciones y medidas tomadas.
 
-3. Módulo de Reportes:
-   - Genera reportes individuales de calidad para cada empleado, destacando su desempeño en términos de calidad.
-   - Produce reportes específicos sobre la calidad de las herramientas y maquinarias utilizadas.
-   - Contribuye con información para la generación de reportes macro que permiten analizar el desempeño de los trabajadores bajo la supervisión de ciertos supervisores o de la empresa en general.
-
+3. Control de Calidad en Procesos:
+Registra la calidad de los procesos de producción o prestación de servicios. Esto incluye la calidad de las materias primas utilizadas, la eficiencia de los procesos y la satisfacción del cliente.
 
 
 
