@@ -28,6 +28,17 @@ Este módulo se encarga de gestionar y mantener un registro detallado de las her
 ## MÓDULO DE REGISTRO DE CALIDAD
 El módulo de Registro de Calidad se encarga de supervisar y garantizar que los productos textiles cumplan con los estándares de calidad establecidos por la empresa. Este módulo registra y analiza los datos relacionados con la calidad de los productos, tanto en términos de materiales como de procesos de producción.
 
+Interacción con otros módulos:
+
+1. Módulo de Herramientas y Maquinarias: 
+   - Utiliza información sobre el estado de las herramientas y maquinarias para garantizar que estén en condiciones óptimas y no afecten la calidad del producto.
+   - Notifica cuando una herramienta o maquinaria presenta un número alto de usos, lo que puede afectar la calidad del producto
+
+2. Módulo de Registro de Tareas:
+
+
+
+
 ## MÓDULO DE REPORTES 
 
 Este módulo se encarga de dar información sobre las actividades concluidas por cada empleado, el estado de las herramientas o el estado de las maquinarias, en forma de reportes; también se encarga de brindar a los empleados su avance en medidas de producción; un último uso que puede brindar es un reporte macro para analizar cómo van los trabajadores de cierto supervisor o de Topitop en general
