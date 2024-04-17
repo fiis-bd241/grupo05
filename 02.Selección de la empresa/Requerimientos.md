@@ -2,9 +2,9 @@
 
 ## USUARIOS DEL SISTEMA
 
-Gerente de producción: Este tipo de usuario es un usuario paramétrico, va a poder registrar la información necesaria según los que requieran ciertos módulos, analiza los reportes para asignar la gestión adecuada según los criterios validados que este mismo posea y solicitará el mantenimiento de maquinaria o herramientas.
+| **Gerente de producción** |: Este tipo de usuario es un usuario paramétrico, va a poder registrar la información necesaria según los que requieran ciertos módulos, analiza los reportes para asignar la gestión adecuada según los criterios validados que este mismo posea y solicitará el mantenimiento de maquinaria o herramientas.
 
-Operario: Este tipo de usuario también es paramétrico, se caracteriza porque el propio sistema es enfocado a su continuo uso, los requerimientos planteados son en su mayoría con base a lo requerido por este tipo de usuario durante el desempeño de sus labores, sobre todo le va a ayudar a automatizar los procesos de categorización de calidad, notificar el uso de herramientas o maquinarias para llevar un histórico o presentar reclamos u observaciones.
+| **Operario** |: Este tipo de usuario también es paramétrico, se caracteriza porque el propio sistema es enfocado a su continuo uso, los requerimientos planteados son en su mayoría con base a lo requerido por este tipo de usuario durante el desempeño de sus labores, sobre todo le va a ayudar a automatizar los procesos de categorización de calidad, notificar el uso de herramientas o maquinarias para llevar un histórico o presentar reclamos u observaciones.
 
 ### 1. Requerimientos funcionales
 
