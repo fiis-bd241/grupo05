@@ -33,7 +33,7 @@ El gestor de producción se registra en la pagina web, va al apartado de registr
 
 ## Plataforma de Quejas y Reclamos:
 El gestor de producción se dirige al apartado de quejas y reclamos, el cual le muestra el historial de reclamos realizados por los operarios. Además, le permite filtrar dichos reclamos por operario, categoría, fecha y estado de los reclamos.
-<img src="interfaz 9.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+<img src="interfaz reclamos.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
 [Selección de la empresa](SeleccionEmpresa.md)
 
