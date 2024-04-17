@@ -23,3 +23,7 @@ Video del Módulo Registro de Calidad (Roger Loayza):
 Video del Módulo Reportes (Mikhael Gordillo): 
 
 [![Video](https://img.youtube.com/vi/v0C3L9EhKoQ/0.jpg)](https://youtu.be/v0C3L9EhKoQ)
+
+Video del Módulo de Solicitud de Pedidos de Insumos (Enrico Larios):
+
+[![Video](https://img.youtube.com/vi/yvkwDeFw56k/0.jpg)](https://youtu.be/yvkwDeFw56k)
