@@ -69,9 +69,6 @@ Este módulo permite a los empleados registrar y gestionar reclamos, quejas, sug
 
 # INTERACCIONES ENTRE MÓDULOS 
 
-## MÓDULO DE REGISTRO DE USUARIO CON TODOS 
-Este módulo tiene una interacción con todos puesto que los módulos que se trabajan son despues de haber entrado al sistema, entonces este módulo permite dar el acceso a todos los módulos disponibles 
-
 ## MODULO DE REGISTRO DE HERRAMIENTAS Y MAQUINARIA CON MODULO DE INICIO DE SESION Y REGISTRO DE ACTIVIDADES 
 El Módulo de Registro de Herramientas y Maquinarias requiere la autenticación de usuarios para acceder a las funciones relacionadas con el registro y la gestión de herramientas y maquinarias. Los usuarios (operarios y gestores de producción) deben iniciar sesión en el sistema para realizar solicitudes, validar solicitudes pendientes y acceder a la información relacionada con el registro de herramientas y maquinarias.
 
