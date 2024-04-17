@@ -2,11 +2,11 @@
 
 ## MÓDULO DE LOGIN Y REGISTRO DE USUARIO 
 
-Este módulo se encarga de poder registrar su perfil de usuario, recopliando informació relevante como nombres y cargos de ocupación. Tambien se encarga de poder actualizar la contraseña mediante una verificación mediante una "palabra clave", y si contesta correctamente según la base de datos se procede a actualizar la contraseña. 
-1. ingreso de usuario y contraseña : los usarios tendrán asignadas usuarios con sus respectivas contraseñas
-2. cambio de contraseña : si el usuario no recuerda la contraseña se le puede dar la función de poder actualizarla mediante un control de seguridad llamado "palabra clave" y si responde correctamente se procede a la actualización de la contraseña
-3. actualización de datos de usuario :  se permite la actualización de datos de usuario, como el telefono celular, el correo, la foto de usuario que se quiere presentar en tal perfil
-4. depuración de cuenta : en caso de quiere eliminar la cuenta se podrá, solo si se se conoce la contraseña para eliminar el usuario  
+Este módulo se encarga de registrar el perfil del usuario, recopliando información relevante como nombres y cargos de ocupación. Tambien se encarga de actualizar la contraseña mediante una verificación conocida como "palabra clave" y si contesta correctamente, según la base de datos, se procede a actualizar la contraseña. 
+1. Ingreso de usuario y contraseña: Los empleados tendrán asignados perfiles de usuario con sus respectivas contraseñas.
+2. Cambio de contraseña: Si el usuario no recuerda la contraseña, se le puede otorgar la función de poder actualizarla mediante un control de seguridad llamado "palabra clave", y si responde correctamente se procede a la actualización de la contraseña.
+3. Actualización de datos del usuario:  Se permite la actualización de datos de usuario, tales como el teléfono celular, el correo y la foto de usuario que se quiere presentar en el perfil.
+4. Depuración de cuenta: En caso de que se quiera eliminar la cuenta, se podrá eliminar el usuario solo si se se conoce la contraseña asociada a dicha cuenta.
 
 ## MÓDULO DE REGISTRO DE HERRAMIENTAS Y MAQUINARIAS
 Este módulo se encarga de gestionar y mantener un registro detallado de las herramientas y maquinarias utilizadas por los operarios en las actividades diarias de producción. Su objetivo es garantizar un uso eficiente de los recursos y un seguimiento preciso de su disponibilidad y estado. El módulo consiste en lo siguiente:
