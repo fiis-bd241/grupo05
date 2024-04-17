@@ -97,15 +97,15 @@
 | Paso | Acción |
 |1|Se realizan inspecciones de calidad en los productos terminados, así como en los materiales y componentes utilizados en el proceso de fabricación y se registran los resultados obtenidos. Esto incluye la evaluación de aspectos como la apariencia, la resistencia, la durabilidad y otros criterios de calidad definidos por la empresa|
 | 2    | Se realizan inspecciones de calidad en los productos terminados, así como en los materiales y componentes utilizados en el proceso de fabricación y se registran los resultados obtenidos. Esto incluye la evaluación de aspectos como la apariencia, la resistencia, la durabilidad y otros criterios de calidad definidos por la empresa. |
-| 2    | Se monitorean y controlan los procesos de fabricación para asegurar que se cumplan los estándares de calidad establecidos. Esto puede incluir la implementación de controles en línea durante la producción para detectar y corregir posibles problemas de calidad de manera oportuna.|
-| 3    | Se registran y gestionan las no conformidades identificadas durante las inspecciones de calidad. Esto incluye el registro de las causas de las no conformidades, así como las acciones correctivas y preventivas implementadas para abordarlas y evitar su recurrencia. |
-| 4    | Se analizan los datos recopilados durante las inspecciones de calidad para identificar tendencias, patrones y áreas de mejora en los procesos de fabricación. Esto permite tomar decisiones informadas para optimizar la calidad y la eficiencia operativa. |
-| 5    |Se establecen y registran los estándares de calidad que deben cumplir los productos o servicios de la empresa. |
-| 6    |Se registran y gestionan las no conformidades identificadas durante las inspecciones de calidad. Esto incluye la identificación de la no conformidad, las causas, las acciones correctivas y preventivas implementadas, y el seguimiento de su resolución. |
-| 7    |Se programan y registran auditorías internas o externas para evaluar el sistema de gestión de calidad de la empresa. Se registran hallazgos, recomendaciones y acciones correctivas tomadas. |
-| 8    |Se analizan los datos recopilados durante las inspecciones de calidad para identificar tendencias, patrones y áreas de mejora en los procesos de fabricación. |
-| 9    | Se generan informes periódicos sobre la calidad de los productos o servicios, incluyendo estadísticas, análisis de tendencias, hallazgos de auditorías y acciones tomadas. Estos informes son útiles para la toma de decisiones y la mejora continua.|
-| 10   |Finaliza el caso. |
+| 3    | Se monitorean y controlan los procesos de fabricación para asegurar que se cumplan los estándares de calidad establecidos. Esto puede incluir la implementación de controles en línea durante la producción para detectar y corregir posibles problemas de calidad de manera oportuna.|
+| 4    | Se registran y gestionan las no conformidades identificadas durante las inspecciones de calidad. Esto incluye el registro de las causas de las no conformidades, así como las acciones correctivas y preventivas implementadas para abordarlas y evitar su recurrencia. |
+| 5    | Se analizan los datos recopilados durante las inspecciones de calidad para identificar tendencias, patrones y áreas de mejora en los procesos de fabricación. Esto permite tomar decisiones informadas para optimizar la calidad y la eficiencia operativa. |
+| 6    |Se establecen y registran los estándares de calidad que deben cumplir los productos o servicios de la empresa. |
+| 7    |Se registran y gestionan las no conformidades identificadas durante las inspecciones de calidad. Esto incluye la identificación de la no conformidad, las causas, las acciones correctivas y preventivas implementadas, y el seguimiento de su resolución. |
+| 8    |Se programan y registran auditorías internas o externas para evaluar el sistema de gestión de calidad de la empresa. Se registran hallazgos, recomendaciones y acciones correctivas tomadas. |
+| 9    |Se analizan los datos recopilados durante las inspecciones de calidad para identificar tendencias, patrones y áreas de mejora en los procesos de fabricación. |
+| 10    | Se generan informes periódicos sobre la calidad de los productos o servicios, incluyendo estadísticas, análisis de tendencias, hallazgos de auditorías y acciones tomadas. Estos informes son útiles para la toma de decisiones y la mejora continua.|
+| 11   |Finaliza el caso. |
 | 5    | |
 | 5    | |
 #### **Caso de uso N°6: registro de usuario**:
