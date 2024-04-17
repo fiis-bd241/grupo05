@@ -100,7 +100,6 @@
 | 4    | Se analizan los datos recopilados durante las inspecciones de calidad para identificar tendencias, patrones y áreas de mejora en los procesos de fabricación. Esto permite tomar decisiones informadas para optimizar la calidad y la eficiencia operativa. |
 | 5    | Finaliza el caso. |
 
-#### **Caso de uso N°7: Reportes**
 #### **Caso de uso N°8: registro de usuario**:
 | **Objetivo:** |Permitir al gestor de la producción u operario ingresar con su usario y contraseña al sistema |
 |------|--------|
@@ -156,6 +155,31 @@
 | 4    |dar confirmación de la depuración|
 | 5    |actualización de cambios|
 | 5    |caso terminado|
+
+#### **Caso de uso N°11: Reportes por operarios**
+| **Objetivo:** |Permitir al jefe de producción analizar las actividades concluidas por un operario|
+|------|--------|
+| **Descripción:** | el jefe de producción se encarga de rellenar la información de las actividades de cada empleado
+| **Actor Primario:** |jefe de producción| 
+| **Actor Secundario :** |no hay actor secundario| 
+| **Precondiciones:** |no hay precondiciones vigentes|
+| Paso | Acción |
+| 1    |Seleccionar el reporte de los operarios|
+| 2    |Ingresar el código del empleado e la cuadrícula|
+| 3    |Visualizar el reporte| 
+
+#### **Caso de uso N°12: Reportes por supervisor**
+| **Objetivo:** |Permitir al jefe de producción analizar las actividades concluidas por los operarios de un cierto supervisor|
+|------|--------|
+| **Descripción:** |A partir de la información obtenida en el registro de tareas se concluye aquí la revisión de todos los operarios por supervisor|
+| **Actor Primario:** |jefe de producción| 
+| **Actor Secundario :** |no hay actor secundario| 
+| **Precondiciones:** |no hay precondiciones vigentes|
+| Paso | Acción |
+| 1    |Seleccionar el reporte por supervisor|
+| 2    |Ingresar el código del supervisor en la cuadrícula|
+| 3    |Visualizar el reporte| 
+
 ### 2. Requerimientos de atributos de calidad
 * Seguridad: El sistema debe garantizar la confidencialidad e integridad de los datos almacenados y transmitidos. Para ello, el sistema solo permitirá acceso a los usuarios que están registrados y que cumplan un rol en la empresa, y solicitará que los usuarios proporcionen dos formas de autenticación: una contraseña y un código enviado a su dispositivo móvil.
 * Escalabilidad: El sistema debe ser capaz de manejar grandes volúmenes de datos y usuarios en tiempo real.
