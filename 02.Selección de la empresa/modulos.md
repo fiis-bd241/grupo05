@@ -56,6 +56,8 @@ Este módulo se encarga de dar información sobre las actividades concluidas por
 
 Este módulo se encarga de darle un espacio al trabajador de llenar específicamente ciertos inconvenientes que puede tener durante su jornada laboral o con algún trato, también comentar las imperfecciones de algún producto, o problemas con herramientas y maquinarias, esta información se la envía al supervisor y finalmente este lo eleva más o realiza operaciones convenientes para el caso
 
+
+
 # INTERACCIONES ENTRE MÓDULOS 
 
 ## MÓDULO DE REGISTRO DE ACTIVIDADES CON MÓDULO DE REGISTRO DE CALIDAD
