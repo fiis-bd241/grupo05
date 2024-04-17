@@ -72,6 +72,15 @@ Este módulo permite a los empleados registrar y gestionar reclamos, quejas, sug
 ## MÓDULO DE REGISTRO DE USUARIO CON TODOS 
 Este módulo tiene una interacción con todos puesto que los módulos que se trabajan son despues de haber entrado al sistema, entonces este módulo permite dar el acceso a todos los módulos disponibles 
 
+## MODULO DE REGISTRO DE HERRAMIENTAS Y MAQUINARIA CON MODULO DE INICIO DE SESION Y REGISTRO DE ACTIVIDADES 
+El Módulo de Registro de Herramientas y Maquinarias requiere la autenticación de usuarios para acceder a las funciones relacionadas con el registro y la gestión de herramientas y maquinarias. Los usuarios (operarios y gestores de producción) deben iniciar sesión en el sistema para realizar solicitudes, validar solicitudes pendientes y acceder a la información relacionada con el registro de herramientas y maquinarias.
+
+## MODULO DE REGISTRO DE HERRAMIENTAS Y MAQUINARIA CON MODULO DE INFORMES 
+El Módulo de Registro de Herramientas y Maquinarias proporciona información que puede ser utilizada para generar informes relacionados con el estado y la utilización de herramientas y maquinarias en la empresa. Los informes pueden incluir detalles sobre la disponibilidad de herramientas, tiempos de inactividad, mantenimientos realizados, entre otros aspectos relevantes para la gestión de la producción.
+
+## MODULO DE REGISTRO DE HERRAMIENTAS Y MAQUINARIA CON MODULO RECLAMOS Y OBSERVACIONES
+Estos modulos estan relacionados en casos en los que los empleados reporten problemas o deficiencias relacionadas con herramientas y maquinarias. Por ejemplo, si un operario encuentra una herramienta defectuosa, puede registrar un reclamo o una observación en el sistema, lo que desencadenaría acciones para su reparación o reemplazo.
+
 ## MÓDULO DE REGISTRO DE ACTIVIDADES CON MÓDULO DE REGISTRO DE CALIDAD
 Estos módulos están en constante comunicación para proporcionar información sobre el personal asignado a ciertas tareas de inspección o control(que gestor de producción fue asignado a tal control).
 
