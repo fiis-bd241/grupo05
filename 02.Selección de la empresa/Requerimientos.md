@@ -106,7 +106,7 @@
 | **Descripción:** |  El usario ingresará al sistema y se topará con "el inicio de sesión" junto con dos espacios para completar , el usuario deberá ingresar sus datos y podrá acceder al sistema. 
 | **Actor Primario:** |Usuario (operario o gestor de producción)| 
 | **Actor Secundario :** |no hay actor secundario | 
-| **Precondiciones:** | los datos a ingresar deben ser unos que esten registrados enla base de datos, de lo contrario  no se podrá acceder al sistema 
+| **Precondiciones:** | los datos a ingresar deben estar registrados en la base de datos, de lo contrario, no se podrá acceder al sistema.
 | Paso | Acción |
 | 1    | El operario o gestor de la producción ingresa al inicio de sesión sistema.. |
 | 2    | El operario o gestor de la producción digita su usuario|
@@ -117,7 +117,7 @@
 #### **Caso de uso N°7: Edición del perfil**:
 | **Objetivo:** |Permitir al operario o gestor de producción cambiar algunos datos que se tengan registrado en el sistema|
 |------|--------|
-| **Descripción:** | el usuario tendrá la opción de editar algunos datos como , el telefono celulqar , el correo, la foto de perfil y incluso la contraseña. 
+| **Descripción:** | El usuario tendrá la opción de editar algunos datos como el telefono celular , el correo, la foto de perfil e incluso la contraseña. 
 | **Actor Primario:** |Usuario (operario o gestor de producción)| 
 | **Actor Secundario :** |no hay actor secundario | 
 | **Precondiciones:** |el numero de celular debe ser de 9 digitos (+51) , se debería verificar el correo sea existente , la foto de perfil se tendría que agregar en formato png. 
@@ -127,10 +127,10 @@
 | 3    |subir cambios ya sea en letra o un archivo png|       
 | 4    |dar confirmación del cambio|
 | 5    |caso terminado|
-#### **Caso de uso N°8: depuración de cuenta**:
-| **Objetivo:** |permite la eliminación total de la cuenta de la base de datos , esto incluye datos personales , usuario y contraseña|
+#### **Caso de uso N°8: Depuración de cuenta**:
+| **Objetivo:** |Permitir la eliminación total de la cuenta de la base de datos , esto incluye datos personales , usuario y contraseña|
 |------|--------|
-| **Descripción:** | el responsable se encarga de eliminar la cuenta ya sea por renuncia o despido
+| **Descripción:** | El responsable se encarga de eliminar la cuenta ya sea por renuncia o despido
 | **Actor Primario:** |gestor de producción| 
 | **Actor Secundario :** |no hay actor secundario | 
 | **Precondiciones:** |el gestor de la producción tendrá una contraseña especial para acceder a la eliminación de la cuenta
@@ -200,6 +200,20 @@
 | Paso | Acción |
 | 1    |Seleccionar el reporte por operario|
 | 2    |Visualizar el reporte|
+
+#### **Caso de uso N°14: Reclamo del operario**
+| **Objetivo:** |Permitir a los operarios registrar reclamos sobre condiciones laborales, problemas de seguridad, sugerencias de mejora u otras preocupaciones relacionadas con su experiencia laboral.|
+|------|--------|
+| **Descripción:** |Los operarios puedan presentar reclamos a través del sistema digital, facilitando la comunicación y la gestión eficiente de problemas en el lugar de trabajo.|
+| **Actor Primario:** |operario| 
+| **Actor Secundario :** |gerente de producción| 
+| **Precondiciones:** |El operario debe estar registrado en el sistema y una preocupación o problema laboral que desee registrar como reclamo|
+| Paso | Acción |
+| 1    |Dirigirse a la sección de quejas y reclamos del sistema|
+| 2    |Seleccionar la opción para registrar un nuevo reclamo y completar los campos requeridos|
+| 3    |Envío del reclamo al sistema para su registro|
+| 4    |Durante el proceso de resolución, el sistema permite la comunicación entre el operario y el responsable de la gestión del reclamo, facilitando cualquier intercambio de información o feedback|
+| 5    |Una vez que se resuelve el reclamo, el sistema notifica al operario sobre las acciones tomadas y cierra el reclamo|
 
 ### 2. Requerimientos de atributos de calidad
 * Seguridad: El sistema debe garantizar la confidencialidad e integridad de los datos almacenados y transmitidos. Para ello, el sistema solo permitirá acceso a los usuarios que están registrados y que cumplan un rol en la empresa, y solicitará que los usuarios proporcionen dos formas de autenticación: una contraseña y un código enviado a su dispositivo móvil.
