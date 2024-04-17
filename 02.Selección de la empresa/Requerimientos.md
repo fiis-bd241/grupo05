@@ -90,9 +90,10 @@
 
 | **Objetivo:** | Garantizar la excelencia de los productos fabricados. |
 |------|--------|
-| **Descripción:** | Este caso de uso describe el proceso de control de calidad mediante el cumplimiento de estándares de calidad. | 
+| **Descripción:** |  | 
 | **Actor:** | Gerente de producción | 
 | **Precondiciones:** | Se conocen previamente los estándares de calidad. | 
+| | | 
 | Paso | Acción |
 | 1    | Se realizan inspecciones de calidad en los productos terminados, así como en los materiales y componentes utilizados en el proceso de fabricación y se registran los resultados obtenidos. Esto incluye la evaluación de aspectos como la apariencia, la resistencia, la durabilidad y otros criterios de calidad definidos por la empresa. |
 | 2    | Se monitorean y controlan los procesos de fabricación para asegurar que se cumplan los estándares de calidad establecidos. Esto puede incluir la implementación de controles en línea durante la producción para detectar y corregir posibles problemas de calidad de manera oportuna.|
