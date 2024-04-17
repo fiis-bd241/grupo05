@@ -69,6 +69,9 @@ Este módulo permite a los empleados registrar y gestionar reclamos, quejas, sug
 
 # INTERACCIONES ENTRE MÓDULOS 
 
+## MÓDULO DE REGISTRO DE USUARIO CON TODOS 
+Este módulo tiene una interacción con todos puesto que los módulos que se trabajan son despues de haber entrado al sistema, entonces este módulo permite dar el acceso a todos los módulos disponibles 
+
 ## MÓDULO DE REGISTRO DE ACTIVIDADES CON MÓDULO DE REGISTRO DE CALIDAD
 Estos módulos están en constante comunicación para proporcionar información sobre el personal asignado a ciertas tareas de inspección o control(que gestor de producción fue asignado a tal control).
 
