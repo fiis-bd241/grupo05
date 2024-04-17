@@ -4,7 +4,7 @@
 
  ## **Información:**
 - [x] Estudiante de Ingeniería de Sistemas - 10mo Ciclo Relativo
-- [x] 25 años
+- [x] 25 años.
 - [x] Miembro del *Grupo 5* del curso de Diseño de Bases de Datos.
 
 
