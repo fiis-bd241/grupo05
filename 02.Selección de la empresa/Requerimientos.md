@@ -100,7 +100,7 @@
 | 4    | Se analizan los datos recopilados durante las inspecciones de calidad para identificar tendencias, patrones y áreas de mejora en los procesos de fabricación. Esto permite tomar decisiones informadas para optimizar la calidad y la eficiencia operativa. |
 | 5    | Finaliza el caso. |
 
-#### **Caso de uso N°8: registro de usuario**:
+#### **Caso de uso N°6: registro de usuario**:
 | **Objetivo:** |Permitir al gestor de la producción u operario ingresar con su usario y contraseña al sistema |
 |------|--------|
 | **Descripción:** |  El usario ingresará al sistema y se topará con "el inicio de sesión" junto con dos espacios para completar , el usuario deberá ingresar sus datos y podrá acceder al sistema. 
