@@ -93,7 +93,8 @@
 | **Descripción:** |  | 
 | **Actor:** | Gerente de producción | 
 | **Precondiciones:** | Se conocen previamente los estándares de calidad. | 
-| | | 
+| | Se conocen previamente los estándares de calidad.
+El Módulo de Registro de Calidad está correctamente configurado y actualizado con los estándares de calidad definidos.| 
 | Paso | Acción |
 | 1    | Se realizan inspecciones de calidad en los productos terminados, así como en los materiales y componentes utilizados en el proceso de fabricación y se registran los resultados obtenidos. Esto incluye la evaluación de aspectos como la apariencia, la resistencia, la durabilidad y otros criterios de calidad definidos por la empresa. |
 | 2    | Se monitorean y controlan los procesos de fabricación para asegurar que se cumplan los estándares de calidad establecidos. Esto puede incluir la implementación de controles en línea durante la producción para detectar y corregir posibles problemas de calidad de manera oportuna.|
