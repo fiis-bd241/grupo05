@@ -10,10 +10,13 @@ El empleado selecciona la máquina necesaria de manera intuitiva, especifica la 
 
 <img src="interfazModulo2.1.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
-
 ## Plataforma de Registro de actividades:
 El operario se registra en la pagina web, va al apartado de registro de actividades y observa todas las actividades que ha trabajado en un determinado tiempo que puede escoger. Asi como la hora de inicio y la hora de inicio y acabado de cada actividad, también observará podrá observar un pequeño diagrama de cuantas horas ha trabajado durante los ultimos dias.
 <img src="interfaz3.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+
+## Plataforma de Quejas y Reclamos:
+El empleado se dirige al apartado de quejas y reclamos, el cual ofrece la opción de realizar un nuevo reclamo y presenta el historial de reclamos realizados. Dicho historial muestra datos como la fecha del reclamo, la categoría del reclamo, el motivo del reclamo y el estado en el que se encuentra dicho reclamo.
+<img src="interfaz 6.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
 # USUARIO: GESTOR DE PRODUCCIÓN
 
