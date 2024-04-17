@@ -75,4 +75,9 @@ Estos módulos tienen conexión directa, debido a que conforme se soliciten herr
 ## MÓDULO DE REPORTES CON MÓDULO DE RECLAMOS Y OBSERVACIONES
 Estos casos tienen una conexión en un caso específico, en el caso de que un operario registre en observaciones el código de la herramienta o maquinaria, esta información no se puede dejar en nada, conforme al análisis del estado de estos artículos, entonces esta información va a ir afectando a los reportes.
 
+
+
+
+
+
 # DIAGRAMA UML
