@@ -49,7 +49,7 @@ En el proceso de producción de una empresa textil, la actividad principal es la
 
 | Secuencia | Actividad                                          | Descripción         | Responsable  |
 | --------- | -------------------------------------------------- | ------------------- | ------------ |
-| 1         | Logeo del Usuario |  | Gestor de Producción y Operarios |
+| 1         | Logeo del Usuario | se hace la inicialización del sistema , con las contraseñas y los usuarios ya asignados| Gestor de Producción y Operarios |
 | 2         | Encontrar Proveedor | Implica la búsqueda y selección de proveedores potenciales que puedan satisfacer las necesidades de la producción, evaluando su idoneidad, reputación y capacidad para suministrar los insumos requeridos. | Gestor de Producción |
 | 3         | Solicitud y adquisición de insumos | Consiste en la elaboración y envío de una solicitud formal de compra a un proveedor seleccionado, detallando los insumos requeridos, las cantidades, especificaciones y cualquier otra información relevante, esto ya de manerá automatizada al recibir los insumos pedidos. | Gestor de Producción |
 | 4         | Descarga de paquete | Refiere al proceso de recepción y descarga física de los paquetes o mercancías entregados por el proveedor, verificando que coincidan con los pedidos de insumos realizados y registrando su recepción de manera adecuada. | Operario |
