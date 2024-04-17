@@ -22,10 +22,10 @@ Si el usuario desea realizar un nuevo reclamo, le aparecerán opciones para conc
 <img src="interfaz reclamos op2.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
 ## Solicitud de Pedido:
-El operario se dirige al apartado de solicitud de pedido, el cual le muestra el historial de sus pedidos realizados. Este historial le muestra datos como fecha de pedido, tipo de insumo, descripción, si la solicitud fue aprobado o desaprobada, y el estado de la solicitud en caso haya sido aprobada.
+El operario se dirige al apartado de solicitud de pedido, el cual le muestra su historial de sus pedidos realizados. Este historial le muestra datos como fecha de pedido, tipo de insumo, descripción, si la solicitud fue aprobado o desaprobada, y el estado de la solicitud en caso haya sido aprobada.
 <img src="InterfazSolicitudPedido1.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
-El operario también tiene la opción de solicitar un pedido con la opción "Realizar Pedido". En esta funcionalidad, el operario puede seleccionar el insumo que requiere y colocar la descripción de este, de ser necesario también tiene la opción de agregar un comentario adicional. El sistema valida automáticamente al usuario, por lo que no es necesario que ingrese sus datos.
+El operario también tiene la opción de solicitar un pedido con la opción "Realizar Nuevo Pedido". En esta funcionalidad, el operario puede seleccionar el insumo que requiere y colocar la descripción de este, de ser necesario también tiene la opción de agregar un comentario adicional. El sistema valida automáticamente al usuario, por lo que no es necesario que ingrese sus datos.
 <img src="InterfazSolicitudPedido2.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
 # USUARIO: GESTOR DE PRODUCCIÓN
@@ -41,6 +41,10 @@ El gestor de producción se registra en la pagina web, va al apartado de registr
 ## Plataforma de Quejas y Reclamos:
 El gestor de producción se dirige al apartado de quejas y reclamos, el cual le muestra el historial de reclamos realizados por los operarios. Además, le permite filtrar dichos reclamos por operario, categoría, fecha y estado de los reclamos.
 <img src="interfaz reclamos gp.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+
+## Solicitud de Pedido:
+El gestor de producción se dirige al apartado de solicitud de pedido, el le muestra el historial de pedidos realizados. Este historial le muestra datos como fecha de pedido, usuario que realizo el pedido, tipo de insumo, descripción, el estado de la solicitud y la opción de editar este estado. También le muestra el registro de insumos y proveedores, con la opción de editarlos en caso de necesitar cambiar de proveedor por tipo de insumo, o de agregar, eliminar o actualizar los datos de insumos o proveedores.
+<img src="InterfazSolicitudPedido3.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
 [Selección de la empresa](SeleccionEmpresa.md)
 
