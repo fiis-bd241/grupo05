@@ -1,6 +1,6 @@
 ## VIDEOS PERSONALES PC1
 
-Video de Frnacisco Grijalva: 
+Video de Francisco Grijalva: 
 
 Video de Peter Lock:
 
