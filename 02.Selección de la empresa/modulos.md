@@ -8,7 +8,7 @@ Este módulo se encarga de poder registrar su perfil de usuario, recopliando inf
 3. actualización de datos de usuario :  se permite la actualización de datos de usuario, como el telefono celular, el correo, la foto de usuario que se quiere presentar en tal perfil
 4. depuración de cuenta : en caso de quiere eliminar la cuenta se podrá, solo si se se conoce la contraseña para eliminar el usuario  
 
-## MÓDULO DE HERRAMIENTAS Y MAQUINARIAS
+## MÓDULO DE REGISTRO DE HERRAMIENTAS Y MAQUINARIAS
 
 ## MÓDULO DE REGISTRO DE TAREAS
 
@@ -26,5 +26,7 @@ Este módulo se encarga de dar información sobre las actividades concluidas por
 4. Notificar cuando una herramienta o maquinaria presenta un número alto de usos
 
 ## MÓDULO DE RECLAMOS Y OBSERVACIONES 
+
+Este módulo se encarga de darle un espacio al trabajador de llenar específicamente ciertos
 
 ## INTERACCIONES ENTRE MÓDULOS 
