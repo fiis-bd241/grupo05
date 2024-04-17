@@ -15,6 +15,7 @@ Este módulo se encarga de poder registrar su perfil de usuario, recopliando inf
 ## MÓDULO DE SOLICITUD DE PEDIDOS DE INSUMOS 
 
 ## MÓDULO DE REGISTRO DE CALIDAD
+El módulo de Registro de Calidad se encarga de supervisar y garantizar que los productos textiles cumplan con los estándares de calidad establecidos por la empresa. Este módulo registra y analiza los datos relacionados con la calidad de los productos, tanto en términos de materiales como de procesos de producción.
 
 ## MÓDULO DE REPORTES 
 
