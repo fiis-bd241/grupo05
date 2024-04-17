@@ -129,20 +129,33 @@
 | 4    | Se revisa si la respuesta termina siendo correcta|
 | 5    | si los datos concuerdan con la algún valor de la base de datos se procede a cambiar la contraseña|
 | 6    |  Caso terminado.|
-#### **Caso de uso N°9: Edición del perfil**:
+#### **Caso de uso N°10: Edición del perfil**:
 | **Objetivo:** |Permitir al operario o gestor de producción cambiar algunos datos que se tengan registrado en el sistema|
 |------|--------|
 | **Descripción:** | el usuario tendrá la opción de editar algunos datos como , el telefono celulqar , el correo, la foto de perfil. 
 | **Actor Primario:** |Usuario (operario o gestor de producción)| 
 | **Actor Secundario :** |no hay actor secundario | 
-| **Precondiciones:** | no hay condiciones
+| **Precondiciones:** |el numero de celular debe ser de 9 digitos (+51) , se debería verificar el correo sea existente , la foto de perfil se tendría que agregar en formato png. 
 | Paso | Acción |
-| 1    |       |
-| 2    |         |
-| 3    |       |       
-| 4    |        |
-| 5    |        |
-| 6    |       |
+| 1    |ingresar al apartado de edición de la cuenta|
+| 2    |seleccionar que parametro se va editar|
+| 3    |subir cambios ya sea en letra o un archivo png|       
+| 4    |dar confirmación del cambio|
+| 5    |caso terminado|
+#### **Caso de uso N°11: depuración de cuenta**:
+| **Objetivo:** |permite la eliminación total de la cuenta de la base de datos , esto incluye datos personales , usuario y contraseña|
+|------|--------|
+| **Descripción:** | el responsable se encarga de eliminar la cuenta ya sea por renuncia o despido
+| **Actor Primario:** |gestor de producción| 
+| **Actor Secundario :** |no hay actor secundario | 
+| **Precondiciones:** |el gestor de la producción tendrá una contraseña especial para acceder a la eliminación de la cuenta
+| Paso | Acción |
+| 1    |ingresar al apartado de eliminación de la cuenta|
+| 2    |digitar la contraseña de acceso para el apartado de eliminación|
+| 3    |seleccionar a el usuario que se va eliminar|       
+| 4    |dar confirmación de la depuración|
+| 5    |actualización de cambios|
+| 5    |caso terminado|
 ### 2. Requerimientos de atributos de calidad
 * Seguridad: El sistema debe garantizar la confidencialidad e integridad de los datos almacenados y transmitidos. Para ello, el sistema solo permitirá acceso a los usuarios que están registrados y que cumplan un rol en la empresa, y solicitará que los usuarios proporcionen dos formas de autenticación: una contraseña y un código enviado a su dispositivo móvil.
 * Escalabilidad: El sistema debe ser capaz de manejar grandes volúmenes de datos y usuarios en tiempo real.
