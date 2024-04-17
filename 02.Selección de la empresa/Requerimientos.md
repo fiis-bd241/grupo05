@@ -93,15 +93,20 @@
 | **Descripción:** |  | 
 | **Actor:** | Gerente de producción | 
 | **Precondiciones:** | Se conocen previamente los estándares de calidad. | 
-| | Se conocen previamente los estándares de calidad.
-El Módulo de Registro de Calidad está correctamente configurado y actualizado con los estándares de calidad definidos.| 
+| |El Módulo de Registro de Calidad está correctamente configurado y actualizado con los estándares de calidad definidos.| 
 | Paso | Acción |
 | 1    | Se realizan inspecciones de calidad en los productos terminados, así como en los materiales y componentes utilizados en el proceso de fabricación y se registran los resultados obtenidos. Esto incluye la evaluación de aspectos como la apariencia, la resistencia, la durabilidad y otros criterios de calidad definidos por la empresa. |
 | 2    | Se monitorean y controlan los procesos de fabricación para asegurar que se cumplan los estándares de calidad establecidos. Esto puede incluir la implementación de controles en línea durante la producción para detectar y corregir posibles problemas de calidad de manera oportuna.|
 | 3    | Se registran y gestionan las no conformidades identificadas durante las inspecciones de calidad. Esto incluye el registro de las causas de las no conformidades, así como las acciones correctivas y preventivas implementadas para abordarlas y evitar su recurrencia. |
 | 4    | Se analizan los datos recopilados durante las inspecciones de calidad para identificar tendencias, patrones y áreas de mejora en los procesos de fabricación. Esto permite tomar decisiones informadas para optimizar la calidad y la eficiencia operativa. |
-| 5    | Finaliza el caso. |
-
+| 5    |Se establecen y registran los estándares de calidad que deben cumplir los productos o servicios de la empresa. |
+| 6    | |
+| 7    | |
+| 8    | |
+| 9    | |
+| 10   | |
+| 5    | |
+| 5    | |
 #### **Caso de uso N°6: registro de usuario**:
 | **Objetivo:** |Permitir al gestor de la producción u operario ingresar con su usario y contraseña al sistema |
 |------|--------|
