@@ -102,9 +102,9 @@
 | 5    |Se establecen y registran los estándares de calidad que deben cumplir los productos o servicios de la empresa. |
 | 6    | |
 | 7    | |
-| 8    | |
-| 9    | |
-| 10   | |
+| 8    |Se analizan los datos recopilados durante las inspecciones de calidad para identificar tendencias, patrones y áreas de mejora en los procesos de fabricación. |
+| 9    | Se generan informes periódicos sobre la calidad de los productos o servicios, incluyendo estadísticas, análisis de tendencias, hallazgos de auditorías y acciones tomadas. Estos informes son útiles para la toma de decisiones y la mejora continua.|
+| 10   |Finaliza el caso. |
 | 5    | |
 | 5    | |
 #### **Caso de uso N°6: registro de usuario**:
