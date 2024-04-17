@@ -11,7 +11,7 @@ En el proceso de producción de una empresa textil, la actividad principal es la
 * **ENCARGADO DE ADQUISICIONES**: Este profesional es responsable de gestionar y coordinar la adquisición de materiales, equipos y suministros necesarios para el proceso de producción. Se encarga de negociar con proveedores, gestionar inventarios y asegurar de que los materiales estén disponibles según las necesidades de producción.
 
 ## FLUJOGRAMA DEL PROCESO DE PRODUCCION
-<img src="produccion-flujo.png" alt="02.Selección de la empresa" style="width: 150%; height: auto;" />
+<img src="diagrama-flujo.jpg" alt="02.Selección de la empresa" style="width: 150%; height: auto;" />
 
 **Hecho en BIZAGI**
 
