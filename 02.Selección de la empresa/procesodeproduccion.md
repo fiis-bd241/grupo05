@@ -28,18 +28,22 @@ En el proceso de producción de una empresa textil, la actividad principal es la
 | 9         | Alistar suficiente material para confeccionar | Este proceso implica revisar el inventario de materiales necesarios para la producción de prendas y asegurarse de que haya suficiente cantidad disponible para cumplir con los pedidos.| Gestor de Producción |
 | 10        |Almacenar lo que no se va a confeccionar | Implica el almacenamiento adecuado de los productos o materiales que no se van a utilizar inmediatamente en la producción o venta, asegurándose de mantener su integridad y calidad hasta su uso futuro o su disposición final. | Operario y Gestor de Producción |
 | 11        | Recepcion del pedido al almacen | Cuando se recibe un pedido de materiales, este proceso implica registrar y verificar los productos recibidos en el almacén. |Gestor de Producción |
-| 12        | Guardar el material | mplica almacenar de manera organizada y segura los materiales que no serán utilizados inmediatamente en la producción, pero que se conservarán para proyectos futuros. Esto incluye etiquetar claramente los materiales, controlar el inventario y protegerlos de daños o pérdidas en un lugar accesible dentro del almacén. | Operario|
+| 12        | Guardar el material | implica almacenar de manera organizada y segura los materiales que no serán utilizados inmediatamente en la producción, pero que se conservarán para proyectos futuros. Esto incluye etiquetar claramente los materiales, controlar el inventario y protegerlos de daños o pérdidas en un lugar accesible dentro del almacén. | Operario|
 | 13        | Recepcion de pedido a la produccion | Después de que los materiales innecesarios son almacenados, se realiza el proceso de verificar que los insumos llegaron al área correspondiente para que se inicien los pasos de fabricación. | Gestor de Producción |
-| 15        | Corte de materiales | En este proceso se cortan los materiales según las especificaciones requeridas para la fabricación de las prendas. | Operario|
-| 16      | Ensamblaje de piezas | Después del corte de los materiales, se ensamblan las diferentes piezas para formar las prendas. | Operario|
-| 17        | Empaquetar las prendas | Una vez que las prendas están ensambladas, se procede a empaquetarlas para su envío o almacenamiento. | Operario |
-| 18        |Registrar calidad | Una vez que se procede a empaquetar las prendas al mismo tiempo se hace el registro de la calidad de los productos , como cuales fueron los inconvenientes en el proceso. | Gestor de producción |
-| 19       | Deshacer el embalaje | Este proceso implica abrir los paquetes recibidos de materiales o productos, para su inspección y utilización en la producción.| Operario |
-| 20        | Deshechar los malos cortes| Durante el proceso de corte de materiales, es posible que se produzcan cortes defectuosos o inservibles, los cuales deben ser desechados adecuadamente. | Operario |
-| 21        | Solicitar el material suficiente |Cuando se detecta que hay una escasez de materiales, se realiza una solicitud al área de almacén para reabastecer los suministros.| Gestor de Producción |
-| 22        | Recepcion de solicitud | El almacén recibe la solicitud de material y procede a preparar los productos solicitados. | Gestor de Producción |
-| 23        | Preparado de la solicitud  | En este proceso, el personal del almacén prepara los materiales solicitados para su envío o entrega al área de producción.  | Gestor de Producción |
-| 24        | Envio de la solicitud | Finalmente, los materiales solicitados son enviados desde el almacén hasta el área de producción para su utilización en el proceso de fabricación de prendas.  | Gestor de Producción |
+| 14        | Registro de inicio de tarea | el gestor distribuye las tareas del día a los diferentes operarios | Gestor de la producción |
+| 15        | Envío de solicitud de maquinaria  |el Operario manda una solicitud para solicitar las herramientas y maquinarias necesarias | Operario |
+| 16        | Recepcion de pedido a la produccion |la solicitud llegas al gestor de producción y este le asigna la maquinaria y las herramientas necesarias| Gestor de producción |
+| 17        | Envío de la maquinaria y herramienta  | la maquinaria y herramientas son enviados a su respectivo operario | Gestor de producción |
+| 18        | Corte de materiales | En este proceso se cortan los materiales según las especificaciones requeridas para la fabricación de las prendas. | Operario|
+| 19      | Ensamblaje de piezas | Después del corte de los materiales, se ensamblan las diferentes piezas para formar las prendas. | Operario|
+| 20        | Empaquetar las prendas | Una vez que las prendas están ensambladas, se procede a empaquetarlas para su envío o almacenamiento. | Operario |
+| 21      |Registrar calidad | Una vez que se procede a empaquetar las prendas al mismo tiempo se hace el registro de la calidad de los productos , como cuales fueron los inconvenientes en el proceso. | Gestor de producción |
+| 22       | Deshacer el embalaje | Este proceso implica abrir los paquetes recibidos de materiales o productos, para su inspección y utilización en la producción.| Operario |
+| 23        | Deshechar los malos cortes| Durante el proceso de corte de materiales, es posible que se produzcan cortes defectuosos o inservibles, los cuales deben ser desechados adecuadamente. | Operario |
+| 24        | Solicitar el material suficiente |Cuando se detecta que hay una escasez de materiales, se realiza una solicitud al área de almacén para reabastecer los suministros.| Gestor de Producción |
+| 25        | Recepcion de solicitud | El almacén recibe la solicitud de material y procede a preparar los productos solicitados. | Gestor de Producción |
+| 26        | Preparado de la solicitud  | En este proceso, el personal del almacén prepara los materiales solicitados para su envío o entrega al área de producción.  | Gestor de Producción |
+| 27        | Envio de la solicitud | Finalmente, los materiales solicitados son enviados desde el almacén hasta el área de producción para su utilización en el proceso de fabricación de prendas.  | Gestor de Producción |
 
 ### PROCESO TO-BE
 
