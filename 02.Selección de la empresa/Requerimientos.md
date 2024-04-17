@@ -114,7 +114,7 @@
 | 4    | Se revisa si existe dicho usuario y contraseña en la base de datos|
 | 5    |si los datos concuerdan con la algún valor de la base de datos se da acceso al sistema de lo contrario se envía un mensaje de "usuario o contraseña invalidos"|
 | 6    |  Caso terminado.|
-#### **Caso de uso N°9: Edición del perfil**:
+#### **Caso de uso N°7: Edición del perfil**:
 | **Objetivo:** |Permitir al operario o gestor de producción cambiar algunos datos que se tengan registrado en el sistema|
 |------|--------|
 | **Descripción:** | el usuario tendrá la opción de editar algunos datos como , el telefono celulqar , el correo, la foto de perfil y incluso la contraseña. 
@@ -127,7 +127,7 @@
 | 3    |subir cambios ya sea en letra o un archivo png|       
 | 4    |dar confirmación del cambio|
 | 5    |caso terminado|
-#### **Caso de uso N°10: depuración de cuenta**:
+#### **Caso de uso N°8: depuración de cuenta**:
 | **Objetivo:** |permite la eliminación total de la cuenta de la base de datos , esto incluye datos personales , usuario y contraseña|
 |------|--------|
 | **Descripción:** | el responsable se encarga de eliminar la cuenta ya sea por renuncia o despido
@@ -142,7 +142,7 @@
 | 5    |actualización de cambios|
 | 5    |caso terminado|
 
-#### **Caso de uso N°11: Reportes por operarios**
+#### **Caso de uso N°9: Reportes por operarios**
 | **Objetivo:** |Permitir al jefe de producción analizar las actividades concluidas por un operario|
 |------|--------|
 | **Descripción:** | el jefe de producción se encarga de rellenar la información de las actividades de cada empleado
@@ -154,7 +154,7 @@
 | 2    |Ingresar el código del empleado e la cuadrícula|
 | 3    |Visualizar el reporte| 
 
-#### **Caso de uso N°12: Reportes por supervisor**
+#### **Caso de uso N°10: Reportes por supervisor**
 | **Objetivo:** |Permitir al jefe de producción analizar las actividades concluidas por los operarios de un cierto supervisor|
 |------|--------|
 | **Descripción:** |A partir de la información obtenida en el registro de tareas se concluye aquí la revisión de todos los operarios por supervisor|
