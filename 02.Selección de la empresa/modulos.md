@@ -21,21 +21,26 @@ Este módulo se encarga de gestionar y mantener un registro detallado de las her
 
 5. Informe de uso y disponibilidad: Genera informes periódicos sobre el uso de herramientas y maquinarias, incluyendo estadísticas de utilización, tiempos de inactividad, mantenimientos realizados y disponibilidad de equipos. Estos informes son útiles para la toma de decisiones y la optimización de los recursos.
 
-## MÓDULO DE REGISTRO DE TAREAS
+## MÓDULO DE REGISTRO DE ACTIVIDADES
+Este módulo se encarga de registar las actividades o trabajos asignados a cada operario, sus responsabilidades son:
+1. Mostrar las actividades realizadas al operario: Esto le permitirá ver como es su avances a lo largo de un tiempo determinado y que actividades realizó con satisfacción.
+2. Actividades generales de los operarios: Para el gestor de producción le permitirá mostrar las actividades realizadas de los operarios, así como controlar el tiempo de ellos.
+3. Estadistica de los operarios: Mostrará un pequeño rendimiento de un operario designado como cuanto tiempo trabaja por día en promedio, si su trabajo es continuo o interrupido por otras actividades, etc.
 
 ## MÓDULO DE SOLICITUD DE PEDIDOS DE INSUMOS 
 
 ## MÓDULO DE REGISTRO DE CALIDAD
-El módulo de Registro de Calidad se encarga de supervisar y garantizar que los productos textiles cumplan con los estándares de calidad establecidos por la empresa. Este módulo registra y analiza los datos relacionados con la calidad de los productos, tanto en términos de materiales como de procesos de producción.
 
-Interacción con otros módulos:
+Este módulo se encarga de gestionar y mantener un registro detallado de la calidad de los productos o servicios producidos por la empresa. Su objetivo principal es garantizar que los estándares de calidad se cumplan y se mantengan a lo largo del tiempo. El módulo de Registro de Calidad consiste en los siguientes elementos:
 
-1. Módulo de Herramientas y Maquinarias: 
-   - Utiliza información sobre el estado de las herramientas y maquinarias para garantizar que estén en condiciones óptimas y no afecten la calidad del producto.
-   - Notifica cuando una herramienta o maquinaria presenta un número alto de usos, lo que puede afectar la calidad del producto
+1. Definición de Estándares de Calidad:
+Permite establecer y registrar los estándares de calidad que deben cumplir los productos o servicios de la empresa. Esto incluye criterios como dimensiones, materiales, procesos, entre otros.
 
-2. Módulo de Registro de Tareas:
+2. Inspección de Productos/Servicios:
+Facilita la realización de inspecciones periódicas a los productos o servicios para verificar su calidad. Se pueden registrar los resultados de las inspecciones, incluyendo observaciones y medidas tomadas.
 
+3. Control de Calidad en Procesos:
+Registra la calidad de los procesos de producción o prestación de servicios. Esto incluye la calidad de las materias primas utilizadas, la eficiencia de los procesos y la satisfacción del cliente.
 
 
 
@@ -51,4 +56,12 @@ Este módulo se encarga de dar información sobre las actividades concluidas por
 
 Este módulo se encarga de darle un espacio al trabajador de llenar específicamente ciertos inconvenientes que puede tener durante su jornada laboral o con algún trato, también comentar las imperfecciones de algún producto, o problemas con herramientas y maquinarias, esta información se la envía al supervisor y finalmente este lo eleva más o realiza operaciones convenientes para el caso
 
-## INTERACCIONES ENTRE MÓDULOS 
+# INTERACCIONES ENTRE MÓDULOS 
+
+## MÓDULO DE REGISTRO DE ACTIVIDADES CON MÓDULO DE REGISTRO DE CALIDAD
+Estos módulos están en constante comunicación para proporcionar información sobre el personal asignado a ciertas tareas de inspección o control(que gestor de producción fue asignado a tal control).
+## MÓDULO DE REPORTES CON MÓDULO DE REGISTRO DE ACTIVIDADES
+Estos módulos estan relación pues el módulo de registro de actividades le brinda la información de las actividades de los usuarios para que este pueda sintetisarlo y exportarlo mediante un archivo pdf de reporte manual.
+
+
+# DIAGRAMA UML

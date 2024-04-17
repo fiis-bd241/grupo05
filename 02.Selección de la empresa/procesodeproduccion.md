@@ -42,16 +42,31 @@ En el proceso de producción de una empresa textil, la actividad principal es la
 
 ### PROCESO TO-BE
 
-
-
+| Secuencia | Actividad                                          | Descripción         | Responsable  |
+| --------- | -------------------------------------------------- | ------------------- | ------------ |
+| 1         | Encontrar Proveedor | Implica la búsqueda y selección de proveedores potenciales que puedan satisfacer las necesidades de la producción, evaluando su idoneidad, reputación y capacidad para suministrar los insumos requeridos. | Gestor de Producción |
+| 2         | Solicitud y adquisición de insumos | Consiste en la elaboración y envío de una solicitud formal de compra a un proveedor seleccionado, detallando los insumos requeridos, las cantidades, especificaciones y cualquier otra información relevante, esto ya de manerá automatizada al recibir los insumos pedidos. | Gestor de Producción |
+| 3         | Descarga de paquete | Refiere al proceso de recepción y descarga física de los paquetes o mercancías entregados por el proveedor, verificando que coincidan con los pedidos de insumos realizados y registrando su recepción de manera adecuada. | Operario |
+| 4         | Revisión de paquete | Implica la inspección y verificación de los insumos recibidos, asegurándose de su calidad, cantidad y conformidad con las especificaciones del pedido, y reportando cualquier discrepancia o problema identificado.  | Gestor de Producción |
+| 5         | Solicitar reenvió | Consiste en solicitar un reenvio al proveedor por insumos que no cumplan con las especificaciones o que presenten defectos, siguiendo los procedimientos y políticas establecidos por el área y el proveedor.  | Gestor de Producción |
+| 6         | Alistar suficiente material para confeccionar | Este proceso implica revisar el inventario de materiales necesarios para la producción de prendas y asegurarse de que haya suficiente cantidad disponible para cumplir con los pedidos.| Gestor de Producción |
+| 7         |Almacenar lo que no se va a confeccionar | Implica el almacenamiento adecuado de los productos o materiales que no se van a utilizar inmediatamente en la producción o venta, asegurándose de mantener su integridad y calidad hasta su uso futuro o su disposición final. | Operario y Gestor de Producción |
+| 8         | Recepcion del pedido al almacen | Cuando se recibe un pedido de materiales, este proceso implica registrar y verificar los productos recibidos en el almacén. |Gestor de Producción |
+| 9         | Guardar el material | mplica almacenar de manera organizada y segura los materiales que no serán utilizados inmediatamente en la producción, pero que se conservarán para proyectos futuros. Esto incluye etiquetar claramente los materiales, controlar el inventario y protegerlos de daños o pérdidas en un lugar accesible dentro del almacén. | Operario|
+| 10        | Recepcion de pedido a la produccion | Después de que los materiales innecesarios son almacenados, se realiza el proceso de verificar que los insumos llegaron al área correspondiente para que se inicien los pasos de fabricación. | Gestor de Producción |
+| 11        | Corte de materiales | En este proceso se cortan los materiales según las especificaciones requeridas para la fabricación de las prendas. | Operario|
+| 12        | Ensamblaje de piezas | Después del corte de los materiales, se ensamblan las diferentes piezas para formar las prendas. | Operario|
+| 13        | Empaquetar las prendas | Una vez que las prendas están ensambladas, se procede a empaquetarlas para su envío o almacenamiento. | Operario |
+| 14        | Deshacer el embalaje | Este proceso implica abrir los paquetes recibidos de materiales o productos, para su inspección y utilización en la producción.| Operario |
+| 15        | Deshechar los malos cortes| Durante el proceso de corte de materiales, es posible que se produzcan cortes defectuosos o inservibles, los cuales deben ser desechados adecuadamente. | Operario |
+| 16        | Solicitud y recibimiento del material suficiente |Cuando se detecta que hay una escasez de materiales, se realiza una solicitud al área de almacén para reabastecer los suministros, este proceso sumergirá una automatización para dar abasto a todas las solicitudes.  | Gestor de Producción |
 
 
 ## GLOSARIO
-1. **Operario**: En el contexto empresarial puede referirse a un trabajador específicamente involucrado en tareas operativas dentro del proceso de producción. Su definición podría incluir detalles sobre las funciones que realiza dentro de la empresa.
+1. **Insumos**: En el contexto de la empresa, los insumos son los materiales y componentes básicos necesarios para la fabricación de los prendas textiles. 
 2. **Piso de Produccion**: Es el área física donde se llevan a cabo las actividades de fabricación, ensamblaje, procesamiento y control de calidad de los productos o servicios de una empresa. Es el lugar donde los trabajadores realizan las tareas relacionadas con la producción.
-3. **Encargado de Adquisiciones**: Es el responsable de gestionar y coordinar la compra de materiales, equipos y suministros necesarios para el proceso de producción de una empresa.
-4. **Descarga de paquete**: Se refiere al proceso de recibir físicamente los productos o mercancías entregadas por el proveedor, verificando que coincidan con los pedidos realizados y registrando su recepción de manera adecuada.
-5. **Proveedor de archivos**: Se refiere a la persona o equipo encargado de gestionar y mantener los registros y documentos relacionados con los proveedores de una empresa, incluyendo contratos, cotizaciones, pedidos y comunicaciones.
+3. **Descarga de paquete**: Se refiere al proceso de recibir físicamente los productos o mercancías entregadas por el proveedor, verificando que coincidan con los pedidos realizados y registrando su recepción de manera adecuada.
+4. **Proveedor de archivos**: Se refiere a la persona o equipo encargado de gestionar y mantener los registros y documentos relacionados con los proveedores de una empresa, incluyendo contratos, cotizaciones, pedidos y comunicaciones.
 
 
 [Selección de la empresa](SeleccionEmpresa.md)

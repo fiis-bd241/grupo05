@@ -26,21 +26,52 @@
 
 #### **Caso de uso N°2: Selección de herramientas y maquinarias**
 
-| **Objetivo:** | Garantizar un proceso de producción eficiente y seguro en la empresa mediante el conocimiento del uso de las herramientas y maquinarias, así como de los procesos asociados a éstos. |
+| **Objetivo:** | Permitir al operario solicitar herramientas y maquinarias necesarias para llevar a cabo una actividad específica. |
 |------|--------|
-| **Descripción:** | Este caso de uso describe el proceso de selección de herramientas y maquinarias por parte del operario. | 
-| **Actor:** | Operario | 
-| **Precondiciones:** | Se disponen de suficientes herramientas y maquinarias para mantener el flujo de producción de la empresa. | 
+| **Descripción:** |  El operario ingresará al sistema y accederá al apartado de "Solicitar de herramienta". Luego de ello, podrá buscar la herramienta deseada por su nombre o código y especificar la actividad que va a realizar. Posteriormente, se dara su busqueda.
+| **Actor Primario:** | Operario | 
+| **Actor Secundario :** | Gestor de producción. | 
+| **Precondiciones:** | Las herramientas y maquinarias deben estar registradas en la base de datos del sistema. | 
 | Paso | Acción |
-| 1    | El operario comprende a fondo el proceso de producción. Esto le permitirá elegir las herramientas y maquinarias adecuadas para cada tarea específica. |
-| 2    | El operario conoce las características técnicas de las herramientas y maquinarias disponibles. Esto incluye detalles como la capacidad, velocidad, precisión, facilidad de uso y mantenimiento. |
-| 3    | El operario se asegura de que la herramienta seleccionada se adapte al tipo de trabajo que realizará. |
-| 4    | El operario debe evaluar si la herramienta es cómoda de usar durante largos períodos y si cumple con las normas de seguridad. |
-| 5    | El operario selecciona la herramienta que le permite una mayor eficiencia y productividad. Además evalúa si la herramienta reduce el tiempo de trabajo y mejora la calidad del producto final. |
-| 6    | Luego de seleccionar la herramienta, el operario procede a seleccionar el tiempo de inicio así como el tiempo de finalización del uso de la herramienta. |
-| 7    | Finaliza el caso. |
+| 1    | El operario ingresa al sistema.. |
+| 2    | El operario accede al apartado "Solicitar herramienta". |
+| 3    | El operario busca la herramienta deseada por su nombre o código. |
+| 4    | El operario especifica la actividad que va a realizar. |
+| 5    | El operario inicia la búsqueda haciendo clic en el icono de la lupa. |
+| 6    | El sistema muestra una tabla con las herramientas disponibles, incluyendo el nombre, código, modelo y estado (disponible, ocupado o mantenimiento). |
+| 7    | El operario selecciona la herramienta deseada. |
+| 8    | El operario hace clic en "Enviar solicitud". |
+| 9    | El sistema envía la solicitud al gestor de producción para su validación. |
+| 10    | Caso terminado. |
 
-#### **Caso de uso N°3: Registro de los empleados**
+#### **Caso de uso N°3: Validación de la solicitud de herramientas y maquinarias**
+
+| **Objetivo:** | Permitir al gestor de producción validar las solicitudes de herramientas y maquinarias realizadas por los operarios. |
+|------|--------|
+| **Descripción:** |  El gestor de producción ingresará al sistema y accederá al apartado de "Solicitud de herramienta". Se mostrará una tabla con todas las solicitudes pendientes, donde se visualizará el código del usuario que solicita, el código de la herramienta, el modelo y nombre de la herramienta. El gestor tendrá la opción de aceptar o rechazar la solicitud.
+| **Actor Primario:** |  Gestor de producción | 
+| **Actor Secundario :** | Operario | 
+| **Precondiciones:** | Existencia de solicitudes de herramientas y maquinarias pendientes en el sistema. | 
+| Paso | Acción |
+| 1    | El gestor de producción ingresa al sistema. |
+| 2    | El gestor de producción accede al apartado "Solicitud de herramienta". |
+| 3    | El sistema muestra una tabla con todas las solicitudes pendientes. |
+| 4    | En la tabla se visualiza el código del usuario que solicita, el código de la herramienta, el modelo y nombre de la herramienta. |
+| 5    | El gestor de producción revisa cada solicitud pendiente. |
+| 6    | El gestor de producción tiene la opción de aceptar o rechazar cada solicitud. |
+| 7    | Si se decide aceptar la solicitud: |
+||a. El gestor de producción marca la solicitud como aceptada. |
+||b. El sistema actualiza el estado de la herramienta a "ocupado". |
+||c. Se notifica al operario que su solicitud ha sido aprobada. |
+| 8    | Si se decide rechazar la solicitud: |
+|  |a. El gestor de producción marca la solicitud como rechazada. |
+|     |b. Se notifica al operario que su solicitud ha sido rechazada. |
+| 9  | El gestor de producción puede repetir el proceso para todas las solicitudes pendientes.|
+| 10  | Caso terminado.|
+
+
+
+#### **Caso de uso N°4: Registro de los empleados**
 
 | **Objetivo:** | Gestionar de manera eficaz la mano de obra y optimizar los procesos de fabricación. |
 |------|--------|
@@ -55,7 +86,7 @@
 | 5    | Se generan informes detallados sobre la asistencia y el rendimiento laboral de los empleados. Esto permite generar información valiosa para evaluar la eficiencia operativa, identificar áreas de mejora y tomar mejores decisiones. |
 | 6    | Finaliza el caso. |
 
-#### **Caso de uso N°4: Control de calidad**
+#### **Caso de uso N°5: Control de calidad**
 
 | **Objetivo:** | Garantizar la excelencia de los productos fabricados. |
 |------|--------|
@@ -69,10 +100,62 @@
 | 4    | Se analizan los datos recopilados durante las inspecciones de calidad para identificar tendencias, patrones y áreas de mejora en los procesos de fabricación. Esto permite tomar decisiones informadas para optimizar la calidad y la eficiencia operativa. |
 | 5    | Finaliza el caso. |
 
-#### **Caso de uso N°6: Reportes**
-
-
-
+#### **Caso de uso N°7: Reportes**
+#### **Caso de uso N°8: registro de usuario**:
+| **Objetivo:** |Permitir al gestor de la producción u operario ingresar con su usario y contraseña al sistema |
+|------|--------|
+| **Descripción:** |  El usario ingresará al sistema y se topará con "el inicio de sesión" junto con dos espacios para completar , el usuario deberá ingresar sus datos y podrá acceder al sistema. 
+| **Actor Primario:** |Usuario (operario o gestor de producción)| 
+| **Actor Secundario :** |no hay actor secundario | 
+| **Precondiciones:** | los datos a ingresar deben ser unos que esten registrados enla base de datos, de lo contrario  no se podrá acceder al sistema 
+| Paso | Acción |
+| 1    | El operario o gestor de la producción ingresa al inicio de sesión sistema.. |
+| 2    | El operario o gestor de la producción digita su usuario|
+| 3    | El operario o gestor de la producción digita su contraseña|
+| 4    | Se revisa si existe dicho usuario y contraseña en la base de datos|
+| 5    |si los datos concuerdan con la algún valor de la base de datos se da acceso al sistema de lo contrario se envía un mensaje de "usuario o contraseña invalidos"|
+| 6    |  Caso terminado.|
+#### **Caso de uso N°9: cambio de contraseña**:
+| **Objetivo:** |Permitir al operario o gestor de producción ingresar con su usario y contraseña al sistema |
+|------|--------|
+| **Descripción:** | Se le da la facilidad al usuario de poder modificar la contraseña si se conoce su usario y una palabra clave que pedirá el sistema. 
+| **Actor Primario:** |Usuario (operario o gestor de producción)| 
+| **Actor Secundario :** |no hay actor secundario | 
+| **Precondiciones:** | se requiere el saber la palabra clave 
+| Paso | Acción |
+| 1    | El operario o gestor de la producción dentro del inicio de sesión irá a la opción de ¿olvidaste la contraseña?|
+| 2    | Se le pedirá al operario o gestor de la producción que dijite su usario |
+| 3    | Se le hará una pregunta , como ¿cual es tu mejor amigo? , ¿cual es tu comida favorita?, entre otras|
+| 4    | Se revisa si la respuesta termina siendo correcta|
+| 5    | si los datos concuerdan con la algún valor de la base de datos se procede a cambiar la contraseña|
+| 6    |  Caso terminado.|
+#### **Caso de uso N°10: Edición del perfil**:
+| **Objetivo:** |Permitir al operario o gestor de producción cambiar algunos datos que se tengan registrado en el sistema|
+|------|--------|
+| **Descripción:** | el usuario tendrá la opción de editar algunos datos como , el telefono celulqar , el correo, la foto de perfil. 
+| **Actor Primario:** |Usuario (operario o gestor de producción)| 
+| **Actor Secundario :** |no hay actor secundario | 
+| **Precondiciones:** |el numero de celular debe ser de 9 digitos (+51) , se debería verificar el correo sea existente , la foto de perfil se tendría que agregar en formato png. 
+| Paso | Acción |
+| 1    |ingresar al apartado de edición de la cuenta|
+| 2    |seleccionar que parametro se va editar|
+| 3    |subir cambios ya sea en letra o un archivo png|       
+| 4    |dar confirmación del cambio|
+| 5    |caso terminado|
+#### **Caso de uso N°11: depuración de cuenta**:
+| **Objetivo:** |permite la eliminación total de la cuenta de la base de datos , esto incluye datos personales , usuario y contraseña|
+|------|--------|
+| **Descripción:** | el responsable se encarga de eliminar la cuenta ya sea por renuncia o despido
+| **Actor Primario:** |gestor de producción| 
+| **Actor Secundario :** |no hay actor secundario | 
+| **Precondiciones:** |el gestor de la producción tendrá una contraseña especial para acceder a la eliminación de la cuenta
+| Paso | Acción |
+| 1    |ingresar al apartado de eliminación de la cuenta|
+| 2    |digitar la contraseña de acceso para el apartado de eliminación|
+| 3    |seleccionar a el usuario que se va eliminar|       
+| 4    |dar confirmación de la depuración|
+| 5    |actualización de cambios|
+| 5    |caso terminado|
 ### 2. Requerimientos de atributos de calidad
 * Seguridad: El sistema debe garantizar la confidencialidad e integridad de los datos almacenados y transmitidos. Para ello, el sistema solo permitirá acceso a los usuarios que están registrados y que cumplan un rol en la empresa, y solicitará que los usuarios proporcionen dos formas de autenticación: una contraseña y un código enviado a su dispositivo móvil.
 * Escalabilidad: El sistema debe ser capaz de manejar grandes volúmenes de datos y usuarios en tiempo real.
