@@ -68,3 +68,6 @@ Este módulo se encarga de darle un espacio al trabajador de llenar específicam
 Estos módulos están en constante comunicación para proporcionar información sobre el personal asignado a ciertas tareas de inspección o control(que gestor de producción fue asignado a tal control).
 ## MÓDULO DE REPORTES CON MÓDULO DE REGISTRO DE ACTIVIDADES
 Estos módulos estan relación pues el módulo de registro de actividades le brinda la información de las actividades de los usuarios para que este pueda sintetisarlo y exportarlo mediante un archivo pdf de reporte manual.
+
+
+# DIAGRAMA UML
