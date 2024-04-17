@@ -25,6 +25,9 @@ Si el usuario desea realizar un nuevo reclamo, le aparecerán opciones para conc
 El operario se dirige al apartado de solicitud de pedido, el cual le muestra el historial de sus pedidos realizados. Este historial le muestra datos como fecha de pedido, tipo de insumo, descripción, si la solicitud fue aprobado o desaprobada, y el estado de la solicitud en caso haya sido aprobada.
 <img src="InterfazSolicitudPedido1.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
+El operario también tiene la opción de solicitar un pedido con la opción "Realizar Pedido". En esta funcionalidad, el operario puede seleccionar el insumo que requiere y colocar la descripción de este, de ser necesario también tiene la opción de agregar un comentario adicional. El sistema valida automáticamente al usuario, por lo que no es necesario que ingrese sus datos.
+<img src="InterfazSolicitudPedido2.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+
 # USUARIO: GESTOR DE PRODUCCIÓN
 
 ## Solicitud de herramienta 
