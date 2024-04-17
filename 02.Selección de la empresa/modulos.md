@@ -56,12 +56,20 @@ Este módulo se encarga de dar información sobre las actividades concluidas por
 
 Este módulo se encarga de darle un espacio al trabajador de llenar específicamente ciertos inconvenientes que puede tener durante su jornada laboral o con algún trato, también comentar las imperfecciones de algún producto, o problemas con herramientas y maquinarias, esta información se la envía al supervisor y finalmente este lo eleva más o realiza operaciones convenientes para el caso
 
+
+
 # INTERACCIONES ENTRE MÓDULOS 
 
 ## MÓDULO DE REGISTRO DE ACTIVIDADES CON MÓDULO DE REGISTRO DE CALIDAD
 Estos módulos están en constante comunicación para proporcionar información sobre el personal asignado a ciertas tareas de inspección o control(que gestor de producción fue asignado a tal control).
+
 ## MÓDULO DE REPORTES CON MÓDULO DE REGISTRO DE ACTIVIDADES
 Estos módulos estan relación pues el módulo de registro de actividades le brinda la información de las actividades de los usuarios para que este pueda sintetisarlo y exportarlo mediante un archivo pdf de reporte manual.
 
+## MÓDULO DE REPORTES CON MÓDULO DE REGISTRO DE HERRAMIENTAS Y MAQUINARIAS
+Estos módulos tienen conexión directa, debido a que conforme se soliciten herramientas y maquinarias, se va a llevar un historial por cada artículo, esta información se registra directamente en los reportes, listos para mostrar el estado de cada artículo.
+
+## MÓDULO DE REPORTES CON MÓDULO DE RECLAMOS Y OBSERVACIONES
+Estos casos tienen una conexión en un caso específico, en el caso de que un operario registre en observaciones el código de la herramienta o maquinaria, esta información no se puede dejar en nada, conforme al análisis del estado de estos artículos, entonces esta información va a ir afectando a los reportes.
 
 # DIAGRAMA UML
