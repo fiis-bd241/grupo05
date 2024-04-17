@@ -1,5 +1,9 @@
 ## VIDEOS PERSONALES PC1
 
+Video del Módulo Registro de Usuario (Daniel Otero):
+
+[![Video](https://img.youtube.com/vi/xoLmPkPB8ps/0.jpg)](https://youtu.be/xoLmPkPB8ps)
+
 Video de Módulo Resgitro de Actividades (Francisco Grijalva):
 
 [![Video](https://img.youtube.com/vi/YgV6mvXwKWA/0.jpg)](https://youtu.be/YgV6mvXwKWA)
