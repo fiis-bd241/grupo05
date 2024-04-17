@@ -87,9 +87,6 @@ Estos módulos estan relación pues el módulo de registro de actividades le bri
 ## MÓDULO DE REPORTES CON MÓDULO DE REGISTRO DE HERRAMIENTAS Y MAQUINARIAS
 Estos módulos tienen conexión directa, debido a que conforme se soliciten herramientas y maquinarias, se va a llevar un historial por cada artículo, esta información se registra directamente en los reportes, listos para mostrar el estado de cada artículo.
 
-## MÓDULO DE REPORTES CON MÓDULO DE RECLAMOS Y OBSERVACIONES
-Estos casos tienen una conexión en un caso específico, en el caso de que un operario registre en observaciones el código de la herramienta o maquinaria, esta información no se puede dejar en nada, conforme al análisis del estado de estos artículos, entonces esta información va a ir afectando a los reportes.
-
 ## MODULO DE REGISTRO DE CALIDAD CON REGISTRO DE HERRAMIENTAS Y MAQUINARIAS:
 El Registro de Calidad define y gestiona los estándares de calidad que deben cumplir las herramientas y maquinarias registradas. Se puede llevar un control de las inspecciones y mantenimientos realizados para asegurar su calidad.
 Si una herramienta o maquinaria presenta alguna no conformidad, se registra en el Módulo de Registro de Calidad, y se relaciona con el registro correspondiente en el Módulo de Herramientas y Maquinarias para su seguimiento y resolución.
