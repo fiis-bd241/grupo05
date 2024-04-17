@@ -114,24 +114,10 @@
 | 4    | Se revisa si existe dicho usuario y contraseña en la base de datos|
 | 5    |si los datos concuerdan con la algún valor de la base de datos se da acceso al sistema de lo contrario se envía un mensaje de "usuario o contraseña invalidos"|
 | 6    |  Caso terminado.|
-#### **Caso de uso N°9: cambio de contraseña**:
-| **Objetivo:** |Permitir al operario o gestor de producción ingresar con su usario y contraseña al sistema |
-|------|--------|
-| **Descripción:** | Se le da la facilidad al usuario de poder modificar la contraseña si se conoce su usario y una palabra clave que pedirá el sistema. 
-| **Actor Primario:** |Usuario (operario o gestor de producción)| 
-| **Actor Secundario :** |no hay actor secundario | 
-| **Precondiciones:** | se requiere el saber la palabra clave 
-| Paso | Acción |
-| 1    | El operario o gestor de la producción dentro del inicio de sesión irá a la opción de ¿olvidaste la contraseña?|
-| 2    | Se le pedirá al operario o gestor de la producción que dijite su usario |
-| 3    | Se le hará una pregunta , como ¿cual es tu mejor amigo? , ¿cual es tu comida favorita?, entre otras|
-| 4    | Se revisa si la respuesta termina siendo correcta|
-| 5    | si los datos concuerdan con la algún valor de la base de datos se procede a cambiar la contraseña|
-| 6    |  Caso terminado.|
-#### **Caso de uso N°10: Edición del perfil**:
+#### **Caso de uso N°9: Edición del perfil**:
 | **Objetivo:** |Permitir al operario o gestor de producción cambiar algunos datos que se tengan registrado en el sistema|
 |------|--------|
-| **Descripción:** | el usuario tendrá la opción de editar algunos datos como , el telefono celulqar , el correo, la foto de perfil. 
+| **Descripción:** | el usuario tendrá la opción de editar algunos datos como , el telefono celulqar , el correo, la foto de perfil y incluso la contraseña. 
 | **Actor Primario:** |Usuario (operario o gestor de producción)| 
 | **Actor Secundario :** |no hay actor secundario | 
 | **Precondiciones:** |el numero de celular debe ser de 9 digitos (+51) , se debería verificar el correo sea existente , la foto de perfil se tendría que agregar en formato png. 
