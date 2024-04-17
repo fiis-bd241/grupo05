@@ -30,23 +30,17 @@ Este módulo se encarga de registar las actividades o trabajos asignados a cada 
 ## MÓDULO DE SOLICITUD DE PEDIDOS DE INSUMOS 
 Este módulo está diseñado para gestionar la solicitud de insumos necesarios para las operaciones de producción. El módulo comprende las siguientes funcionalidades:
 1. Registro de Insumos:
--Incluye un catálogo completo de todos los insumos utilizados en el proceso de producción, detallando información como nombre, descripción, proveedor y cualquier otra especificación relevante.
+Incluye un catálogo completo de todos los insumos utilizados en el proceso de producción, detallando información como nombre, descripción, proveedor y cualquier otra especificación relevante.
 2. Solicitud de Pedidos:
--Permite a los responsables de cada área o departamento realizar solicitudes de insumos según las necesidades específicas de sus actividades.
--Los usuarios pueden seleccionar los insumos necesarios desde el catálogo y especificar la cantidad requerida para cada uno.
+Permite a los responsables de cada área o departamento realizar solicitudes de insumos según las necesidades específicas de sus actividades. Los usuarios pueden seleccionar los insumos necesarios desde el catálogo y especificar la cantidad requerida para cada uno.
 3. Aprobación de Pedidos:
--Las solicitudes de pedidos pasan por un proceso de aprobación, donde se verifica su necesidad y se evalúa su viabilidad en función del presupuesto y las existencias disponibles.
--Los supervisores o encargados de aprobar los pedidos pueden revisar la solicitud, realizar ajustes si es necesario y autorizar su ejecución.
+Las solicitudes de pedidos pasan por un proceso de aprobación, donde se verifica su necesidad y se evalúa su viabilidad en función del presupuesto y las existencias disponibles. Los supervisores o encargados de aprobar los pedidos pueden revisar la solicitud, realizar ajustes si es necesario y autorizar su ejecución.
 4. Gestión de Proveedores:
--Administra una base de datos de proveedores, incluyendo información sobre sus productos, precios, tiempos de entrega y términos de contrato.
--Permite comparar distintas opciones de proveedores para cada insumo y seleccionar la más conveniente en términos de calidad, costo y disponibilidad.
+Administra una base de datos de proveedores, incluyendo información sobre sus productos, precios, tiempos de entrega y términos de contrato.
 5. Seguimiento de Pedidos:
--Proporciona herramientas para monitorear el estado de los pedidos en tiempo real, desde su solicitud hasta su entrega.
--Permite conocer el estado de procesamiento de cada pedido, las fechas estimadas de entrega y cualquier eventualidad que pueda afectar su cumplimiento.
+Permite monitorear el estado de los pedidos en tiempo real, desde su solicitud hasta su entrega.
 6. Generación de Informes:
--Produce informes periódicos sobre el volumen de solicitudes realizadas, el cumplimiento de los pedidos, el desempeño de los proveedores y cualquier otra métrica relevante para la gestión de insumos.
--Estos informes son útiles para la toma de decisiones estratégicas, la optimización de inventarios y la mejora continua de los procesos de abastecimiento.
--Este módulo facilita una gestión más eficiente y transparente de los pedidos de insumos, permitiendo a la empresa mantener un control preciso sobre sus recursos y garantizar una operación fluida y sin interrupciones.
+Permite producir informes periódicos sobre el volumen de solicitudes realizadas, el cumplimiento de los pedidos, el desempeño de los proveedores y cualquier otra métrica relevante para la gestión de insumos.
 
 ## MÓDULO DE REGISTRO DE CALIDAD
 
