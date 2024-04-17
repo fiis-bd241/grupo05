@@ -95,16 +95,15 @@ Cada usuario registrado en el sistema puede tener asignado un perfil de calidad,
 El Registro de Calidad define y gestiona los estándares de calidad que deben cumplir las herramientas y maquinarias registradas. Se puede llevar un control de las inspecciones y mantenimientos realizados para asegurar su calidad.
 Si una herramienta o maquinaria presenta alguna no conformidad, se registra en el Módulo de Registro de Calidad, y se relaciona con el registro correspondiente en el Módulo de Herramientas y Maquinarias para su seguimiento y resolución.
 
-## Relación con Módulo de Registro de Actividades:
+## MODULO DE REGISTRO DE CALIDAD CON MODULO DE REGISTRO DE ACTIVIDADES:
 Cada actividad registrada puede tener asociada una evaluación de calidad, permitiendo monitorear y mejorar la calidad de los procesos y resultados de las actividades realizadas por los operarios.
-## Relación con Módulo de Reportes:
 
+## MODULO DE REGISTRO DE CALIDAD CON MODULO DE REPORTES:
 Informes de Calidad: Los informes generados por el Módulo de Registro de Calidad pueden ser utilizados como fuente de información para los reportes del Módulo de Reportes, proporcionando datos sobre la calidad de productos, herramientas, maquinarias, procesos y actividades.
 
 Análisis de Tendencias de Calidad: Los datos recopilados en el Módulo de Registro de Calidad se utilizan para analizar tendencias y generar informes que ayuden en la toma de decisiones y la optimización de recursos.
 
-## Relación con Módulo de Reclamos y Observaciones:
-
+## MODULO DE REGISTRO DE CALIDAD CON MODULO DE RECLAMOS Y OBSERVACIONES:
 Las no conformidades registradas por los empleados en el Módulo de Reclamos y Observaciones se relacionan con el Módulo de Registro de Calidad para su gestión y resolución. Se puede llevar un seguimiento de las acciones correctivas tomadas y su impacto en la calidad.
 
 Los resultados y conclusiones obtenidas en el Módulo de Registro de Calidad pueden ser comunicados a los empleados a través del Módulo de Reclamos y Observaciones, permitiendo una retroalimentación y mejora continua.
