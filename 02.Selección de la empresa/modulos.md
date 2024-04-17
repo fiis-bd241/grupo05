@@ -1,27 +1,11 @@
 # MODULOS 
 
-## MÓDULO DE LOGIN
-
-Este módulo se encarga de gestionar el registro de perfiles de usuario (empleados y administradores) y a su vez validar este mismo proceso, validar los datos de loggeo. También servirá de dar las funcionalidades respectivas al usuario dependiendo de qué datos se ingresen y per la recuperación de contraseñas en caso de olvidos de los usuarios 
-
 ## MÓDULO DE LOGIN Y REGISTRO DE USUARIO 
 
 Este módulo se encarga de poder registrar su perfil de usuario, recopliando informació relevante como nombres y cargos de ocupación. Tambien se encarga de poder actualizar la contraseña mediante una verificación mediante una "palabra clave", y si contesta correctamente según la base de datos se procede a actualizar la contraseña. 
 1. ingreso de usuario y contraseña : los usarios tendrán asignadas usuarios con sus respectivas contraseñas
 2. cambio de contraseña : si el usuario no recuerda la contraseña se le puede dar la función de poder actualizarla mediante un control de seguridad llamado "palabra clave" y si responde correctamente se procede a la actualización de la contraseña
-3. 
-
-## MÓDULO DE SELECCION DE HERRAMIENTAS Y MAQUINARIAS
-
-El Módulo de Selección de Herramientas y Maquinarias es fundamental para garantizar un proceso de producción eficiente y seguro en la empresa Topitop, especializada en la elaboración de prendas de vestir. A continuación, profundizaremos en los aspectos clave de este módulo:
-
-1. Conocimiento del Proceso y Tareas Específicas: Los operarios deben comprender a fondo el proceso de producción y las etapas en las que intervienen. Esto les permitirá elegir las herramientas y maquinarias adecuadas para cada tarea específica.
-2. Características de las Herramientas y Maquinarias: Los operarios deben conocer las características técnicas de las herramientas y maquinarias disponibles. Esto incluye detalles como la capacidad, velocidad, precisión, facilidad de uso y mantenimiento.
-3. Adaptación al Trabajo: Las herramientas y maquinarias deben adaptarse al tipo de trabajo que se realiza. Por ejemplo, si se trata de costura, la elección de la máquina de coser adecuada es esencial.
-4. Seguridad y Ergonomía: Los operarios deben considerar la seguridad al elegir herramientas. Evaluar si la herramienta es cómoda de usar durante largos períodos y si cumple con las normas de seguridad.
-5. Eficiencia y Productividad: Seleccionar herramientas que permitan una mayor eficiencia y productividad. Evaluar si la herramienta reduce el tiempo de trabajo y mejora la calidad del producto final.
-6. Colaboración y Retroalimentación: Los operarios pueden colaborar entre sí y compartir experiencias sobre qué herramientas funcionan mejor en diferentes situaciones. La retroalimentación constante ayuda a mejorar la elección de herramientas con el tiempo.
-
+3. actualización de datos de usuario :  se permite la actualización de datos de usuario, como el telefono celular, el correo,
 
 ## MÓDULO DE REGISTRO LABORAL 
 Este módulo se encarga sobre gestionar de manera eficaz la mano de obra y optimizar los procesos de fabricación. este Modulo permite registrar y gesionar la información relacionada con el trabajo de los empleados en las lienas de producción de calzado, se especifica en los siguientes pasos 
@@ -35,7 +19,18 @@ Este módulo se encarga sobre gestionar de manera eficaz la mano de obra y optim
 ## MÓDULO DE CONTROL DE CALIDAD
 Es una pieza fundamental para garantizar la excelencia en los productos fabricados. Aquí está cómo funcionaría este módulo
  1. Registro de Inspecciones: Permite registrar los resultados de las inspecciones de calidad realizadas en los productos terminados, así como en los materiales y componentes utilizados en el proceso de fabricación. Esto incluye la evaluación de aspectos como la apariencia, la resistencia, la durabilidad y otros criterios de calidad definidos por la empresa.
-2. Control de Procesos: Permite monitorear y controlar los procesos de fabricación para asegurar que se cumplan los estándares de calidad establecidos. Esto puede incluir la implementación de controles en línea durante la producción para detectar y corregir posibles problemas de calidad de manera oportuna.
+2. Control de Procesos: Permite monitorear y controlar los procesos de fabricación para asegurar que se cumplan los estándares de calidad establecidos. Esto puede incluir la implementación de controles en línea durante la producción para detectar y corregir posibles problemas de calidad de manera oportuna.## MÓDULO DE SELECCION DE HERRAMIENTAS Y MAQUINARIAS
+
+El Módulo de Selección de Herramientas y Maquinarias es fundamental para garantizar un proceso de producción eficiente y seguro en la empresa Topitop, especializada en la elaboración de prendas de vestir. A continuación, profundizaremos en los aspectos clave de este módulo:
+
+1. Conocimiento del Proceso y Tareas Específicas: Los operarios deben comprender a fondo el proceso de producción y las etapas en las que intervienen. Esto les permitirá elegir las herramientas y maquinarias adecuadas para cada tarea específica.
+2. Características de las Herramientas y Maquinarias: Los operarios deben conocer las características técnicas de las herramientas y maquinarias disponibles. Esto incluye detalles como la capacidad, velocidad, precisión, facilidad de uso y mantenimiento.
+3. Adaptación al Trabajo: Las herramientas y maquinarias deben adaptarse al tipo de trabajo que se realiza. Por ejemplo, si se trata de costura, la elección de la máquina de coser adecuada es esencial.
+4. Seguridad y Ergonomía: Los operarios deben considerar la seguridad al elegir herramientas. Evaluar si la herramienta es cómoda de usar durante largos períodos y si cumple con las normas de seguridad.
+5. Eficiencia y Productividad: Seleccionar herramientas que permitan una mayor eficiencia y productividad. Evaluar si la herramienta reduce el tiempo de trabajo y mejora la calidad del producto final.
+6. Colaboración y Retroalimentación: Los operarios pueden colaborar entre sí y compartir experiencias sobre qué herramientas funcionan mejor en diferentes situaciones. La retroalimentación constante ayuda a mejorar la elección de herramientas con el tiempo.
+
+
 3. Seguimiento de No Conformidades: Permite registrar y gestionar las no conformidades identificadas durante las inspecciones de calidad. Esto incluye el registro de las causas de las no conformidades, así como las acciones correctivas y preventivas implementadas para abordarlas y evitar su recurrencia.
 4. Análisis de Datos: Ofrece la capacidad de analizar los datos recopilados durante las inspecciones de calidad para identificar tendencias, patrones y áreas de mejora en los procesos de fabricación. Esto permite tomar decisiones informadas para optimizar la calidad y la eficiencia operativa.
 5. Definición de Estándares de Calidad: Permite establecer y mantener los estándares de calidad para los productos y materiales. Esto implica definir los criterios de aceptación y rechazo, así como los procedimientos de prueba y los niveles de tolerancia para cada aspecto de la calidad.
