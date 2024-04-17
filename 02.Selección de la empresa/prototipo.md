@@ -31,6 +31,10 @@ El jefe de ingeniería atiende las solicitudes para el uso de herramientas y maq
 El gestor de producción se registra en la pagina web, va al apartado de registro de actividades y observa todas las actividades que ha trabajado en un determinado tiempo que puede escoger uno o varios operarios o gestores de producción asi como la hora de inicio y la hora de inicio y acabado de cada actividad, también el gestor de producción se encarga de agregar las actividades que hagan los operarios según sea su supervisión de los avances de estos.
 <img src="interfaz 3.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
+## Plataforma de Quejas y Reclamos:
+El gestor de producción se dirige al apartado de quejas y reclamos, el cual le muestra el historial de reclamos realizados por los operarios. Además, le permite filtrar dichos reclamos por operario, categoría, fecha y estado de los reclamos.
+<img src="interfaz 9.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+
 [Selección de la empresa](SeleccionEmpresa.md)
 
 [Regresar al índice](../README.md)
