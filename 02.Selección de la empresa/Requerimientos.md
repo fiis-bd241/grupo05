@@ -100,8 +100,8 @@
 | 3    | Se registran y gestionan las no conformidades identificadas durante las inspecciones de calidad. Esto incluye el registro de las causas de las no conformidades, así como las acciones correctivas y preventivas implementadas para abordarlas y evitar su recurrencia. |
 | 4    | Se analizan los datos recopilados durante las inspecciones de calidad para identificar tendencias, patrones y áreas de mejora en los procesos de fabricación. Esto permite tomar decisiones informadas para optimizar la calidad y la eficiencia operativa. |
 | 5    |Se establecen y registran los estándares de calidad que deben cumplir los productos o servicios de la empresa. |
-| 6    | |
-| 7    | |
+| 6    |Se registran y gestionan las no conformidades identificadas durante las inspecciones de calidad. Esto incluye la identificación de la no conformidad, las causas, las acciones correctivas y preventivas implementadas, y el seguimiento de su resolución. |
+| 7    |Se programan y registran auditorías internas o externas para evaluar el sistema de gestión de calidad de la empresa. Se registran hallazgos, recomendaciones y acciones correctivas tomadas. |
 | 8    |Se analizan los datos recopilados durante las inspecciones de calidad para identificar tendencias, patrones y áreas de mejora en los procesos de fabricación. |
 | 9    | Se generan informes periódicos sobre la calidad de los productos o servicios, incluyendo estadísticas, análisis de tendencias, hallazgos de auditorías y acciones tomadas. Estos informes son útiles para la toma de decisiones y la mejora continua.|
 | 10   |Finaliza el caso. |
