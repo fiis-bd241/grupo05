@@ -82,10 +82,10 @@ Estos módulos tienen conexión directa, debido a que conforme se soliciten herr
 ## MÓDULO DE REPORTES CON MÓDULO DE RECLAMOS Y OBSERVACIONES
 Estos casos tienen una conexión en un caso específico, en el caso de que un operario registre en observaciones el código de la herramienta o maquinaria, esta información no se puede dejar en nada, conforme al análisis del estado de estos artículos, entonces esta información va a ir afectando a los reportes.
 
-## Relación con Módulo de Login y Registro de Usuario:
+## MODULO DE REGISTRO DE CALIDAD CON MODULO DE LOGIN Y REGISTRO DE USUARIO:
 Cada usuario registrado en el sistema puede tener asignado un perfil de calidad, lo que permite registrar y gestionar la calidad relacionada con sus actividades y responsabilidades.
 
-## Relación con Módulo de Registro de Herramientas y Maquinarias:
+## MODULO DE REGISTRO DE CALIDAD CON REGISTRO DE HERRAMIENTAS Y MAQUINARIAS:
 El Registro de Calidad define y gestiona los estándares de calidad que deben cumplir las herramientas y maquinarias registradas. Se puede llevar un control de las inspecciones y mantenimientos realizados para asegurar su calidad.
 Si una herramienta o maquinaria presenta alguna no conformidad, se registra en el Módulo de Registro de Calidad, y se relaciona con el registro correspondiente en el Módulo de Herramientas y Maquinarias para su seguimiento y resolución.
 
