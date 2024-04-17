@@ -97,8 +97,11 @@ Si una herramienta o maquinaria presenta alguna no conformidad, se registra en e
 
 ## Relación con Módulo de Registro de Actividades:
 Cada actividad registrada puede tener asociada una evaluación de calidad, permitiendo monitorear y mejorar la calidad de los procesos y resultados de las actividades realizadas por los operarios.
+## Relación con Módulo de Reportes:
 
+Informes de Calidad: Los informes generados por el Módulo de Registro de Calidad pueden ser utilizados como fuente de información para los reportes del Módulo de Reportes, proporcionando datos sobre la calidad de productos, herramientas, maquinarias, procesos y actividades.
 
+Análisis de Tendencias de Calidad: Los datos recopilados en el Módulo de Registro de Calidad se utilizan para analizar tendencias y generar informes que ayuden en la toma de decisiones y la optimización de recursos.
 
 
 # DIAGRAMA UML
