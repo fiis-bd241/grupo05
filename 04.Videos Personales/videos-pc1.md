@@ -2,4 +2,4 @@
 Video de Frnacisco Grijalva: 
 Video de Peter Lock:
 Video de Roger Loayza:
-Video de Mikhael Gordillo:
+Video del Módulo Reportes (Mikhael Gordillo): https://youtu.be/v0C3L9EhKoQ
