@@ -70,6 +70,8 @@ En el proceso de producción de una empresa textil, la actividad principal es la
 | 19        | Solicitud y recibimiento del material suficiente |Cuando se detecta que hay una escasez de materiales, se realiza una solicitud al área de almacén para reabastecer los suministros, este proceso sumergirá una automatización para dar abasto a todas las solicitudes.  | Gestor de Producción |
 | 20      |Registrar calidad | Una vez que se procede a empaquetar las prendas al mismo tiempo se hace el registro de la calidad de los productos , como cuales fueron los inconvenientes en el proceso. | Gestor de producción |
 | 21      |Reclamos y observaciones | los reclamos y observaciones que llegan al gestor de la producción | gestor de la producción
+| 22      |Reportes | Los reportes desde la información que dan los demás módulos al concluir su proceso | gestor de la producción
+
 
 ## GLOSARIO
 1. **Insumos**: En el contexto de la empresa, los insumos son los materiales y componentes básicos necesarios para la fabricación de los prendas textiles. 
