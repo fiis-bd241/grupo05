@@ -4,6 +4,10 @@
 
 # Link Drive
 
-* [Entrevistas] (https://drive.google.com/drive/folders/1mmbsMMvGOVKu_BqF8J5UStLr8GxYMrhd?usp=sharing)
+* Entrevistas
+
+  ENTREVISTA #1: 
+[![Video](https://img.youtube.com/vi/EsTbHX2KR_M/0.jpg)](https://www.youtube.com/watch?v=EsTbHX2KR_M)
+  ENTREVISTA #2:
 
 * [Regresar al índice](../README.md)
