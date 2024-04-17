@@ -30,8 +30,7 @@ Este módulo se encarga de registar las actividades o trabajos asignados a cada 
 ## MÓDULO DE SOLICITUD DE PEDIDOS DE INSUMOS 
 Este módulo está diseñado para gestionar la solicitud de insumos necesarios para las operaciones de producción. El módulo comprende las siguientes funcionalidades:
 1. Registro de Insumos:
-
--Incluye un catálogo completo de todos los insumos utilizados en el proceso de producción, detallando información como nombre, descripción, proveedor, cantidad mínima de pedido, y cualquier otra especificación relevante.
+-Incluye un catálogo completo de todos los insumos utilizados en el proceso de producción, detallando información como nombre, descripción, proveedor y cualquier otra especificación relevante.
 2. Solicitud de Pedidos:
 -Permite a los responsables de cada área o departamento realizar solicitudes de insumos según las necesidades específicas de sus actividades.
 -Los usuarios pueden seleccionar los insumos necesarios desde el catálogo y especificar la cantidad requerida para cada uno.
