@@ -13,7 +13,7 @@ Este módulo se encarga de gestionar y mantener un registro detallado de las her
 
 1. Registro de herramientas y maquinarias: Incluye un catálogo completo de todas las herramientas y maquinarias disponibles en la empresa, especificando detalles como nombre, descripción, número de serie, ubicación y estado de cada elemento.
 
-2. Solicitud de herramientas: Permite a los operarios solicitar las herramientas y maquinarias que necesitan para realizar sus tareas, indicando también la actividad específica que van a llevar a cabo. Esta solicitud puede realizarse a través de un formulario en línea o de un sistema de gestión de tickets.
+2. Solicitud de herramientas: Permite a los operarios solicitar las herramientas y maquinarias que necesitan para realizar sus tareas, indicando también la actividad específica que van a llevar a cabo. Esta solicitud puede realizarse a través de un formulario en línea .
 
 3. Asignación y registro de uso: Una vez aprobada la solicitud, se asigna la herramienta o maquinaria al operario correspondiente, y se registra la hora de inicio y finalización de su uso. Esto permite llevar un seguimiento preciso del tiempo de utilización de cada herramienta y planificar su mantenimiento de manera oportuna.
 
