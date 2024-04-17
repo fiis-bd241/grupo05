@@ -4,7 +4,7 @@ El empleado tendrá que ingresar su usuario y contraseña.En caso se olvide tant
 
 <img src="prototipo-topitop1.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
-# USUARIO: EMPLEADO
+# USUARIO: OPERARIO
 ## Solicitud de herramientas:
 El empleado selecciona la máquina necesaria de manera intuitiva, especifica la actividad a realizar y proporciona los tiempos de inicio y fin de uso. Una vez completada la solicitud, esta se envía para su revisión y aprobación. Una vez aprobada, el empleado recibe la notificación y puede recoger la máquina solicitada para comenzar su labor en la empresa textil, agilizando así el proceso de obtención de herramientas.
 
@@ -12,11 +12,11 @@ El empleado selecciona la máquina necesaria de manera intuitiva, especifica la 
 <img src="interfazModulo2.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
 
-## Plataforma de Registro:
-El empleado se registra en la aplicacion , seleccionando la actividad a realizar .Asi como la hora de inicio y la hora de acabado
-<img src="interfaz 3.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+## Plataforma de Registro de actividades:
+El operario se registra en la pagina web, va al apartado de registro de actividades y observa todas las actividades que ha trabajado en un determinado tiempo que puede escoger. Asi como la hora de inicio y la hora de inicio y acabado de cada actividad, también observará podrá observar un pequeño diagrama de cuantas horas ha trabajado durante los ultimos dias.
+<img src="interfaz3.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
-# USUARIO: JEFE DE INGENIERÍA
+# USUARIO: GESTOR DE PRODUCCIÓN
 
 ## Seguimiento de Trabajadores:
 El jefe de ingenieria puede corroborar la actividad de los operarios como la fecha ,hora y estado del trabajo realizado 
@@ -25,6 +25,10 @@ El jefe de ingenieria puede corroborar la actividad de los operarios como la fec
 ## Solicitud de herramienta 
 El jefe de ingeniería atiende las solicitudes para el uso de herramientas y maquinarias de los trabajadores, aceptarlos si hay disponibilidad.
 <img src="interfaz 5.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+
+## Plataforma de Registro de actividades:
+El gestor de producción se registra en la pagina web, va al apartado de registro de actividades y observa todas las actividades que ha trabajado en un determinado tiempo que puede escoger uno o varios operarios o gestores de producción asi como la hora de inicio y la hora de inicio y acabado de cada actividad, también el gestor de producción se encarga de agregar las actividades que hagan los operarios según sea su supervisión de los avances de estos.
+<img src="interfaz 3.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
 [Selección de la empresa](SeleccionEmpresa.md)
 
