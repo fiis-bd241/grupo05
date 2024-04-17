@@ -8,7 +8,9 @@ Video de Módulo Resgitro de Actividades (Francisco Grijalva):
 
 [![Video](https://img.youtube.com/vi/YgV6mvXwKWA/0.jpg)](https://youtu.be/YgV6mvXwKWA)
 
-Video de Peter Lock:
+Video de Módulo de Quejas y Observaciones (Peter Lock):
+
+[![Video](https://img.youtube.com/vi/bv8ZALdnsOU/0.jpg)](https://youtu.be/bv8ZALdnsOU)
 
 Video del Módulo Registro de Herramientas y Maquinaría (Kevin Huaman):
 
