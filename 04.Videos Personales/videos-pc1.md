@@ -1,6 +1,8 @@
 ## VIDEOS PERSONALES PC1
 
-Video de Francisco Grijalva: 
+Video de Módulo Resgitro de Actividades (Francisco Grijalva):
+
+[![Video](https://img.youtube.com/vi/YgV6mvXwKWA/0.jpg)](https://youtu.be/YgV6mvXwKWA)
 
 Video de Peter Lock:
 
