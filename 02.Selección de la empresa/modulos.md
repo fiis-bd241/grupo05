@@ -103,5 +103,11 @@ Informes de Calidad: Los informes generados por el Módulo de Registro de Calida
 
 Análisis de Tendencias de Calidad: Los datos recopilados en el Módulo de Registro de Calidad se utilizan para analizar tendencias y generar informes que ayuden en la toma de decisiones y la optimización de recursos.
 
+## Relación con Módulo de Reclamos y Observaciones:
+
+Las no conformidades registradas por los empleados en el Módulo de Reclamos y Observaciones se relacionan con el Módulo de Registro de Calidad para su gestión y resolución. Se puede llevar un seguimiento de las acciones correctivas tomadas y su impacto en la calidad.
+
+Los resultados y conclusiones obtenidas en el Módulo de Registro de Calidad pueden ser comunicados a los empleados a través del Módulo de Reclamos y Observaciones, permitiendo una retroalimentación y mejora continua.
+
 
 # DIAGRAMA UML
