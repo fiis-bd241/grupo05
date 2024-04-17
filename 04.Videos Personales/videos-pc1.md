@@ -10,7 +10,9 @@ Video de Módulo Resgitro de Actividades (Francisco Grijalva):
 
 Video de Peter Lock:
 
-Video de Roger Loayza:
+Video deL Módulo Registro de Calidad (Roger Loayza):
+
+[![Video](https://img.youtube.com/vi/csDmcXrocko/0.jpg)](https://youtu.be/csDmcXrocko)
 
 Video del Módulo Reportes (Mikhael Gordillo): 
 
