@@ -106,8 +106,6 @@
 | 9    |Se analizan los datos recopilados durante las inspecciones de calidad para identificar tendencias, patrones y áreas de mejora en los procesos de fabricación. |
 | 10    | Se generan informes periódicos sobre la calidad de los productos o servicios, incluyendo estadísticas, análisis de tendencias, hallazgos de auditorías y acciones tomadas. Estos informes son útiles para la toma de decisiones y la mejora continua.|
 | 11   |Finaliza el caso. |
-| 5    | |
-| 5    | |
 #### **Caso de uso N°6: registro de usuario**:
 | **Objetivo:** |Permitir al gestor de la producción u operario ingresar con su usario y contraseña al sistema |
 |------|--------|
