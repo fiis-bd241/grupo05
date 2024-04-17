@@ -21,6 +21,10 @@ El empleado se dirige al apartado de quejas y reclamos, el cual ofrece la opció
 Si el usuario desea realizar un nuevo reclamo, le aparecerán opciones para concretar dicha operación, como la selección de la categoría del reclamo y el motivo de dicho reclamo. Una vez completados dichos campos, el usuario deberá seleccionar la opción "enviar reclamo" para el envío y procesamiento del reclamo.
 <img src="interfaz reclamos op2.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
+## Solicitud de Pedido:
+El operario se dirige al apartado de solicitud de pedido, el cual le muestra el historial de sus pedidos realizados. Este historial le muestra datos como fecha de pedido, tipo de insumo, descripción, si la solicitud fue aprobado o desaprobada, y el estado de la solicitud en caso haya sido aprobada.
+<img src="InterfazSolicitudPedido1.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" /
+
 # USUARIO: GESTOR DE PRODUCCIÓN
 
 ## Solicitud de herramienta 
