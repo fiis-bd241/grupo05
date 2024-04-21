@@ -1,13 +1,5 @@
 # MODULOS 
 
-## MÓDULO DE LOGIN Y REGISTRO DE USUARIO 
-
-Este módulo se encarga de registrar el perfil del usuario, recopliando información relevante como nombres y cargos de ocupación. Tambien se encarga de actualizar la contraseña mediante una verificación conocida como "palabra clave" y si contesta correctamente, según la base de datos, se procede a actualizar la contraseña. 
-1. Ingreso de usuario y contraseña: Los empleados tendrán asignados perfiles de usuario con sus respectivas contraseñas.
-2. Cambio de contraseña: Si el usuario no recuerda la contraseña, se le puede otorgar la función de poder actualizarla mediante un control de seguridad llamado "palabra clave", y si responde correctamente se procede a la actualización de la contraseña.
-3. Actualización de datos del usuario:  Se permite la actualización de datos de usuario, tales como el teléfono celular, el correo y la foto de usuario que se quiere presentar en el perfil.
-4. Depuración de cuenta: En caso de que se quiera eliminar la cuenta, se podrá eliminar el usuario solo si se se conoce la contraseña asociada a dicha cuenta.
-
 ## MÓDULO DE REGISTRO DE HERRAMIENTAS Y MAQUINARIAS
 Este módulo se encarga de gestionar y mantener un registro detallado de las herramientas y maquinarias utilizadas por los operarios en las actividades diarias de producción. Su objetivo es garantizar un uso eficiente de los recursos y un seguimiento preciso de su disponibilidad y estado. El módulo consiste en lo siguiente:
 
@@ -35,20 +27,34 @@ Este módulo está diseñado para gestionar la solicitud de insumos necesarios p
 5. Gestión de Proveedores: Permite administrar una base de datos de proveedores, incluyendo información sobre sus productos, precios, tiempos de entrega y términos de contrato.
 6. Seguimiento de Pedidos: Permite monitorear el estado de los pedidos, desde su solicitud hasta su entrega.
 
-## MÓDULO DE REGISTRO DE CALIDAD
+## MÓDULO DE CALIDAD DE HERRAMIENTAS Y MAQUINARIA
+Garantizar la calidad de las herramientas y maquinarias utilizadas en la producción textil.
+1. Registro de Herramientas y Maquinarias:
+   Catálogo detallado de herramientas y maquinarias con información como nombre, descripción, número de serie, ubicación y 
+   estado.
+2. Mantenimiento Preventivo:
+   Programación y seguimiento de mantenimientos periódicos para asegurar el correcto funcionamiento de las herramientas y 
+   maquinarias.
+3. Inspecciones de Calidad:
+   Registro de inspecciones realizadas para verificar la calidad y funcionamiento de las herramientas y maquinarias.
+4. Reportes de Estado y Uso:
+   Generación de informes sobre el estado, uso y mantenimiento de las herramientas y maquinarias.
 
-Este módulo se encarga de gestionar y mantener un registro detallado de la calidad de los productos o servicios producidos por la empresa. Su objetivo principal es garantizar que los estándares de calidad se cumplan y se mantengan a lo largo del tiempo. El módulo de Registro de Calidad consiste en los siguientes elementos:
-
+## MÓDULO DE CALIDAD DE PROCESOS
+Asegurar la calidad de los procesos de producción textil desde la selección de materiales hasta el acabado del producto final.
 1. Definición de Estándares de Calidad:
-Permite establecer y registrar los estándares de calidad que deben cumplir los productos o servicios de la empresa. Esto incluye criterios como dimensiones, materiales, procesos, entre otros.
-
-2. Inspección de Productos/Servicios:
-Facilita la realización de inspecciones periódicas a los productos o servicios para verificar su calidad. Se pueden registrar los resultados de las inspecciones, incluyendo observaciones y medidas tomadas.
-
+   Establecimiento y registro de los estándares de calidad para los productos textiles.
+2. Inspecciones de Producto:
+   Realización de inspecciones periódicas a los productos textiles para verificar su calidad y conformidad con los 
+   estándares establecidos.
 3. Control de Calidad en Procesos:
-Registra la calidad de los procesos de producción o prestación de servicios. Esto incluye la calidad de las materias primas utilizadas, la eficiencia de los procesos y la satisfacción del cliente.
-
-
+   Registro y seguimiento de la calidad de los procesos de producción, incluyendo la calidad de las materias primas, 
+   eficiencia de los procesos y satisfacción del cliente.
+4. Análisis y Mejora Continua:
+   Análisis de datos recopilados para identificar áreas de mejora y implementar acciones correctivas y preventivas.
+5. Reportes de Calidad:
+   Generación de informes sobre la calidad de los procesos y productos, incluyendo estadísticas, tendencias y análisis 
+   comparativos.
 
 ## MÓDULO DE REPORTES 
 
