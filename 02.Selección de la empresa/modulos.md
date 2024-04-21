@@ -78,9 +78,6 @@ Asegurar la calidad de los procesos de producción textil desde la selección de
 ## MODULO DE REGISTRO DE HERRAMIENTAS Y MAQUINARIA CON MODULO DE INICIO DE SESION Y REGISTRO DE ACTIVIDADES 
 El Módulo de Registro de Herramientas y Maquinarias requiere la autenticación de usuarios para acceder a las funciones relacionadas con el registro y la gestión de herramientas y maquinarias. Los usuarios (operarios y gestores de producción) deben iniciar sesión en el sistema para realizar solicitudes, validar solicitudes pendientes y acceder a la información relacionada con el registro de herramientas y maquinarias.
 
-## MODULO DE REGISTRO DE HERRAMIENTAS Y MAQUINARIA CON MODULO DE INFORMES 
-El Módulo de Registro de Herramientas y Maquinarias proporciona información que puede ser utilizada para generar informes relacionados con el estado y la utilización de herramientas y maquinarias en la empresa. Los informes pueden incluir detalles sobre la disponibilidad de herramientas, tiempos de inactividad, mantenimientos realizados, entre otros aspectos relevantes para la gestión de la producción.
-
 ## MODULO DE REGISTRO DE HERRAMIENTAS Y MAQUINARIA CON MODULO RECLAMOS Y OBSERVACIONES
 Estos modulos estan relacionados en casos en los que los empleados reporten problemas o deficiencias relacionadas con herramientas y maquinarias. Por ejemplo, si un operario encuentra una herramienta defectuosa, puede registrar un reclamo o una observación en el sistema, lo que desencadenaría acciones para su reparación o reemplazo.
 
@@ -105,6 +102,8 @@ Proporciona información sobre el estado y uso de las herramientas y maquinarias
 ## MÓDULO DE CALIDAD DE HERRAMIENTAS Y MAQUINARIA CON MÓDULO DE SOLICITUD DE PEDIDIOS DE INSUMOS
 Solicita herramientas y maquinarias específicas que cumplen con los estándares de calidad establecidos.
 
+## MÓDULO DE REPORTES CON MÓDULO DE RECLAMOS Y OBSERVACIONES
+Utiliza la información de las observaciones para generar un reporte de los incidentes ocurridos
 
 
 # DIAGRAMA UML
