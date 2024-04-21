@@ -27,6 +27,23 @@ Este módulo está diseñado para gestionar la solicitud de insumos necesarios p
 5. Gestión de Proveedores: Permite administrar una base de datos de proveedores, incluyendo información sobre sus productos, precios, tiempos de entrega y términos de contrato.
 6. Seguimiento de Pedidos: Permite monitorear el estado de los pedidos, desde su solicitud hasta su entrega.
 
+## MÓDULO DE REPORTES 
+
+Este módulo se encarga de dar información sobre las actividades concluidas por cada empleado, el estado de las herramientas o el estado de las maquinarias, en forma de reportes; también se encarga de brindar a los empleados su avance en medidas de producción; un último uso que puede brindar es un reporte macro para analizar cómo van los trabajadores de cierto supervisor o de Topitop en general
+1. Tomar información del módulo de herramientas y maquinarias, también de registro de tareas para concretar los reportes
+2. Generación de reportes individuales de cada empleado
+3. Generación de reportes de cada herramienta y maquinaria
+4. Notificar cuando una herramienta o maquinaria presenta un número alto de usos
+
+## MÓDULO DE RECLAMOS Y OBSERVACIONES 
+
+Este módulo permite a los empleados registrar y gestionar reclamos, quejas, sugerencias y observaciones relacionadas con diversos aspectos de su experiencia laboral, como el entorno de trabajo, las condiciones de trabajo, las imperfecciones de algún producto o problemas con herramientas y maquinarias. Este módulo está diseñado para facilitar la comunicación entre los empleados y la empresa, así como para identificar áreas de mejora y promover un ambiente laboral saludable y productivo.
+1. Registro de reclamos y observaciones del empleado
+2. Asignación del personal responsable para la gestión de los reclamos y observaciones
+3. Seguimiento de los reclamos
+4. Comunicación interna al empleado
+5. Generación de informes relacionados al módulo
+
 ## MÓDULO DE CALIDAD DE HERRAMIENTAS Y MAQUINARIA
 Garantizar la calidad de las herramientas y maquinarias utilizadas en la producción textil.
 1. Registro de Herramientas y Maquinarias:
@@ -55,23 +72,6 @@ Asegurar la calidad de los procesos de producción textil desde la selección de
 5. Reportes de Calidad:
    Generación de informes sobre la calidad de los procesos y productos, incluyendo estadísticas, tendencias y análisis 
    comparativos.
-
-## MÓDULO DE REPORTES 
-
-Este módulo se encarga de dar información sobre las actividades concluidas por cada empleado, el estado de las herramientas o el estado de las maquinarias, en forma de reportes; también se encarga de brindar a los empleados su avance en medidas de producción; un último uso que puede brindar es un reporte macro para analizar cómo van los trabajadores de cierto supervisor o de Topitop en general
-1. Tomar información del módulo de herramientas y maquinarias, también de registro de tareas para concretar los reportes
-2. Generación de reportes individuales de cada empleado
-3. Generación de reportes de cada herramienta y maquinaria
-4. Notificar cuando una herramienta o maquinaria presenta un número alto de usos
-
-## MÓDULO DE RECLAMOS Y OBSERVACIONES 
-
-Este módulo permite a los empleados registrar y gestionar reclamos, quejas, sugerencias y observaciones relacionadas con diversos aspectos de su experiencia laboral, como el entorno de trabajo, las condiciones de trabajo, las imperfecciones de algún producto o problemas con herramientas y maquinarias. Este módulo está diseñado para facilitar la comunicación entre los empleados y la empresa, así como para identificar áreas de mejora y promover un ambiente laboral saludable y productivo.
-1. Registro de reclamos y observaciones del empleado
-2. Asignación del personal responsable para la gestión de los reclamos y observaciones
-3. Seguimiento de los reclamos
-4. Comunicación interna al empleado
-5. Generación de informes relacionados al módulo
 
 # INTERACCIONES ENTRE MÓDULOS 
 
