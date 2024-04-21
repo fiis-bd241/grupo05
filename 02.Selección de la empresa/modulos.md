@@ -1,6 +1,6 @@
 # MODULOS 
 
-## MÓDULO DE REGISTRO DE HERRAMIENTAS Y MAQUINARIAS
+## MÓDULO DE GESTION DE HERRAMIENTAS Y MAQUINARIAS
 Este módulo se encarga de gestionar y mantener un registro detallado de las herramientas y maquinarias utilizadas por los operarios en las actividades diarias de producción. Su objetivo es garantizar un uso eficiente de los recursos y un seguimiento preciso de su disponibilidad y estado. El módulo consiste en lo siguiente:
 
 1. Registro de herramientas y maquinarias: Incluye un catálogo completo de todas las herramientas y maquinarias disponibles en la empresa, especificando detalles como nombre, descripción, número de serie, ubicación y estado de cada elemento.
