@@ -89,68 +89,49 @@
 #### **Caso de uso N°5: Control de calidad de herramientas y maquinaria**
 
 
-| **Objetivo:** | Garantizar la excelencia de los productos fabricados. |
+| **Objetivo:** | |
 |------|--------|
 | **Descripción:** |  | 
 | **Actor:** | Gerente de producción | 
-| **Precondiciones:** | Se conocen previamente los estándares de calidad. | 
+| **Precondiciones:** | | 
 | |El Módulo de Registro de Calidad está correctamente configurado y actualizado con los estándares de calidad definidos.| 
 | Paso | Acción |
-|1|Se realizan inspecciones de calidad en los productos terminados, así como en los materiales y componentes utilizados en el proceso de fabricación y se registran los resultados obtenidos. Esto incluye la evaluación de aspectos como la apariencia, la resistencia, la durabilidad y otros criterios de calidad definidos por la empresa|
-| 2    | Se realizan inspecciones de calidad en los productos terminados, así como en los materiales y componentes utilizados en el proceso de fabricación y se registran los resultados obtenidos. Esto incluye la evaluación de aspectos como la apariencia, la resistencia, la durabilidad y otros criterios de calidad definidos por la empresa. |
-| 3    | Se monitorean y controlan los procesos de fabricación para asegurar que se cumplan los estándares de calidad establecidos. Esto puede incluir la implementación de controles en línea durante la producción para detectar y corregir posibles problemas de calidad de manera oportuna.|
-| 4    | Se registran y gestionan las no conformidades identificadas durante las inspecciones de calidad. Esto incluye el registro de las causas de las no conformidades, así como las acciones correctivas y preventivas implementadas para abordarlas y evitar su recurrencia. |
-| 5    | Se analizan los datos recopilados durante las inspecciones de calidad para identificar tendencias, patrones y áreas de mejora en los procesos de fabricación. Esto permite tomar decisiones informadas para optimizar la calidad y la eficiencia operativa. |
-| 6    |Se establecen y registran los estándares de calidad que deben cumplir los productos o servicios de la empresa. |
-| 7    |Se registran y gestionan las no conformidades identificadas durante las inspecciones de calidad. Esto incluye la identificación de la no conformidad, las causas, las acciones correctivas y preventivas implementadas, y el seguimiento de su resolución. |
-| 8    |Se programan y registran auditorías internas o externas para evaluar el sistema de gestión de calidad de la empresa. Se registran hallazgos, recomendaciones y acciones correctivas tomadas. |
-| 9    |Se analizan los datos recopilados durante las inspecciones de calidad para identificar tendencias, patrones y áreas de mejora en los procesos de fabricación. |
-| 10    | Se generan informes periódicos sobre la calidad de los productos o servicios, incluyendo estadísticas, análisis de tendencias, hallazgos de auditorías y acciones tomadas. Estos informes son útiles para la toma de decisiones y la mejora continua.|
-| 1   ||
-
-
-Registro de Herramientas y Maquinarias
+|1|Registro de Herramientas y Maquinarias
 Opción para agregar, modificar y eliminar herramientas y maquinarias.
 Campos obligatorios: nombre, descripción, número de serie, ubicación y estado.
-Validación de datos para evitar duplicados o inconsistencias.
-Mantenimiento Preventivo
-Programación de mantenimientos periódicos.
-Registro de fechas de mantenimiento realizados y próximos.
-Inspecciones de Calidad
+Validación de datos para evitar duplicados o inconsistencias.|
+| 2    | Mantenimiento Preventivo
+Programación de mantenimientos periódicos. 
+Registro de fechas de mantenimiento realizados y próximos.|
+| 3    | Se monitorean y controlan los procesos de fabricación para asegurar que se cumplan los estándares de calidad establecidos. Esto puede incluir la implementación de controles en línea durante la producción para detectar y corregir posibles problemas de calidad de manera oportuna.|
+| 4    | Inspecciones de Calidad
 Opción para registrar resultados de inspecciones.
-Campos para observaciones, fecha de inspección y responsable.
-Reportes de Estado y Uso
+Campos para observaciones, fecha de inspección y responsable. |
+| 5    | Reportes de Estado y Uso
 Generación de informes sobre estado, uso y mantenimiento.
-Opciones de filtrado por fecha, tipo de herramienta/maquinaria y estado.
+Opciones de filtrado por fecha, tipo de herramienta/maquinaria y estado.|
 
 #### **Caso de uso N°6: Control de calidad de Procesos**
 
-Definición de Estándares de Calidad
-Opción para establecer y modificar estándares de calidad.
-Campos para especificar criterios como dimensiones, materiales y procesos.
-Inspecciones de Producto
-Registro de inspecciones periódicas a productos.
-Campos para resultados, observaciones y fechas de inspección.
-Control de Calidad en Procesos
-Registro de calidad de materias primas, eficiencia de procesos y satisfacción del cliente.
-Opciones para evaluar y calificar los procesos de producción.
-Análisis y Mejora Continua
 Análisis de datos para identificar áreas de mejora.
 Implementación de acciones correctivas y preventivas.
-| **Objetivo:** | Garantizar la excelencia de los productos fabricados. |
+| **Objetivo:** |  |
 |------|--------|
 | **Descripción:** |  | 
 | **Actor:** | Gerente de producción | 
-| **Precondiciones:** | Se conocen previamente los estándares de calidad. | 
-| 1   ||
-| 1   |Definición de Estándares de Calidad: pción para establecer y modificar estándares de calidad.|
-| 1   ||
-| 1   ||
-| 1   ||
-| 1   ||
-| 1   ||
-| 1   ||
-| 1   ||
+| **Precondiciones:** |  | 
+| 1   |Definición de Estándares de Calidad: Opción para establecer y modificar estándares de calidad.|
+| 2   |Campos para especificar criterios como dimensiones, materiales y procesos.
+Inspecciones de Producto|
+| 3   |Registro de inspecciones periódicas a productos.
+Campos para resultados, observaciones y fechas de inspección.|
+| 4   |Control de Calidad en Procesos
+Registro de calidad de materias primas, eficiencia de procesos y satisfacción del cliente.|
+| 5   |Opciones para evaluar y calificar los procesos de producción.
+Análisis y Mejora Continua|
+| 6   |Análisis de datos para identificar áreas de mejora.
+Implementación de acciones correctivas y preventivas.|
+
 
 
 #### **Caso de uso N°7: registro de usuario**:
