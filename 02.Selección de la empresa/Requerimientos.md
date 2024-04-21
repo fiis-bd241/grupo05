@@ -98,7 +98,7 @@
 | Paso | Acción |
 |1|Registro de Herramientas y Maquinarias
 Opción para agregar, modificar y eliminar herramientas y maquinarias.
-Campos obligatorios: nombre, descripción, número de serie, ubicación y estado.
+!!Campos obligatorios: nombre, descripción, número de serie, ubicación y estado.
 Validación de datos para evitar duplicados o inconsistencias.|
 | 2    | Mantenimiento Preventivo
 Programación de mantenimientos periódicos. 
@@ -121,10 +121,10 @@ Implementación de acciones correctivas y preventivas.
 | **Actor:** | Gerente de producción | 
 | **Precondiciones:** |  | 
 | 1   |Definición de Estándares de Calidad: Opción para establecer y modificar estándares de calidad.|
-| 2   |Campos para especificar criterios como dimensiones, materiales y procesos.
-Inspecciones de Producto|
-| 3   |Registro de inspecciones periódicas a productos.
-Campos para resultados, observaciones y fechas de inspección.|
+|    |Campos para especificar criterios como dimensiones, materiales y procesos.
+|2|Inspecciones de Producto|
+|    |Registro de inspecciones periódicas a productos.
+|3|Campos para resultados, observaciones y fechas de inspección.|
 | 4   |Control de Calidad en Procesos
 Registro de calidad de materias primas, eficiencia de procesos y satisfacción del cliente.|
 | 5   |Opciones para evaluar y calificar los procesos de producción.
