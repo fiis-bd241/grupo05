@@ -142,7 +142,7 @@
 
 |     Atributo     |                  Descripción                  |   Formato   | Naturaleza |  Valores |
 |:----------------:|:---------------------------------------------:|:-----------:|:----------:|:--------:|
-|    ID_ACTIVIDAD |              Código de la actividad            |   999AA99   |   Varchar  | <999 caracteres alfanumericos|
+|    ID_ACTIVIDAD |              Código de la actividad            |   999AA99   |   Varchar  | <999 caracteres alfanumericos |
 |  TIPO_ACTIVIDAD |          Tipo de actividad   |  AAA9 |  char  | TAB 4 |
 |  FECHA_ACTIVIDAD |          Fecha de la actividad   |  YYYY-MM-DD  |  Date  | NOT NULL |
 | HORA_INI_ACTI    |          Hora del inicio de la actividad       |   HH-MM   |   Date  | NOT NULL |
@@ -159,3 +159,22 @@
 | A5 |  Correciones de prenda |
 | A6 |  Planchado de prenda |
 | A7 |  Empaquetamiento de lotes |
+
+
+### Entidad: Taller
+#### Se refiere a los diferentes lugares donde se hace alguna actividad de producción de prendas en el area de producción de la empresa TOPITOP.
+
+|     Atributo     |                  Descripción                  |   Formato   | Naturaleza |  Valores |
+|:----------------:|:---------------------------------------------:|:-----------:|:----------:|:--------:|
+|    ID_TALLER |              Código del taller           |   AA999   |   Varchar  | <999 caracteres alfanumericos|
+|  CAPACIDAD_TALLER |          Capacidad del taller   | 99999 |  Int  | >0 |
+|  CATEGORÍA_TALLER |          Categoría  de las actividades que se realizan en el taller  |  YYYY-MM-DD  |  Char | TAB 5 |
+
+|     Categoria del taller    |    Semantica |
+|:---------------:|:-----------------:|
+|     T1    |    Taller de Lavado |
+| T2 |  Taller de Secado  |
+| T3 |  Taller de Costura  |
+| T4 |  Taller de Acabados  |
+| T5 |  Taller de Correciones |
+| T6 |  Taller de Planchados |
