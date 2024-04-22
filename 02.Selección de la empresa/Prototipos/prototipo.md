@@ -46,6 +46,6 @@ El gestor de producción se dirige al apartado de quejas y reclamos, el cual le 
 El gestor de producción se dirige al apartado de solicitud de pedido, el le muestra el historial de pedidos realizados. Este historial le muestra datos como fecha de pedido, usuario que realizo el pedido, tipo de insumo, descripción, el estado de la solicitud y la opción de editar este estado. También le muestra el registro de insumos y proveedores, con la opción de editarlos en caso de necesitar cambiar de proveedor por tipo de insumo, o de agregar, eliminar o actualizar los datos de insumos o proveedores.
 <img src="InterfazSolicitudPedido3.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
-[Selección de la empresa](SeleccionEmpresa.md)
+[Selección de la empresa](../SeleccionEmpresa.md)
 
-[Regresar al índice](../README.md)
+[Regresar al índice](../../README.md)
