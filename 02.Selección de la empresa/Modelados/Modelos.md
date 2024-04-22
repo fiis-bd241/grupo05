@@ -201,8 +201,8 @@
 
 |     Estado del Reclamo    |    Semantica |
 |:---------------:|:-----------------:|
-| P |  Pendiente |
-| R |  Resuelto |
+| P |  Reclamo pendiente |
+| R |  Reclamo resuelto |
 
 
 ### Entidad: Observaciones
@@ -220,5 +220,5 @@
 
 |     Estado de la observación    |    Semantica |
 |:---------------:|:-----------------:|
-| P |  Pendiente |
-| R |  Resuelta |
+| P |  Observación pendiente |
+| R |  Observación resuelta |
