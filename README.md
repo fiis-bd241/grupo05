@@ -9,5 +9,7 @@ Bienvenidos al repositorio del Proyecto del Curso Diseño de Base de Datos del G
 2. [Selección de la empresa](02.Selección%20de%20la%20empresa/SeleccionEmpresa.md)
 
 3. [Entrevistas](03.Entrevistas/Entrevistas.md)
+
+4. [Videos Personales](04.Videos%20Personales/Videos%20Personales.md)
    
-4. Otra sección
+5. Otra sección
