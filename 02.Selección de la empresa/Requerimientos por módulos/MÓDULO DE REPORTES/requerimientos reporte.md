@@ -22,3 +22,39 @@
 | 2    |Ingresar el código del supervisor en la cuadrícula|
 | 3    |Visualizar el reporte| 
 
+#### **Caso de uso N°13: Reportes por Herramienta**
+| **Objetivo:** |Permitir al jefe de producción analizar los estados de las herramientas durante el trabajo|
+|------|--------|
+| **Descripción:** |A partir de la información obtenida en el registro de herramientas y maquinarias se concluye aquí la revisión de todas las herramientas|
+| **Actor Primario:** |jefe de producción| 
+| **Actor Secundario :** |no hay actor secundario| 
+| **Precondiciones:** |Datos ya creados desde el registro de herramientas y maquinarias|
+| Paso | Acción |
+| 1    |Seleccionar el reporte de herramientas|
+| 2    |Ingresar el código de la heramienta en la cuadrícula|
+| 3    |Visualizar el reporte| 
+
+
+#### **Caso de uso N°14: Reportes por Maquinarias**
+| **Objetivo:** |Permitir al jefe de producción analizar los estados de las maquinarias durante el trabajo|
+|------|--------|
+| **Descripción:** |A partir de la información obtenida en el registro de herramientas y maquinarias se concluye aquí la revisión de todas las maquinarias|
+| **Actor Primario:** |jefe de producción| 
+| **Actor Secundario :** |no hay actor secundario| 
+| **Precondiciones:** |Datos ya creados desde el registro de herramientas y maquinarias|
+| Paso | Acción |
+| 1    |Seleccionar el reporte de maquinarias|
+| 2    |Ingresar el código de la maquinaria en la cuadrícula|
+| 3    |Visualizar el reporte| 
+
+
+#### **Caso de uso N°15: Reportes por operario**
+| **Objetivo:** |Permitir al operario analizar sus propias actividades para conocer su paga semanal|
+|------|--------|
+| **Descripción:** |A partir de la información obtenida en el registro de tareas se concluye aquí la revisión de todas las actividades realizadas por el operario|
+| **Actor Primario:** |operario| 
+| **Actor Secundario :** |no hay actor secundario| 
+| **Precondiciones:** |Datos ya creados desde el registro de tareas|
+| Paso | Acción |
+| 1    |Seleccionar el reporte por operario|
+| 2    |Visualizar el reporte|
