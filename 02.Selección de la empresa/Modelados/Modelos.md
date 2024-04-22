@@ -191,20 +191,18 @@
 
 |     Atributo     |                  Descripción                  |   Formato   | Naturaleza |  Valores |
 |:----------------:|:---------------------------------------------:|:-----------:|:----------:|:--------:|
-|    ID_TALLER |              Código del taller           |   AA999   |   Varchar  | <999 caracteres alfanumericos|
-|  CAPACIDAD_TALLER |          Capacidad del taller   | 99999 |  Int  | >0 |
-|  CATEGORÍA_TALLER |          Categoría  de las actividades que se realizan en el taller  |  YYYY-MM-DD  |  Char | TAB 5 |
+|  id_reclamo |              Código del reclamo           |   999999   |   Varchar  | 6 dígitos |
+|  fecha_reclamo |     Fecha en la que se realiza el reclamo   | YYYY-MM-DD |  Date  | NOT NULL |
+|  descripcion_reclamo |      Descripción detallada del reclamo |  X(60)|  Varchar | NOT NULL |
+|  estado_reclamo |      Situación en la que se encuentra el reclamo  | A |  Char | TAB 6 |
+|  id_operario |      Código del operario que realiza el reclamo  | 999999 |  Varchar | 6 dígitos|
 
 #### TAB 6
 
 |     Estado del Reclamo    |    Semantica |
 |:---------------:|:-----------------:|
-|     T1    |    Taller de Lavado |
-| T2 |  Taller de Secado  |
-| T3 |  Taller de Costura  |
-| T4 |  Taller de Acabados  |
-| T5 |  Taller de Correciones |
-| T6 |  Taller de Planchados |
+| P |  Pendiente |
+| R |  Resuelto |
 
 
 ### Entidad: Observaciones
