@@ -72,3 +72,24 @@ Se refiere a los insumos utilizados en el proceso de producción de la empresa. 
 |     P1       |         Aprobado            |
 |     P2       |       Desaprobado           |
 |     P3       |        Pendiente            |
+
+
+
+
+### Entidad: 
+#### P.
+
+|     Atributo      |              Descripción                  |   Formato   | Naturaleza |  Valores |
+|:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
+|                   |                                           |             |   Varchar  | 6 dígitos|
+|                   |                                           |             |   Char     | NOT NULL |
+|                   |                                           |             |   Char     | NOT NULL |
+|                   |                                           |             |   Char     | TAB 4    |
+|                   |                                           |             |   Char     | Opcional |
+  
+#### TAB 
+|    Estado    |          Semántica          |
+|:------------:|:---------------------------:|
+|              |                             |
+|              |                             |
+|              |                             |
