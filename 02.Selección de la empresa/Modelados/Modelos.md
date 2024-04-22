@@ -18,6 +18,7 @@
 |  DNI_operario   |          documento de indentidad del empleado  |  99999999   |  char |  8 dígitos|
 |     Teléfono     |        Número de teléfono del empleado        | 999 999 999 |    Char    | 9 dígitos |
 
+
 ### Entidad: Gestor de Produccion
 #### Se refiere a un individuo que trabaja en la gestion de producción de la empresa TOPITOP, desempeñando roles y tareas relacionadas con  organizar, dirigir y controlar todas las actividades relacionadas con la producción, con el objetivo de garantizar la eficiencia y rentabilidad de la empresa
 
@@ -47,6 +48,7 @@
 | E2 |  Mantenimiento |
 | E3 |  Ocupado |
 
+
 ### Entidad: Herramienta
 #### Se refiere al pedido realizado por un empleado para el uso de una maquinaria o herramienta específica en el area producción de la empresa TOPITOP.
 
@@ -57,6 +59,7 @@
 | Modelo_Herramienta        |          Modelo de la maquinaria       |   AAA   |   char  | No null |
 | tiempo de uso       |          tiempo de uso la maquinaria       |   99:99 H   |   time | No null |
 
+
 ### Entidad: Insumo
 #### Se refiere a los insumos utilizados en el proceso de producción de la empresa. Los operarios pueden realizar solicitudes de pedido de insumos a través del sistema.
 |     Atributo      |              Descripción                  |   Formato   | Naturaleza |  Valores |
@@ -66,6 +69,7 @@
 |   cantidad_insumo |        Cantidad del insumo                 |     999     |   Int      | NOT NULL |
 |   id_proveedor    |        Código del proveedor del insumo     |   999999    |   Varchar  | 6 dígitos|
 
+
 ### Entidad: FALLO
 #### Un fallo representa un defecto, problema o anomalía identificada en una herramienta o maquinaria que afecta su funcionamiento, rendimiento o calidad.
 
@@ -73,6 +77,7 @@
 |:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
 |   ID_FALLO        |  dentificador único del fallo             |   999999     |  INT     | 6 dígitos|
 | DESCRIPCION_FALLO | Descripción detallada del fallo   |  X(60)       |   Char     | NOT NULL |
+
 
 ### Entidad: INSPECCION
 #### Una inspección representa el proceso de revisión y evaluación de herramientas o maquinarias para verificar su estado, calidad y funcionamiento de acuerdo con los estándares establecidos.
@@ -95,8 +100,9 @@
 | DESCRIPCION_MANTENIMIENTO|  Descripción detallada del mantenimiento |   VARCHAR(70)|  X(60)  | Char | NOT NULL |
 | TIPO_MANTENIMIENTO |    Tipo de mantenimiento   | TAB            |             |     | |
 | ID_RESPONSABLE | Identificador del responsable del mantenimiento    |      999999 |   INT  | 6 dígitos|
-##|ESTADO |     Estado actual del mantenimiento    |             |     | |
+|ESTADO |     Estado actual del mantenimiento    |             |     | |
 | FECHA_MANTENIMIENTO | Fecha en que se realizó el mantenimiento       |  YYYY-MM-DD |    Date    |  NOT NULL  |
+
 #### TAB 2
 
 |     Cargo    |    Semantica |
@@ -113,7 +119,6 @@
 | Tipo_Estandar     |   Tipo o categoría del estándar |  Texto    |VARCHAR(50)  |  	NOT NULL        |
 | Descripcion       |   Descripción detallada del estándar  |  Texto    |VARCHAR(50)  |  	NOT NULL        |
 | Fecha_Creacion    |  Fecha de creación o última actualización del estándar |  YYYY-MM-DD |    Date    |  NOT NULL  |
-
 
 
 ### Entidad: Reportes
@@ -134,7 +139,6 @@
 | R2 |  Reporte por maquinaria |
 | R3 |  Reporte por operario |
 | R4 |  Reporte por operaro (visualización del operario) |
-
 
 
 ### Entidad: Actividad
@@ -170,7 +174,51 @@
 |  CAPACIDAD_TALLER |          Capacidad del taller   | 99999 |  Int  | >0 |
 |  CATEGORÍA_TALLER |          Categoría  de las actividades que se realizan en el taller  |  YYYY-MM-DD  |  Char | TAB 5 |
 
+#### TAB 5
+
 |     Categoria del taller    |    Semantica |
+|:---------------:|:-----------------:|
+|     T1    |    Taller de Lavado |
+| T2 |  Taller de Secado  |
+| T3 |  Taller de Costura  |
+| T4 |  Taller de Acabados  |
+| T5 |  Taller de Correciones |
+| T6 |  Taller de Planchados |
+
+
+### Entidad: Reclamo
+#### Se refiere a un informe formal presentado por un empleado de la empresa en el que se expone una preocupación, queja, problema o incidente relacionado con su experiencia laboral.
+
+|     Atributo     |                  Descripción                  |   Formato   | Naturaleza |  Valores |
+|:----------------:|:---------------------------------------------:|:-----------:|:----------:|:--------:|
+|    ID_TALLER |              Código del taller           |   AA999   |   Varchar  | <999 caracteres alfanumericos|
+|  CAPACIDAD_TALLER |          Capacidad del taller   | 99999 |  Int  | >0 |
+|  CATEGORÍA_TALLER |          Categoría  de las actividades que se realizan en el taller  |  YYYY-MM-DD  |  Char | TAB 5 |
+
+#### TAB 6
+
+|     Estado del Reclamo    |    Semantica |
+|:---------------:|:-----------------:|
+|     T1    |    Taller de Lavado |
+| T2 |  Taller de Secado  |
+| T3 |  Taller de Costura  |
+| T4 |  Taller de Acabados  |
+| T5 |  Taller de Correciones |
+| T6 |  Taller de Planchados |
+
+
+### Entidad: Observaciones
+#### Una observación representa una sugerencia, comentario, idea o propuesta presentada por un empleado de la empresa para mejorar algún aspecto de la operación, proceso o ambiente laboral.
+
+|     Atributo     |                  Descripción                  |   Formato   | Naturaleza |  Valores |
+|:----------------:|:---------------------------------------------:|:-----------:|:----------:|:--------:|
+|    ID_TALLER |              Código del taller           |   AA999   |   Varchar  | <999 caracteres alfanumericos|
+|  CAPACIDAD_TALLER |          Capacidad del taller   | 99999 |  Int  | >0 |
+|  CATEGORÍA_TALLER |          Categoría  de las actividades que se realizan en el taller  |  YYYY-MM-DD  |  Char | TAB 5 |
+
+#### TAB 7
+
+|     Estado de la observación    |    Semantica |
 |:---------------:|:-----------------:|
 |     T1    |    Taller de Lavado |
 | T2 |  Taller de Secado  |
