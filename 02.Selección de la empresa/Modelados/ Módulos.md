@@ -107,6 +107,3 @@ Utiliza la información de las observaciones para generar un reporte de los inci
 
 # DIAGRAMA UML
 <img src="UML.png" alt="02.Selección de la empresa" style="width: 100%; height: auto;" />
-
-# MODELO CONCEPTUAL
-<img src="MCD CHEN.png" alt="02.Selección de la empresa" style="width: 100%; height: auto;" />
