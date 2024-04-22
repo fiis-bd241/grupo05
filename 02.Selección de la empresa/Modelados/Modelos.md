@@ -134,4 +134,28 @@
 | R2 |  Reporte por maquinaria |
 | R3 |  Reporte por operario |
 | R4 |  Reporte por operaro (visualización del operario) |
-  
+
+
+
+### Entidad: Actividad
+#### Se refiere a cualquier proceso o precedimiento que realiza un operario al momento de la fabricación de prendas en el area producción de la empresa TOPITOP.
+
+|     Atributo     |                  Descripción                  |   Formato   | Naturaleza |  Valores |
+|:----------------:|:---------------------------------------------:|:-----------:|:----------:|:--------:|
+|    ID_ACTIVIDAD |              Código de la actividad            |   999AA99   |   Varchar  | <999 caracteres alfanumericos|
+|  TIPO_ACTIVIDAD |          Tipo de actividad   |  AAA9 |  char  | TAB 3 |
+|  FECHA_ACTIVIDAD |          Fecha de la actividad   |  YYYY-MM-DD  |  Date  | NOT NULL |
+| HORA_INI_ACTI    |          Hora del inicio de la actividad       |   HH-MM   |   Date  | NOT NULL |
+| HORA_FIN_ACTI      |           Hora del final de la actividad       |   HH-MM   |   Date  | NOT NULL |
+
+#### TAB 4
+
+|     Tipo de actividad    |    Semantica |
+|:---------------:|:-----------------:|
+|     A1    |    Lavado de prenda|
+| A2 |  Secado de prenda |
+| A3 |  Costura de prenda |
+| A4 |  Acabados de prenda |
+| A5 |  Correciones de prenda |
+| A6 |  Planchado de prenda |
+| A7 |  Empaquetamiento de lotes |
