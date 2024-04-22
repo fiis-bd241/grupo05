@@ -1,5 +1,5 @@
 ### 1. Requerimientos por modulos
-- [MÓDULO DE CALIDAD DE HERRAMIENTAS Y MAQUINARIA](Requerimientos%20por%20módulos/MÓDULO%20DE%20CALIDAD%20DE%20HERRAMIENTAS%20Y%20MAQUINARIA.md)
+- [MÓDULO DE CALIDAD DE HERRAMIENTAS Y MAQUINARIA](MÓDULO%20DE%20CALIDAD%20DE%20HERRAMIENTAS%20Y%20MAQUINARIA.md)
 - [Grijalva Parra Francisco Leonel](Francisco%20Grijalva/FranciscoGrijalva.md)
 - [Huaman Yance Kevin Sebastian](Huaman%20Kevin/HuamanKevin.md)
 - [Larios Figueroa Enrico](Enrico%20Larios%20Figueroa/EnricoLarios.md)
