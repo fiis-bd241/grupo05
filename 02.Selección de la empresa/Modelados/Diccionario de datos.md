@@ -63,18 +63,8 @@ Se refiere a los insumos utilizados en el proceso de producción de la empresa. 
 |   ID_Insumo       |        Código del insumo                  |   999999    |   Varchar  | 6 dígitos|
 |   Tipo_Insumo     |        Tipo de insumo                      |     X(60)   |   Char     | NOT NULL |
 |   Descripcion     |        Descripción del insumo             |     X(100)  |   Char     | NOT NULL |
-|   Estado_Solicitud| Estado de la solicitud de pedido del insumo |     AAA     |   Char     | TAB 4    |
-|   Comentario      |        Comentario adicional               |     X(200)  |   Char     | Opcional |
-
-#### TAB 4
-|    Estado    |          Semántica          |
-|:------------:|:---------------------------:|
-|     P1       |         Aprobado            |
-|     P2       |       Desaprobado           |
-|     P3       |        Pendiente            |
-
-
-
+|   Cantidad_Insumo |        Cantidad del insumo                 |     999     |   Int      | NOT NULL |
+|   id_Proveedor    |        Código del proveedor del insumo     |   999999    |   Varchar  | 6 dígitos|
 
 ### Entidad: 
 #### P.
