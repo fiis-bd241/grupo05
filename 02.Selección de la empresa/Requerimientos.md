@@ -71,37 +71,7 @@
 
 
 
-#### **Caso de uso N°4: Registro de las actividades**
 
-| **Objetivo:** | Gestionar de manera eficaz la mano de obra y optimizar los procesos de fabricación. |
-|------|--------|
-| **Descripción:** | Este caso de uso describe el proceso de registro de la información relacionada con el trabajo de los empleados en las líneas de producción de prendas. | 
-| **Actores:** | Operario y Gestor de Producción | 
-| **Precondiciones:** | Se disponen de instrumentos de medición que permiten registrar intervalos de tiempo así como los datos de los operarios y de las actividades a registrar. | 
-| Paso | Acción |
-| 1    | Se registra la hora de inicio y acabado de las actividades de los empleados en sus jornadas laborales. Esto proporciona un seguimiento preciso del tiempo de trabajo por cada empleado. |
-| 2    | Los gestores de producción de este módulo pueden verificar el estado de las acividades en curso y realizar ajustes según sea necesario para garantizar que se cumplan los plazos y objetivos de producción. |
-| 3    | Se asignan tareas especificas a los empleados en función de sus habilidades y la disponibiidad que tienen, con esto se asegura una distribución equitativa del trabajo y una correcta asignación eficiente de recursos humanos en cada turno de producción. |
-| 4    | Se registra el tiempo extra trabajado por los empleados , así como las ausencias de éstos en el trabajo, vacaciones o días libres. También se registran las ausencias no planificadas como enfermedades, con esto se puede garantizar una correcta cobertura adecuada en la línea de producción. |
-| 5    | Se generan informes detallados sobre la asistencia y el rendimiento laboral de los empleados, como también las horas trabajadas en cada día. Esto permite generar información valiosa para evaluar la eficiencia operativa, identificar áreas de mejora y tomar mejores decisiones. |
-| 6    | Finaliza el caso. |
-
-#### **Caso de uso N°5: Mantenimiento Preventivo de herramientas y maquinaria**
-
-| **Objetivo:** |Programar y hacer seguimiento de los mantenimientos periódicos para las herramientas y maquinarias. |
-|------|--------|
-| **Descripción:** | El responsable de mantenimiento accederá al sistema y seleccionará la opción de "Mantenimiento Preventivo". Se mostrará una lista de herramientas y maquinarias que requieren mantenimiento. El responsable seleccionará una herramienta o maquinaria y programará la fecha del próximo mantenimiento. | 
-| **Actor Primario:** | Responsable de mantenimiento |
-| **Actor Secundario:** | Gerente de producción | 
-| **Precondiciones:** | Existencia de herramientas y maquinarias registradas en el sistema que requieran mantenimiento| 
-| Paso | Acción |
-| 1    |El responsable de mantenimiento ingresa al sistema.|
-| 2    |Accede al apartado "Mantenimiento Preventivo".|
-| 3    | Se monitorean y controlan los procesos de fabricación para asegurar que se cumplan los estándares de calidad establecidos. Esto puede incluir la implementación de controles en línea durante la producción para detectar y corregir posibles problemas de calidad de manera oportuna.|
-| 4    | Selecciona una herramienta o maquinaria |
-| 5    | Programa la fecha del próximo mantenimiento.|
-| 6    | Confirma y guarda la programación del mantenimiento.|
-| 7    | Caso terminado.|
 
 
 #### **Caso de uso N°6: Reporte de Calidad de herramientas y maquinaria**
@@ -125,7 +95,7 @@ Implementación de acciones correctivas y preventivas.|
 
 
 
-#### **Caso de uso N°7: registro de usuario**:
+#### **Caso de uso N°8: registro de usuario**:
 | **Objetivo:** |Permitir al gestor de la producción u operario ingresar con su usario y contraseña al sistema |
 |------|--------|
 | **Descripción:** |  El usario ingresará al sistema y se topará con "el inicio de sesión" junto con dos espacios para completar , el usuario deberá ingresar sus datos y podrá acceder al sistema. 
@@ -139,7 +109,7 @@ Implementación de acciones correctivas y preventivas.|
 | 4    | Se revisa si existe dicho usuario y contraseña en la base de datos|
 | 5    |si los datos concuerdan con la algún valor de la base de datos se da acceso al sistema de lo contrario se envía un mensaje de "usuario o contraseña invalidos"|
 | 6    |  Caso terminado.|
-#### **Caso de uso N°8: Edición del perfil**:
+#### **Caso de uso N°9: Edición del perfil**:
 | **Objetivo:** |Permitir al operario o gestor de producción cambiar algunos datos que se tengan registrado en el sistema|
 |------|--------|
 | **Descripción:** | El usuario tendrá la opción de editar algunos datos como el telefono celular , el correo, la foto de perfil e incluso la contraseña. 
@@ -152,7 +122,7 @@ Implementación de acciones correctivas y preventivas.|
 | 3    |subir cambios ya sea en letra o un archivo png|       
 | 4    |dar confirmación del cambio|
 | 5    |caso terminado|
-#### **Caso de uso N°9: Depuración de cuenta**:
+#### **Caso de uso N°10: Depuración de cuenta**:
 | **Objetivo:** |Permitir la eliminación total de la cuenta de la base de datos , esto incluye datos personales , usuario y contraseña|
 |------|--------|
 | **Descripción:** | El responsable se encarga de eliminar la cuenta ya sea por renuncia o despido
@@ -167,7 +137,7 @@ Implementación de acciones correctivas y preventivas.|
 | 5    |actualización de cambios|
 | 5    |caso terminado|
 
-#### **Caso de uso N°10: Reportes por operarios**
+#### **Caso de uso N°11: Reportes por operarios**
 | **Objetivo:** |Permitir al jefe de producción analizar las actividades concluidas por un operario|
 |------|--------|
 | **Descripción:** | el jefe de producción se encarga de rellenar la información de las actividades de cada empleado
@@ -179,7 +149,7 @@ Implementación de acciones correctivas y preventivas.|
 | 2    |Ingresar el código del empleado e la cuadrícula|
 | 3    |Visualizar el reporte| 
 
-#### **Caso de uso N°11: Reportes por supervisor**
+#### **Caso de uso N°12: Reportes por supervisor**
 | **Objetivo:** |Permitir al jefe de producción analizar las actividades concluidas por los operarios de un cierto supervisor|
 |------|--------|
 | **Descripción:** |A partir de la información obtenida en el registro de tareas se concluye aquí la revisión de todos los operarios por supervisor|
@@ -191,7 +161,7 @@ Implementación de acciones correctivas y preventivas.|
 | 2    |Ingresar el código del supervisor en la cuadrícula|
 | 3    |Visualizar el reporte| 
 
-#### **Caso de uso N°12: Reportes por Herramienta**
+#### **Caso de uso N°13: Reportes por Herramienta**
 | **Objetivo:** |Permitir al jefe de producción analizar los estados de las herramientas durante el trabajo|
 |------|--------|
 | **Descripción:** |A partir de la información obtenida en el registro de herramientas y maquinarias se concluye aquí la revisión de todas las herramientas|
@@ -203,7 +173,7 @@ Implementación de acciones correctivas y preventivas.|
 | 2    |Ingresar el código de la heramienta en la cuadrícula|
 | 3    |Visualizar el reporte| 
 
-#### **Caso de uso N°13: Reportes por Maquinarias**
+#### **Caso de uso N°14: Reportes por Maquinarias**
 | **Objetivo:** |Permitir al jefe de producción analizar los estados de las maquinarias durante el trabajo|
 |------|--------|
 | **Descripción:** |A partir de la información obtenida en el registro de herramientas y maquinarias se concluye aquí la revisión de todas las maquinarias|
@@ -215,7 +185,7 @@ Implementación de acciones correctivas y preventivas.|
 | 2    |Ingresar el código de la maquinaria en la cuadrícula|
 | 3    |Visualizar el reporte| 
 
-#### **Caso de uso N°14: Reportes por operario**
+#### **Caso de uso N°15: Reportes por operario**
 | **Objetivo:** |Permitir al operario analizar sus propias actividades para conocer su paga semanal|
 |------|--------|
 | **Descripción:** |A partir de la información obtenida en el registro de tareas se concluye aquí la revisión de todas las actividades realizadas por el operario|
@@ -226,7 +196,7 @@ Implementación de acciones correctivas y preventivas.|
 | 1    |Seleccionar el reporte por operario|
 | 2    |Visualizar el reporte|
 
-#### **Caso de uso N°15: Reclamo del operario**
+#### **Caso de uso N°16: Reclamo del operario**
 | **Objetivo:** |Permitir a los operarios registrar reclamos sobre condiciones laborales, problemas de seguridad, sugerencias de mejora u otras preocupaciones relacionadas con su experiencia laboral.|
 |------|--------|
 | **Descripción:** |Los operarios puedan presentar reclamos a través del sistema digital, facilitando la comunicación y la gestión eficiente de problemas en el lugar de trabajo.|
