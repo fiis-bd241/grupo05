@@ -110,4 +110,4 @@ Utiliza la información de las observaciones para generar un reporte de los inci
 
 [Selección de la empresa](../SeleccionEmpresa.md)
 
-[Regresar al índice](../README.md)
+[Regresar al índice](README.md)
