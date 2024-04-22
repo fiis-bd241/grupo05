@@ -27,3 +27,7 @@ Video del Módulo Reportes (Mikhael Gordillo):
 Video del Módulo de Solicitud de Pedidos de Insumos (Enrico Larios):
 
 [![Video](https://img.youtube.com/vi/yvkwDeFw56k/0.jpg)](https://youtu.be/yvkwDeFw56k)
+
+
+[Ver otros videos](../Videos.md)
+[Regresar al índice](../README.md)
