@@ -88,7 +88,6 @@
 
 #### **Caso de uso N°5: Mantenimiento Preventivo de herramientas y maquinaria**
 
-
 | **Objetivo:** |Programar y hacer seguimiento de los mantenimientos periódicos para las herramientas y maquinarias. |
 |------|--------|
 | **Descripción:** | El responsable de mantenimiento accederá al sistema y seleccionará la opción de "Mantenimiento Preventivo". Se mostrará una lista de herramientas y maquinarias que requieren mantenimiento. El responsable seleccionará una herramienta o maquinaria y programará la fecha del próximo mantenimiento. | 
@@ -103,7 +102,9 @@
 | 5    | Programa la fecha del próximo mantenimiento.|
 | 6    | Confirma y guarda la programación del mantenimiento.|
 | 7    | Caso terminado.|
-#### **Caso de uso N°6: Reporte de Calidad **
+
+
+#### **Caso de uso N°6: Reporte de Calidad de herramientas y maquinaria**
 
 | **Objetivo:** |Identificar áreas de mejora en los procesos de producción a través del análisis de datos recopilados.|
 |------|--------|
