@@ -60,11 +60,10 @@
 Se refiere a los insumos utilizados en el proceso de producción de la empresa. Los operarios pueden realizar solicitudes de pedido de insumos a través del sistema.
 |     Atributo      |              Descripción                  |   Formato   | Naturaleza |  Valores |
 |:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
-|   ID_Insumo       |        Código del insumo                  |   999999    |   Varchar  | 6 dígitos|
-|   Tipo_Insumo     |        Tipo de insumo                      |     X(60)   |   Char     | NOT NULL |
-|   Descripcion     |        Descripción del insumo             |     X(100)  |   Char     | NOT NULL |
-|   Cantidad_Insumo |        Cantidad del insumo                 |     999     |   Int      | NOT NULL |
-|   id_Proveedor    |        Código del proveedor del insumo     |   999999    |   Varchar  | 6 dígitos|
+|   id_insumo       |        Código del insumo                  |   999999    |   Varchar  | 6 dígitos|
+|   tipo_insumo     |        Tipo de insumo                      |     X(60)   |   Char     | NOT NULL |
+|   cantidad_insumo |        Cantidad del insumo                 |     999     |   Int      | NOT NULL |
+|   id_proveedor    |        Código del proveedor del insumo     |   999999    |   Varchar  | 6 dígitos|
 
 ### Entidad: 
 #### P.
