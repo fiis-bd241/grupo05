@@ -86,31 +86,23 @@
 | 5    | Se generan informes detallados sobre la asistencia y el rendimiento laboral de los empleados, como también las horas trabajadas en cada día. Esto permite generar información valiosa para evaluar la eficiencia operativa, identificar áreas de mejora y tomar mejores decisiones. |
 | 6    | Finaliza el caso. |
 
-#### **Caso de uso N°5: Control de calidad de herramientas y maquinaria**
+#### **Caso de uso N°5: Mantenimiento Preventivo de herramientas y maquinaria**
 
 
-| **Objetivo:** | |
+| **Objetivo:** |Programar y hacer seguimiento de los mantenimientos periódicos para las herramientas y maquinarias. |
 |------|--------|
-| **Descripción:** |  | 
-| **Actor:** | Gerente de producción | 
-| **Precondiciones:** | | 
-| |El Módulo de Registro de Calidad está correctamente configurado y actualizado con los estándares de calidad definidos.| 
+| **Descripción:** | El responsable de mantenimiento accederá al sistema y seleccionará la opción de "Mantenimiento Preventivo". Se mostrará una lista de herramientas y maquinarias que requieren mantenimiento. El responsable seleccionará una herramienta o maquinaria y programará la fecha del próximo mantenimiento. | 
+| **Actor Primario:** | Responsable de mantenimiento |
+| **Actor Secundario:** | Gerente de producción | 
+| **Precondiciones:** | Existencia de herramientas y maquinarias registradas en el sistema que requieran mantenimiento| 
 | Paso | Acción |
-|1|Registro de Herramientas y Maquinarias
-Opción para agregar, modificar y eliminar herramientas y maquinarias.
-!!Campos obligatorios: nombre, descripción, número de serie, ubicación y estado.
-Validación de datos para evitar duplicados o inconsistencias.|
-| 2    | Mantenimiento Preventivo
-Programación de mantenimientos periódicos. 
-Registro de fechas de mantenimiento realizados y próximos.|
+| 1    |El responsable de mantenimiento ingresa al sistema.|
+| 2    |Accede al apartado "Mantenimiento Preventivo".|
 | 3    | Se monitorean y controlan los procesos de fabricación para asegurar que se cumplan los estándares de calidad establecidos. Esto puede incluir la implementación de controles en línea durante la producción para detectar y corregir posibles problemas de calidad de manera oportuna.|
-| 4    | Inspecciones de Calidad
-Opción para registrar resultados de inspecciones.
-Campos para observaciones, fecha de inspección y responsable. |
-| 5    | Reportes de Estado y Uso
-Generación de informes sobre estado, uso y mantenimiento.
-Opciones de filtrado por fecha, tipo de herramienta/maquinaria y estado.|
-
+| 4    | Selecciona una herramienta o maquinaria |
+| 5    | Programa la fecha del próximo mantenimiento.|
+| 6    | Confirma y guarda la programación del mantenimiento.|
+| 7    | Caso terminado.|
 #### **Caso de uso N°6: Reporte de Calidad **
 
 | **Objetivo:** |Identificar áreas de mejora en los procesos de producción a través del análisis de datos recopilados.|
