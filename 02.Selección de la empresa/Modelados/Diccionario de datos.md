@@ -58,42 +58,7 @@
 |   cantidad_insumo |        Cantidad del insumo                 |     999     |   Int      | NOT NULL |
 |   id_proveedor    |        Código del proveedor del insumo     |   999999    |   Varchar  | 6 dígitos|
 
-### Entidad: FALLO
-#### P.
-
-|     Atributo      |              Descripción                  |   Formato   | Naturaleza |  Valores |
-|:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
-|   ID_FALLO        |                                           |             |   Varchar  | 6 dígitos|
-| DESCRIPCION_FALLO |                                           |             |   Char     | NOT NULL |
-
-  
-### Entidad: INSPECCION
-#### P.
-
-|     Atributo      |              Descripción                  |   Formato   | Naturaleza |  Valores |
-|:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
-|   ID_FALLO        |                                           |             |   Varchar  | 6 dígitos|
-| DESCRIPCION_FALLO |                                           |             |   Char     | NOT NULL |
-
-
-
-  ### Entidad: MANTENIMIENTO_HERRA_MAQUIN
-#### P.
-
-|     Atributo      |              Descripción                  |   Formato   | Naturaleza |  Valores |
-|:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
-|   ID_FALLO        |                                           |             |   Varchar  | 6 dígitos|
-| DESCRIPCION_FALLO |                                           |             |   Char     | NOT NULL |
-
-
-
-  ### Entidad: ESTANDAR_CALIDAD
-#### P.
-
-|     Atributo      |              Descripción                  |   Formato   | Naturaleza |  Valores |
-|:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
-|   ID_FALLO        |                                           |             |   Varchar  | 6 dígitos|
-| DESCRIPCION_FALLO |      
+![image](https://github.com/fiis-bd241/grupo05/assets/164256464/00e5dfca-49a1-4a52-8bf8-e4f1d692ec46)
 
 
 
