@@ -8,23 +8,86 @@
 
 ### 1. Requerimientos funcionales
 
-#### **Caso de uso N°1: Abastecimiento de insumos**
+* MÓDULO DE CALIDAD DE HERRAMIENTAS Y MAQUINARIA
 
-| **Objetivo:** | Coordinar y gestionar el flujo de materiales desde el almacén hasta las líneas de producción, asegurando que se satisfagan las necesidades de producción de manera oportuna y eficiente. |
+#### **Caso de uso N°1: Mantenimiento Preventivo de herramientas y maquinaria**
+
+| **Objetivo:** |Programar y hacer seguimiento de los mantenimientos periódicos para las herramientas y maquinarias. |
 |------|--------|
-| **Descripción:** | Este caso de uso describe el proceso de abastecimiento de materia prima desde la planificación de la producción y gestión del inventario hasta la distribución de la materia prima al área de producción. | 
-| **Actor:** | Encargado de Adquisiciones | 
-| **Precondiciones:** | El sistema de gestión de inventario se encuentra actualizado, asimismo se posee suficiente espacio para almacenar la materia prima. | 
+| **Descripción:** | El responsable de mantenimiento accederá al sistema y seleccionará la opción de "Mantenimiento Preventivo". Se mostrará una lista de herramientas y maquinarias que requieren mantenimiento. El responsable seleccionará una herramienta o maquinaria y programará la fecha del próximo mantenimiento. | 
+| **Actor Primario:** | Responsable de mantenimiento |
+| **Actor Secundario:** | Gerente de producción | 
+| **Precondiciones:** | Existencia de herramientas y maquinarias registradas en el sistema que requieran mantenimiento| 
 | Paso | Acción |
-| 1    | Se determinan los niveles de inventario tanto en el almacén como en el área de producción para determinar los materiales necesarios, así como el tiempo necesario para que dicha producción no se detenga. |
-| 2    | Se gestionan las compras para adquirir los materiales necesarios para la producción. |
-| 3    | Se lleva a cabo una selección y evaluación de proveedores para garantizar la calidad del producto y el tiempo de entrega, entre otros criterios. |
-| 4    | Se recibe la materia prima de los proveedores y se verifica su calidad. |
-| 5    | Una vez adquiridos los materiales, se gestiona la correcta recepción y almacenamiento de estos, la cual será guiado por un registro detallado. |
-| 6    | Se distribuyen los materiales necesarios para el área de producción, que en este caso consiste en la confección de ropa. |
-| 7    | Finaliza el caso. |
+| 1    |El responsable de mantenimiento ingresa al sistema.|
+| 2    |Accede al apartado "Mantenimiento Preventivo".|
+| 3    | Se monitorean y controlan los procesos de fabricación para asegurar que se cumplan los estándares de calidad establecidos. Esto puede incluir la implementación de controles en línea durante la producción para detectar y corregir posibles problemas de calidad de manera oportuna.|
+| 4    | Selecciona una herramienta o maquinaria |
+| 5    | Programa la fecha del próximo mantenimiento.|
+| 6    | Confirma y guarda la programación del mantenimiento.|
+| 7    | Caso terminado.|
 
-#### **Caso de uso N°2: Selección de herramientas y maquinarias**
+
+#### **Caso de uso N°2: Reporte de Calidad de herramientas y maquinaria**
+
+| **Objetivo:** |Identificar áreas de mejora en los procesos de producción a través del análisis de datos recopilados.|
+|------|--------|
+| **Descripción:** |	El sistema deberá analizar los datos de calidad recopilados durante las inspecciones y el control de calidad en procesos para identificar posibles áreas de mejora.| 
+| **Actor:** | Gerente de producción | 
+| **Precondiciones:** || 
+| 1   |Definición de Estándares de Calidad: Opción para establecer y modificar estándares de calidad.|
+|    |Campos para especificar criterios como dimensiones, materiales y procesos.
+|2|Inspecciones de Producto|
+|    |Registro de inspecciones periódicas a productos.
+|3|Campos para resultados, observaciones y fechas de inspección.|
+| 4   |Control de Calidad en Procesos
+Registro de calidad de materias primas, eficiencia de procesos y satisfacción del cliente.|
+| 5   |Opciones para evaluar y calificar los procesos de producción.
+Análisis y Mejora Continua|
+| 6   |Análisis de datos para identificar áreas de mejora.
+Implementación de acciones correctivas y preventivas.|
+
+
+
+#### **Caso de uso N°3: Reporte de Calidad de herramientas y maquinaria**
+
+| **Objetivo:** |Identificar áreas de mejora en los procesos de producción a través del análisis de datos recopilados.|
+|------|--------|
+| **Descripción:** |	El sistema deberá analizar los datos de calidad recopilados durante las inspecciones y el control de calidad en procesos para identificar posibles áreas de mejora.| 
+| **Actor:** | Gerente de producción | 
+| **Precondiciones:** || 
+| 1   |Definición de Estándares de Calidad: Opción para establecer y modificar estándares de calidad.|
+|    |Campos para especificar criterios como dimensiones, materiales y procesos.
+|2|Inspecciones de Producto|
+|    |Registro de inspecciones periódicas a productos.
+|3|Campos para resultados, observaciones y fechas de inspección.|
+| 4   |Control de Calidad en Procesos
+Registro de calidad de materias primas, eficiencia de procesos y satisfacción del cliente.|
+| 5   |Opciones para evaluar y calificar los procesos de producción.
+Análisis y Mejora Continua|
+| 6   |Análisis de datos para identificar áreas de mejora.
+Implementación de acciones correctivas y preventivas.|
+
+* MÓDULO DE CALIDAD DE PROCESOS
+
+#### **Caso de uso N°4: reportes de calidad**
+
+| **Objetivo:** | Generar informes detallados sobre la calidad de los procesos y productos textiles. |
+|------|--------|
+| **Descripción:** | El sistema permitirá a los usuarios generar informes de calidad que incluyan estadísticas, tendencias y análisis comparativos para evaluar la calidad de los productos y procesos textiles.| 
+| **Actor:** | Gerente de producción | 
+| **Precondiciones:** | Existencia de datos de calidad recopilados en el sistema. | 
+| Paso | Acción |
+| 1    | El usuario autorizado ingresa al sistema. |
+| 2    | El usuario accede al apartado "Reportes de Calidad". |
+| 3    | El sistema presenta opciones para seleccionar el tipo de informe deseado: calidad de insumos, calidad de operarios o calidad de confecciones.|
+| 4    |El usuario selecciona el tipo de informe que desea generar.|
+| 5    |El sistema genera el informe de calidad según las especificaciones del usuario.|
+| 6    | Finaliza el caso.  |
+
+*MÓDULO DE GESTION DE HERRAMIENTAS Y MAQUINARIAS
+
+#### **Caso de uso N°5: Selección de herramientas y maquinarias**
 
 | **Objetivo:** | Permitir al operario solicitar herramientas y maquinarias necesarias para llevar a cabo una actividad específica. |
 |------|--------|
@@ -44,7 +107,8 @@
 | 9    | El sistema envía la solicitud al gestor de producción para su validación. |
 | 10    | Caso terminado. |
 
-#### **Caso de uso N°3: Validación de la solicitud de herramientas y maquinarias**
+
+#### **Caso de uso N°6: Validación de la solicitud de herramientas y maquinarias**
 
 | **Objetivo:** | Permitir al gestor de producción validar las solicitudes de herramientas y maquinarias realizadas por los operarios. |
 |------|--------|
@@ -69,134 +133,9 @@
 | 9  | El gestor de producción puede repetir el proceso para todas las solicitudes pendientes.|
 | 10  | Caso terminado.|
 
+* MÓDULO DE RECLAMOS Y OBSERVACIONES
 
-
-
-
-
-#### **Caso de uso N°6: Reporte de Calidad de herramientas y maquinaria**
-
-| **Objetivo:** |Identificar áreas de mejora en los procesos de producción a través del análisis de datos recopilados.|
-|------|--------|
-| **Descripción:** |	El sistema deberá analizar los datos de calidad recopilados durante las inspecciones y el control de calidad en procesos para identificar posibles áreas de mejora.| 
-| **Actor:** | Gerente de producción | 
-| **Precondiciones:** || 
-| 1   |Definición de Estándares de Calidad: Opción para establecer y modificar estándares de calidad.|
-|    |Campos para especificar criterios como dimensiones, materiales y procesos.
-|2|Inspecciones de Producto|
-|    |Registro de inspecciones periódicas a productos.
-|3|Campos para resultados, observaciones y fechas de inspección.|
-| 4   |Control de Calidad en Procesos
-Registro de calidad de materias primas, eficiencia de procesos y satisfacción del cliente.|
-| 5   |Opciones para evaluar y calificar los procesos de producción.
-Análisis y Mejora Continua|
-| 6   |Análisis de datos para identificar áreas de mejora.
-Implementación de acciones correctivas y preventivas.|
-
-
-
-#### **Caso de uso N°8: registro de usuario**:
-| **Objetivo:** |Permitir al gestor de la producción u operario ingresar con su usario y contraseña al sistema |
-|------|--------|
-| **Descripción:** |  El usario ingresará al sistema y se topará con "el inicio de sesión" junto con dos espacios para completar , el usuario deberá ingresar sus datos y podrá acceder al sistema. 
-| **Actor Primario:** |Usuario (operario o gestor de producción)| 
-| **Actor Secundario :** |no hay actor secundario | 
-| **Precondiciones:** | los datos a ingresar deben estar registrados en la base de datos, de lo contrario, no se podrá acceder al sistema.
-| Paso | Acción |
-| 1    | El operario o gestor de la producción ingresa al inicio de sesión sistema.. |
-| 2    | El operario o gestor de la producción digita su usuario|
-| 3    | El operario o gestor de la producción digita su contraseña|
-| 4    | Se revisa si existe dicho usuario y contraseña en la base de datos|
-| 5    |si los datos concuerdan con la algún valor de la base de datos se da acceso al sistema de lo contrario se envía un mensaje de "usuario o contraseña invalidos"|
-| 6    |  Caso terminado.|
-#### **Caso de uso N°9: Edición del perfil**:
-| **Objetivo:** |Permitir al operario o gestor de producción cambiar algunos datos que se tengan registrado en el sistema|
-|------|--------|
-| **Descripción:** | El usuario tendrá la opción de editar algunos datos como el telefono celular , el correo, la foto de perfil e incluso la contraseña. 
-| **Actor Primario:** |Usuario (operario o gestor de producción)| 
-| **Actor Secundario :** |no hay actor secundario | 
-| **Precondiciones:** |el numero de celular debe ser de 9 digitos (+51) , se debería verificar el correo sea existente , la foto de perfil se tendría que agregar en formato png. 
-| Paso | Acción |
-| 1    |ingresar al apartado de edición de la cuenta|
-| 2    |seleccionar que parametro se va editar|
-| 3    |subir cambios ya sea en letra o un archivo png|       
-| 4    |dar confirmación del cambio|
-| 5    |caso terminado|
-#### **Caso de uso N°10: Depuración de cuenta**:
-| **Objetivo:** |Permitir la eliminación total de la cuenta de la base de datos , esto incluye datos personales , usuario y contraseña|
-|------|--------|
-| **Descripción:** | El responsable se encarga de eliminar la cuenta ya sea por renuncia o despido
-| **Actor Primario:** |gestor de producción| 
-| **Actor Secundario :** |no hay actor secundario | 
-| **Precondiciones:** |el gestor de la producción tendrá una contraseña especial para acceder a la eliminación de la cuenta
-| Paso | Acción |
-| 1    |ingresar al apartado de eliminación de la cuenta|
-| 2    |digitar la contraseña de acceso para el apartado de eliminación|
-| 3    |seleccionar a el usuario que se va eliminar|       
-| 4    |dar confirmación de la depuración|
-| 5    |actualización de cambios|
-| 5    |caso terminado|
-
-#### **Caso de uso N°11: Reportes por operarios**
-| **Objetivo:** |Permitir al jefe de producción analizar las actividades concluidas por un operario|
-|------|--------|
-| **Descripción:** | el jefe de producción se encarga de rellenar la información de las actividades de cada empleado
-| **Actor Primario:** |jefe de producción| 
-| **Actor Secundario :** |no hay actor secundario| 
-| **Precondiciones:** |no hay precondiciones vigentes|
-| Paso | Acción |
-| 1    |Seleccionar el reporte de los operarios|
-| 2    |Ingresar el código del empleado e la cuadrícula|
-| 3    |Visualizar el reporte| 
-
-#### **Caso de uso N°12: Reportes por supervisor**
-| **Objetivo:** |Permitir al jefe de producción analizar las actividades concluidas por los operarios de un cierto supervisor|
-|------|--------|
-| **Descripción:** |A partir de la información obtenida en el registro de tareas se concluye aquí la revisión de todos los operarios por supervisor|
-| **Actor Primario:** |jefe de producción| 
-| **Actor Secundario :** |no hay actor secundario| 
-| **Precondiciones:** |no hay precondiciones vigentes|
-| Paso | Acción |
-| 1    |Seleccionar el reporte por supervisor|
-| 2    |Ingresar el código del supervisor en la cuadrícula|
-| 3    |Visualizar el reporte| 
-
-#### **Caso de uso N°13: Reportes por Herramienta**
-| **Objetivo:** |Permitir al jefe de producción analizar los estados de las herramientas durante el trabajo|
-|------|--------|
-| **Descripción:** |A partir de la información obtenida en el registro de herramientas y maquinarias se concluye aquí la revisión de todas las herramientas|
-| **Actor Primario:** |jefe de producción| 
-| **Actor Secundario :** |no hay actor secundario| 
-| **Precondiciones:** |Datos ya creados desde el registro de herramientas y maquinarias|
-| Paso | Acción |
-| 1    |Seleccionar el reporte de herramientas|
-| 2    |Ingresar el código de la heramienta en la cuadrícula|
-| 3    |Visualizar el reporte| 
-
-#### **Caso de uso N°14: Reportes por Maquinarias**
-| **Objetivo:** |Permitir al jefe de producción analizar los estados de las maquinarias durante el trabajo|
-|------|--------|
-| **Descripción:** |A partir de la información obtenida en el registro de herramientas y maquinarias se concluye aquí la revisión de todas las maquinarias|
-| **Actor Primario:** |jefe de producción| 
-| **Actor Secundario :** |no hay actor secundario| 
-| **Precondiciones:** |Datos ya creados desde el registro de herramientas y maquinarias|
-| Paso | Acción |
-| 1    |Seleccionar el reporte de maquinarias|
-| 2    |Ingresar el código de la maquinaria en la cuadrícula|
-| 3    |Visualizar el reporte| 
-
-#### **Caso de uso N°15: Reportes por operario**
-| **Objetivo:** |Permitir al operario analizar sus propias actividades para conocer su paga semanal|
-|------|--------|
-| **Descripción:** |A partir de la información obtenida en el registro de tareas se concluye aquí la revisión de todas las actividades realizadas por el operario|
-| **Actor Primario:** |operario| 
-| **Actor Secundario :** |no hay actor secundario| 
-| **Precondiciones:** |Datos ya creados desde el registro de tareas|
-| Paso | Acción |
-| 1    |Seleccionar el reporte por operario|
-| 2    |Visualizar el reporte|
-
-#### **Caso de uso N°16: Reclamo del operario**
+#### **Caso de uso N°7: Reclamo del operario**
 | **Objetivo:** |Permitir a los operarios registrar reclamos sobre condiciones laborales, problemas de seguridad, sugerencias de mejora u otras preocupaciones relacionadas con su experiencia laboral.|
 |------|--------|
 | **Descripción:** |Los operarios puedan presentar reclamos a través del sistema digital, facilitando la comunicación y la gestión eficiente de problemas en el lugar de trabajo.|
@@ -209,6 +148,121 @@ Implementación de acciones correctivas y preventivas.|
 | 3    |Envío del reclamo al sistema para su registro|
 | 4    |Durante el proceso de resolución, el sistema permite la comunicación entre el operario y el responsable de la gestión del reclamo, facilitando cualquier intercambio de información o feedback|
 | 5    |Una vez que se resuelve el reclamo, el sistema notifica al operario sobre las acciones tomadas y cierra el reclamo|
+
+* MÓDULO DE RECLAMOS Y OBSERVACIONES
+
+#### **Caso de uso N°8: Reclamo del operario**
+| **Objetivo:** |Permitir a los operarios registrar reclamos sobre condiciones laborales, problemas de seguridad, sugerencias de mejora u otras preocupaciones relacionadas con su experiencia laboral.|
+|------|--------|
+| **Descripción:** |Los operarios puedan presentar reclamos a través del sistema digital, facilitando la comunicación y la gestión eficiente de problemas en el lugar de trabajo.|
+| **Actor Primario:** |operario| 
+| **Actor Secundario :** |gerente de producción| 
+| **Precondiciones:** |El operario debe estar registrado en el sistema y una preocupación o problema laboral que desee registrar como reclamo|
+| Paso | Acción |
+| 1    |Dirigirse a la sección de quejas y reclamos del sistema|
+| 2    |Seleccionar la opción para registrar un nuevo reclamo y completar los campos requeridos|
+| 3    |Envío del reclamo al sistema para su registro|
+| 4    |Durante el proceso de resolución, el sistema permite la comunicación entre el operario y el responsable de la gestión del reclamo, facilitando cualquier intercambio de información o feedback|
+| 5    |Una vez que se resuelve el reclamo, el sistema notifica al operario sobre las acciones tomadas y cierra el reclamo|
+
+* MÓDULO DE REGISTRO DE ACTIVIDADES
+
+#### **Caso de uso N°9: Registro de las actividades**
+
+| **Objetivo:** | Gestionar de manera eficaz la mano de obra y optimizar los procesos de fabricación. |
+|------|--------|
+| **Descripción:** | Este caso de uso describe el proceso de registro de la información relacionada con el trabajo de los empleados en las líneas de producción de prendas. | 
+| **Actores:** | Operario y Gestor de Producción | 
+| **Precondiciones:** | Se disponen de instrumentos de medición que permiten registrar intervalos de tiempo así como los datos de los operarios y de las actividades a registrar. | 
+| Paso | Acción |
+| 1    | Se registra la hora de inicio y acabado de las actividades de los empleados en sus jornadas laborales. Esto proporciona un seguimiento preciso del tiempo de trabajo por cada empleado. |
+| 2    | Los gestores de producción de este módulo pueden verificar el estado de las acividades en curso y realizar ajustes según sea necesario para garantizar que se cumplan los plazos y objetivos de producción. |
+| 3    | Se asignan tareas especificas a los empleados en función de sus habilidades y la disponibiidad que tienen, con esto se asegura una distribución equitativa del trabajo y una correcta asignación eficiente de recursos humanos en cada turno de producción. |
+| 4    | Se registra el tiempo extra trabajado por los empleados , así como las ausencias de éstos en el trabajo, vacaciones o días libres. También se registran las ausencias no planificadas como enfermedades, con esto se puede garantizar una correcta cobertura adecuada en la línea de producción. |
+| 5    | Se generan informes detallados sobre la asistencia y el rendimiento laboral de los empleados, como también las horas trabajadas en cada día. Esto permite generar información valiosa para evaluar la eficiencia operativa, identificar áreas de mejora y tomar mejores decisiones. |
+| 6    | Finaliza el caso. |
+
+* MÓDULO DE REPORTES
+
+### **Caso de uso N°10: Reportes por operarios**
+| **Objetivo:** |Permitir al jefe de producción analizar las actividades concluidas por un operario|
+|------|--------|
+| **Descripción:** | el jefe de producción se encarga de rellenar la información de las actividades de cada empleado
+| **Actor Primario:** |jefe de producción| 
+| **Actor Secundario :** |no hay actor secundario| 
+| **Precondiciones:** |no hay precondiciones vigentes|
+| Paso | Acción |
+| 1    |Seleccionar el reporte de los operarios|
+| 2    |Ingresar el código del empleado e la cuadrícula|
+| 3    |Visualizar el reporte| 
+
+#### **Caso de uso N°11: Reportes por supervisor**
+| **Objetivo:** |Permitir al jefe de producción analizar las actividades concluidas por los operarios de un cierto supervisor|
+|------|--------|
+| **Descripción:** |A partir de la información obtenida en el registro de tareas se concluye aquí la revisión de todos los operarios por supervisor|
+| **Actor Primario:** |jefe de producción| 
+| **Actor Secundario :** |no hay actor secundario| 
+| **Precondiciones:** |no hay precondiciones vigentes|
+| Paso | Acción |
+| 1    |Seleccionar el reporte por supervisor|
+| 2    |Ingresar el código del supervisor en la cuadrícula|
+| 3    |Visualizar el reporte| 
+
+#### **Caso de uso N°12: Reportes por Herramienta**
+| **Objetivo:** |Permitir al jefe de producción analizar los estados de las herramientas durante el trabajo|
+|------|--------|
+| **Descripción:** |A partir de la información obtenida en el registro de herramientas y maquinarias se concluye aquí la revisión de todas las herramientas|
+| **Actor Primario:** |jefe de producción| 
+| **Actor Secundario :** |no hay actor secundario| 
+| **Precondiciones:** |Datos ya creados desde el registro de herramientas y maquinarias|
+| Paso | Acción |
+| 1    |Seleccionar el reporte de herramientas|
+| 2    |Ingresar el código de la heramienta en la cuadrícula|
+| 3    |Visualizar el reporte| 
+
+
+#### **Caso de uso N°13: Reportes por Maquinarias**
+| **Objetivo:** |Permitir al jefe de producción analizar los estados de las maquinarias durante el trabajo|
+|------|--------|
+| **Descripción:** |A partir de la información obtenida en el registro de herramientas y maquinarias se concluye aquí la revisión de todas las maquinarias|
+| **Actor Primario:** |jefe de producción| 
+| **Actor Secundario :** |no hay actor secundario| 
+| **Precondiciones:** |Datos ya creados desde el registro de herramientas y maquinarias|
+| Paso | Acción |
+| 1    |Seleccionar el reporte de maquinarias|
+| 2    |Ingresar el código de la maquinaria en la cuadrícula|
+| 3    |Visualizar el reporte| 
+
+
+#### **Caso de uso N°14: Reportes por operario**
+| **Objetivo:** |Permitir al operario analizar sus propias actividades para conocer su paga semanal|
+|------|--------|
+| **Descripción:** |A partir de la información obtenida en el registro de tareas se concluye aquí la revisión de todas las actividades realizadas por el operario|
+| **Actor Primario:** |operario| 
+| **Actor Secundario :** |no hay actor secundario| 
+| **Precondiciones:** |Datos ya creados desde el registro de tareas|
+| Paso | Acción |
+| 1    |Seleccionar el reporte por operario|
+| 2    |Visualizar el reporte|
+
+* MÓDULO DE SOLICITUD DE PEDIDOS DE INSUMOS
+
+#### **Caso de uso N°15: Abastecimiento de insumos**
+
+| **Objetivo:** | Coordinar y gestionar el flujo de materiales desde el almacén hasta las líneas de producción, asegurando que se satisfagan las necesidades de producción de manera oportuna y eficiente. |
+|------|--------|
+| **Descripción:** | Este caso de uso describe el proceso de abastecimiento de materia prima desde la planificación de la producción y gestión del inventario hasta la distribución de la materia prima al área de producción. | 
+| **Actor:** | Encargado de Adquisiciones | 
+| **Precondiciones:** | El sistema de gestión de inventario se encuentra actualizado, asimismo se posee suficiente espacio para almacenar la materia prima. | 
+| Paso | Acción |
+| 1    | Se determinan los niveles de inventario tanto en el almacén como en el área de producción para determinar los materiales necesarios, así como el tiempo necesario para que dicha producción no se detenga. |
+| 2    | Se gestionan las compras para adquirir los materiales necesarios para la producción. |
+| 3    | Se lleva a cabo una selección y evaluación de proveedores para garantizar la calidad del producto y el tiempo de entrega, entre otros criterios. |
+| 4    | Se recibe la materia prima de los proveedores y se verifica su calidad. |
+| 5    | Una vez adquiridos los materiales, se gestiona la correcta recepción y almacenamiento de estos, la cual será guiado por un registro detallado. |
+| 6    | Se distribuyen los materiales necesarios para el área de producción, que en este caso consiste en la confección de ropa. |
+| 7    | Finaliza el caso. |
+
 
 ### 2. Requerimientos de atributos de calidad
 * Seguridad: El sistema debe garantizar la confidencialidad e integridad de los datos almacenados y transmitidos. Para ello, el sistema solo permitirá acceso a los usuarios que están registrados y que cumplan un rol en la empresa, y solicitará que los usuarios proporcionen dos formas de autenticación: una contraseña y un código enviado a su dispositivo móvil.
