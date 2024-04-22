@@ -73,14 +73,6 @@
 | DESCRIPCION_FALLO |                                           |             |   Char     | NOT NULL |
 
   
-#### TAB 
-|    Estado    |          Semántica          |
-|:------------:|:---------------------------:|
-|              |                             |
-|              |                             |
-|              |                             |
-
-
 ### Entidad: INSPECCION
 #### P.
 
@@ -88,9 +80,6 @@
 |:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
 |   ID_FALLO        |                                           |             |   Varchar  | 6 dígitos|
 | DESCRIPCION_FALLO |                                           |             |   Char     | NOT NULL |
-
-
-
 
 
 
