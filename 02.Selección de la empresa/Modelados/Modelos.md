@@ -210,17 +210,15 @@
 
 |     Atributo     |                  Descripción                  |   Formato   | Naturaleza |  Valores |
 |:----------------:|:---------------------------------------------:|:-----------:|:----------:|:--------:|
-|    ID_TALLER |              Código del taller           |   AA999   |   Varchar  | <999 caracteres alfanumericos|
-|  CAPACIDAD_TALLER |          Capacidad del taller   | 99999 |  Int  | >0 |
-|  CATEGORÍA_TALLER |          Categoría  de las actividades que se realizan en el taller  |  YYYY-MM-DD  |  Char | TAB 5 |
+|  id_obs |       Código de la observación        |  999999  |   Varchar  | 6 dígitos |
+|  fecha_obs |   Fecha en la que se registra la observación  | YYYY-MM-DD |  Date  | NOT NULL |
+|  descripcion_obs |  Descripción detallada de la observación realizada | X(60) |  Char | NOT NULL |
+|  estado_obs |  Situación en la que se encuentra la observación | A |  Char | TAB 7 |
+|  id_actividad |  Código de la actividad de la cual se obtiene la observación | 999AA99 |  Varchar | <999 caracteres alfanuméricos |
 
 #### TAB 7
 
 |     Estado de la observación    |    Semantica |
 |:---------------:|:-----------------:|
-|     T1    |    Taller de Lavado |
-| T2 |  Taller de Secado  |
-| T3 |  Taller de Costura  |
-| T4 |  Taller de Acabados  |
-| T5 |  Taller de Correciones |
-| T6 |  Taller de Planchados |
+| P |  Pendiente |
+| R |  Resuelto |
