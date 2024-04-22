@@ -64,16 +64,14 @@
 |   cantidad_insumo |        Cantidad del insumo                 |     999     |   Int      | NOT NULL |
 |   id_proveedor    |        Código del proveedor del insumo     |   999999    |   Varchar  | 6 dígitos|
 
-### Entidad: 
+### Entidad: FALLO
 #### P.
 
 |     Atributo      |              Descripción                  |   Formato   | Naturaleza |  Valores |
 |:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
-|                   |                                           |             |   Varchar  | 6 dígitos|
-|                   |                                           |             |   Char     | NOT NULL |
-|                   |                                           |             |   Char     | NOT NULL |
-|                   |                                           |             |   Char     | TAB 4    |
-|                   |                                           |             |   Char     | Opcional |
+|   ID_FALLO        |                                           |             |   Varchar  | 6 dígitos|
+| DESCRIPCION_FALLO |                                           |             |   Char     | NOT NULL |
+
   
 #### TAB 
 |    Estado    |          Semántica          |
@@ -81,3 +79,36 @@
 |              |                             |
 |              |                             |
 |              |                             |
+
+
+### Entidad: INSPECCION
+#### P.
+
+|     Atributo      |              Descripción                  |   Formato   | Naturaleza |  Valores |
+|:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
+|   ID_FALLO        |                                           |             |   Varchar  | 6 dígitos|
+| DESCRIPCION_FALLO |                                           |             |   Char     | NOT NULL |
+
+
+
+
+
+
+  ### Entidad: MANTENIMIENTO_HERRA_MAQUIN
+#### P.
+
+|     Atributo      |              Descripción                  |   Formato   | Naturaleza |  Valores |
+|:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
+|   ID_FALLO        |                                           |             |   Varchar  | 6 dígitos|
+| DESCRIPCION_FALLO |                                           |             |   Char     | NOT NULL |
+
+
+
+  ### Entidad: ESTANDAR_CALIDAD
+#### P.
+
+|     Atributo      |              Descripción                  |   Formato   | Naturaleza |  Valores |
+|:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
+|   ID_FALLO        |                                           |             |   Varchar  | 6 dígitos|
+| DESCRIPCION_FALLO |      
+  
