@@ -72,7 +72,7 @@
 |     Atributo      |              Descripción                  |   Formato   | Naturaleza |  Valores |
 |:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
 |   ID_FALLO        |  dentificador único del fallo             |   999999     |  INT     | 6 dígitos|
-| DESCRIPCION_FALLO |   VARCHAR(70)   |  X(60)       |   Char     | NOT NULL |
+| DESCRIPCION_FALLO | Descripción detallada del fallo   |  X(60)       |   Char     | NOT NULL |
 
 ### Entidad: INSPECCION
 #### Una inspección representa el proceso de revisión y evaluación de herramientas o maquinarias para verificar su estado, calidad y funcionamiento de acuerdo con los estándares establecidos.
@@ -104,9 +104,9 @@
 |     Atributo      |              Descripción                  |   Formato   | Naturaleza |  Valores |
 |:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
 |   ID_Estandar     | Identificador único del estándar de calidad|      999999 |   INT  | 6 dígitos|
-| Tipo_Estandar     |   Tipo o categoría del estándar |  VARCHAR(50)   |   Texto         |  	NOT NULL        |
-| Descripcion       |   Descripción detallada del estándar  |  VARCHAR(50)   |   Texto         |  	NOT NULL    |
-| Fecha_Creacion    |  Fecha de creación o última actualización del estándar     |  YYYY-MM-DD |    Date    |  NOT NULL  |
+| Tipo_Estandar     |   Tipo o categoría del estándar |  Texto    |VARCHAR(50)  |  	NOT NULL        |
+| Descripcion       |   Descripción detallada del estándar  |  Texto    |VARCHAR(50)  |  	NOT NULL        |
+| Fecha_Creacion    |  Fecha de creación o última actualización del estándar |  YYYY-MM-DD |    Date    |  NOT NULL  |
 
 
 
