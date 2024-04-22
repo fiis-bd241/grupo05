@@ -1,5 +1,4 @@
 # MODULOS 
-
 ## MÓDULO DE GESTION DE HERRAMIENTAS Y MAQUINARIAS
 Este módulo se encarga de gestionar y mantener un registro detallado de las herramientas y maquinarias utilizadas por los operarios en las actividades diarias de producción. Su objetivo es garantizar un uso eficiente de los recursos y un seguimiento preciso de su disponibilidad y estado. El módulo consiste en lo siguiente:
 
