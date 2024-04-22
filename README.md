@@ -10,6 +10,6 @@ Bienvenidos al repositorio del Proyecto del Curso Diseño de Base de Datos del G
 
 3. [Entrevistas](03.Entrevistas/Entrevistas.md)
 
-4. [Videos Personales](04.Videos%20Personales/Videos%20Personales.md)
+4. [Videos Personales](04.Videos%20Personales/Videos.md)
    
 5. Otra sección
