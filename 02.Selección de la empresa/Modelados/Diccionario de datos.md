@@ -58,7 +58,46 @@
 |   cantidad_insumo |        Cantidad del insumo                 |     999     |   Int      | NOT NULL |
 |   id_proveedor    |        Código del proveedor del insumo     |   999999    |   Varchar  | 6 dígitos|
 
-![image](https://github.com/fiis-bd241/grupo05/assets/164256464/00e5dfca-49a1-4a52-8bf8-e4f1d692ec46)
+### Entidad: FALLO
+#### Un fallo representa un defecto, problema o anomalía identificada en una herramienta o maquinaria que afecta su funcionamiento, rendimiento o calidad.
+
+|     Atributo      |              Descripción                  |   Formato   | Naturaleza |  Valores |
+|:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
+|   ID_FALLO        |  dentificador único del fallo             |   999999     |  INT     | 6 dígitos|
+| DESCRIPCION_FALLO |   VARCHAR(70)                             |  X(60(       |   Char     | NOT NULL |
+
+### Entidad: INSPECCION
+#### Un fallo representa un defecto, problema o anomalía identificada en una herramienta o maquinaria que afecta su funcionamiento, rendimiento o calidad.
+
+|     Atributo      |              Descripción                  |   Formato   | Naturaleza |  Valores |
+|:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
+|   ID_FALLO        |                                           |             |   Varchar  | 6 dígitos|
+| DESCRIPCION_FALLO |                                           |             |   Char     | NOT NULL |
+|   ID_FALLO        |                                           |             |   Varchar  | 6 dígitos|
+|   ID_FALLO        |                                           |             |   Varchar  | 6 dígitos|
+
+  ### Entidad: MANTENIMIENTO_HERRAMIENTA_MAQUINARIA
+#### P.
+
+|     Atributo      |              Descripción                  |   Formato   | Naturaleza |  Valores |
+|:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
+| ID_MANTENIMIENTO  |                                           |             |   Varchar  | 6 dígitos|
+| DESCRIPCION_MANTENIMIENTO|             |   Char     | NOT NULL |
+| TIPO_MANTENIMIENTO |                                           |             |   Char     | NOT NULL |
+| ID_RESPONSABLE |                                           |             |   Char     | NOT NULL |
+|ESTADO |                                           |             |   Char     | NOT NULL |
+| FECHA_MANTENIMIENTO |                                           |             |   Char     | NOT NULL |
+
+  ### Entidad: ESTANDAR_CALIDAD
+#### Un estándar de calidad es una norma o criterio establecido que define las características, propiedades o condiciones que debe cumplir un producto, herramienta o maquinaria para ser considerado como de calidad aceptable.
+
+|     Atributo      |              Descripción                  |   Formato   | Naturaleza |  Valores |
+|:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
+|   ID_Estandar     | Identificador único del estándar de calidad|      INT       |   999999  | 6 dígitos|
+| Tipo_Estandar     |   Tipo o categoría del estándar |  VARCHAR(50)   |   Texto         |  	NOT NULL        |
+| Descripcion       |   Descripción detallada del estándar  |  VARCHAR(50)   |   Texto         |  	NOT NULL        |
+| Fecha_Creacion    |  Fecha de creación o última actualización del estándar     |  YYYY-MM-DD           |    Date        |  NOT NULL        |
+
 
 
 
