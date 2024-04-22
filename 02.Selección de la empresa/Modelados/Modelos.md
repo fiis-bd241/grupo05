@@ -221,4 +221,4 @@
 |     Estado de la observación    |    Semantica |
 |:---------------:|:-----------------:|
 | P |  Pendiente |
-| R |  Resuelto |
+| R |  Resuelta |
