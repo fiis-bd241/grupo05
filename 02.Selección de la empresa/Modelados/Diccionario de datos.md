@@ -94,4 +94,25 @@
 |:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
 |   ID_FALLO        |                                           |             |   Varchar  | 6 dígitos|
 | DESCRIPCION_FALLO |      
+
+
+
+### Entidad: Reportes
+#### Se refiere al pedido realizado por un empleado para el uso de una maquinaria específica en el area producción de la empresa TOPITOP.
+
+|     Atributo     |                  Descripción                  |   Formato   | Naturaleza |  Valores |
+|:----------------:|:---------------------------------------------:|:-----------:|:----------:|:--------:|
+|    ID_REPORTE |              Código del reporte            |   999AAA9   |   Varchar  | <999 caracteres alfanumericos|
+|  FECHA_REPORTE |          Fecha del reporte   |  YYYY-MM-DD  |  Date  | NOT NULL |
+| HORA_REPORTE      |          Hora del reporte       |   HH-MM   |   Date  | NOT NULL |
+| TIPO_REPORTE      |          Tipo de reporte       |   AAA   |   char  | TAB 2 |
+
+#### TAB 2
+
+|     Tipo de reporte    |    Semantica |
+|:---------------:|:-----------------:|
+|     R1    |    Reporte por herramienta|
+| R2 |  Reporte por maquinaria |
+| R3 |  Reporte por operario |
+| R4 |  Reporte por operaro (visualización del operario) |
   
