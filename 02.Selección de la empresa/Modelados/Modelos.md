@@ -72,40 +72,41 @@
 |     Atributo      |              Descripción                  |   Formato   | Naturaleza |  Valores |
 |:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
 |   ID_FALLO        |  dentificador único del fallo             |   999999     |  INT     | 6 dígitos|
-| DESCRIPCION_FALLO |   VARCHAR(70)                             |  X(60(       |   Char     | NOT NULL |
+| DESCRIPCION_FALLO |   VARCHAR(70)   |  X(60)       |   Char     | NOT NULL |
 
 ### Entidad: INSPECCION
-#### Un fallo representa un defecto, problema o anomalía identificada en una herramienta o maquinaria que afecta su funcionamiento, rendimiento o calidad.
-
+#### Una inspección representa el proceso de revisión y evaluación de herramientas o maquinarias para verificar su estado, calidad y funcionamiento de acuerdo con los estándares establecidos.
 |     Atributo      |              Descripción                  |   Formato   | Naturaleza |  Valores |
 |:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
-|   ID_FALLO        |                                           |             |   Varchar  | 6 dígitos|
-| DESCRIPCION_FALLO |                                           |             |   Char     | NOT NULL |
-|   ID_FALLO        |                                           |             |   Varchar  | 6 dígitos|
-|   ID_FALLO        |                                           |             |   Varchar  | 6 dígitos|
+|   ID_inspeccion            |Identificador único de la inspección |      999999 |   INT  | 6 dígitos|
+| ID_RESPONSABLE             | Identificador del responsable de la inspección  |      999999 |   INT  | 6 dígitos|
+|  ID_HERRANMIENTA_MAQUINARIA|  Identificador de la herramienta o maquinaria inspeccionada | 999999 | INT  | 6 dígitos|
+|   RESULTADO                |  Resultado de la inspección |   VARCHAR(70)   |  X(60)   |   Char   | NOT NULL |
+|   FECHA_INSPECCION         | Fecha en que se realizó la inspección     |  YYYY-MM-DD |    Date    |  NOT NULL  |
+|   OBSERVACIONES | Observaciones adicionales sobre la inspección  |  VARCHAR(70)   |  X(60)       |   Char     | NOT NULL |
+
 
   ### Entidad: MANTENIMIENTO_HERRAMIENTA_MAQUINARIA
-#### P.
+#### El mantenimiento de herramientas y maquinarias es el conjunto de actividades preventivas y correctivas realizadas de manera regular para asegurar su funcionamiento óptimo, prolongar su vida útil y prevenir fallos o defectos.
 
 |     Atributo      |              Descripción                  |   Formato   | Naturaleza |  Valores |
 |:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
-| ID_MANTENIMIENTO  |                                           |             |   Varchar  | 6 dígitos|
-| DESCRIPCION_MANTENIMIENTO|             |   Char     | NOT NULL |
-| TIPO_MANTENIMIENTO |                                           |             |   Char     | NOT NULL |
-| ID_RESPONSABLE |                                           |             |   Char     | NOT NULL |
-|ESTADO |                                           |             |   Char     | NOT NULL |
-| FECHA_MANTENIMIENTO |                                           |             |   Char     | NOT NULL |
+| ID_MANTENIMIENTO  | Identificador único del mantenimiento |      999999 |   INT  | 6 dígitos|
+| DESCRIPCION_MANTENIMIENTO|  Descripción detallada del mantenimiento |   VARCHAR(70)|  X(60)  | Char | NOT NULL |
+##| TIPO_MANTENIMIENTO |    Tipo de mantenimiento (preventivo/correctivo)  | TAB            |             |     | |
+| ID_RESPONSABLE | Identificador del responsable del mantenimiento    |      999999 |   INT  | 6 dígitos|
+##|ESTADO |     Estado actual del mantenimiento    |             |     | |
+| FECHA_MANTENIMIENTO | Fecha en que se realizó el mantenimiento       |  YYYY-MM-DD |    Date    |  NOT NULL  |
 
   ### Entidad: ESTANDAR_CALIDAD
 #### Un estándar de calidad es una norma o criterio establecido que define las características, propiedades o condiciones que debe cumplir un producto, herramienta o maquinaria para ser considerado como de calidad aceptable.
 
 |     Atributo      |              Descripción                  |   Formato   | Naturaleza |  Valores |
 |:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
-|   ID_Estandar     | Identificador único del estándar de calidad|      INT       |   999999  | 6 dígitos|
+|   ID_Estandar     | Identificador único del estándar de calidad|      999999 |   INT  | 6 dígitos|
 | Tipo_Estandar     |   Tipo o categoría del estándar |  VARCHAR(50)   |   Texto         |  	NOT NULL        |
-| Descripcion       |   Descripción detallada del estándar  |  VARCHAR(50)   |   Texto         |  	NOT NULL        |
-| Fecha_Creacion    |  Fecha de creación o última actualización del estándar     |  YYYY-MM-DD           |    Date        |  NOT NULL        |
-
+| Descripcion       |   Descripción detallada del estándar  |  VARCHAR(50)   |   Texto         |  	NOT NULL    |
+| Fecha_Creacion    |  Fecha de creación o última actualización del estándar     |  YYYY-MM-DD |    Date    |  NOT NULL  |
 
 
 
