@@ -12,7 +12,7 @@
 
 2. [Proceso de Producción](procesodeproduccion.md)
    
-3. [Módulos del sistema](Modelados/M%dulos.md)
+3. [Módulos del sistema](Modelados/Modulos.md)
    
 4. [Requerimientos del Sistema](Requerimientos.md)
 
