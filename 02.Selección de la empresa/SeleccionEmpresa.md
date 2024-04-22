@@ -16,7 +16,7 @@
    
 4. [Requerimientos del Sistema](Requerimientos.md)
 
-5. [Prototipo de la aplicación](../prototipo.md)
+5. [Prototipo de la aplicación](Prototipos/prototipo.md)
 
 
 [Regresar al índice](../README.md)
