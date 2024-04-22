@@ -1,6 +1,6 @@
 #### **Caso de uso N°: reportes de calidad**
 
-| **Objetivo:** | CGenerar informes detallados sobre la calidad de los procesos y productos textiles. |
+| **Objetivo:** | Generar informes detallados sobre la calidad de los procesos y productos textiles. |
 |------|--------|
 | **Descripción:** | El sistema permitirá a los usuarios generar informes de calidad que incluyan estadísticas, tendencias y análisis comparativos para evaluar la calidad de los productos y procesos textiles.| 
 | **Actor:** | Gerente de producción | 
