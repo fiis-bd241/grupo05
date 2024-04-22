@@ -34,7 +34,7 @@
 
 |     Atributo     |                  Descripción                  |   Formato   | Naturaleza |  Valores |
 |:----------------:|:---------------------------------------------:|:-----------:|:----------:|:--------:|
-|    ID_Solicitud |              Código del solicitud              |   999-AAA   |   Varchar  | 6 dígitos|
+|    ID_Solicitud |              Código del solicitud              |   9999-AAA   |   Varchar  | 4 dígitos + 3 letras paridad|
 |  Fecha_Solicitud |          Fecha en que se realiza la solicitud |    YYYY-MM-DD  |  Date  | NOT NULL |
 | Estado           |          Estado actual de la solicitud         |   AAA   |   char  | TAB 3 |
 
