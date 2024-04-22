@@ -1,9 +1,10 @@
 # Modelado Conceptual
 
+<img src="MCD.jpeg" alt="Modelados" style="width: 100%; height: auto;" />
 
 # Modelo Lógico
 
-
+<img src="ModeloLogico.png" alt="Modelados" style="width: 100%; height: auto;" />
 
 # Diccionario de datos
 ### Entidad: Operario
