@@ -56,8 +56,7 @@
 | Modelo_Maquina        |          Modelo de la maquinaria       |   AAA   |   char  | No null |
 
 ### Entidad: Insumo
-#### Se refiere al pedido realizado por un empleado para el uso de una maquinaria específica en el area producción de la empresa TOPITOP.
-Se refiere a los insumos utilizados en el proceso de producción de la empresa. Los operarios pueden realizar solicitudes de pedido de insumos a través del sistema.
+#### Se refiere a los insumos utilizados en el proceso de producción de la empresa. Los operarios pueden realizar solicitudes de pedido de insumos a través del sistema.
 |     Atributo      |              Descripción                  |   Formato   | Naturaleza |  Valores |
 |:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
 |   id_insumo       |        Código del insumo                  |   999999    |   Varchar  | 6 dígitos|
