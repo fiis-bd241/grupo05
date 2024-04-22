@@ -124,7 +124,7 @@
 |    ID_REPORTE |              Código del reporte            |   999AAA9   |   Varchar  | <999 caracteres alfanumericos|
 |  FECHA_REPORTE |          Fecha del reporte   |  YYYY-MM-DD  |  Date  | NOT NULL |
 | HORA_REPORTE      |          Hora del reporte       |   HH-MM   |   Date  | NOT NULL |
-| TIPO_REPORTE      |          Tipo de reporte       |   AAA   |   char  | TAB 2 |
+| TIPO_REPORTE      |          Tipo de reporte       |   AAA   |   char  | TAB 3 |
 
 #### TAB 3
 
@@ -143,7 +143,7 @@
 |     Atributo     |                  Descripción                  |   Formato   | Naturaleza |  Valores |
 |:----------------:|:---------------------------------------------:|:-----------:|:----------:|:--------:|
 |    ID_ACTIVIDAD |              Código de la actividad            |   999AA99   |   Varchar  | <999 caracteres alfanumericos|
-|  TIPO_ACTIVIDAD |          Tipo de actividad   |  AAA9 |  char  | TAB 3 |
+|  TIPO_ACTIVIDAD |          Tipo de actividad   |  AAA9 |  char  | TAB 4 |
 |  FECHA_ACTIVIDAD |          Fecha de la actividad   |  YYYY-MM-DD  |  Date  | NOT NULL |
 | HORA_INI_ACTI    |          Hora del inicio de la actividad       |   HH-MM   |   Date  | NOT NULL |
 | HORA_FIN_ACTI      |           Hora del final de la actividad       |   HH-MM   |   Date  | NOT NULL |
