@@ -106,7 +106,7 @@ Utiliza la información de las observaciones para generar un reporte de los inci
 
 
 # DIAGRAMA UML
-<img src="UML.png" alt="02.Selección de la empresa" style="width: 100%; height: auto;" />
+<img src="UML.png" alt="Modelos" style="width: 100%; height: auto;" />
 
 [Selección de la empresa](../../02.Selección%20de%20la%20empresa/SeleccionEmpresa.md)
 
