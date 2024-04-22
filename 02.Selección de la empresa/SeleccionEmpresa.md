@@ -18,7 +18,7 @@
 
 5. [Prototipo de la aplicación](Prototipos/prototipo.md)
    
-6. [Modelado Conceptual y Lógico](Modelados/Modelo.md)
+6. [Modelado Conceptual y Lógico](Modelados/Modelos.md)
 
 
 [Regresar al índice](../README.md)
