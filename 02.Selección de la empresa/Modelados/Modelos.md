@@ -93,11 +93,17 @@
 |:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
 | ID_MANTENIMIENTO  | Identificador único del mantenimiento |      999999 |   INT  | 6 dígitos|
 | DESCRIPCION_MANTENIMIENTO|  Descripción detallada del mantenimiento |   VARCHAR(70)|  X(60)  | Char | NOT NULL |
-##| TIPO_MANTENIMIENTO |    Tipo de mantenimiento (preventivo/correctivo)  | TAB            |             |     | |
+| TIPO_MANTENIMIENTO |    Tipo de mantenimiento   | TAB            |             |     | |
 | ID_RESPONSABLE | Identificador del responsable del mantenimiento    |      999999 |   INT  | 6 dígitos|
 ##|ESTADO |     Estado actual del mantenimiento    |             |     | |
 | FECHA_MANTENIMIENTO | Fecha en que se realizó el mantenimiento       |  YYYY-MM-DD |    Date    |  NOT NULL  |
+#### TAB 2
 
+|     Cargo    |    Semantica |
+|:---------------:|:-----------------:|
+|     M1   |    PREVENTIVO|
+| M2 |  Mantenimiento |
+| E3 |  CORRECTIVO    |
   ### Entidad: ESTANDAR_CALIDAD
 #### Un estándar de calidad es una norma o criterio establecido que define las características, propiedades o condiciones que debe cumplir un producto, herramienta o maquinaria para ser considerado como de calidad aceptable.
 
@@ -120,7 +126,7 @@
 | HORA_REPORTE      |          Hora del reporte       |   HH-MM   |   Date  | NOT NULL |
 | TIPO_REPORTE      |          Tipo de reporte       |   AAA   |   char  | TAB 2 |
 
-#### TAB 2
+#### TAB 3
 
 |     Tipo de reporte    |    Semantica |
 |:---------------:|:-----------------:|
