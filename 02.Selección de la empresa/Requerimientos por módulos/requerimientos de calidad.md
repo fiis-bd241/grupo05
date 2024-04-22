@@ -1,11 +1,11 @@
 ### 1. Requerimientos por modulos
-- [MÓDULO DE CALIDAD DE HERRAMIENTAS Y MAQUINARIA](MÓDULO%20DE%20CALIDAD%20DE%20HERRAMIENTAS%20Y%20MAQUINARIA.md)
-- [Grijalva Parra Francisco Leonel](Francisco%20Grijalva/FranciscoGrijalva.md)
-- [Huaman Yance Kevin Sebastian](Huaman%20Kevin/HuamanKevin.md)
-- [Larios Figueroa Enrico](Enrico%20Larios%20Figueroa/EnricoLarios.md)
-- [Loayza Segura Roger Salvador](Roger%20Loayza/RogerLoayza.md)
-- [Lock Brañez Peter Alexander](Peter%20Lock/PeterLock.md)
-- [Otero Vicente Daniel Mauricio](Mauricio%20Otero%20Vicente/MauricioOtero.md)
+- [MÓDULO DE CALIDAD DE HERRAMIENTAS Y MAQUINARIA]()
+- [MÓDULO DE CALIDAD DE PROCESOS]()
+- [MÓDULO DE GESTION DE HERRAMIENTAS Y MAQUINARIAS]()
+- [MÓDULO DE RECLAMOS Y OBSERVACIONES]()
+- [MÓDULO DE REGISTRO DE ACTIVIDADES]()
+- [MÓDULO DE REPORTES]()
+- [MÓDULO DE SOLICITUD DE PEDIDOS DE INSUMOS]()
 
 
 ### 2. Requerimientos de atributos de calidad
