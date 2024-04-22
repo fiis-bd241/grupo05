@@ -17,3 +17,29 @@
 | 8    | El operario hace clic en "Enviar solicitud". |
 | 9    | El sistema envía la solicitud al gestor de producción para su validación. |
 | 10    | Caso terminado. |
+
+
+#### **Caso de uso N°3: Validación de la solicitud de herramientas y maquinarias**
+
+| **Objetivo:** | Permitir al gestor de producción validar las solicitudes de herramientas y maquinarias realizadas por los operarios. |
+|------|--------|
+| **Descripción:** |  El gestor de producción ingresará al sistema y accederá al apartado de "Solicitud de herramienta". Se mostrará una tabla con todas las solicitudes pendientes, donde se visualizará el código del usuario que solicita, el código de la herramienta, el modelo y nombre de la herramienta. El gestor tendrá la opción de aceptar o rechazar la solicitud.
+| **Actor Primario:** |  Gestor de producción | 
+| **Actor Secundario :** | Operario | 
+| **Precondiciones:** | Existencia de solicitudes de herramientas y maquinarias pendientes en el sistema. | 
+| Paso | Acción |
+| 1    | El gestor de producción ingresa al sistema. |
+| 2    | El gestor de producción accede al apartado "Solicitud de herramienta". |
+| 3    | El sistema muestra una tabla con todas las solicitudes pendientes. |
+| 4    | En la tabla se visualiza el código del usuario que solicita, el código de la herramienta, el modelo y nombre de la herramienta. |
+| 5    | El gestor de producción revisa cada solicitud pendiente. |
+| 6    | El gestor de producción tiene la opción de aceptar o rechazar cada solicitud. |
+| 7    | Si se decide aceptar la solicitud: |
+||a. El gestor de producción marca la solicitud como aceptada. |
+||b. El sistema actualiza el estado de la herramienta a "ocupado". |
+||c. Se notifica al operario que su solicitud ha sido aprobada. |
+| 8    | Si se decide rechazar la solicitud: |
+|  |a. El gestor de producción marca la solicitud como rechazada. |
+|     |b. Se notifica al operario que su solicitud ha sido rechazada. |
+| 9  | El gestor de producción puede repetir el proceso para todas las solicitudes pendientes.|
+| 10  | Caso terminado.|
