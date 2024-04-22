@@ -1,3 +1,10 @@
+# Modelado Conceptual
+
+
+# Modelo Lógico
+
+
+
 # Diccionario de datos
 ### Entidad: Operario
 #### Se refiere a un individuo que trabaja en la división de producción de la empresa TOPITOP, desempeñando roles y tareas relacionadas con la fabricación de productos textiles de acuerdo con los estándares de calidad y diseño establecidos.
