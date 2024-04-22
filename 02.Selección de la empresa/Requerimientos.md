@@ -111,15 +111,13 @@ Campos para observaciones, fecha de inspección y responsable. |
 Generación de informes sobre estado, uso y mantenimiento.
 Opciones de filtrado por fecha, tipo de herramienta/maquinaria y estado.|
 
-#### **Caso de uso N°6: Control de calidad de Procesos**
+#### **Caso de uso N°6: Reporte de Calidad **
 
-Análisis de datos para identificar áreas de mejora.
-Implementación de acciones correctivas y preventivas.
-| **Objetivo:** |  |
+| **Objetivo:** |Identificar áreas de mejora en los procesos de producción a través del análisis de datos recopilados.|
 |------|--------|
-| **Descripción:** |  | 
+| **Descripción:** |	El sistema deberá analizar los datos de calidad recopilados durante las inspecciones y el control de calidad en procesos para identificar posibles áreas de mejora.| 
 | **Actor:** | Gerente de producción | 
-| **Precondiciones:** |  | 
+| **Precondiciones:** || 
 | 1   |Definición de Estándares de Calidad: Opción para establecer y modificar estándares de calidad.|
 |    |Campos para especificar criterios como dimensiones, materiales y procesos.
 |2|Inspecciones de Producto|
