@@ -20,5 +20,7 @@
    
 6. [Modelado Conceptual y Lógico](Modelados/Modelos.md)
 
+7. [Comandos de SQL](data-sql.md)
+
 
 [Regresar al índice](../README.md)
