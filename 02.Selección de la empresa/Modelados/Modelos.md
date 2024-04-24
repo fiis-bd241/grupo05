@@ -12,7 +12,7 @@
 
 |     Atributo     |                  Descripción                  |   Formato   | Naturaleza |  Valores |
 |:----------------:|:---------------------------------------------:|:-----------:|:----------:|:--------:|
-|    ID_operario  |              Código del operario             |   999999 |   char  | 6 dígitos|
+|    ID_operario  |              Código del operario             |   AA999 |   char  | 3 dígitos+ 2 letras paridad|
 |  Nombre_operario |          Nombre del empleado                  |     X(60)    |   char   | NOT NULL |
 | Apellido_operario|          Apellido del empleado                |     X(60)     |   char  | NOT NULL |
 |  DNI_operario   |          documento de indentidad del empleado  |  99999999   |  char |  8 dígitos|
@@ -24,7 +24,7 @@
 
 |     Atributo     |                  Descripción                  |   Formato   | Naturaleza |  Valores |
 |:----------------:|:---------------------------------------------:|:-----------:|:----------:|:--------:|
-|    ID_gestor  |              Código del operario             |   999999 |   Varchar  | 6 dígitos|
+|    ID_gestor  |              Código del operario             |   AA999 |   Varchar  | 3 dígitos+ 2 letras paridad|
 |  Nombre_gestor |          Nombre del empleado                  |     X(60)    |   char   | NOT NULL |
 | Apellido_gestor|          Apellido del empleado                |     X(60)     |   char  | NOT NULL |
 |  DNI_gestor    |          documento de indentidad del empleado  |  99999999   |  char |  8 dígitos|
@@ -64,7 +64,7 @@
 #### Se refiere a los insumos utilizados en el proceso de producción de la empresa. Los operarios pueden realizar solicitudes de pedido de insumos a través del sistema.
 |     Atributo      |              Descripción                  |   Formato   | Naturaleza |  Valores |
 |:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
-|   id_insumo       |        Código del insumo                  |   999999    |   char  | 6 dígitos|
+|   id_insumo       |        Código del insumo                  |   AAA999   |   char  | 3 dígitos+ 3 letras paridad|
 |   tipo_insumo     |        Tipo de insumo                      |     X(60)   |   Char     | NOT NULL |
 |   cantidad_insumo |        Cantidad del insumo                 |     999     |   Int      | NOT NULL |
 |   id_proveedor    |        Código del proveedor del insumo     |   999999    |   char| 6 dígitos|
@@ -75,7 +75,7 @@
 
 |     Atributo      |              Descripción                  |   Formato   | Naturaleza |  Valores |
 |:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
-|   ID_FALLO        |  dentificador único del fallo             |   999999     |  char    | 6 dígitos|
+|   ID_FALLO        |  dentificador único del fallo             |   AA999    |  char    | 3 dígitos+ 2 letras paridad|
 | DESCRIPCION_FALLO | Descripción detallada del fallo   |  X(60)       |   Char     | NOT NULL |
 
 
@@ -96,7 +96,7 @@
 
 |     Atributo      |              Descripción                  |   Formato   | Naturaleza |  Valores |
 |:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
-| ID_MANTENIMIENTO  | Identificador único del mantenimiento |      999999 |   INT  | 6 dígitos|
+| ID_MANTENIMIENTO  | Identificador único del mantenimiento |      AAA999 |   INT  | 3 dígitos+ 3 letras paridad|
 | DESCRIPCION_MANTENIMIENTO|  Descripción detallada del mantenimiento |   VARCHAR(70)|  X(60)  | Char | NOT NULL |
 | TIPO_MANTENIMIENTO |    Tipo de mantenimiento   | TAB            |             |     | |
 | ID_RESPONSABLE | Identificador del responsable del mantenimiento    |      999999 |   INT  | 6 dígitos|
@@ -116,7 +116,7 @@
 
 |     Atributo      |              Descripción                  |   Formato   | Naturaleza |  Valores |
 |:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
-|   ID_Estandar     | Identificador único del estándar de calidad|      999999 |   char  | 6 dígitos|
+|   ID_Estandar     | Identificador único del estándar de calidad|      AAA999 |   char  | 3 dígitos+ 3 letras paridad|
 | Tipo_Estandar     |   Tipo o categoría del estándar |  Texto    |VARCHAR(50)  |  	NOT NULL        |
 | Descripcion       |   Descripción detallada del estándar  |  Texto    |VARCHAR(50)  |  	NOT NULL        |
 | Fecha_Creacion    |  Fecha de creación o última actualización del estándar |  YYYY-MM-DD |    Date    |  NOT NULL  |
@@ -147,7 +147,7 @@
 
 |     Atributo     |                  Descripción                  |   Formato   | Naturaleza |  Valores |
 |:----------------:|:---------------------------------------------:|:-----------:|:----------:|:--------:|
-|    ID_ACTIVIDAD |              Código de la actividad            |   999AA99   |   char  | <999 caracteres alfanumericos |
+|    ID_ACTIVIDAD |              Código de la actividad            |   AAA999   |   char  | 3 dígitos+ 3 letras paridad |
 |  TIPO_ACTIVIDAD |          Tipo de actividad   |  AAA9 |  char  | TAB 4 |
 |  FECHA_ACTIVIDAD |          Fecha de la actividad   |  YYYY-MM-DD  |  Date  | NOT NULL |
 | HORA_INI_ACTI    |          Hora del inicio de la actividad       |   HH-MM   |   Date  | NOT NULL |
@@ -192,7 +192,7 @@
 
 |     Atributo     |                  Descripción                  |   Formato   | Naturaleza |  Valores |
 |:----------------:|:---------------------------------------------:|:-----------:|:----------:|:--------:|
-|  id_reclamo |              Código del reclamo           |   999999   |   Varchar  | 6 dígitos |
+|  id_reclamo |              Código del reclamo           |   AA999   |   Varchar  |2 dígitos+ 3 letras paridad |
 |  fecha_reclamo |     Fecha en la que se realiza el reclamo   | YYYY-MM-DD |  Date  | NOT NULL |
 |  descripcion_reclamo |      Descripción detallada del reclamo |  X(60)|  Varchar | NOT NULL |
 |  estado_reclamo |      Situación en la que se encuentra el reclamo  | A |  Char | TAB 6 |
@@ -211,7 +211,7 @@
 
 |     Atributo     |                  Descripción                  |   Formato   | Naturaleza |  Valores |
 |:----------------:|:---------------------------------------------:|:-----------:|:----------:|:--------:|
-|  id_obs |       Código de la observación        |  999999  |   char  | 6 dígitos |
+|  id_obs |       Código de la observación        |  AAA999  |   char  | 3 dígitos+ 3 letras paridad |
 |  fecha_obs |   Fecha en la que se registra la observación  | YYYY-MM-DD |  Date  | NOT NULL |
 |  descripcion_obs |  Descripción detallada de la observación realizada | X(60) |  Char | NOT NULL |
 |  estado_obs |  Situación en la que se encuentra la observación | A |  Char | TAB 7 |
