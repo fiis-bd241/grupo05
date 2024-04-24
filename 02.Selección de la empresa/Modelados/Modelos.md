@@ -12,7 +12,7 @@
 
 |     Atributo     |                  Descripción                  |   Formato   | Naturaleza |  Valores |
 |:----------------:|:---------------------------------------------:|:-----------:|:----------:|:--------:|
-|    ID_operario  |              Código del operario             |   999999 |   Varchar  | 6 dígitos|
+|    ID_operario  |              Código del operario             |   999999 |   char  | 6 dígitos|
 |  Nombre_operario |          Nombre del empleado                  |     X(60)    |   char   | NOT NULL |
 | Apellido_operario|          Apellido del empleado                |     X(60)     |   char  | NOT NULL |
 |  DNI_operario   |          documento de indentidad del empleado  |  99999999   |  char |  8 dígitos|
@@ -36,7 +36,7 @@
 
 |     Atributo     |                  Descripción                  |   Formato   | Naturaleza |  Valores |
 |:----------------:|:---------------------------------------------:|:-----------:|:----------:|:--------:|
-|    ID_Solicitud |              Código del solicitud              |   9999-AAA   |   Varchar  | 4 dígitos + 3 letras paridad|
+|    ID_Solicitud |              Código del solicitud              |   9999-AAA   |   char  | 4 dígitos + 3 letras paridad|
 |  Fecha_Solicitud |          Fecha en que se realiza la solicitud |    YYYY-MM-DD  |  Date  | NOT NULL |
 | Estado           |          Estado actual de la solicitud         |   AAA   |   char  | TAB 1 |
 
@@ -64,10 +64,10 @@
 #### Se refiere a los insumos utilizados en el proceso de producción de la empresa. Los operarios pueden realizar solicitudes de pedido de insumos a través del sistema.
 |     Atributo      |              Descripción                  |   Formato   | Naturaleza |  Valores |
 |:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
-|   id_insumo       |        Código del insumo                  |   999999    |   Varchar  | 6 dígitos|
+|   id_insumo       |        Código del insumo                  |   999999    |   char  | 6 dígitos|
 |   tipo_insumo     |        Tipo de insumo                      |     X(60)   |   Char     | NOT NULL |
 |   cantidad_insumo |        Cantidad del insumo                 |     999     |   Int      | NOT NULL |
-|   id_proveedor    |        Código del proveedor del insumo     |   999999    |   Varchar  | 6 dígitos|
+|   id_proveedor    |        Código del proveedor del insumo     |   999999    |   char| 6 dígitos|
 
 
 ### Entidad: FALLO
@@ -75,7 +75,7 @@
 
 |     Atributo      |              Descripción                  |   Formato   | Naturaleza |  Valores |
 |:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
-|   ID_FALLO        |  dentificador único del fallo             |   999999     |  INT     | 6 dígitos|
+|   ID_FALLO        |  dentificador único del fallo             |   999999     |  char    | 6 dígitos|
 | DESCRIPCION_FALLO | Descripción detallada del fallo   |  X(60)       |   Char     | NOT NULL |
 
 
@@ -115,7 +115,7 @@
 
 |     Atributo      |              Descripción                  |   Formato   | Naturaleza |  Valores |
 |:-----------------:|:-----------------------------------------:|:-----------:|:----------:|:--------:|
-|   ID_Estandar     | Identificador único del estándar de calidad|      999999 |   INT  | 6 dígitos|
+|   ID_Estandar     | Identificador único del estándar de calidad|      999999 |   char  | 6 dígitos|
 | Tipo_Estandar     |   Tipo o categoría del estándar |  Texto    |VARCHAR(50)  |  	NOT NULL        |
 | Descripcion       |   Descripción detallada del estándar  |  Texto    |VARCHAR(50)  |  	NOT NULL        |
 | Fecha_Creacion    |  Fecha de creación o última actualización del estándar |  YYYY-MM-DD |    Date    |  NOT NULL  |
@@ -126,7 +126,7 @@
 
 |     Atributo     |                  Descripción                  |   Formato   | Naturaleza |  Valores |
 |:----------------:|:---------------------------------------------:|:-----------:|:----------:|:--------:|
-|    ID_REPORTE |              Código del reporte            |   999AAA9   |   Varchar  | <999 caracteres alfanumericos|
+|    ID_REPORTE |              Código del reporte            |   999AAA9   |   char  | <999 caracteres alfanumericos|
 |  FECHA_REPORTE |          Fecha del reporte   |  YYYY-MM-DD  |  Date  | NOT NULL |
 | HORA_REPORTE      |          Hora del reporte       |   HH-MM   |   Date  | NOT NULL |
 | TIPO_REPORTE      |          Tipo de reporte       |   AAA   |   char  | TAB 3 |
@@ -146,7 +146,7 @@
 
 |     Atributo     |                  Descripción                  |   Formato   | Naturaleza |  Valores |
 |:----------------:|:---------------------------------------------:|:-----------:|:----------:|:--------:|
-|    ID_ACTIVIDAD |              Código de la actividad            |   999AA99   |   Varchar  | <999 caracteres alfanumericos |
+|    ID_ACTIVIDAD |              Código de la actividad            |   999AA99   |   char  | <999 caracteres alfanumericos |
 |  TIPO_ACTIVIDAD |          Tipo de actividad   |  AAA9 |  char  | TAB 4 |
 |  FECHA_ACTIVIDAD |          Fecha de la actividad   |  YYYY-MM-DD  |  Date  | NOT NULL |
 | HORA_INI_ACTI    |          Hora del inicio de la actividad       |   HH-MM   |   Date  | NOT NULL |
@@ -170,7 +170,7 @@
 
 |     Atributo     |                  Descripción                  |   Formato   | Naturaleza |  Valores |
 |:----------------:|:---------------------------------------------:|:-----------:|:----------:|:--------:|
-|    ID_TALLER |              Código del taller           |   AA999   |   Varchar  | <999 caracteres alfanumericos|
+|    ID_TALLER |              Código del taller           |   AA999   |   char | <999 caracteres alfanumericos|
 |  CAPACIDAD_TALLER |          Capacidad del taller   | 99999 |  Int  | >0 |
 |  CATEGORÍA_TALLER |          Categoría  de las actividades que se realizan en el taller  |  YYYY-MM-DD  |  Char | TAB 5 |
 
@@ -210,7 +210,7 @@
 
 |     Atributo     |                  Descripción                  |   Formato   | Naturaleza |  Valores |
 |:----------------:|:---------------------------------------------:|:-----------:|:----------:|:--------:|
-|  id_obs |       Código de la observación        |  999999  |   Varchar  | 6 dígitos |
+|  id_obs |       Código de la observación        |  999999  |   char  | 6 dígitos |
 |  fecha_obs |   Fecha en la que se registra la observación  | YYYY-MM-DD |  Date  | NOT NULL |
 |  descripcion_obs |  Descripción detallada de la observación realizada | X(60) |  Char | NOT NULL |
 |  estado_obs |  Situación en la que se encuentra la observación | A |  Char | TAB 7 |
