@@ -13,6 +13,11 @@
 
 [![Video](https://img.youtube.com/vi/OyRxJD3zp28/0.jpg)](https://youtu.be/OyRxJD3zp28)
 
+* Video del Módulo gestion de herramientas (kevin huaman): 
+
+[![Video](https://img.youtube.com/vi/ftYTyqSdO6w/0.jpg)](https://youtu.be/ftYTyqSdO6w)
+
+
 Video del Módulo Registro de Calidad (Roger Loayza):
 
 [![Video](https://img.youtube.com/vi/tdNDOGlTgeg/0.jpg)](https://youtu.be/tdNDOGlTgeg)
