@@ -1,6 +1,6 @@
 # Modelado Conceptual
 
-<img src="MCD.png" alt="Modelados" style="width: 100%; height: auto;" />
+<img src="MCD1.png" alt="Modelados" style="width: 100%; height: auto;" />
 
 # Modelo Lógico
 
