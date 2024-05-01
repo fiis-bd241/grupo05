@@ -16,7 +16,7 @@
 Video del Módulo Registro de Calidad (Roger Loayza):
 
 [![Video](https://img.youtube.com/vi/tdNDOGlTgeg/0.jpg)](https://youtu.be/tdNDOGlTgeg)
-
+[![Video](https://img.youtube.com/vi/tdNDOGlTgeg/0.jpg)](https://youtu.be/8v0Qycd7dGY)
 [Ver otros videos](Videos.md)
 
 [Regresar al índice](../README.md)
