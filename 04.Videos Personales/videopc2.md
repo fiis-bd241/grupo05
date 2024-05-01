@@ -1,5 +1,9 @@
 # VIDEOS PERSONALES PC2
 
+*Video del Módulo de Calidad de Procesos (Daniel Otero):
+
+[![Video](https://img.youtube.com/vi/jHUGzJ2Fs3k/0.jpg)](https://youtu.be/jHUGzJ2Fs3k)
+
 * Video de Módulo Resgitro de Actividades (Francisco Grijalva):
 
 [![Video](https://img.youtube.com/vi/hEC6umps-zA/0.jpg)](https://youtu.be/hEC6umps-zA)
