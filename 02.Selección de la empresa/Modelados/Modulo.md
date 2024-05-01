@@ -71,6 +71,13 @@ Asegurar la calidad de los procesos de producción textil desde la selección de
 5. Reportes de Calidad:
    Generación de informes sobre la calidad de los procesos y productos, incluyendo estadísticas, tendencias y análisis 
    comparativos.
+   
+## MÓDULO DE REMUNERACIÓN DEL OPERARIO
+Llevar el conteo de todos los datos como deducciones o bonificaciones que modifican el sueldo de un operario o un gestor de la producción mediante nóminas semanales y finalmente presentar el resultado de sus sueldos correspondientes.
+1. Generar las bonificaciones y deducciones a partir de los reportes
+2. Generar las bonificaciones y las deducciones como información en las nóminas
+3. Usar las nóminas para concretar el pago del gestor de la producción a los operarios
+4. El usuario puede previsualizar en el sistema su aproximado de pago al momento
 
 # INTERACCIONES ENTRE MÓDULOS 
 
@@ -103,6 +110,13 @@ Solicita herramientas y maquinarias específicas que cumplen con los estándares
 
 ## MÓDULO DE REPORTES CON MÓDULO DE RECLAMOS Y OBSERVACIONES
 Utiliza la información de las observaciones para generar un reporte de los incidentes ocurridos
+
+## MÓDULO DE REMUNERACIÓN CON MÓDULO DE REPORTES
+Utiliza la información de los reportes para definir las bonificaciones y las deducciones
+
+
+
+
 
 
 # DIAGRAMA UML
