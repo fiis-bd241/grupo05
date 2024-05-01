@@ -1,4 +1,4 @@
-#VIDEOS PC2
+# VIDEOS PC2
 
 Video de Módulo Resgitro de Actividades (Francisco Grijalva):
 
