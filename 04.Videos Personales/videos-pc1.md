@@ -1,5 +1,4 @@
-## VIDEOS PERSONALES PC1
-
+## VIDEOS PERSONALES PC1 y PC2
 Video del Módulo Registro de Usuario (Daniel Otero):
 
 [![Video](https://img.youtube.com/vi/xoLmPkPB8ps/0.jpg)](https://youtu.be/xoLmPkPB8ps)
