@@ -8,3 +8,7 @@
 Video del Módulo Reportes y remuneración (Mikhael Gordillo): 
 
 [![Video](https://img.youtube.com/vi/OyRxJD3zp28/0.jpg)](https://youtu.be/OyRxJD3zp28)
+
+[Ver otros videos](Videos.md)
+
+[Regresar al índice](../README.md)
