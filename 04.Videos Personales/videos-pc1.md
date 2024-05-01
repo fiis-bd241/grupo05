@@ -29,6 +29,12 @@ Video del Módulo de Solicitud de Pedidos de Insumos (Enrico Larios):
 [![Video](https://img.youtube.com/vi/yvkwDeFw56k/0.jpg)](https://youtu.be/yvkwDeFw56k)
 
 
+## VIDEOS PERSONALES PC2
+
+Video del Módulo Reportes y remuneración (Mikhael Gordillo): 
+
+[![Video](https://youtu.be/OyRxJD3zp28)](https://youtu.be/v0C3L9EhKoQ)
+
 [Ver otros videos](Videos.md)
 
 [Regresar al índice](../README.md)
