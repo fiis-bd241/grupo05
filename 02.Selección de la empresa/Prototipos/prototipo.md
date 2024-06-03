@@ -11,7 +11,7 @@ El empleado selecciona la máquina necesaria de manera intuitiva, especifica la 
 <img src="interfazModulo2.1.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
 ## Plataforma de Registro de actividades:
-El operario se registra en la pagina web, va al apartado de registro de actividades y observa todas las actividades que ha trabajado en un determinado tiempo que puede escoger. Asi como la hora de inicio y la hora de inicio y acabado de cada actividad, también observará podrá observar un pequeño diagrama de cuantas horas ha trabajado durante los ultimos dias.
+El operario se registra en la pagina web, va al apartado de registro de actividades y observa todas las actividades que ha trabajado en un determinado tiempo que puede escoger. Asi como la hora de inicio y acabado de cada actividad, también observará podrá observar un pequeño diagrama de cuantas horas ha trabajado durante los ultimos dias.
 <img src="interfaz3.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
 ## Plataforma de Quejas y Reclamos:
