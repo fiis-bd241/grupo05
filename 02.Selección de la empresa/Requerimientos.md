@@ -165,26 +165,9 @@ Implementación de acciones correctivas y preventivas.|
 | 4    |Durante el proceso de resolución, el sistema permite la comunicación entre el operario y el responsable de la gestión del reclamo, facilitando cualquier intercambio de información o feedback|
 | 5    |Una vez que se resuelve el reclamo, el sistema notifica al operario sobre las acciones tomadas y cierra el reclamo|
 
-* MÓDULO DE REGISTRO DE ACTIVIDADES
-
-#### **Caso de uso N°9: Registro de las actividades**
-
-| **Objetivo:** | Gestionar de manera eficaz la mano de obra y optimizar los procesos de fabricación. |
-|------|--------|
-| **Descripción:** | Este caso de uso describe el proceso de registro de la información relacionada con el trabajo de los empleados en las líneas de producción de prendas. | 
-| **Actores:** | Operario y Gestor de Producción | 
-| **Precondiciones:** | Se disponen de instrumentos de medición que permiten registrar intervalos de tiempo así como los datos de los operarios y de las actividades a registrar. | 
-| Paso | Acción |
-| 1    | Se registra la hora de inicio y acabado de las actividades de los empleados en sus jornadas laborales. Esto proporciona un seguimiento preciso del tiempo de trabajo por cada empleado. |
-| 2    | Los gestores de producción de este módulo pueden verificar el estado de las acividades en curso y realizar ajustes según sea necesario para garantizar que se cumplan los plazos y objetivos de producción. |
-| 3    | Se asignan tareas especificas a los empleados en función de sus habilidades y la disponibiidad que tienen, con esto se asegura una distribución equitativa del trabajo y una correcta asignación eficiente de recursos humanos en cada turno de producción. |
-| 4    | Se registra el tiempo extra trabajado por los empleados , así como las ausencias de éstos en el trabajo, vacaciones o días libres. También se registran las ausencias no planificadas como enfermedades, con esto se puede garantizar una correcta cobertura adecuada en la línea de producción. |
-| 5    | Se generan informes detallados sobre la asistencia y el rendimiento laboral de los empleados, como también las horas trabajadas en cada día. Esto permite generar información valiosa para evaluar la eficiencia operativa, identificar áreas de mejora y tomar mejores decisiones. |
-| 6    | Finaliza el caso. |
-
 * MÓDULO DE REPORTES
 
-### **Caso de uso N°10: Reportes por operarios**
+### **Caso de uso N°9: Reportes por operarios**
 | **Objetivo:** |Permitir al jefe de producción analizar las actividades concluidas por un operario|
 |------|--------|
 | **Descripción:** | el jefe de producción se encarga de rellenar la información de las actividades de cada empleado
@@ -196,7 +179,7 @@ Implementación de acciones correctivas y preventivas.|
 | 2    |Ingresar el código del empleado e la cuadrícula|
 | 3    |Visualizar el reporte| 
 
-#### **Caso de uso N°11: Reportes por supervisor**
+#### **Caso de uso N°10: Reportes por supervisor**
 | **Objetivo:** |Permitir al jefe de producción analizar las actividades concluidas por los operarios de un cierto supervisor|
 |------|--------|
 | **Descripción:** |A partir de la información obtenida en el registro de tareas se concluye aquí la revisión de todos los operarios por supervisor|
@@ -208,7 +191,7 @@ Implementación de acciones correctivas y preventivas.|
 | 2    |Ingresar el código del supervisor en la cuadrícula|
 | 3    |Visualizar el reporte| 
 
-#### **Caso de uso N°12: Reportes por Herramienta**
+#### **Caso de uso N°11: Reportes por Herramienta**
 | **Objetivo:** |Permitir al jefe de producción analizar los estados de las herramientas durante el trabajo|
 |------|--------|
 | **Descripción:** |A partir de la información obtenida en el registro de herramientas y maquinarias se concluye aquí la revisión de todas las herramientas|
@@ -221,7 +204,7 @@ Implementación de acciones correctivas y preventivas.|
 | 3    |Visualizar el reporte| 
 
 
-#### **Caso de uso N°13: Reportes por Maquinarias**
+#### **Caso de uso N°12: Reportes por Maquinarias**
 | **Objetivo:** |Permitir al jefe de producción analizar los estados de las maquinarias durante el trabajo|
 |------|--------|
 | **Descripción:** |A partir de la información obtenida en el registro de herramientas y maquinarias se concluye aquí la revisión de todas las maquinarias|
@@ -234,7 +217,7 @@ Implementación de acciones correctivas y preventivas.|
 | 3    |Visualizar el reporte| 
 
 
-#### **Caso de uso N°14: Reportes por operario**
+#### **Caso de uso N°13: Reportes por operario**
 | **Objetivo:** |Permitir al operario analizar sus propias actividades para conocer su paga semanal|
 |------|--------|
 | **Descripción:** |A partir de la información obtenida en el registro de tareas se concluye aquí la revisión de todas las actividades realizadas por el operario|
@@ -247,7 +230,7 @@ Implementación de acciones correctivas y preventivas.|
 
 * MÓDULO DE SOLICITUD DE PEDIDOS DE INSUMOS
 
-#### **Caso de uso N°15: Abastecimiento de insumos**
+#### **Caso de uso N°14: Abastecimiento de insumos**
 
 | **Objetivo:** | Coordinar y gestionar el flujo de materiales desde el almacén hasta las líneas de producción, asegurando que se satisfagan las necesidades de producción de manera oportuna y eficiente. |
 |------|--------|
@@ -263,6 +246,22 @@ Implementación de acciones correctivas y preventivas.|
 | 6    | Se distribuyen los materiales necesarios para el área de producción, que en este caso consiste en la confección de ropa. |
 | 7    | Finaliza el caso. |
 
+* MÓDULO DE REGISTRO DE ACTIVIDADES
+
+#### **Caso de uso N°15: Registro de las actividades**
+
+| **Objetivo:** | Gestionar de manera eficaz la mano de obra y optimizar los procesos de fabricación. |
+|------|--------|
+| **Descripción:** | Este caso de uso describe el proceso de registro de la información relacionada con el trabajo de los empleados en las líneas de producción de prendas. | 
+| **Actores:** | Operario y Gestor de Producción | 
+| **Precondiciones:** | Se disponen de instrumentos de medición que permiten registrar intervalos de tiempo así como los datos de los operarios y de las actividades a registrar. | 
+| Paso | Acción |
+| 1    | Se registra la hora de inicio y acabado de las actividades de los empleados en sus jornadas laborales. Esto proporciona un seguimiento preciso del tiempo de trabajo por cada empleado. |
+| 2    | Los gestores de producción de este módulo pueden verificar el estado de las acividades en curso y realizar ajustes según sea necesario para garantizar que se cumplan los plazos y objetivos de producción. |
+| 3    | Se asignan tareas especificas a los empleados en función de sus habilidades y la disponibiidad que tienen, con esto se asegura una distribución equitativa del trabajo y una correcta asignación eficiente de recursos humanos en cada turno de producción. |
+| 4    | Se registra el tiempo extra trabajado por los empleados , así como las ausencias de éstos en el trabajo, vacaciones o días libres. También se registran las ausencias no planificadas como enfermedades, con esto se puede garantizar una correcta cobertura adecuada en la línea de producción. |
+| 5    | Se generan informes detallados sobre la asistencia y el rendimiento laboral de los empleados, como también las horas trabajadas en cada día. Esto permite generar información valiosa para evaluar la eficiencia operativa, identificar áreas de mejora y tomar mejores decisiones. |
+| 6    | Finaliza el caso. |
 
 ### 2. Requerimientos de atributos de calidad
 * Seguridad: El sistema debe garantizar la confidencialidad e integridad de los datos almacenados y transmitidos. Para ello, el sistema solo permitirá acceso a los usuarios que están registrados y que cumplan un rol en la empresa, y solicitará que los usuarios proporcionen dos formas de autenticación: una contraseña y un código enviado a su dispositivo móvil.
