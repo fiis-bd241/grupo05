@@ -302,3 +302,13 @@ SELECT monto_deduccion FROM deduccion;
 |<1> es el ID de asignación de actividad.|
 |<2> es la hora de inicio de actividad.|
 |<3> es la hora de fin de actividad.|
+
+# Prototipo: Reportes
+### Código Requerimiento: R-001
+### Código Interfaz: I-001
+### Imagen Interfaz: (imagen ilustrativa) 
+ 
+### Descripción: Esta interfaz permite a un gestor de la producción revisar los reportes para los reclamos y las herramientas
+
+### HERRAMIENTAS: Se puede consultar de 3 diferentes formas: por nombre, proveedor y modelo
+### RECLAMOS: Se puede consultar por las formas de id_operario, fecha_reclamo, estado del reclamo y el tipo de descripción de reclamo
