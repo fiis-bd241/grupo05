@@ -1035,66 +1035,66 @@
     insert into solicitud_herramienta (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('10-01-2024', 'EHE1', 'OPE14 ', 'GES28 ', 'HERR11');
 
 
-    ## ESTADO RECLAMO
+## ESTADO RECLAMO
 ||
   |-------------------------------------|
   |  codigo: 
   
-INSERT INTO Estado_Reclamo (Id_estado_reclamo, Nom_estado_reclamo) VALUES
-('EST001', 'Pendiente'),
-('EST002', 'En Proceso'),
-('EST003', 'Resuelto'),
-('EST004', 'Cerrado');
+    INSERT INTO Estado_Reclamo (Id_estado_reclamo, Nom_estado_reclamo) VALUES
+    ('EST001', 'Pendiente'),
+    ('EST002', 'En Proceso'),
+    ('EST003', 'Resuelto'),
+    ('EST004', 'Cerrado');
 
-    ## DESCRIPCIÓN RECLAMO
+## DESCRIPCIÓN RECLAMO
 ||
   |-------------------------------------|
   |  codigo: 
   
-INSERT INTO Descripcion_reclamo (Id_descrip_reclamo, Nom_descrip_reclamo) VALUES
-('DES001', 'Producto Defectuoso'),
-('DES002', 'Entrega Tardía'),
-('DES003', 'Mala Atención'),
-('DES004', 'Otros');
+    INSERT INTO Descripcion_reclamo (Id_descrip_reclamo, Nom_descrip_reclamo) VALUES
+    ('DES001', 'Producto Defectuoso'),
+    ('DES002', 'Entrega Tardía'),
+    ('DES003', 'Mala Atención'),
+    ('DES004', 'Otros');
 
-    ## TIPO DE DEDUCCIÓN
+## TIPO DE DEDUCCIÓN
 ||
   |-------------------------------------|
   |  codigo: 
   
-INSERT INTO Tipo_deduccion (Id_tipo_deduccion, Nom_tipo_deduccion) VALUES
-('DED001', 'Impuesto'),
-('DED002', 'Seguro'),
-('DED003', 'Adelanto Salarial'),
-('DED004', 'Multa');
+    INSERT INTO Tipo_deduccion (Id_tipo_deduccion, Nom_tipo_deduccion) VALUES
+    ('DED001', 'Impuesto'),
+    ('DED002', 'Seguro'),
+    ('DED003', 'Adelanto Salarial'),
+    ('DED004', 'Multa');
 
-    ## TIPO DE SUELDO BASE 
+## TIPO DE SUELDO BASE 
 ||
   |-------------------------------------|
   |  codigo: 
   
-INSERT INTO Tipo_Sueldo_Base (Id_sueldo_base, Monto_sueldo_base) VALUES
-('SB001', 450.00),
-('SB002', 1000.00),
-('SB003', 3500.00);
+    INSERT INTO Tipo_Sueldo_Base (Id_sueldo_base, Monto_sueldo_base) VALUES
+    ('SB001', 450.00),
+    ('SB002', 1000.00),
+    ('SB003', 3500.00);
 
-    ## TIPO DE BONIFICACIÓN
+## TIPO DE BONIFICACIÓN
 ||
   |-------------------------------------|
   |  codigo: 
   
-INSERT INTO Tipo_Bonificacion (Id_tipo_boni, Nom_tipo_boni) VALUES
-('BON001', 'Productividad'),
-('BON002', 'Asistencia Perfecta'),
-('BON003', 'Antigüedad'),
-('BON004', 'Otros');
+    INSERT INTO Tipo_Bonificacion (Id_tipo_boni, Nom_tipo_boni) VALUES
+    ('BON001', 'Productividad'),
+    ('BON002', 'Asistencia Perfecta'),
+    ('BON003', 'Antigüedad'),
+    ('BON004', 'Otros');
 
-    ## PERIODO DE PAGO
+## PERIODO DE PAGO
 ||
   |-------------------------------------|
   |  codigo: 
   
-INSERT INTO Periodo_pago (Id_periodo_pago, Nom_periodo_pago) VALUES
-('PP001', 'Mensual'),
-('PP002', 'Quincenal'),
-('PP003', 'Semanal');
+    INSERT INTO Periodo_pago (Id_periodo_pago, Nom_periodo_pago) VALUES
+    ('PP001', 'Mensual'),
+    ('PP002', 'Quincenal'),
+    ('PP003', 'Semanal');
