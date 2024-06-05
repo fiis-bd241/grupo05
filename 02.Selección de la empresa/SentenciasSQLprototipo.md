@@ -206,7 +206,7 @@ SELECT monto_deduccion FROM deduccion;
 ### Código Requerimiento: Caso de uso N°15
 ### Código Interfaz: IMG1
 ### Imagen Interfaz: (imagen ilustrativa)
-<img src="yo4.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+<img src="yo4.png" alt="02.Selección de la empresa/Prototipos" style="width: 120%; height: auto;" />
 ### Descripción: Esta interfaz permite a un operario visualizar el proceso para asignar una actividad a un operario.
 
 ## Sentencia SQL:
