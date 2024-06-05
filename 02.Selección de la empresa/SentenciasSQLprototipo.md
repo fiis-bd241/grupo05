@@ -2,6 +2,7 @@
 ### Código Requerimiento: R-001
 ### Código Interfaz: I-001
 ### Imagen Interfaz: (imagen ilustrativa) 
+<img src="Group 3.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
  
 ### Descripción: Esta interfaz permite a un operario registrar una nueva solicitud de herramienta.
 
