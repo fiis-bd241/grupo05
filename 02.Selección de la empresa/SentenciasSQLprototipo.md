@@ -204,8 +204,9 @@ SELECT monto_deduccion FROM deduccion;
 
 # Prototipo: Interfaz de Asignación de actividades
 ### Código Requerimiento: Caso de uso N°15
-### Código Interfaz: 
+### Código Interfaz: IMG1
 ### Imagen Interfaz: (imagen ilustrativa)
+<img src="yo4.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 ### Descripción: Esta interfaz permite a un operario visualizar el proceso para asignar una actividad a un operario.
 
 ## Sentencia SQL:
@@ -228,7 +229,7 @@ SELECT monto_deduccion FROM deduccion;
 
 # Prototipo: Interfaz de Envío de Verificación de Actividad
 ### Código Requerimiento: Caso de uso N°16
-### Código Interfaz: 
+### Código Interfaz: IMG2
 ### Imagen Interfaz: (imagen ilustrativa)
 ### Descripción: Esta interfaz permitir a un operario enviar una verificación de una actividad al gestor de producción para su revisión.
 
@@ -261,7 +262,7 @@ SELECT monto_deduccion FROM deduccion;
 
 # Prototipo: Interfaz de Auditoria de actividades
 ### Código Requerimiento: Caso de uso N°17
-### Código Interfaz: 
+### Código Interfaz: IMG3
 ### Imagen Interfaz: (imagen ilustrativa)
 ### Descripción: Esta interfaz permitir a un gestor de producción dar un visto bueno a una actividad para indicar que ha sido realizada correctamente por un operario.
 ## Sentencia SQL:
