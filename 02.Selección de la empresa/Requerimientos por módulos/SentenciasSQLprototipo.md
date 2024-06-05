@@ -70,6 +70,8 @@ SELECT nombre_herramienta FROM herramienta;
       herramienta h ON s.id_herramienta = h.id_herramienta
     WHERE 
       s.id_operario = <1>;
+      ORDER BY 
+    s.fecha_solicitud DESC;
     
 |Donde:|
 |-------------------------------------|
