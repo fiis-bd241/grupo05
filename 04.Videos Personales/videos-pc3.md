@@ -19,6 +19,7 @@ Video del Módulo Registro de Calidad:
 Video del Módulo Reportes Y Módulo de Remuneración (Mikhael Gordillo):
 
 [![Video](https://img.youtube.com/vi/HqwsSb61YKo?si=9WyGZT-JV1vAPh-O/0.jpg)](https://youtu.be/HqwsSb61YKo?si=9WyGZT-JV1vAPh-O)
+[![Video](https://img.youtube.com/vi/HqwsSb61YKo?si=nkrRLb7bsrT2MAyZ/0.jpg)](https://youtu.be/HqwsSb61YKo?si=nkrRLb7bsrT2MAyZ)
 
 Video del Módulo Solicitud de Pedidos de Insumos:
 
