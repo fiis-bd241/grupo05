@@ -12,7 +12,7 @@ Video del Módulo Registro de Herramientas y Maquinaría:
 
 Video del Módulo Registro de Calidad:
 
-Video del Módulo Reportes: 
+Video del Módulo Reportes Y Módulo de Remuneración (Mikhael Gordillo): 
 
 Video del Módulo Solicitud de Pedidos de Insumos:
 
