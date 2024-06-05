@@ -195,3 +195,30 @@ SELECT monto_deduccion FROM deduccion;
 ### SELECT total_pago FROM nomina;
 ### Por la fecha de pago:
 ### SELECT fecha_emision FROM nomina;
+
+
+# MODULO REGISTRO DE ACTIVIDADES
+
+# Prototipo: Interfaz de Asignación de actividades
+### Código Requerimiento: Caso de uso N°15
+### Código Interfaz: 
+### Imagen Interfaz: (imagen ilustrativa)
+### Descripción: Esta interfaz permite a un operario visualizar el proceso para asignar una actividad a un operario.
+
+## Sentencia SQL:
+### Eventos:
+### 1- Boton  Asignar Actividad: Se agregará un nuevo registro a la tabla de asignación de actividad.
+||
+  |-------------------------------------|
+  |  codigo:  
+      INSERT INTO asignacion_actividad (fecha_asig, hora_inicio, hora_fin, id_asignacion, id_gestor, id_lote, id_actividad, id_operario, id_est_actividad)
+      VALUES (<1>, <2>, 'ASI1' , <3>, <4>, <5>, <6>, <7>, 'EST4');
+|Donde:|
+|--------------------------------------------|
+|<1> es el fecha de elaborar la actividad.|
+|<2> es el hora de inicio.|
+|<3> es el hora de fin.|
+|<4> es el ID del gestor que está asignando.|
+|<5> es el ID del lote a elaborar.|
+|<6> es el ID del la actividad que se realizará.|
+|<7> es el ID del operario que realizará la actividad.|
