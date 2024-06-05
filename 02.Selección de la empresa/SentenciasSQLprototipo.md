@@ -30,21 +30,20 @@ SELECT nombre_herramienta FROM herramienta;
   |  codigo:  
       SELECT id_herramienta, nombre_herramienta, modelo, nombre_proveedor
       FROM herramienta
-      WHERE nombre_herramienta ILIKE '%' || <4> || '%' AND disponible = TRUE;
+      WHERE nombre_herramienta ILIKE '%' || <3> || '%' AND disponible = TRUE;
       
 ### 3-Botón Registrar Solicitud: Agregar una nueva solicitud de herramienta.
 ||
   |-------------------------------------|
   |  codigo:  
-     INSERT INTO solicitud_herramienta (id_solicitud, fecha_solicitud, id_operario,id_herramienta)
-     VALUES (<1>, CURRENT_TIMESTAMP, <2> ,<3>);
+     INSERT INTO solicitud_herramienta (id_est_soli_herra, fecha_solicitud, id_operario,id_herramienta)
+     VALUES ('EHE1', CURRENT_TIMESTAMP, <1> ,<2>);
 
 |Donde:|
 |--------------------------------------------|
-|<1> es el ID de la solicitud generado. |
-|<2> es el ID del operario que realiza la solicitud. |
-|<3> es el ID de la herramienta seleccionada. |
-|<4> es el nombre de la herramienta seleccionada. |
+|<1> es el ID del operario que realiza la solicitud. |
+|<2> es el ID de la herramienta seleccionada. |
+|<3> es el nombre de la herramienta seleccionada. |
 
  
 ## Prototipo 2: Interfaz de Visualización de Herramientas y Solicitudes por Operario
@@ -59,18 +58,19 @@ SELECT nombre_herramienta FROM herramienta;
   |-------------------------------------|
   |codigo:
     SELECT 
-    s.fecha_solicitud, 
-    s.estado_solicitud, 
-    h.nombre_herramienta, 
-    h.modelo
-    FROM 
+     s.id_solicitud, 
+     s.fecha_solicitud, 
+     s.id_est_soli_herra, 
+     h.nombre_herramienta, 
+     h.modelo
+     FROM 
       solicitud_herramienta s
-    JOIN 
+     JOIN 
       herramienta h ON s.id_herramienta = h.id_herramienta
-    WHERE 
-      s.id_operario = <1>;
-      ORDER BY 
-    s.fecha_solicitud DESC;
+     WHERE 
+       s.id_operario = <1>
+     ORDER BY 
+       s.fecha_solicitud DESC;
     
 |Donde:|
 |-------------------------------------|
@@ -91,37 +91,39 @@ SELECT nombre_herramienta FROM herramienta;
   |-------------------------------------|
   |  codigo:  
       SELECT 
-      s.id_solicitud, 
-        o.prim_nom_op || ' ' || o.seg_nom_op || ' ' || o.prim_ape_op AS nombre_completo_operario,
-        h.modelo,
-        h.nombre_herramienta
+       s.id_solicitud, 
+       o.prim_nom_op || ' ' || o.seg_nom_op || ' ' || o.prim_ape_op || ' ' || o.seg_ape_op AS nombre_completo_operario,
+       h.modelo,
+       h.nombre_herramienta
+    
       FROM 
-        solicitud_herramienta s
+       solicitud_herramienta s
       JOIN 
-        operario o ON s.id_operario = o.id_operario
+       operario o ON s.id_operario = o.id_operario
       JOIN 
-        herramienta h ON s.id_herramienta = h.id_herramienta
+       herramienta h ON s.id_herramienta = h.id_herramienta
       WHERE 
-        s.estado_solicitud = 'Pendiente';
+       s.id_est_soli_herra = 'EHE1';
     
 ### 2-Botón Buscar: Buscar solicitudes por nombre y apellido del operario.
 ||
   |-------------------------------------|
   |  codigo:  
       SELECT 
-         s.id_solicitud, 
-         o. prim_nom_op || ' ' || o.seg_nom_op || ' ' || o. prim_ape_op AS nombre_completo_operario,
-         h.modelo,
-         h.nombre_herramienta
+        s.id_solicitud, 
+        o.prim_nom_op || ' ' || o.seg_nom_op || ' ' || o.prim_ape_op || ' ' || o.seg_ape_op AS nombre_completo_operario,
+        h.modelo,
+        h.nombre_herramienta,
+        s.id_est_soli_herra
       FROM 
-         solicitud_herramienta s
+        solicitud_herramienta s
       JOIN 
-         operario o ON s.id_operario = o.id_operario
+       operario o ON s.id_operario = o.id_operario
       JOIN 
-         herramienta h ON s.id_herramienta = h.id_herramienta
+       herramienta h ON s.id_herramienta = h.id_herramienta
       WHERE 
-         s.estado_solicitud = 'Pendiente' AND
-         (o.prim_nom_op || ' ' || o.seg_nom_op || ' ' || o. prim_ape_op) ILIKE '%' || <1>  || '%';
+       s.id_est_soli_herra = 'EHE1' AND
+      (o.prim_nom_op || ' ' || o.seg_nom_op || ' ' || o.prim_ape_op || ' ' || o.seg_ape_op) ILIKE '%' || <3> || '%';
 
 
 |Donde:|
@@ -133,17 +135,16 @@ SELECT nombre_herramienta FROM herramienta;
   |-------------------------------------|
   |  codigo:  
       UPDATE solicitud_herramienta
-        SET estado_solicitud = 'Aprobada', fecha_solicitud = CURRENT_TIMESTAMP, id_gestor = <1>
-        WHERE id_solicitud = <2>;
+      SET id_est_soli_herra = 'EHE2', fecha_solicitud = CURRENT_TIMESTAMP, id_gestor = <1>
+      WHERE id_solicitud = <2>;
 
 ### 4-Botón Rechazar Solicitud: Rechazar una solicitud pendiente.
 ||
   |-------------------------------------|
   |  codigo:  
       UPDATE solicitud_herramienta
-      SET estado_solicitud = 'Rechazada', fecha_solicitud = CURRENT_TIMESTAMP, id_gestor = <1>
+      SET id_est_soli_herra = 'EHE3', fecha_solicitud = CURRENT_TIMESTAMP, id_gestor = <1>
       WHERE id_solicitud = <2>;
-
 |Donde:|
 |--------------------------------------------|
 |<1> es el ID del gestor que toma la acción.|
