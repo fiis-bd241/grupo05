@@ -1,6 +1,6 @@
 ## VIDEOS PERSONALES PC3
 
-Video del Módulo Registro de Usuario:
+Video del Módulo Registro de Actividades:
 
 [![Video](https://img.youtube.com/vi/PwELBnjyvjc/0.jpg)](https://youtu.be/PwELBnjyvjc)
 
