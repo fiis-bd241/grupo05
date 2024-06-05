@@ -315,7 +315,7 @@ SELECT monto_deduccion FROM deduccion;
 ### Código Requerimiento: R-005
 ### Código Interfaz: I-005
 ### Imagen Interfaz: (imagen ilustrativa) 
-<img src="interfaz reclamos op1.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+<img src="interfaz reclamos op1 mejorado.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
 ### Descripción: Esta interfaz permite a un operario registrar un reclamo.
 
