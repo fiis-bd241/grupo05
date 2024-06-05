@@ -23,5 +23,11 @@
 7. [Comandos de SQL](data-sql.md)
 
 8. [Secuencias SQL por prototipo](SentenciasSQLprototipo.md)
+   
+9. [Carga de datos](carga_de_datos.md)
+
+10. [Funcionalidades primarias por modulo](funcionalidades_primaria.md)
+
+12. [Stack tecnológico](stack_tecnologico.md)
 
 [Regresar al índice](../README.md)
