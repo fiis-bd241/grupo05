@@ -19,6 +19,10 @@ Video del Módulo Reportes Y Módulo de Remuneración (Mikhael Gordillo):
 Video del Módulo Solicitud de Pedidos de Insumos:
 
 
+Video del Registro actividad:
+
+
+[![Video](https://img.youtube.com/vi/PwELBnjyvjc/0.jpg)](https://youtu.be/PwELBnjyvjc)
 
 [Ver otros videos](Videos.md)
 
