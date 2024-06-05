@@ -51,6 +51,7 @@ SELECT nombre_herramienta FROM herramienta;
 ### Código Requerimiento: R-002
 ### Código Interfaz: I-002
 ### Imagen Interfaz:  (imagen ilustrativa)
+<img src="Group 4.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 ### Descripción: Esta interfaz permite a un operario visualizar todas sus solicitudes y las herramientas disponibles.
 ## Sentencias SQL:
 ### 1-Carga de Página: Mostrar solicitudes del operario.
