@@ -9,6 +9,7 @@ Video del Módulo Reclamos y Observaciones (Peter Lock):
 [![Video](https://img.youtube.com/vi/ArPOsv2--8U/0.jpg)](https://youtu.be/ArPOsv2--8U)
 
 Video del Módulo Registro de Herramientas y Maquinaría:
+[![Video](https://img.youtube.com/vi/ArPOsv2--8U/0.jpg)](https://youtu.be/DiCaOETQXAg)
 
 Video del Módulo Registro de Calidad:
 
