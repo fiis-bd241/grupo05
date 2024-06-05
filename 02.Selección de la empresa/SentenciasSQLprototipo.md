@@ -81,6 +81,7 @@ SELECT nombre_herramienta FROM herramienta;
 ### Código Requerimiento: R-003
 ### Código Interfaz: I-003
 ### Imagen Interfaz:  (imagen ilustrativa)
+<img src="interfaz 10.1.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
  
 ### Descripción: Esta interfaz permite a un gestor ver las solicitudes pendientes y aprobar o rechazar las solicitudes.
 
