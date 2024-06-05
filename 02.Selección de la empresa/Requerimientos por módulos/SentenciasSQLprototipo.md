@@ -59,7 +59,6 @@ SELECT nombre_herramienta FROM herramienta;
   |-------------------------------------|
   |codigo:
     SELECT 
-    s.id_solicitud, 
     s.fecha_solicitud, 
     s.estado_solicitud, 
     h.nombre_herramienta, 
