@@ -266,6 +266,7 @@ SELECT monto_deduccion FROM deduccion;
 ### Código Interfaz: IMG3
 ### Imagen Interfaz: (imagen ilustrativa)
 <img src="audi.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+<img src="rehacer.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 ### Descripción: Esta interfaz permitir a un gestor de producción dar un visto bueno a una actividad para indicar que ha sido realizada correctamente por un operario.
 
 ## Sentencia SQL:
