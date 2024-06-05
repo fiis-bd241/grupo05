@@ -149,3 +149,48 @@ SELECT nombre_herramienta FROM herramienta;
 |--------------------------------------------|
 |<1> es el ID del gestor que toma la acción.|
 |<2> es el ID de la solicitud seleccionada.|
+
+# Prototipo : Interfaz de Muestra de bonificación de pago
+### Código Requerimiento: R-R01
+### Código Interfaz: I-R01
+### Imagen Interfaz: (imagen ilustrativa) 
+
+### Descripción: Esta interfaz permite a un operario visualizar las bonificaciones que ha percibido dentro de su ciclo de remuneración.
+### Eventos:
+### 1- Carga de Página: Se llenará la lista de bonificaciones por código de bonificación o monto de bonificación para seleccionar.
+### Por código de bonificación:
+SELECT id_bonificacion FROM bonificacion;
+### Por monto de bonificación:
+SELECT monto_bonificacion FROM bonificacion;
+### 2- Botón buscar: Cuando el usuario oprima la opción de buscar se llenará la grilla de resultados
+### 3- Cálculo final: Estos datos son usados posteriormente en la tabla de bonificación para determinar la remuneración total
+
+
+# Prototipo : Interfaz de Muestra de deducción de pago
+### Código Requerimiento: R-D01
+### Código Interfaz: I-D01
+### Imagen Interfaz: (imagen ilustrativa) 
+
+### Descripción: Esta interfaz permite a un operario visualizar las deducciones que ha percibido dentro de su ciclo de remuneración.
+### Eventos:
+### 1- Carga de Página: Se llenará la lista de deducciones por código de deducción o monto de deducción para seleccionar.
+### Por código de deducción:
+SELECT id_deduccion FROM deduccion;
+### Por monto de deducción:
+SELECT monto_deduccion FROM deduccion;
+### 2- Botón buscar: Cuando el usuario oprima la opción de buscar se llenará la grilla de resultados
+### 3- Cálculo final: Estos datos son usados posteriormente en la tabla de deducción para determinar la remuneración total
+
+# Prototipo : Interfaz de Muestra de remuneración total de pago
+### Código Requerimiento: R-R01
+### Código Interfaz: I-R01
+### Imagen Interfaz: (imagen ilustrativa)
+### Descripción: Esta interfaz permite a un operario visualizar el total de su remuneración dentro de su ciclo de pago, además revisar datos adicionales de su nómina.
+### Eventos:
+### 1- Carga de página: Se llenará la lista de remuneraciones por todos los pagos que se le haya hecho al operario, se puede buscar por el id de la nómina, por el total de pago o por la fecha de emisión
+### Por id de la nómina:
+### SELECT id_nomina FROM nomina;
+### Por el total de pago:
+### SELECT total_pago FROM nomina;
+### Por la fecha de pago:
+### SELECT fecha_emision FROM nomina;
