@@ -248,19 +248,70 @@ Implementación de acciones correctivas y preventivas.|
 
 * MÓDULO DE REGISTRO DE ACTIVIDADES
 
-#### **Caso de uso N°15: Registro de las actividades**
+#### **Caso de uso N°15: Asignación de Actividades**
 
-| **Objetivo:** | Gestionar de manera eficaz la mano de obra y optimizar los procesos de fabricación. |
+| **Objetivo:** | Permitir a un gestor de producción asignar actividades a los operarios dentro del sistema web. |
 |------|--------|
-| **Descripción:** | Este caso de uso describe el proceso de registro de la información relacionada con el trabajo de los empleados en las líneas de producción de prendas. | 
-| **Actores:** | Operario y Gestor de Producción | 
-| **Precondiciones:** | Se disponen de instrumentos de medición que permiten registrar intervalos de tiempo así como los datos de los operarios y de las actividades a registrar. | 
+| **Descripción:** | Este caso de uso describe el proceso mediante el cual un gestor de producción puede asignar una actividad específica a un operario en el sistema web. Las actividades pueden incluir tareas de producción de la empresa. | 
+| **Actores:** | Gestor de Producción | 
+| **Precondiciones:** | El gestor de producción debe tener los permisos adecuados para asignar actividades, además debe existir al menos un operario al que se pueda asignar la actividad. | 
 | Paso | Acción |
-| 1    | Se registra la hora de inicio y acabado de las actividades de los empleados en sus jornadas laborales. Esto proporciona un seguimiento preciso del tiempo de trabajo por cada empleado. |
-| 2    | Los gestores de producción de este módulo pueden verificar el estado de las acividades en curso y realizar ajustes según sea necesario para garantizar que se cumplan los plazos y objetivos de producción. |
-| 3    | Se asignan tareas especificas a los empleados en función de sus habilidades y la disponibiidad que tienen, con esto se asegura una distribución equitativa del trabajo y una correcta asignación eficiente de recursos humanos en cada turno de producción. |
-| 4    | Se registra el tiempo extra trabajado por los empleados , así como las ausencias de éstos en el trabajo, vacaciones o días libres. También se registran las ausencias no planificadas como enfermedades, con esto se puede garantizar una correcta cobertura adecuada en la línea de producción. |
-| 5    | Se generan informes detallados sobre la asistencia y el rendimiento laboral de los empleados, como también las horas trabajadas en cada día. Esto permite generar información valiosa para evaluar la eficiencia operativa, identificar áreas de mejora y tomar mejores decisiones. |
+| 1    | El gestor de producción inicia sesión en el sistema web. |
+| 2    | El gestor de producción accede a la sección de gestión de actividades. |
+| 3    | El gestor de producción selecciona la opción de "Asignar nueva actividad". |
+| 4    | El sistema muestra un formulario para la asignación de la actividad. |
+| 5    | El gestor de producción completa el formulario, incluyendo detalles como la  actividad a realizar, la fecha límite y el operario asignado. |
+| 6    | El sistema registra la actividad asignada y notifica al operario. |
+| 7    | Finaliza el caso. |
+
+#### **Caso de uso N°16: Envío de Verificación de Actividad**
+
+| **Objetivo:** | Permitir a un operario enviar una verificación de una actividad al gestor de producción para su revisión. |
+|------|--------|
+| **Descripción:** |  Este caso de uso describe el proceso mediante el cual un operario puede enviar una verificación de una actividad completada al gestor de producción para su revisión. La verificación proporciona al gestor de producción la confirmación de que la actividad ha sido realizada de acuerdo con los requisitos establecidos. | 
+| **Actores:** | Operario | 
+| **Precondiciones:** | La actividad debe haber sido completada por el operario, el operario debe tener los permisos necesarios para enviar verificaciones | 
+| Paso | Acción |
+| 1    | El operario inicia sesión en el sistema web. |
+| 2    | El operario accede a la lista de actividades que está haciendo. |
+| 3    | El operario selecciona la actividad que desea verificar y envía una solicitud de verificación al gestor de producción. |
+| 4    | El sistema notifica al gestor de producción sobre la solicitud de verificación. |
+| 5    | El gestor de producción recibe la notificación y accede a la lista de verificaciones pendientes. |
+| 6  | Finaliza el caso. |
+
+
+#### **Caso de uso N°17: Auditar Actividades**
+
+| **Objetivo:** | Permitir a un gestor de producción dar un visto bueno a una actividad para indicar que ha sido realizada correctamente por un operario. |
+|------|--------|
+| **Descripción:** |  Este caso de uso describe cómo un gestor de producción puede auditar una actividad realizada por un operario para verificar que ha sido completada satisfactoriamente. El gestor de producción tiene la capacidad de dar un visto bueno a la actividad, lo que indica que ha sido realizada según los estándares establecidos. | 
+| **Actores:** | Gestor de Producción | 
+| **Precondiciones:** | La actividad debe estar marcada como completada por el operario, además el gestor de producción debe tener los permisos adecuados para auditar actividades. | 
+| Paso | Acción |
+| 1    | El gestor de producción inicia sesión en el sistema web. |
+| 2    | El gestor de producción accede a la lista de actividades pendientes de auditoría. |
+| 3    | El sistema muestra las actividades que están listas para ser auditadas. |
+| 4    | El gestor de producción selecciona una actividad para auditar. |
+| 5    | El gestor de producción revisa los detalles de la actividad y verifica que ha sido completada correctamente por el operario. |
+| 6    | Si la actividad cumple con los criterios establecidos, el gestor de producción da un visto bueno. |
+| 7    | El sistema registra el visto bueno y actualiza el estado de la actividad como auditada. |
+| 8    | Si la actividad no cumple con los criterios, el gestor de producción puede solicitar rehacer la actividad al operario. |
+| 9    | El sistema notifica al operario sobre el resultado de la auditoría. |
+| 10   | Finaliza el caso. |
+
+#### **Caso de uso N°18: Historial de Actividades**
+
+| **Objetivo:** | Permitir a los usuarios revisar el historial de actividades realizadas en el sistema. |
+|------|--------|
+| **Descripción:** | Este caso de uso describe cómo los usuarios pueden acceder al historial completo de actividades realizadas por los operarios en el sistema web. El historial proporciona una visión retrospectiva de todas las actividades completadas, asignadas o modificadas dentro del sistema. | 
+| **Actores:** | Operario y Gestor de Producción | 
+| **Precondiciones:** | Deben existir actividades registradas en el sistema y en caso de que el usuario sea un operario, solo puede ver las actividades hechas por el mismo. | 
+| Paso | Acción |
+| 1    | El usuario inicia sesión en el sistema web. |
+| 2    | El usuario accede a la sección de historial de actividades. |
+| 3    | El sistema muestra una lista ordenada cronológicamente de todas las actividades realizadas. |
+| 4    | El usuario puede aplicar filtros de búsqueda para encontrar actividades específicas. |
+| 5    | El usuario revisa el historial de actividades, que incluye detalles como la descripción de la actividad, fecha de creación, fecha de asignación, fecha de finalización, y el estado de la actividad. |
 | 6    | Finaliza el caso. |
 
 ### 2. Requerimientos de atributos de calidad
