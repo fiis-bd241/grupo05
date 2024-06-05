@@ -304,6 +304,8 @@ SELECT monto_deduccion FROM deduccion;
 |<2> es la hora de inicio de actividad.|
 |<3> es la hora de fin de actividad.|
 
+
+#MODULO REPORTE
 # Prototipo: Reportes
 ### Código Requerimiento: R-001
 ### Código Interfaz: I-001
