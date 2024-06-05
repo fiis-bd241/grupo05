@@ -234,13 +234,20 @@ SELECT monto_deduccion FROM deduccion;
 
 ## Sentencia SQL:
 ### Eventos:
-### 1- Carga de página: Se escogera una id de asignación de actividad.
+### 1- Cargar página: Se mostrará la tabla de actividades ya mandadas a revisión.
+||
+  |-------------------------------------|
+  |  codigo:  
+      SELECT *
+      FROM asignacion_actividad
+      WHERE id_est_actividad = 'EST4';
+### 2- Botón seleccionar: Se escogera una id de asignación de actividad.
 ||
   |-------------------------------------|
   |  codigo:  
       SELECT id_asignacion;
       
-### 1- Boton  Enviar a revisión: Se modificara un nueva registro a la tabla de asignación de actividad.
+### 3- Boton  Enviar a revisión: Se modificara un nueva registro a la tabla de asignación de actividad.
 ||
   |-------------------------------------|
   |  codigo:  
@@ -251,3 +258,47 @@ SELECT monto_deduccion FROM deduccion;
 |Donde:|
 |--------------------------------------------|
 |<1> es el ID de asignación de actividad.|
+
+# Prototipo: Interfaz de Auditoria de actividades
+### Código Requerimiento: Caso de uso N°17
+### Código Interfaz: 
+### Imagen Interfaz: (imagen ilustrativa)
+### Descripción: Esta interfaz permitir a un gestor de producción dar un visto bueno a una actividad para indicar que ha sido realizada correctamente por un operario.
+## Sentencia SQL:
+### Eventos:
+### 1- Carga de página: Se mostrará la tabla de actividades ya mandadas a revisión.
+||
+  |-------------------------------------|
+  |  codigo:  
+      SELECT *
+      FROM asignacion_actividad
+      WHERE id_est_actividad = 'EST3';
+
+### 2- Boton de selección: Se escogera una asignación.
+||
+  |-------------------------------------|
+  |  codigo:  
+      SELECT id_asignacion;
+    
+### 3- Boton  Aprobar: Se modificara un nueva registro a la tabla de asignación de actividad.
+||
+  |-------------------------------------|
+  |  codigo:  
+      UPDATE asignacion_actividad
+      SET id_est_actividad = 'EST2'
+      WHERE id_asignacion = <1>;
+ 
+### 4- Boton  Rehacer actividad: Se modificara un nueva registro a la tabla de asignación de actividad.
+||
+  |-------------------------------------|
+  |  codigo:  
+      UPDATE asignacion_actividad
+      SET id_est_actividad = 'EST4'
+      SET hora_inicio = <2>;
+      SET hora_inicio = <3>;
+      WHERE id_asignacion = <1>;
+|Donde:|
+|--------------------------------------------|
+|<1> es el ID de asignación de actividad.|
+|<2> es la hora de inicio de actividad.|
+|<3> es la hora de fin de actividad.|
