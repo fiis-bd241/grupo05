@@ -238,7 +238,7 @@ SELECT monto_deduccion FROM deduccion;
 
 ## Sentencia SQL:
 ### Eventos:
-### 1- Cargar página: Se mostrará la tabla de actividades ya mandadas a revisión.
+### 1- Cargar página: Se mostrará la tabla de asignacion de actividades ya mandadas a revisión.
 ||
   |-------------------------------------|
   |  codigo:  
@@ -274,7 +274,7 @@ SELECT monto_deduccion FROM deduccion;
 
 ## Sentencia SQL:
 ### Eventos:
-### 1- Carga de página: Se mostrará la tabla de actividades ya mandadas a revisión.
+### 1- Carga de página: Se mostrará la tabla de asignacion de actividades ya mandadas a revisión.
 ||
   |-------------------------------------|
   |  codigo:  
