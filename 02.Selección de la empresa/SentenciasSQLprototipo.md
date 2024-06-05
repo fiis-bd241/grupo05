@@ -1,3 +1,4 @@
+
 # Prototipo 1: Interfaz de Registro de Solicitudes de Herramientas por Operario
 ### Código Requerimiento: R-001
 ### Código Interfaz: I-001
@@ -224,3 +225,29 @@ SELECT monto_deduccion FROM deduccion;
 |<5> es el ID del lote a elaborar.|
 |<6> es el ID del la actividad que se realizará.|
 |<7> es el ID del operario que realizará la actividad.|
+
+# Prototipo: Interfaz de Envío de Verificación de Actividad
+### Código Requerimiento: Caso de uso N°16
+### Código Interfaz: 
+### Imagen Interfaz: (imagen ilustrativa)
+### Descripción: Esta interfaz permitir a un operario enviar una verificación de una actividad al gestor de producción para su revisión.
+
+## Sentencia SQL:
+### Eventos:
+### 1- Carga de página: Se escogera una id de asignación de actividad.
+||
+  |-------------------------------------|
+  |  codigo:  
+      SELECT id_asignacion;
+      
+### 1- Boton  Enviar a revisión: Se modificara un nueva registro a la tabla de asignación de actividad.
+||
+  |-------------------------------------|
+  |  codigo:  
+      UPDATE asignacion_actividad
+      SET id_est_actividad = 'EST3'
+      WHERE id_asignacion = <1>;
+
+|Donde:|
+|--------------------------------------------|
+|<1> es el ID de asignación de actividad.|
