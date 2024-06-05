@@ -2,6 +2,8 @@
 
 Video del Módulo Registro de Usuario:
 
+[![Video](https://img.youtube.com/vi/PwELBnjyvjc/0.jpg)](https://youtu.be/PwELBnjyvjc)
+
 Video del Módulo Registro de Actividades:
 
 Video del Módulo Reclamos y Observaciones (Peter Lock):
@@ -20,10 +22,7 @@ Video del Módulo Reportes Y Módulo de Remuneración (Mikhael Gordillo):
 Video del Módulo Solicitud de Pedidos de Insumos:
 
 
-Video del Registro actividad:
 
-
-[![Video](https://img.youtube.com/vi/PwELBnjyvjc/0.jpg)](https://youtu.be/PwELBnjyvjc)
 
 [Ver otros videos](Videos.md)
 
