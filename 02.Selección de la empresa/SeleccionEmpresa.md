@@ -22,5 +22,6 @@
 
 7. [Comandos de SQL](data-sql.md)
 
+8. [Secuencias SQL por prototipo](SentenciasSQLprototipo.md)
 
 [Regresar al índice](../README.md)
