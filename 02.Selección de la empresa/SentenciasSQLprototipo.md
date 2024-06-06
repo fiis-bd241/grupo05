@@ -437,7 +437,7 @@ SELECT estado_observacion FROM observacion;
   |  codigo:  
       SELECT fecha_observacion, id_observacion, id_actividad, descripcion_observacion, estado_observacion
       FROM observacion
-      WHERE id_reclamo = <1>;
+      WHERE id_observacion = <1>;
 
 ### Por código de actividad :
 ||
