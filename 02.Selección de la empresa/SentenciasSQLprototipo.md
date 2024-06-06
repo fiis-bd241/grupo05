@@ -242,9 +242,24 @@ SELECT monto_deduccion FROM deduccion;
 ||
   |-------------------------------------|
   |  codigo:  
-      SELECT *
-      FROM asignacion_actividad
-      WHERE id_est_actividad = 'EST4';
+      SELECT 
+    aa.fecha_asig,
+    aa.hora_inicio,
+    aa.hora_fin,
+    aa.id_gestor,
+    aa.id_lote,
+    aa.id_actividad,
+    aa.id_operario,
+    aa.id_est_actividad,
+    o.id_taller
+FROM 
+    asignacion_actividad aa
+JOIN 
+    operario o ON aa.id_operario = o.id_operario
+WHERE 
+    aa.id_est_actividad = 'EST4';
+
+      
 ### 2- Botón seleccionar: Se escogera una id de asignación de actividad.
 ||
   |-------------------------------------|
@@ -278,9 +293,10 @@ SELECT monto_deduccion FROM deduccion;
 ||
   |-------------------------------------|
   |  codigo:  
-      SELECT *
-      FROM asignacion_actividad
-      WHERE id_est_actividad = 'EST3';
+      SELECT aa.*, o.id_taller
+      FROM asignacion_actividad aa
+      JOIN operario o ON aa.id_operario = o.id_operario
+      WHERE aa.id_est_actividad = 'EST3';
 
 ### 2- Boton de selección: Se escogera una asignación.
 ||
