@@ -49,9 +49,10 @@ SELECT nombre_herramienta FROM herramienta;
 ### Código Interfaz: I-002
 ### Imagen Interfaz:  (imagen ilustrativa)
 <img src="Group 4.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+
 ### Descripción: Esta interfaz permite a un operario visualizar todas sus solicitudes y las herramientas disponibles.
-## Sentencias SQL:
-### Eventos:
+## Sentencias SQL
+### Eventos
 ### 1-Carga de Página: Mostrar solicitudes del operario.
 
   ||
@@ -151,13 +152,14 @@ SELECT nombre_herramienta FROM herramienta;
 |<1> es el ID del gestor que toma la acción.|
 |<2> es el ID de la solicitud seleccionada.|
 
-# Prototipo : Interfaz de Muestra de bonificación de pago
-### Código Requerimiento: R-R01
-### Código Interfaz: I-R01
+ ## Prototipo 4: Interfaz de Muestra de bonificación de pago
+### Código Requerimiento: R-004
+### Código Interfaz: I-004
 ### Imagen Interfaz: (imagen ilustrativa) 
 
 ### Descripción: Esta interfaz permite a un operario visualizar las bonificaciones que ha percibido dentro de su ciclo de remuneración.
-### Eventos:
+## Sentencias SQL
+### Eventos
 ### 1- Carga de Página: Se llenará la lista de bonificaciones por código de bonificación o monto de bonificación para seleccionar.
 ### Por código de bonificación:
 SELECT id_bonificacion FROM bonificacion;
@@ -167,13 +169,14 @@ SELECT monto_bonificacion FROM bonificacion;
 ### 3- Cálculo final: Estos datos son usados posteriormente en la tabla de bonificación para determinar la remuneración total
 
 
-# Prototipo : Interfaz de Muestra de deducción de pago
-### Código Requerimiento: R-D01
-### Código Interfaz: I-D01
+ ## Prototipo 5: Interfaz de Muestra de deducción de pago
+### Código Requerimiento: R-005
+### Código Interfaz: I-005
 ### Imagen Interfaz: (imagen ilustrativa) 
 
 ### Descripción: Esta interfaz permite a un operario visualizar las deducciones que ha percibido dentro de su ciclo de remuneración.
-### Eventos:
+## Sentencias SQL
+### Eventos
 ### 1- Carga de Página: Se llenará la lista de deducciones por código de deducción o monto de deducción para seleccionar.
 ### Por código de deducción:
 SELECT id_deduccion FROM deduccion;
@@ -182,12 +185,14 @@ SELECT monto_deduccion FROM deduccion;
 ### 2- Botón buscar: Cuando el usuario oprima la opción de buscar se llenará la grilla de resultados
 ### 3- Cálculo final: Estos datos son usados posteriormente en la tabla de deducción para determinar la remuneración total
 
-# Prototipo : Interfaz de Muestra de remuneración total de pago
-### Código Requerimiento: R-R01
-### Código Interfaz: I-R01
+ ## Prototipo 6: Interfaz de Muestra de remuneración total de pago
+### Código Requerimiento: R-006
+### Código Interfaz: I-006
 ### Imagen Interfaz: (imagen ilustrativa)
+
 ### Descripción: Esta interfaz permite a un operario visualizar el total de su remuneración dentro de su ciclo de pago, además revisar datos adicionales de su nómina.
-### Eventos:
+## Sentencias SQL
+### Eventos
 ### 1- Carga de página: Se llenará la lista de remuneraciones por todos los pagos que se le haya hecho al operario, se puede buscar por el id de la nómina, por el total de pago o por la fecha de emisión
 ### Por id de la nómina:
 ### SELECT id_nomina FROM nomina;
@@ -199,15 +204,15 @@ SELECT monto_deduccion FROM deduccion;
 
 # MODULO REGISTRO DE ACTIVIDADES
 
-# Prototipo: Interfaz de Asignación de actividades
-### Código Requerimiento: Caso de uso N°15
-### Código Interfaz: IMG1
+ ## Prototipo 7: Interfaz de Asignación de actividades
+### Código Requerimiento: R-007
+### Código Interfaz: I-007
 ### Imagen Interfaz: (imagen ilustrativa)
 <img src="asig.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
 ### Descripción: Esta interfaz permite a un operario visualizar el proceso para asignar una actividad a un operario.
 
-## Sentencia SQL:
+## Sentencias SQL:
 ### Eventos:
 ### 1- Boton  Asignar Actividad: Se agregará un nuevo registro a la tabla de asignación de actividad.
 ||
@@ -225,15 +230,15 @@ SELECT monto_deduccion FROM deduccion;
 |<6> es el ID del la actividad que se realizará.|
 |<7> es el ID del operario que realizará la actividad.|
 
-# Prototipo: Interfaz de Envío de Verificación de Actividad
-### Código Requerimiento: Caso de uso N°16
-### Código Interfaz: IMG2
+ ## Prototipo 8: Interfaz de Envío de Verificación de Actividad
+### Código Requerimiento: R-008
+### Código Interfaz: I-008
 ### Imagen Interfaz: (imagen ilustrativa)
 <img src="veri.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
 ### Descripción: Esta interfaz permitir a un operario enviar una verificación de una actividad al gestor de producción para su revisión.
 
-## Sentencia SQL:
+## Sentencias SQL:
 ### Eventos:
 ### 1- Cargar página: Se mostrará la tabla de asignacion de actividades ya mandadas a revisión.
 ||
@@ -275,16 +280,16 @@ SELECT monto_deduccion FROM deduccion;
 |--------------------------------------------|
 |<1> es el ID de asignación de actividad.|
 
-# Prototipo: Interfaz de Auditoria de actividades
-### Código Requerimiento: Caso de uso N°17
-### Código Interfaz: IMG3
+ ## Prototipo 9: Interfaz de Auditoria de actividades
+### Código Requerimiento: R-009
+### Código Interfaz: I-009
 ### Imagen Interfaz: (imagen ilustrativa)
 <img src="audi.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 <img src="rehacer.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
 ### Descripción: Esta interfaz permitir a un gestor de producción dar un visto bueno a una actividad para indicar que ha sido realizada correctamente por un operario.
 
-## Sentencia SQL:
+## Sentencias SQL:
 ### Eventos:
 ### 1- Carga de página: Se mostrará la tabla de asignacion de actividades ya mandadas a revisión.
 ||
@@ -324,16 +329,17 @@ SELECT monto_deduccion FROM deduccion;
 |<2> es la hora de inicio de actividad.|
 |<3> es la hora de fin de actividad.|
 
-# Prototipo: Interfaz de Registro de Reclamos
-### Código Requerimiento: R-005
-### Código Interfaz: I-005
+ ## Prototipo 10: Interfaz de Registro de Reclamos
+### Código Requerimiento: R-010
+### Código Interfaz: I-010
 ### Imagen Interfaz: (imagen ilustrativa) 
 <img src="interfaz reclamos op1 mejorado.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 <img src="interfaz reclamos op2 mejorado.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
 ### Descripción: Esta interfaz permite a un operario registrar un reclamo.
 
-## Sentencias SQL:
+## Sentencias SQL
+### Eventos
 ### 1- Registrar un reclamo: Agregar un nuevo reclamo.
 
   ||
@@ -347,9 +353,9 @@ SELECT monto_deduccion FROM deduccion;
 | <1> es el ID del operario autenticado. |
 
 #MODULO REPORTE
-# Prototipo: Reportes
-### Código Requerimiento: R-001
-### Código Interfaz: I-001
+ ## Prototipo 11: Reportes
+### Código Requerimiento: R-011
+### Código Interfaz: I-011
 ### Imagen Interfaz: (imagen ilustrativa) 
  
 ### Descripción: Esta interfaz permite a un gestor de la producción revisar los reportes para los reclamos y las herramientas
