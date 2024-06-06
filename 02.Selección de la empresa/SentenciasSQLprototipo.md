@@ -252,11 +252,11 @@ SELECT monto_deduccion FROM deduccion;
     aa.id_operario,
     aa.id_est_actividad,
     o.id_taller
-FROM 
+    FROM 
     asignacion_actividad aa
-JOIN 
+     JOIN 
     operario o ON aa.id_operario = o.id_operario
-WHERE 
+     WHERE 
     aa.id_est_actividad = 'EST4';
 
       
