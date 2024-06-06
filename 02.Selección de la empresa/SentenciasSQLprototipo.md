@@ -319,6 +319,17 @@ SELECT monto_deduccion FROM deduccion;
 
 ### Descripción: Esta interfaz permite a un operario registrar un reclamo.
 
+## Sentencias SQL:
+### 1-Registrar un reclamo: Agregar un nuevo reclamo.
+
+  ||
+  |-------------------------------------|
+  |codigo:
+    INSERT INTO reclamo (id_reclamo, fecha_reclamo, estado_reclamo, descripcion_reclamo, id_operario) VALUES  ('RC001', '2024-04-10', 'En proceso', 'Problema con la máquina', <1>);
+    
+|Donde:|
+|-------------------------------------|
+| <1> es el ID del operario autenticado. |
 
 #MODULO REPORTE
 # Prototipo: Reportes
