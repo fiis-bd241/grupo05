@@ -362,6 +362,54 @@ SELECT monto_deduccion FROM deduccion;
 
 ## Sentencias SQL
 ### Eventos
+### 1- Carga de Página: Se llenará la lista de reclamos por código de reclamo, código de operario, fecha de reclamo o estado del reclamo para seleccionar.
+### Por código de reclamo :
+SELECT id_reclamo FROM reclamo;
+### Por código de operario :
+SELECT id_operario FROM reclamo; 
+### Por fecha de reclamo:
+SELECT fecha_reclamo FROM reclamo;
+### Por estado de reclamo:
+SELECT estado_reclamo FROM reclamo;
+### 2-Boton buscar:  Cuando el usuario oprima el botón buscar se llenará la grilla de resultados utilizando la siguiente sentencia
+### Por código de reclamo :
+||
+  |-------------------------------------|
+  |  codigo:  
+      SELECT fecha_reclamo, id_reclamo, id_operario, descripcion_reclamo, estado_reclamo
+      FROM reclamo
+      WHERE id_reclamo = <1>;
+
+### Por código de operario :
+||
+  |-------------------------------------|
+  |  codigo:  
+      SELECT fecha_reclamo, id_reclamo, id_operario, descripcion_reclamo, estado_reclamo
+      FROM reclamo
+      WHERE id_operario = <2>;
+
+### Por fecha de reclamo :
+||
+  |-------------------------------------|
+  |  codigo:  
+      SELECT fecha_reclamo, id_reclamo, id_operario, descripcion_reclamo, estado_reclamo
+      FROM reclamo
+      WHERE fecha_reclamo = <3>;
+
+### Por estado de reclamo :
+||
+  |-------------------------------------|
+  |  codigo:  
+      SELECT fecha_reclamo, id_reclamo, id_operario, descripcion_reclamo, estado_reclamo
+      FROM reclamo
+      WHERE estado_reclamo = <4>;
+
+|Donde:|
+|--------------------------------------------|
+|<1> es el ID del reclamo seleccionado.|
+|<2> es el ID del operario que realizó el reclamo.|
+|<3> es la fecha del reclamo seleccionado.|
+|<4> es el estado del reclamo seleccionado.|
 
  ## Prototipo 12: Interfaz de Visualización de Observaciones
 ### Código Requerimiento: R-012
