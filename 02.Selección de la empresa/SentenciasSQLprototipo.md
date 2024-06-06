@@ -371,7 +371,7 @@ SELECT id_operario FROM reclamo;
 SELECT fecha_reclamo FROM reclamo;
 ### Por estado de reclamo:
 SELECT estado_reclamo FROM reclamo;
-### 2-Boton buscar:  Cuando el usuario oprima el botón buscar se llenará la grilla de resultados utilizando la siguiente sentencia
+### 2-Boton buscar:  Cuando el gestor oprima el botón buscar, se llenará la grilla de resultados utilizando la siguiente sentencia
 ### Por código de reclamo :
 ||
   |-------------------------------------|
@@ -421,7 +421,54 @@ SELECT estado_reclamo FROM reclamo;
 
 ## Sentencias SQL
 ### Eventos
+### 1- Carga de Página: Se llenará la lista de observaciones por código de observación, código de actividad, fecha de la observación o estado de la observación para seleccionar.
+### Por código de observación :
+SELECT id_observacion FROM observacion;
+### Por código de operario :
+SELECT id_actividad FROM observacion; 
+### Por fecha de reclamo:
+SELECT fecha_observacion FROM observacion;
+### Por estado de reclamo:
+SELECT estado_observacion FROM observacion;
+### 2-Boton buscar:  Cuando el gestor oprima el botón buscar, se llenará la grilla de resultados utilizando la siguiente sentencia
+### Por código de observación :
+||
+  |-------------------------------------|
+  |  codigo:  
+      SELECT fecha_observacion, id_observacion, id_actividad, descripcion_observacion, estado_observacion
+      FROM observacion
+      WHERE id_reclamo = <1>;
 
+### Por código de actividad :
+||
+  |-------------------------------------|
+  |  codigo:  
+      SELECT fecha_observacion, id_observacion, id_actividad, descripcion_observacion, estado_observacion
+      FROM observacion
+      WHERE id_actividad = <2>;
+
+### Por fecha de observación :
+||
+  |-------------------------------------|
+  |  codigo:  
+      SELECT fecha_observacion, id_observacion, id_actividad, descripcion_observacion, estado_observacion
+      FROM observacion
+      WHERE fecha_observacion = <3>;
+
+### Por estado de observación :
+||
+  |-------------------------------------|
+  |  codigo:  
+      SELECT fecha_observacion, id_observacion, id_actividad, descripcion_observacion, estado_observacion
+      FROM observacion
+      WHERE estado_observacion = <4>;
+
+|Donde:|
+|--------------------------------------------|
+|<1> es el ID de la observación seleccionada.|
+|<2> es el ID de la actividad relacionada a la observación.|
+|<3> es la fecha de la observación seleccionada.|
+|<4> es el estado de la observación seleccionada.|
 
 #MODULO REPORTE
  ## Prototipo : Reportes
