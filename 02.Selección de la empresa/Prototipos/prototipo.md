@@ -15,11 +15,11 @@ El operario se registra en la pagina web, va al apartado de registro de activida
 <img src="interfaz3.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
 ## Plataforma de Quejas y Reclamos:
-El empleado se dirige al apartado de quejas y reclamos, el cual ofrece la opción de realizar un nuevo reclamo y presenta el historial de reclamos realizados. Dicho historial muestra datos como la fecha del reclamo, la categoría del reclamo, el motivo del reclamo y el estado en el que se encuentra dicho reclamo.
-<img src="interfaz reclamos op1.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+El empleado se dirige al apartado de quejas y reclamos, el cual ofrece la opción de realizar un nuevo reclamo y presenta el historial de reclamos realizados. Dicho historial muestra datos como la fecha del reclamo, el motivo del reclamo y el estado en el que se encuentra dicho reclamo.
+<img src="interfaz reclamos op1 mejorado.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
-Si el usuario desea realizar un nuevo reclamo, le aparecerán opciones para concretar dicha operación, como la selección de la categoría del reclamo y el motivo de dicho reclamo. Una vez completados dichos campos, el usuario deberá seleccionar la opción "enviar reclamo" para el envío y procesamiento del reclamo.
-<img src="interfaz reclamos op2.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+Si el usuario desea realizar un nuevo reclamo, le aparecerá un cuadro donde podrá ingresar el motivo de dicho reclamo. Una vez completado, el usuario deberá seleccionar la opción "enviar reclamo" para el envío y procesamiento del reclamo.
+<img src="interfaz reclamos op2 mejorado.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
 ## Solicitud de Pedido:
 El operario se dirige al apartado de solicitud de pedido, el cual le muestra su historial de sus pedidos realizados. Este historial le muestra datos como fecha de pedido, tipo de insumo, descripción, si la solicitud fue aprobado o desaprobada, y el estado de la solicitud en caso haya sido aprobada.
@@ -39,8 +39,8 @@ El gestor de producción se registra en la pagina web, va al apartado de registr
 <img src="interfaz 3.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
 ## Plataforma de Quejas y Reclamos:
-El gestor de producción se dirige al apartado de quejas y reclamos, el cual le muestra el historial de reclamos realizados por los operarios. Además, le permite filtrar dichos reclamos por operario, categoría, fecha y estado de los reclamos.
-<img src="interfaz reclamos gp.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+El gestor de producción se dirige al apartado de quejas y reclamos, el cual le muestra el historial de reclamos realizados por los operarios. Además, le permite filtrar dichos reclamos por operario, fecha y estado de los reclamos.
+<img src="interfaz reclamos gp mejorado.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
 ## Solicitud de Pedido:
 El gestor de producción se dirige al apartado de solicitud de pedido, el le muestra el historial de pedidos realizados. Este historial le muestra datos como fecha de pedido, usuario que realizo el pedido, tipo de insumo, descripción, el estado de la solicitud y la opción de editar este estado. También le muestra el registro de insumos y proveedores, con la opción de editarlos en caso de necesitar cambiar de proveedor por tipo de insumo, o de agregar, eliminar o actualizar los datos de insumos o proveedores.
