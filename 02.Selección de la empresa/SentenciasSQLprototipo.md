@@ -352,10 +352,33 @@ SELECT monto_deduccion FROM deduccion;
 |-------------------------------------|
 | <1> es el ID del operario autenticado. |
 
-#MODULO REPORTE
- ## Prototipo 11: Reportes
+ ## Prototipo 11: Interfaz de Visualización de Reclamos
 ### Código Requerimiento: R-011
 ### Código Interfaz: I-011
+### Imagen Interfaz: (imagen ilustrativa) 
+<img src="interfaz reclamos gp mejorado.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+
+### Descripción: Esta interfaz permite al gestor de producción visualizar los reclamos realizados por los operarios.
+
+## Sentencias SQL
+### Eventos
+
+ ## Prototipo 12: Interfaz de Visualización de Observaciones
+### Código Requerimiento: R-012
+### Código Interfaz: I-012
+### Imagen Interfaz: (imagen ilustrativa) 
+<img src="interfaz observaciones.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+
+### Descripción: Esta interfaz permite al gestor de producción visualizar el total de observaciones realizadas.
+
+## Sentencias SQL
+### Eventos
+
+
+#MODULO REPORTE
+ ## Prototipo : Reportes
+### Código Requerimiento: R-000
+### Código Interfaz: I-000
 ### Imagen Interfaz: (imagen ilustrativa) 
  
 ### Descripción: Esta interfaz permite a un gestor de la producción revisar los reportes para los reclamos y las herramientas
