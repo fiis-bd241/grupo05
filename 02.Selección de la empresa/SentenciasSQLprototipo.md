@@ -356,7 +356,7 @@ SELECT monto_deduccion FROM deduccion;
 ### Código Requerimiento: R-011
 ### Código Interfaz: I-011
 ### Imagen Interfaz: (imagen ilustrativa) 
-<img src="interfaz reclamos gp mejorado.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+<img src="interfaz reclamos gp1.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
 ### Descripción: Esta interfaz permite al gestor de producción visualizar los reclamos realizados por los operarios.
 
@@ -367,7 +367,7 @@ SELECT monto_deduccion FROM deduccion;
 ### Código Requerimiento: R-012
 ### Código Interfaz: I-012
 ### Imagen Interfaz: (imagen ilustrativa) 
-<img src="interfaz observaciones.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+<img src="interfaz observaciones1.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 
 ### Descripción: Esta interfaz permite al gestor de producción visualizar el total de observaciones realizadas.
 
