@@ -470,7 +470,7 @@ SELECT estado_observacion FROM observacion;
 |<3> es la fecha de la observación seleccionada.|
 |<4> es el estado de la observación seleccionada.|
 
-#MODULO REPORTE
+#### MODULO REPORTE
  ## Prototipo : Reportes
 ### Código Requerimiento: R-000
 ### Código Interfaz: I-000
