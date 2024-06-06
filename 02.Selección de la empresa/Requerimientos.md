@@ -38,14 +38,14 @@
 | 1   |Definición de Estándares de Calidad: Opción para establecer y modificar estándares de calidad.|
 |    |Campos para especificar criterios como dimensiones, materiales y procesos.
 |2|Inspecciones de Producto|
-|    |Registro de inspecciones periódicas a productos.
+|    |Registro de inspecciones periódicas a productos.|
 |3|Campos para resultados, observaciones y fechas de inspección.|
-| 4   |Control de Calidad en Procesos
-Registro de calidad de materias primas, eficiencia de procesos y satisfacción del cliente.|
-| 5   |Opciones para evaluar y calificar los procesos de producción.
-Análisis y Mejora Continua|
-| 6   |Análisis de datos para identificar áreas de mejora.
-Implementación de acciones correctivas y preventivas.|
+| 4   |Control de Calidad en Procesos|
+| |Registro de calidad de materias primas, eficiencia de procesos y satisfacción del cliente.|
+| 5   |Opciones para evaluar y calificar los procesos de producción.|
+| |Análisis y Mejora Continua|
+| 6   |Análisis de datos para identificar áreas de mejora.|
+| |Implementación de acciones correctivas y preventivas.|
 
 
 
@@ -61,12 +61,12 @@ Implementación de acciones correctivas y preventivas.|
 |2|Inspecciones de Producto|
 |    |Registro de inspecciones periódicas a productos.
 |3|Campos para resultados, observaciones y fechas de inspección.|
-| 4   |Control de Calidad en Procesos
-Registro de calidad de materias primas, eficiencia de procesos y satisfacción del cliente.|
-| 5   |Opciones para evaluar y calificar los procesos de producción.
-Análisis y Mejora Continua|
-| 6   |Análisis de datos para identificar áreas de mejora.
-Implementación de acciones correctivas y preventivas.|
+| 4   |Control de Calidad en Procesos|
+| |Registro de calidad de materias primas, eficiencia de procesos y satisfacción del cliente.|
+| 5   |Opciones para evaluar y calificar los procesos de producción.|
+| |Análisis y Mejora Continua|
+| 6   |Análisis de datos para identificar áreas de mejora.|
+| |Implementación de acciones correctivas y preventivas.|
 
 * MÓDULO DE CALIDAD DE PROCESOS
 
