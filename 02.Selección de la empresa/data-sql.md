@@ -149,10 +149,11 @@
 ``CREATE TABLE fallo (
     id_fallo CHAR(6) PRIMARY KEY,
     tipo_fallo VARCHAR(10),
-    fecha_fallo DATE,
     id_herramienta CHAR(6) REFERENCES herramienta_maquinaria(id_herramienta) ON DELETE CASCADE,
-    descripcion_fallo CHAR(60) NOT NULL
-);``
+    descripcion_fallo CHAR(60) NOT NULL,
+    fecha_fallo DATE
+);
+``
 
 ## CÓDIGO DE LLENADO DE DATOS
 
@@ -261,3 +262,14 @@ VALUES
 ('SOL001', 'En proceso', 'OP001', 'GES001'),
 ('SOL002', 'Pendiente', 'OP002', 'GES002'),
 ('SOL003', 'Completado', 'OP003', 'GES003');``
+
+### DATOS TABLA: FALLO
+``INSERT INTO fallo (id_fallo, tipo_fallo, id_herramienta, descripcion_fallo, fecha_fallo) 
+VALUES  
+('FL001', 'Eléctrico', 'HRM001', 'Fallo eléctrico en la máquina de coser recta', '2024-04-01'),
+('FL002', 'Mecánico', 'HRM002', 'Fallo mecánico en la máquina overlock', '2024-04-15'),
+('FL003', 'Hidráulico', 'HRM003', 'Fallo hidráulico en la máquina de bordar', '2024-04-20');
+;``
+
+
+
