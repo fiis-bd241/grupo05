@@ -91,7 +91,7 @@
 |   OBSERVACIONES | Observaciones adicionales sobre la inspección  |  VARCHAR(70)   |  X(60)       |   Char     | NOT NULL |
 
 
-  ### Entidad: MANTENIMIENTO_HERRAMIENTA_MAQUINARIA
+  ### Entidad: MANTENIMIENTO_MAQUINARIA
 #### El mantenimiento de herramientas y maquinarias es el conjunto de actividades preventivas y correctivas realizadas de manera regular para asegurar su funcionamiento óptimo, prolongar su vida útil y prevenir fallos o defectos.
 
 |     Atributo      |              Descripción                  |   Formato   | Naturaleza |  Valores |
