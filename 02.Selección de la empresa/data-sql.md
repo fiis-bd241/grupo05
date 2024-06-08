@@ -145,6 +145,15 @@
     FOREIGN KEY (id_gestor) REFERENCES gestor_de_produccion(id_gestor)
 );``
 
+### TABLA: FALLO
+``CREATE TABLE fallo (
+    id_fallo CHAR(6) PRIMARY KEY,
+    tipo_fallo VARCHAR(10),
+    fecha_fallo DATE,
+    id_herramienta CHAR(6) REFERENCES herramienta_maquinaria(id_herramienta) ON DELETE CASCADE,
+    descripcion_fallo CHAR(60) NOT NULL
+);``
+
 ## CÓDIGO DE LLENADO DE DATOS
 
 ### DATOS TABLA: OPERARIO
