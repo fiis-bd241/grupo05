@@ -22,8 +22,8 @@
 ### TABLA: ESTANDAR DE CALIDAD
 ``CREATE TABLE estandar_de_calidad (
     id_calidad CHAR(6) PRIMARY KEY,
-    tipo_estandar VARCHAR(10),
-    descripcion_estandar VARCHAR(15)
+    tipo_estandar VARCHAR(20),
+    descripcion_estandar VARCHAR(50)
 );``
 
 ### TABLA: FALLO
