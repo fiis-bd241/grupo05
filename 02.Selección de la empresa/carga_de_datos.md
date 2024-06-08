@@ -2129,3 +2129,23 @@
     insert into nomina (Id_nomina, Fecha_emision, Id_periodo_pago, Id_gestor, Id_bonificacion, Id_deduccion, Id_sueldo_base) values ('NOM198', '03-11-2023', 'PP003', 'GES146', 'BOD198', 'DED198', 'SB001');
     insert into nomina (Id_nomina, Fecha_emision, Id_periodo_pago, Id_gestor, Id_bonificacion, Id_deduccion, Id_sueldo_base) values ('NOM199', '20-03-2024', 'PP001', 'GES143', 'BOD199', 'DED199', 'SB003');
     insert into nomina (Id_nomina, Fecha_emision, Id_periodo_pago, Id_gestor, Id_bonificacion, Id_deduccion, Id_sueldo_base) values ('NOM200', '19-12-2023', 'PP002', 'GES160', 'BOD200', 'DED200', 'SB003');
+## ESTANDAR DE CALIDAD
+||
+  |-------------------------------------|
+  |  codigo: 
+  
+    INSERT INTO estandar_de_calidad (id_estandar, tipo_estandar, descripcion, fecha_creacion) VALUES
+    ('CAL001', 'ISO 11148-3', 'Requisitos de seguridad para herramientas portátiles accionadas neumáticamente'),
+('CAL002', 'ISO 13849-1', 'Seguridad de las máquinas - Partes de sistemas de control relacionadas con la seguridad'),
+('CAL003', 'ISO 17066', 'Requisitos para herramientas manuales no motorizadas'),
+('CAL004', 'ISO 3691-1', 'Seguridad de los vehículos industriales'),
+('CAL005', 'ISO 3744', 'Determinación de los niveles de presión sonora de herramientas manuales');
+
+
+
+
+
+INSERT INTO estandar_de_calidad (id_estandar, tipo_estandar, descripcion, fecha_creacion) VALUES
+('CAL001', 'ISO 11148-3', 'Requisitos de seguridad para herramientas portátiles accionadas neumáticamente', '2023-06-01'),
+('CAL002', 'ISO 13849-1', 'Seguridad de las máquinas - Partes de sistemas de control relacionadas con la seguridad', '2023-05-20'),
+('CAL003', 'ISO 17066', 'Requisitos para herramientas manuales no motorizadas', '2023-04-15'),
