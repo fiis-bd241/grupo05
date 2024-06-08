@@ -164,9 +164,10 @@ VALUES
 ### DATOS TABLA: ESTANDAR DE CALIDAD
 ``INSERT INTO estandar_de_calidad (id_calidad, tipo_estandar, descripcion_estandar)
 VALUES 
-('CAL001', 'A', 'Alto'),
-('CAL002', 'B', 'Medio'),
-('CAL003', 'C', 'Bajo');``
+('CAL001', 'ISO 11148-3', 'Requisitos de seguridad para herramientas portátiles accionadas neumáticamente'),
+('CAL002', 'ISO 13849-1', 'Seguridad de las máquinas - Partes de sistemas de control relacionadas con la seguridad'),
+('CAL003', 'ISO 17066', 'Requisitos para herramientas manuales no motorizadas');``
+
 
 ### DATOS TABLA: FALLO
 ``INSERT INTO fallo (id_fallo, tipo_fallo, fecha_fallo)
