@@ -144,15 +144,18 @@
 );
 ``
 ### TABLA: MANTENIMIENTO DE MAQUINARIA
-``CREATE TABLE mantenimiento_de_maquinaria (
+``CREATE TABLE mantenimiento_maquinaria (
     id_mantenimiento CHAR(6) PRIMARY KEY,
-    tipo_mantenimiento VARCHAR(10) CHECK (tipo_mantenimiento IN ('M1', 'M2', 'M3')),
+    tipo_mantenimiento CHAR(2),
     estado_mantenimiento VARCHAR(15),
     fecha_mantenimiento DATE NOT NULL,
     id_responsable CHAR(6),
-    id_calidad CHAR(6) REFERENCES estandar_de_calidad(id_calidad),
-    id_fallo CHAR(6) REFERENCES fallo(id_fallo),
-    descripcion_mantenimiento CHAR(70) NOT NULL
+    id_calidad CHAR(6),
+    id_fallo CHAR(6),
+    descripcion_mantenimiento VARCHAR(70),
+    FOREIGN KEY (id_responsable) REFERENCES operario(id_operario),
+    FOREIGN KEY (id_calidad) REFERENCES estandar_de_calidad(id_calidad),
+    FOREIGN KEY (id_fallo) REFERENCES fallo(id_fallo)
 );``
 ## CÓDIGO DE LLENADO DE DATOS
 
@@ -265,11 +268,10 @@ VALUES
 ('FL003', 'Hidráulico', 'HRM003', 'Fallo hidráulico en la máquina de bordar', '2024-04-20');
 ;``
 ### DATOS TABLA: MANTENIMIENTO DE MAQUINARIA
-``INSERT INTO mantenimiento_de_maquinaria (id_mantenimiento, tipo_mantenimiento, estado_mantenimiento, fecha_mantenimiento, id_responsable, id_calidad, id_fallo, descripcion_mantenimiento) 
+``INSERT INTO mantenimiento_de_maquinaria (id_mantenimiento, tipo_mantenimiento, estado_mantenimiento, fecha_mantenimiento, id_responsable, id_calidad, id_fallo, descripcion_mantenimiento)
 VALUES  
 ('MNT001', 'M1', 'En proceso', '2024-04-05', 'OP001', 'CAL001', 'FL001', 'Mantenimiento preventivo para resolver el fallo eléctrico en la máquina de coser recta'),
-('MNT002', 'M2', 'Pendiente', '2024-04-17', 'OP002', 'CAL002', 'FL002', 'Mantenimiento correctivo para reparar el fallo mecánico en la máquina overlock'),
-('MNT003', 'M3', 'Completado', '2024-04-25', 'OP003', 'CAL003', 'FL003', 'Mantenimiento en espera a la espera de piezas de repuesto para el fallo hidráulico en la máquina de bordar');
+('MNT002', 'M2', 'Pendiente', '2024-04-17', 'OP002', 'CAL002', 'FL002', 'Mantenimiento correctivo para reparar el fallo mecánico en la máquina overlock');
 ``
 
 
