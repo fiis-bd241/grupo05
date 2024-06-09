@@ -38,7 +38,7 @@ Si se selecciona una asignacion de actividad con estado.
 El gestor de producción puede hacer clic en el botón de "Enviar a revisión" para poder mandar la solicitud de revisón a los gestores de producción.
 
 ## Auditoria de actividades
-<img src="interfaz 10.1.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+<img src="audi.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
 Al presionar el botón de "Aprobar actividad", la solicitud cambiará a estado de "acabado".
 Al presionar el botón de "Rehacer actividad", la solicitud cambiará a estado de "culminado".
 
