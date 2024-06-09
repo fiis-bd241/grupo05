@@ -2148,4 +2148,4 @@
 INSERT INTO estandar_de_calidad (id_estandar, tipo_estandar, descripcion, fecha_creacion) VALUES
 ('CAL001', 'ISO 11148-3', 'Requisitos de seguridad para herramientas portátiles accionadas neumáticamente', '2023-06-01'),
 ('CAL002', 'ISO 13849-1', 'Seguridad de las máquinas - Partes de sistemas de control relacionadas con la seguridad', '2023-05-20'),
-('CAL003', 'ISO 17066', 'Requisitos para herramientas manuales no motorizadas', '2023-04-15'),
+('CAL003', 'ISO 17066', 'Requisitos para herramientas manuales no motorizadas', '2023-04-15');
