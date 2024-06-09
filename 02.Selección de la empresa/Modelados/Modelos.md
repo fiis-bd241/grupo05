@@ -109,7 +109,7 @@
 |:---------------:|:-----------------:|
 | M1 |  PREVENTIVO |
 | M2 |  CORRECTIVO |
-| M3 |  EN ESPERA  |
+
 
   ### Entidad: ESTANDAR_CALIDAD
 #### Un estándar de calidad es una norma o criterio establecido que define las características, propiedades o condiciones que debe cumplir un producto, herramienta o maquinaria para ser considerado como de calidad aceptable.
