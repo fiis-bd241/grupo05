@@ -137,11 +137,13 @@
 ### TABLA: FALLO
 ``CREATE TABLE fallo (
     id_fallo CHAR(6) PRIMARY KEY,
-    tipo_fallo VARCHAR(10),
-    id_herramienta CHAR(6) REFERENCES herramienta_maquinaria(id_herramienta) ON DELETE CASCADE,
-    descripcion_fallo CHAR(60) NOT NULL,
-    fecha_fallo DATE
+    tipo_fallo VARCHAR(20),
+    id_herramienta CHAR(6),
+    descripcion_fallo VARCHAR(100),
+    fecha_fallo DATE,
+    FOREIGN KEY (id_herramienta) REFERENCES herramienta(id_herramienta)
 );
+
 ``
 ### TABLA: MANTENIMIENTO DE MAQUINARIA
 ``CREATE TABLE mantenimiento_maquinaria (
@@ -172,21 +174,6 @@ VALUES
 ('INS001', 'PRV001', 100),
 ('INS002', 'PRV002', 150),
 ('INS003', 'PRV003', 200);``
-
-### DATOS TABLA: ESTANDAR DE CALIDAD
-``INSERT INTO estandar_de_calidad (id_calidad, tipo_estandar, descripcion_estandar)
-VALUES 
-('CAL001', 'ISO 11148-3', 'Requisitos de seguridad para herramientas portátiles accionadas neumáticamente'),
-('CAL002', 'ISO 13849-1', 'Seguridad de las máquinas - Partes de sistemas de control relacionadas con la seguridad'),
-('CAL003', 'ISO 17066', 'Requisitos para herramientas manuales no motorizadas');``
-
-
-### DATOS TABLA: FALLO
-``INSERT INTO fallo (id_fallo, tipo_fallo, fecha_fallo)
-VALUES 
-('FL001', 'Eléctrico', '2024-04-01'),
-('FL002', 'Mecánico', '2024-04-15'),
-('FL003', 'Hidráulico', '2024-04-20');``
 
 
 
@@ -273,5 +260,10 @@ VALUES
 ('MNT001', 'M1', 'En proceso', '2024-04-05', 'OP001', 'CAL001', 'FL001', 'Mantenimiento preventivo para resolver el fallo eléctrico en la máquina de coser recta'),
 ('MNT002', 'M2', 'Pendiente', '2024-04-17', 'OP002', 'CAL002', 'FL002', 'Mantenimiento correctivo para reparar el fallo mecánico en la máquina overlock');
 ``
-
+### DATOS TABLA: ESTANDAR DE CALIDAD
+``INSERT INTO estandar_de_calidad (id_calidad, tipo_estandar, descripcion_estandar)
+VALUES 
+('CAL001', 'ISO 11148-3', 'Requisitos de seguridad para herramientas portátiles accionadas neumáticamente'),
+('CAL002', 'ISO 13849-1', 'Seguridad de las máquinas - Partes de sistemas de control relacionadas con la seguridad'),
+('CAL003', 'ISO 17066', 'Requisitos para herramientas manuales no motorizadas');``
 
