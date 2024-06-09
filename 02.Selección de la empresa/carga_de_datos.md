@@ -2135,12 +2135,24 @@
   |  codigo: 
   
     INSERT INTO estandar_de_calidad (id_estandar, tipo_estandar, descripcion, fecha_creacion) VALUES
-    ('CAL001', 'ISO 11148-3', 'Requisitos de seguridad para herramientas portátiles accionadas neumáticamente');
-('CAL002', 'ISO 13849-1', 'Seguridad de las máquinas - Partes de sistemas de control relacionadas con la seguridad');
-('CAL003', 'ISO 17066', 'Requisitos para herramientas manuales no motorizadas');
-('CAL004', 'ISO 3691-1', 'Seguridad de los vehículos industriales');
+    ('CAL001', 'ISO 11148-3', 'Requisitos de seguridad para herramientas portátiles accionadas neumáticamente'),
+('CAL002', 'ISO 13849-1', 'Seguridad de las máquinas - Partes de sistemas de control relacionadas con la seguridad'),
+('CAL003', 'ISO 17066', 'Requisitos para herramientas manuales no motorizadas'),
+('CAL004', 'ISO 3691-1', 'Seguridad de los vehículos industriales'),
 ('CAL005', 'ISO 3744', 'Determinación de los niveles de presión sonora de herramientas manuales');
 
-
+## ACTIVIDAD
+||
+  |-------------------------------------|
+  |  codigo:  
+    INSERT INTO actividad (id_actividad, nombre_actividad) VALUES
+    ('ACT1', 'Diseño de prendas de vestir'),
+    ('ACT2', 'Patronaje y corte de telas'),
+    ('ACT3', 'Confección de prendas'),
+    ('ACT4', 'Costura y ensamblaje de componentes'),
+    ('ACT5', 'Planchado y acabado de prendas'),
+    ('ACT6', 'Control de calidad de prendas'),
+    ('ACT7', 'Empaquetado y etiquetado de prendas'),
+    ('ACT8', 'Almacenamiento de productos terminados');
 
 
