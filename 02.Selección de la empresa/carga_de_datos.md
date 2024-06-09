@@ -2145,14 +2145,37 @@
 ||
   |-------------------------------------|
   |  codigo:  
-    INSERT INTO actividad (id_actividad, nombre_actividad) VALUES
-    ('ACT1', 'Diseño de prendas de vestir'),
-    ('ACT2', 'Patronaje y corte de telas'),
-    ('ACT3', 'Confección de prendas'),
-    ('ACT4', 'Costura y ensamblaje de componentes'),
-    ('ACT5', 'Planchado y acabado de prendas'),
-    ('ACT6', 'Control de calidad de prendas'),
-    ('ACT7', 'Empaquetado y etiquetado de prendas'),
-    ('ACT8', 'Almacenamiento de productos terminados');
+    INSERT INTO mantenimiento_de_maquinaria (id_mantenimiento, tipo_mantenimiento, estado_mantenimiento, fecha_mantenimiento, id_responsable, id_calidad, id_fallo, descripcion_mantenimiento) 
+VALUES  
+('MNT001', 'M1', 'En proceso', '2024-04-05', 'OP001', 'CAL001', 'FL001', 'Mantenimiento preventivo para resolver el fallo eléctrico en la máquina de coser recta'),
+('MNT002', 'M2', 'Pendiente', '2024-04-17', 'OP002', 'CAL002', 'FL002', 'Mantenimiento correctivo para reparar el fallo mecánico en la máquina overlock'),
+('MNT003', 'M3', 'Completado', '2024-04-25', 'OP003', 'CAL003', 'FL003', 'Mantenimiento en espera a la espera de piezas de repuesto para el fallo hidráulico en la máquina de bordar'),
+('MNT004', 'M1', 'En proceso', '2024-05-02', 'OP004', 'CAL004', 'FL004', 'Mantenimiento preventivo para revisar el funcionamiento general de la máquina de corte láser'),
+('MNT005', 'M2', 'Pendiente', '2024-05-15', 'OP005', 'CAL005', 'FL005', 'Mantenimiento correctivo para ajustar el sistema de estampado en la máquina de estampado'),
+('MNT006', 'M3', 'Completado', '2024-05-25', 'OP006', 'CAL006', 'FL006', 'Mantenimiento en espera a la espera de la llegada de un técnico especializado para la máquina de planchado'),
+('MNT007', 'M1', 'En proceso', '2024-06-02', 'OP007', 'CAL007', 'FL007', 'Mantenimiento preventivo para revisar y lubricar los mecanismos de la máquina de tejido circular'),
+('MNT008', 'M2', 'Pendiente', '2024-06-15', 'OP008', 'CAL008', 'FL008', 'Mantenimiento correctivo para reemplazar el motor de la máquina de lavado industrial'),
+('MNT009', 'M3', 'Completado', '2024-06-25', 'OP009', 'CAL009', 'FL009', 'Mantenimiento en espera a la espera de la autorización del departamento de compras para la máquina de teñido'),
+('MNT010', 'M1', 'En proceso', '2024-07-02', 'OP010', 'CAL010', 'FL010', 'Mantenimiento preventivo para calibrar y ajustar los sensores de la máquina de empacado'),
+('MNT011', 'M2', 'Pendiente', '2024-07-15', 'OP011', 'CAL011', 'FL011', 'Mantenimiento correctivo para reparar el sistema de control de calidad de la máquina de coser recta'),
+('MNT012', 'M3', 'Completado', '2024-07-25', 'OP012', 'CAL012', 'FL012', 'Mantenimiento en espera a la espera de la llegada del nuevo software para la máquina overlock'),
+('MNT013', 'M1', 'En proceso', '2024-08-02', 'OP013', 'CAL013', 'FL013', 'Mantenimiento preventivo para revisar y limpiar los cabezales de impresión de la máquina de estampado'),
+('MNT014', 'M2', 'Pendiente', '2024-08-15', 'OP014', 'CAL014', 'FL014', 'Mantenimiento correctivo para reemplazar el calentador de la máquina de planchado'),
+('MNT015', 'M3', 'Completado', '2024-08-25', 'OP015', 'CAL015', 'FL015', 'Mantenimiento en espera a la espera de la llegada del técnico de servicio para la máquina de tejido circular'),
+('MNT016', 'M1', 'En proceso', '2024-09-02', 'OP016', 'CAL016', 'FL016', 'Mantenimiento preventivo para ajustar los niveles de agua en la máquina de lavado industrial'),
+('MNT017', 'M2', 'Pendiente', '2024-09-15', 'OP017', 'CAL017', 'FL017', 'Mantenimiento correctivo para reemplazar las boquillas de tinte en la máquina de teñido'),
+('MNT018', 'M3', 'Completado', '2024-09-25', 'OP018', 'CAL018', 'FL018', 'Mantenimiento en espera a la espera de la entrega de repuestos para la máquina de empacado'),
+('MNT019', 'M1', 'En proceso', '2024-10-02', 'OP019', 'CAL019', 'FL019', 'Mantenimiento preventivo para revisar y ajustar los sistemas de seguridad en la máquina de corte láser'),
+('MNT020', 'M2', 'Pendiente', '2024-10-15', 'OP020', 'CAL020', 'FL020', 'Mantenimiento correctivo para reparar la pantalla táctil de la máquina de estampado'),
+('MNT021', 'M3', 'Completado', '2024-10-25', 'OP021', 'CAL021', 'FL021', 'Mantenimiento en espera a la espera de la autorización del departamento de compras para la máquina de coser recta'),
+('MNT022', 'M1', 'En proceso', '2024-11-02', 'OP022', 'CAL022', 'FL022', 'Mantenimiento preventivo para limpiar y calibrar los sensores de temperatura en la máquina overlock'),
+('MNT023', 'M2', 'Pendiente', '2024-11-15', 'OP023', 'CAL023', 'FL023', 'Mantenimiento correctivo para reemplazar la bomba de vacío en la máquina de bordar'),
+('MNT024', 'M3', 'Completado', '2024-11-25', 'OP024', 'CAL024', 'FL024', 'Mantenimiento en espera a la espera de la llegada del nuevo software para la máquina de corte láser'),
+('MNT025', 'M1', 'En proceso', '2024-12-02', 'OP025', 'CAL025', 'FL025', 'Mantenimiento preventivo para revisar y lubricar los rodamientos en la máquina de estampado'),
+('MNT026', 'M2', 'Pendiente', '2024-12-15', 'OP026', 'CAL026', 'FL026', 'Mantenimiento correctivo para reemplazar el cilindro neumático en la máquina de planchado'),
+('MNT027', 'M3', 'Completado', '2024-12-25', 'OP027', 'CAL027', 'FL027', 'Mantenimiento en espera a la espera de la entrega de repuestos para la máquina de tejido circular'),
+('MNT028', 'M1', 'En proceso', '2025-01-02', 'OP028', 'CAL028', 'FL028', 'Mantenimiento preventivo para revisar y ajustar los sistemas de seguridad en la máquina de lavado industrial'),
+('MNT029', 'M2', 'Pendiente', '2025-01-15', 'OP029', 'CAL029', 'FL029', 'Mantenimiento correctivo para reparar el sensor de nivel de agua en la máquina de teñido'),
+('MNT030', 'M3', 'Completado', '2025-01-25', 'OP030', 'CAL030', 'FL030', 'Mantenimiento en espera a la espera de la llegada de un técnico especializado para la máquina de empacado');
 
 
