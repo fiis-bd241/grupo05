@@ -480,3 +480,130 @@ SELECT estado_observacion FROM observacion;
 
 ### HERRAMIENTAS: Se puede consultar de 3 diferentes formas: por nombre, proveedor y modelo
 ### RECLAMOS: Se puede consultar por las formas de id_operario, fecha_reclamo, estado del reclamo y el tipo de descripción de reclamo
+
+
+
+
+ ## Prototipo 13: Mantenimiento Preventivo e Inspecciones de Calidad
+### Código Requerimiento: R-013
+### Código Interfaz: I-013
+### Imagen Interfaz: (imagen ilustrativa) 
+### Descripción:Esta interfaz sirve para gestionar y asegurar la calidad y mantenimiento de las herramientas y maquinarias utilizadas en la producción textil.
+### 1- Carga de Página:Para la programación de mantenimiento de herramientas y maquinaria, al cargar la página, se debe llenar la lista de opciones disponibles para la selección.
+### Seleccionar Tipos de Mantenimiento:
+||
+  |-------------------------------------|
+  |  codigo:  
+      SELECT 'M1' AS tipo_mantenimiento, 'Preventivo' AS descripcion
+      UNION
+      SELECT 'M2' AS tipo_mantenimiento, 'Correctivo' AS descripcion;
+
+### Seleccionar Herramientas/Maquinarias:
+||
+  |-------------------------------------|
+  |  codigo:  
+      SELECT id_herramienta, nombre_herramienta FROM herramienta;
+
+### 2-Boton buscar:  Cuando el gestor oprima el botón buscar, se llenará la grilla de resultados utilizando la siguiente sentencia:
+### Por ID de Mantenimiento:
+||
+  |-------------------------------------|
+  |  codigo:  
+      SELECT id_mantenimiento, tipo_mantenimiento, estado_mantenimiento, fecha_mantenimiento, id_responsable, id_calidad, id_fallo, descripcion_mantenimiento
+      FROM mantenimiento_de_maquinaria
+      WHERE id_mantenimiento = '<ID_MANTENIMIENTO>';
+### Por ID de Herramienta/Maquinaria:
+||
+  |-------------------------------------|
+  |  codigo:
+      SELECT id_mantenimiento, tipo_mantenimiento, estado_mantenimiento, fecha_mantenimiento, id_responsable, id_calidad, id_fallo, descripcion_mantenimiento
+      FROM mantenimiento_de_maquinaria
+      WHERE id_herramienta = '<ID_HERRAMIENTA>';
+     
+### Por Fecha de Mantenimiento:
+||
+  |-------------------------------------|
+  |  codigo:
+      SELECT id_mantenimiento, tipo_mantenimiento, estado_mantenimiento, fecha_mantenimiento, id_responsable, id_calidad, id_fallo, descripcion_mantenimiento
+      FROM mantenimiento_de_maquinaria
+      WHERE fecha_mantenimiento = '<FECHA_MANTENIMIENTO>';
+
+### Por Estado de Mantenimiento:
+||
+  |-------------------------------------|
+  |  codigo:
+      SELECT id_mantenimiento, tipo_mantenimiento, estado_mantenimiento, fecha_mantenimiento, id_responsable, id_calidad, id_fallo, descripcion_mantenimiento
+      FROM mantenimiento_de_maquinaria
+      WHERE estado_mantenimiento = '<ESTADO_MANTENIMIENTO>';
+
+### Por ID de Inspección:
+||
+  |-------------------------------------|
+  |  codigo:
+      SELECT id_inspeccion, id_herramienta, fecha_inspeccion, resultado, observaciones
+      FROM inspecciones_de_calidad
+      WHERE id_inspeccion = '<ID_INSPECCION>';
+
+
+### Por ID de Herramienta/Maquinaria (Inspección):
+||
+  |-------------------------------------|
+  |  codigo:
+      SELECT id_inspeccion, id_herramienta, fecha_inspeccion, resultado, observaciones
+      FROM inspecciones_de_calidad
+      WHERE id_herramienta = '<ID_HERRAMIENTA>';
+
+
+### 3 Boton Historial: Cuando el gestor oprima el botón historial, se mostrara todo los Mantenimientos e Inspecciones de dicha herrmaienta.
+
+### Por Tipo (Mantenimiento/Inspección):
+||
+  |-------------------------------------|
+  |  codigo:
+
+    SELECT 'Mantenimiento' AS tipo, id_mantenimiento AS id, id_herramienta, fecha_mantenimiento AS fecha, estado_mantenimiento AS estado 
+    FROM mantenimiento_de_maquinaria
+    UNION
+    SELECT 'Inspección' AS tipo, id_inspeccion AS id, id_herramienta, fecha_inspeccion AS fecha, resultado AS estado 
+    FROM inspecciones_de_calidad;
+
+### Por Herramienta/Maquinaria:
+||
+  |-------------------------------------|
+  |  codigo:
+      SELECT nombre_herramienta FROM herramienta WHERE id_herramienta = '<ID_HERRAMIENTA>';
+ 
+### 3-Boton Acciones (Editar, Eliminar):
+### Editar Mantenimiento:
+||
+  |-------------------------------------|
+  |  codigo:
+      UPDATE mantenimiento_de_maquinaria 
+      SET tipo_mantenimiento = '<TIPO_MANTENIMIENTO>', estado_mantenimiento = '<ESTADO>', fecha_mantenimiento = '<FECHA>', id_responsable = '<ID_RESPONSABLE>', id_calidad = '<ID_CALIDAD>', id_fallo = '<ID_FALLO>', descripcion_mantenimiento = '<DESCRIPCION>'
+      WHERE id_mantenimiento = '<ID_MANTENIMIENTO>';
+### Editar Mantenimiento:
+||
+  |-------------------------------------|
+  |  codigo:
+      UPDATE mantenimiento_de_maquinaria 
+      SET tipo_mantenimiento = '<TIPO_MANTENIMIENTO>', estado_mantenimiento = '<ESTADO>', fecha_mantenimiento = '<FECHA>', id_responsable = '<ID_RESPONSABLE>', id_calidad = '<ID_CALIDAD>', id_fallo = '<ID_FALLO>', descripcion_mantenimiento = '<DESCRIPCION>'
+      WHERE id_mantenimiento = '<ID_MANTENIMIENTO>';
+
+### Eliminar Mantenimiento:
+||
+  |-------------------------------------|
+  |  codigo:
+      DELETE FROM mantenimiento_de_maquinaria WHERE id_mantenimiento = '<ID_MANTENIMIENTO>';
+
+### Editar Inspección:
+||
+  |-------------------------------------|
+  |  codigo:
+      UPDATE inspecciones_de_calidad 
+      SET id_herramienta = '<ID_HERRAMIENTA>', fecha_inspeccion = '<FECHA>', resultado = '<RESULTADO>', observaciones = '<OBSERVACIONES>'
+      WHERE id_inspeccion = '<ID_INSPECCION>';
+### Eliminar Inspección:
+||
+  |-------------------------------------|
+  |  codigo:
+      DELETE FROM inspecciones_de_calidad WHERE id_inspeccion = '<ID_INSPECCION>';
