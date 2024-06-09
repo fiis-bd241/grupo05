@@ -135,14 +135,14 @@
 );``
 
 ### TABLA: FALLO
-``CREATE TABLE fallo (
-    id_fallo CHAR(6) PRIMARY KEY,
-    tipo_fallo VARCHAR(20),
-    id_herramienta CHAR(6),
-    descripcion_fallo VARCHAR(100),
-    fecha_fallo DATE,
-    FOREIGN KEY (id_herramienta) REFERENCES herramienta(id_herramienta)
-);
+	``CREATE TABLE fallo (
+	    id_fallo CHAR(6) PRIMARY KEY,
+	    tipo_fallo VARCHAR(20),
+	    id_herramienta CHAR(6),
+	    descripcion_fallo VARCHAR(100),
+	    fecha_fallo DATE,
+	    FOREIGN KEY (id_herramienta) REFERENCES herramienta(id_herramienta)
+	);
 
 ``
 ### TABLA: MANTENIMIENTO DE MAQUINARIA
@@ -159,6 +159,45 @@
     FOREIGN KEY (id_calidad) REFERENCES estandar_de_calidad(id_calidad),
     FOREIGN KEY (id_fallo) REFERENCES fallo(id_fallo)
 );``
+
+### TABLA TIPO VEHÍCULO
+	CREATE TABLE Tipo_vehiculo (
+	    id_tipo_vehiculo CHAR(6) NOT NULL,
+	    nombre_tipo_vehiculo VARCHAR(50) NOT NULL,
+	    PRIMARY KEY (id_tipo_vehiculo)
+	);
+
+ ### TABLA TRANSPORTE
+	CREATE TABLE Transporte (
+	    id_transporte CHAR(6) NOT NULL,
+	    id_operario CHAR(6) NOT NULL,
+	    fecha_transporte DATE NOT NULL,
+	    id_tipo_vehiculo CHAR(6) NOT NULL,
+	    PRIMARY KEY (id_transporte),
+	    FOREIGN KEY (id_operario) REFERENCES Operario(id_operario),
+	    FOREIGN KEY (id_tipo_vehiculo) REFERENCES Tipo_vehiculo(id_tipo_vehiculo)
+	);
+
+ ### TABLA INSUMO
+	 CREATE TABLE Insumo (
+	    id_insumo CHAR(6) NOT NULL,
+	    cantidad_insumo INT NOT NULL,
+	    tipo_insumo VARCHAR(50) NOT NULL,
+	    id_proveedor CHAR(6) NOT NULL,
+	    PRIMARY KEY (id_insumo)
+	);
+
+ ### TABLA SOLICITUD DE INSUMO
+	 CREATE TABLE Solicitud_insumo (
+	    id_solicitud_insumo CHAR(6) NOT NULL,
+	    fecha_solicitud DATE NOT NULL,
+	    estado_solicitud VARCHAR(50) NOT NULL,
+	    id_gestor CHAR(6) NOT NULL,
+	    id_insumo CHAR(6) NOT NULL,
+	    PRIMARY KEY (id_solicitud_insumo),
+	    FOREIGN KEY (id_gestor) REFERENCES gestor_produccion(id_gestor),
+	    FOREIGN KEY (id_insumo) REFERENCES Insumo(id_insumo)
+	);
 ## CÓDIGO DE LLENADO DE DATOS
 
 ### DATOS TABLA: OPERARIO
