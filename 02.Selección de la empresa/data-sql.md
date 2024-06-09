@@ -198,6 +198,12 @@
 	    FOREIGN KEY (id_gestor) REFERENCES gestor_produccion(id_gestor),
 	    FOREIGN KEY (id_insumo) REFERENCES Insumo(id_insumo)
 	);
+ ### TIPO DE INSUMO
+	INSERT INTO Tipo_Insumo (Id_tipo_insumo, Nom_tipo_insumo) VALUES
+	('TI001', 'Materia prima'),
+	('TI002', 'Producto químico'),
+	('TI003', 'Herramienta');
+	 
 ## CÓDIGO DE LLENADO DE DATOS
 
 ### DATOS TABLA: OPERARIO
