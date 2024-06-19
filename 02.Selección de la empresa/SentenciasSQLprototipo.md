@@ -345,7 +345,7 @@ SELECT monto_deduccion FROM deduccion;
   ||
   |-------------------------------------|
   |codigo:
-    INSERT INTO reclamo (id_reclamo, fecha_reclamo, estado_reclamo, descripcion_reclamo, id_operario)
+    INSERT INTO reclamo (id_reclamo, fecha_reclamo, id_estado_reclamo, id_descrip_reclamo, id_operario)
     VALUES ('RC001', '2024-04-10', 'En proceso', 'Problema con la máquina', <1>);
     
 |Donde:|
@@ -370,13 +370,13 @@ SELECT id_operario FROM reclamo;
 ### Por fecha de reclamo:
 SELECT fecha_reclamo FROM reclamo;
 ### Por estado de reclamo:
-SELECT estado_reclamo FROM reclamo;
+SELECT id_estado_reclamo FROM reclamo;
 ### 2-Boton buscar:  Cuando el gestor oprima el botón buscar, se llenará la grilla de resultados utilizando la siguiente sentencia
 ### Por código de reclamo :
 ||
   |-------------------------------------|
   |  codigo:  
-      SELECT fecha_reclamo, id_reclamo, id_operario, descripcion_reclamo, estado_reclamo
+      SELECT fecha_reclamo, id_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo
       FROM reclamo
       WHERE id_reclamo = <1>;
 
@@ -384,7 +384,7 @@ SELECT estado_reclamo FROM reclamo;
 ||
   |-------------------------------------|
   |  codigo:  
-      SELECT fecha_reclamo, id_reclamo, id_operario, descripcion_reclamo, estado_reclamo
+      SELECT fecha_reclamo, id_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo
       FROM reclamo
       WHERE id_operario = <2>;
 
@@ -392,7 +392,7 @@ SELECT estado_reclamo FROM reclamo;
 ||
   |-------------------------------------|
   |  codigo:  
-      SELECT fecha_reclamo, id_reclamo, id_operario, descripcion_reclamo, estado_reclamo
+      SELECT fecha_reclamo, id_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo
       FROM reclamo
       WHERE fecha_reclamo = <3>;
 
@@ -400,9 +400,9 @@ SELECT estado_reclamo FROM reclamo;
 ||
   |-------------------------------------|
   |  codigo:  
-      SELECT fecha_reclamo, id_reclamo, id_operario, descripcion_reclamo, estado_reclamo
+      SELECT fecha_reclamo, id_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo
       FROM reclamo
-      WHERE estado_reclamo = <4>;
+      WHERE id_estado_reclamo = <4>;
 
 |Donde:|
 |--------------------------------------------|
@@ -425,17 +425,17 @@ SELECT estado_reclamo FROM reclamo;
 ### Por código de observación :
 SELECT id_observacion FROM observacion;
 ### Por código de operario :
-SELECT id_actividad FROM observacion; 
+SELECT id_asignacion FROM observacion; 
 ### Por fecha de reclamo:
 SELECT fecha_observacion FROM observacion;
 ### Por estado de reclamo:
-SELECT estado_observacion FROM observacion;
+SELECT id_estado_observacion FROM observacion;
 ### 2-Boton buscar:  Cuando el gestor oprima el botón buscar, se llenará la grilla de resultados utilizando la siguiente sentencia
 ### Por código de observación :
 ||
   |-------------------------------------|
   |  codigo:  
-      SELECT fecha_observacion, id_observacion, id_actividad, descripcion_observacion, estado_observacion
+      SELECT fecha_observacion, id_observacion, id_asignacion, id_descrip_observacion, id_estado_observacion
       FROM observacion
       WHERE id_observacion = <1>;
 
@@ -443,15 +443,15 @@ SELECT estado_observacion FROM observacion;
 ||
   |-------------------------------------|
   |  codigo:  
-      SELECT fecha_observacion, id_observacion, id_actividad, descripcion_observacion, estado_observacion
+      SELECT fecha_observacion, id_observacion, id_asignacion, id_descrip_observacion, id_estado_observacion
       FROM observacion
-      WHERE id_actividad = <2>;
+      WHERE id_asignacion = <2>;
 
 ### Por fecha de observación :
 ||
   |-------------------------------------|
   |  codigo:  
-      SELECT fecha_observacion, id_observacion, id_actividad, descripcion_observacion, estado_observacion
+      SELECT fecha_observacion, id_observacion, id_asignacion, id_descrip_observacion, id_estado_observacion
       FROM observacion
       WHERE fecha_observacion = <3>;
 
@@ -459,9 +459,9 @@ SELECT estado_observacion FROM observacion;
 ||
   |-------------------------------------|
   |  codigo:  
-      SELECT fecha_observacion, id_observacion, id_actividad, descripcion_observacion, estado_observacion
+      SELECT fecha_observacion, id_observacion, id_asignacion, id_descrip_observacion, id_estado_observacion
       FROM observacion
-      WHERE estado_observacion = <4>;
+      WHERE id_estado_observacion = <4>;
 
 |Donde:|
 |--------------------------------------------|
