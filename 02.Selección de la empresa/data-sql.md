@@ -204,6 +204,17 @@
 	('TI002', 'Producto químico'),
 	('TI003', 'Herramienta');
 	 
+### TABLA INSPECCION DE CALIDAD
+
+	CREATE TABLE inspeccion_calidad (
+	    id_inspeccion CHAR(6) PRIMARY KEY,
+	    fecha_inspeccion DATE,
+	    id_inspector CHAR(6),
+	    resultados VARCHAR(50),
+	    observaciones VARCHAR(100),
+	    FOREIGN KEY (id_inspector) REFERENCES operario(id_operario)
+	);
+
 ## CÓDIGO DE LLENADO DE DATOS
 
 ### DATOS TABLA: OPERARIO
