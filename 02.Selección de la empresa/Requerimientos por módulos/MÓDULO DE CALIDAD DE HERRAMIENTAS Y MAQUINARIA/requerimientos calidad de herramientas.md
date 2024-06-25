@@ -1,57 +1,37 @@
-#### **Caso de uso N°5: Mantenimiento Preventivo de herramientas y maquinaria**
+#### **Caso de uso N°5: Mantenimiento  de herramientas y maquinaria**
 
 | **Objetivo:** |Programar y hacer seguimiento de los mantenimientos periódicos para las herramientas y maquinarias. |
 |------|--------|
-| **Descripción:** | El responsable de mantenimiento accederá al sistema y seleccionará la opción de "Mantenimiento Preventivo". Se mostrará una lista de herramientas y maquinarias que requieren mantenimiento. El responsable seleccionará una herramienta o maquinaria y programará la fecha del próximo mantenimiento. | 
-| **Actor Primario:** | Responsable de mantenimiento |
+| **Descripción:** | El responsable de mantenimiento accede al sistema y selecciona la opción de "Mantenimiento". Se muestra una lista de herramientas y maquinarias que requieren mantenimiento. El responsable puede seleccionar una herramienta o maquinaria existente para programar un nuevo mantenimiento, asegurándose de incluir  los estándares de calidad asociados a dicha herramienta. | 
+| **Actor Primario:** |Operario |
 | **Actor Secundario:** | Gerente de producción | 
-| **Precondiciones:** | Existencia de herramientas y maquinarias registradas en el sistema que requieran mantenimiento| 
+| **Precondiciones:** | Existencia de herramientas y maquinarias registradas en el sistema que requieran mantenimiento.
+Estándares de calidad definidos para cada herramienta y maquinaria.| 
 | Paso | Acción |
 | 1    |El responsable de mantenimiento ingresa al sistema.|
-| 2    |Accede al apartado "Mantenimiento Preventivo".|
-| 3    | Se monitorean y controlan los procesos de fabricación para asegurar que se cumplan los estándares de calidad establecidos. Esto puede incluir la implementación de controles en línea durante la producción para detectar y corregir posibles problemas de calidad de manera oportuna.|
-| 4    | Selecciona una herramienta o maquinaria |
-| 5    | Programa la fecha del próximo mantenimiento.|
-| 6    | Confirma y guarda la programación del mantenimiento.|
-| 7    | Caso terminado.|
+| 2    |Accede al apartado "Mantenimiento".|
+| 3    |Se muestra una lista de herramientas y maquinarias que requieren mantenimiento.|
+| 4    |Selecciona una herramienta o maquinaria |
+| 5    |Verifica que se adjunte los estándares de calidad asociados a dicha herramienta.|
+| 6    | Programa la fecha del próximo mantenimiento.|
+| 7    | Confirma y guarda la programación del mantenimiento.|
+| 8    | Caso terminado.|
 
 
-#### **Caso de uso N°6: Reporte de Calidad de herramientas y maquinaria**
+#### **Caso de uso N°6: Visualización de Histórico de Mantenimientos**
 
-| **Objetivo:** |Identificar áreas de mejora en los procesos de producción a través del análisis de datos recopilados.|
+| **Objetivo:** |Identificar áreas de mejora en los procesos de producción a través del histórico de todos los mantenimientos realizados a las herramientas y maquinarias..|
 |------|--------|
-| **Descripción:** |	El sistema deberá analizar los datos de calidad recopilados durante las inspecciones y el control de calidad en procesos para identificar posibles áreas de mejora.| 
-| **Actor:** | Gerente de producción | 
-| **Precondiciones:** || 
-| 1   |Definición de Estándares de Calidad: Opción para establecer y modificar estándares de calidad.|
-|    |Campos para especificar criterios como dimensiones, materiales y procesos.
-|2|Inspecciones de Producto|
-|    |Registro de inspecciones periódicas a productos.
-|3|Campos para resultados, observaciones y fechas de inspección.|
-| 4   |Control de Calidad en Procesos
+| **Descripción:** |	El sistema deberá analizar los datos de calidad recopilados durante los manteniminetos y el control de calidad  para identificar posibles mejoras en la adquisiicion de materiales.| 
+| **Actor:** | Responsable de mantenimiento| 
+| **Precondiciones:** |Existencia de registros de mantenimientos previos en el sistema.
+Estándares de calidad definidos y asociados a cada herramienta y maquinaria.| 
+| 1  |El responsable de mantenimiento o usuario autorizado ingresa al sistema|
+| 2  | Accede al apartado "Histórico de Mantenimientos"|
+| 3  |Se muestra un listado de todas las herramientas y maquinarias registradas.|
+| 4  |Selecciona una herramienta o maquinaria para ver su histórico de mantenimientos y estándares de calidad.|
 Registro de calidad de materias primas, eficiencia de procesos y satisfacción del cliente.|
-| 5   |Opciones para evaluar y calificar los procesos de producción.
-Análisis y Mejora Continua|
-| 6   |Análisis de datos para identificar áreas de mejora.
-Implementación de acciones correctivas y preventivas.|
+| 5  |Visualiza los detalles de los mantenimientos realizados, incluyendo fechas, tipo de mantenimiento, cumplimiento de estándares y comentarios adicionales.|
+| 6  |Puede realizar búsquedas o filtrados adicionales según sea necesario.|
+| 7  |Caso terminado|
 
-
-
-#### **Caso de uso N°7: Reporte de Calidad de herramientas y maquinaria**
-
-| **Objetivo:** |Identificar áreas de mejora en los procesos de producción a través del análisis de datos recopilados.|
-|------|--------|
-| **Descripción:** |	El sistema deberá analizar los datos de calidad recopilados durante las inspecciones y el control de calidad en procesos para identificar posibles áreas de mejora.| 
-| **Actor:** | Gerente de producción | 
-| **Precondiciones:** || 
-| 1   |Definición de Estándares de Calidad: Opción para establecer y modificar estándares de calidad.|
-|    |Campos para especificar criterios como dimensiones, materiales y procesos.
-|2|Inspecciones de Producto|
-|    |Registro de inspecciones periódicas a productos.
-|3|Campos para resultados, observaciones y fechas de inspección.|
-| 4   |Control de Calidad en Procesos
-Registro de calidad de materias primas, eficiencia de procesos y satisfacción del cliente.|
-| 5   |Opciones para evaluar y calificar los procesos de producción.
-Análisis y Mejora Continua|
-| 6   |Análisis de datos para identificar áreas de mejora.
-Implementación de acciones correctivas y preventivas.|
