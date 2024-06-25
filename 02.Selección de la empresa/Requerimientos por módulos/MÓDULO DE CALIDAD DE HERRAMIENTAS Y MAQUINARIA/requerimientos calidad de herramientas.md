@@ -30,7 +30,7 @@ Estándares de calidad definidos y asociados a cada herramienta y maquinaria.|
 | 2  | Accede al apartado "Histórico de Mantenimientos"|
 | 3  |Se muestra un listado de todas las herramientas y maquinarias registradas.|
 | 4  |Selecciona una herramienta o maquinaria para ver su histórico de mantenimientos y estándares de calidad.|
-Registro de calidad de materias primas, eficiencia de procesos y satisfacción del cliente.|
+|    |Registro de calidad de materias primas, eficiencia de procesos y satisfacción del cliente.|
 | 5  |Visualiza los detalles de los mantenimientos realizados, incluyendo fechas, tipo de mantenimiento, cumplimiento de estándares y comentarios adicionales.|
 | 6  |Puede realizar búsquedas o filtrados adicionales según sea necesario.|
 | 7  |Caso terminado|
