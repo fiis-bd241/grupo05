@@ -40,7 +40,7 @@
     id_reclamo CHAR(6) PRIMARY KEY,
     fecha_reclamo DATE,
     estado_reclamo VARCHAR(15),
-    descripcion_reclamo VARCHAR(50),
+    descrip_reclamo VARCHAR(50),
     id_operario CHAR(6),
     FOREIGN KEY (id_operario) REFERENCES operario(id_operario)
 );``
@@ -67,11 +67,11 @@
 );``
 
 ### TABLA: OBSERVACIONES
-``CREATE TABLE observaciones (
-    id_obs CHAR(6) PRIMARY KEY,
-    fecha_obs DATE,
-    estado_obs VARCHAR(15),
-    descripcion_obs VARCHAR(50),
+``CREATE TABLE observacion (
+    id_observacion CHAR(6) PRIMARY KEY,
+    fecha_observacion DATE,
+    estado_observacion VARCHAR(15),
+    descrip_observacion VARCHAR(50),
     id_actividad CHAR(6),
     FOREIGN KEY (id_actividad) REFERENCES actividad(id_actividad)
 );``
@@ -255,7 +255,7 @@ VALUES
 ('HRM003', 'PRV003', 'ALM003', '3 meses', 'OP003');``
 
 ### DATOS TABLA: OBSERVACIONES
-``INSERT INTO observaciones (id_obs, fecha_obs, estado_obs, descripcion_obs, id_actividad)
+``INSERT INTO observacion (id_observacion, fecha_observacion, estado_observacion, descrip_observacion, id_actividad)
 VALUES 
 ('OBS001', '2024-04-05', 'En proceso', 'Necesita más supervisión', 'ACT001'),
 ('OBS002', '2024-04-15', 'Pendiente', 'Requiere más piezas', 'ACT002'),
