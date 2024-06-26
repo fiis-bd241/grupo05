@@ -2971,30 +2971,31 @@ insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo,
   |-------------------------------------|
   |  codigo: 
   
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI1', '17-06-2023', 'Aprobado', 'GES192', 'INS178');
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI2', '24-12-2023', 'Rechazado', 'GES56', 'INS148');
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI3', '15-08-2023', 'Aprobado', 'GES103', 'INS46');
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI4', '13-12-2023', 'Rechazado', 'GES39', 'INS93');
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI5', '17-09-2023', 'Pendiente', 'GES157', 'INS193');
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI6', '02-12-2023', 'Pendiente', 'GES43', 'INS79');
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI7', '12-02-2024', 'Rechazado', 'GES74', 'INS17');
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI8', '31-05-2024', 'Pendiente', 'GES60', 'INS155');
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI9', '04-01-2024', 'Aprobado', 'GES114', 'INS140');
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI10', '11-06-2023', 'Aprobado', 'GES146', 'INS42');
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI11', '29-02-2024', 'Pendiente', 'GES72', 'INS50');
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI12', '03-08-2023', 'Pendiente', 'GES27', 'INS148');
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI13', '29-08-2023', 'Rechazado', 'GES121', 'INS161');
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI14', '11-04-2024', 'Pendiente', 'GES112', 'INS76');
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI15', '16-01-2024', 'Pendiente', 'GES146', 'INS191');
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI16', '11-11-2023', 'Aprobado', 'GES116', 'INS165');
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI17', '07-05-2024', 'Rechazado', 'GES52', 'INS12');
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI18', '27-12-2023', 'Pendiente', 'GES98', 'INS26');
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI19', '26-05-2024', 'Pendiente', 'GES69', 'INS180');
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI20', '22-03-2024', 'Pendiente', 'GES74', 'INS108');
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI21', '27-09-2023', 'Rechazado', 'GES197', 'INS54');
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI22', '02-08-2023', 'Pendiente', 'GES66', 'INS171');
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI23', '09-04-2024', 'Pendiente', 'GES9', 'INS174');
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI24', '09-03-2024', 'Pendiente', 'GES124', 'INS51');
+    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values
+      ('ISI1', '17-06-2023', 'Aprobado', 'GES192', 'INS178'),
+      ('ISI2', '24-12-2023', 'Rechazado', 'GES56', 'INS148'),
+      ('ISI3', '15-08-2023', 'Aprobado', 'GES103', 'INS46'),
+      ('ISI4', '13-12-2023', 'Rechazado', 'GES39', 'INS93');
+      ('ISI5', '17-09-2023', 'Pendiente', 'GES157', 'INS193');
+      ('ISI6', '02-12-2023', 'Pendiente', 'GES43', 'INS79');
+      ('ISI7', '12-02-2024', 'Rechazado', 'GES74', 'INS17');
+      ('ISI8', '31-05-2024', 'Pendiente', 'GES60', 'INS155');
+      ('ISI9', '04-01-2024', 'Aprobado', 'GES114', 'INS140');
+      ('ISI10', '11-06-2023', 'Aprobado', 'GES146', 'INS42');
+      ('ISI11', '29-02-2024', 'Pendiente', 'GES72', 'INS50');
+      ('ISI12', '03-08-2023', 'Pendiente', 'GES27', 'INS148');
+      ('ISI13', '29-08-2023', 'Rechazado', 'GES121', 'INS161');
+      ('ISI14', '11-04-2024', 'Pendiente', 'GES112', 'INS76');
+      ('ISI15', '16-01-2024', 'Pendiente', 'GES146', 'INS191');
+      ('ISI16', '11-11-2023', 'Aprobado', 'GES116', 'INS165');
+      ('ISI17', '07-05-2024', 'Rechazado', 'GES52', 'INS12');
+      ('ISI18', '27-12-2023', 'Pendiente', 'GES98', 'INS26');
+      ('ISI19', '26-05-2024', 'Pendiente', 'GES69', 'INS180');
+      ('ISI20', '22-03-2024', 'Pendiente', 'GES74', 'INS108');
+      ('ISI21', '27-09-2023', 'Rechazado', 'GES197', 'INS54');
+      ('ISI22', '02-08-2023', 'Pendiente', 'GES66', 'INS171');
+      ('ISI23', '09-04-2024', 'Pendiente', 'GES9', 'INS174');
+      ('ISI24', '09-03-2024', 'Pendiente', 'GES124', 'INS51');
     insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI25', '05-02-2024', 'Aprobado', 'GES101', 'INS77');
     insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI26', '24-11-2023', 'Pendiente', 'GES28', 'INS121');
     insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI27', '29-04-2024', 'Aprobado', 'GES26', 'INS96');
@@ -3163,13 +3164,13 @@ insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo,
     insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI190', '13-07-2023', 'Rechazado', 'GES78', 'INS75');
     insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI191', '02-08-2023', 'Aprobado', 'GES40', 'INS185');
     insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI192', '24-03-2024', 'Aprobado', 'GES81', 'INS166');
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI193', '23-05-2024', 'Pendiente', 'GES44', 'INS75');
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI194', '02-08-2023', 'Rechazado', 'GES176', 'INS174');
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI195', '07-08-2023', 'Pendiente', 'GES66', 'INS180');
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI196', '26-07-2023', 'Pendiente', 'GES41', 'INS50');
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI197', '12-02-2024', 'Aprobado', 'GES104', 'INS72');
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI198', '18-10-2023', 'Rechazado', 'GES162', 'INS107');
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI199', '13-03-2024', 'Aprobado', 'GES146', 'INS178');
-    insert into Solicitud_insumo (id_solicitud_insumo, fecha_solicitud, estado_solicitud, id_gestor, id_insumo) values ('ISI200', '24-02-2024', 'Pendiente', 'GES151', 'INS24');
+    ('ISI193', '23-05-2024', 'Pendiente', 'GES44', 'INS75');
+    ('ISI194', '02-08-2023', 'Rechazado', 'GES176', 'INS174');
+    ('ISI195', '07-08-2023', 'Pendiente', 'GES66', 'INS180');
+    ('ISI196', '26-07-2023', 'Pendiente', 'GES41', 'INS50');
+    ('ISI197', '12-02-2024', 'Aprobado', 'GES104', 'INS72');
+    ('ISI198', '18-10-2023', 'Rechazado', 'GES162', 'INS107'),
+    ('ISI199', '13-03-2024', 'Aprobado', 'GES146', 'INS178'),
+    ('ISI200', '24-02-2024', 'Pendiente', 'GES151', 'INS24');
 
     
