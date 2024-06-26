@@ -1,4 +1,4 @@
-```java
+```SQL
  INSERT INTO herramienta (id_herramienta, nombre_herramienta, modelo, nombre_proveedor) VALUES
   ('HERR01', 'Máquina de coser recta', 'Industrial 2000', 'Maquinarias Textiles S.A.'),
   ('HERR02', 'Máquina overlock', 'Speedy Stitcher', 'Maquinarias Textiles S.A.'),
