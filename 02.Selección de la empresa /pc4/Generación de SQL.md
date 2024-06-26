@@ -1,5 +1,5 @@
 ```java
--- Eliminar tablas si existen
+	-- Eliminar tablas si existen
 DROP TABLE IF EXISTS herramienta CASCADE;
 DROP TABLE IF EXISTS gestor_produccion CASCADE;
 DROP TABLE IF EXISTS actividad CASCADE;
@@ -36,6 +36,30 @@ DROP TABLE IF EXISTS Transporte CASCADE;
 DROP TABLE IF EXISTS Solicitud_insumo CASCADE;
 DROP TABLE IF EXISTS Transportista CASCADE;
 DROP TABLE IF EXISTS Tipo_vehiculo CASCADE;
+-- Eliminar el trigger
+DROP TRIGGER IF EXISTS before_insert_asignacion ON asignacion_actividad;
+
+-- Eliminar la función del trigger
+DROP FUNCTION IF EXISTS asignacion_id_trigger;
+
+-- Eliminar la secuencia
+DROP SEQUENCE IF EXISTS asignacion_seq;
+
+-- Eliminar la función para generar el ID
+DROP FUNCTION IF EXISTS gen_id;
+
+-- Eliminar la tabla asignacion_actividad
+DROP TABLE IF EXISTS asignacion_actividad;
+
+
+CREATE OR REPLACE FUNCTION gen_id(prefix TEXT, seq_name TEXT) RETURNS TEXT AS $$
+DECLARE
+    seq_val BIGINT;
+BEGIN
+    EXECUTE format('SELECT nextval(''%s'')', seq_name) INTO seq_val;
+    RETURN prefix || LPAD(seq_val::TEXT, 3, '0');
+END;
+$$ LANGUAGE plpgsql;
 
 
 -- Eliminar secuencia si existe
@@ -174,58 +198,58 @@ CREATE TABLE solicitud_herramienta (
 	FOREIGN KEY (id_est_soli_herra) REFERENCES estado_soli_herra(id_est_soli_herra)
 );
 
-CREATE TABLE estado_reclamo
+CREATE TABLE Estado_Reclamo
 (
- id_estado_reclamo CHAR(6) NOT NULL,
- nom_estado_reclamo VARCHAR(50) NOT NULL,
- PRIMARY KEY (id_estado_reclamo)
+ Id_estado_reclamo CHAR(6) NOT NULL,
+ Nom_estado_reclamo VARCHAR(50) NOT NULL,
+ PRIMARY KEY (Id_estado_reclamo)
 );
 
-CREATE TABLE descripcion_reclamo
+CREATE TABLE Descripcion_reclamo
 (
- id_descrip_reclamo CHAR(6) NOT NULL,
- nom_descrip_reclamo VARCHAR(50) NOT NULL,
- PRIMARY KEY (id_descrip_reclamo)
+ Id_descrip_reclamo CHAR(6) NOT NULL,
+ Nom_descrip_reclamo VARCHAR(50) NOT NULL,
+ PRIMARY KEY (Id_descrip_reclamo)
 );
 
-CREATE TABLE reclamo
+CREATE TABLE Reclamo
 (
- id_reclamo CHAR(6) NOT NULL,
- fecha_reclamo DATE NOT NULL,
- id_operario CHAR(6) NOT NULL,
- id_descrip_reclamo CHAR(6) NOT NULL,
- id_estado_reclamo CHAR(6) NOT NULL,
- PRIMARY KEY (id_reclamo),
- FOREIGN KEY (id_operario) REFERENCES operario(id_operario),
- FOREIGN KEY (id_descrip_reclamo) REFERENCES descripcion_reclamo(id_descrip_reclamo),
- FOREIGN KEY (id_estado_reclamo) REFERENCES estado_reclamo(id_estado_reclamo)
+ Id_reclamo CHAR(6) NOT NULL,
+ Fecha_reclamo DATE NOT NULL,
+ Id_operario CHAR(6) NOT NULL,
+ Id_descrip_reclamo CHAR(6) NOT NULL,
+ Id_estado_reclamo CHAR(6) NOT NULL,
+ PRIMARY KEY (Id_reclamo),
+ FOREIGN KEY (Id_operario) REFERENCES Operario(Id_operario),
+ FOREIGN KEY (Id_descrip_reclamo) REFERENCES Descripcion_reclamo(Id_descrip_reclamo),
+ FOREIGN KEY (Id_estado_reclamo) REFERENCES Estado_Reclamo(Id_estado_reclamo)
 );
 
-CREATE TABLE estado_observacion
+CREATE TABLE Estado_Observacion
 (
- id_estado_observacion CHAR(6) NOT NULL,
- nom_estado_observacion VARCHAR(50) NOT NULL,
- PRIMARY KEY (id_estado_observacion)
+ Id_estado_observacion CHAR(6) NOT NULL,
+ Nom_estado_observacion VARCHAR(50) NOT NULL,
+ PRIMARY KEY (Id_estado_observacion)
 );
 
-CREATE TABLE descripcion_observacion
+CREATE TABLE Descripcion_observacion
 (
- id_descrip_observacion CHAR(6) NOT NULL,
- nom_descrip_observacion VARCHAR(50) NOT NULL,
- PRIMARY KEY (id_descrip_observacion)
+ Id_descrip_observacion CHAR(6) NOT NULL,
+ Nom_descrip_observacion VARCHAR(50) NOT NULL,
+ PRIMARY KEY (Id_descrip_observacion)
 );
 
-CREATE TABLE observacion
+CREATE TABLE Observacion
 (
- id_observacion CHAR(6) NOT NULL,
- fecha_observacion DATE NOT NULL,
+ Id_observacion CHAR(6) NOT NULL,
+ Fecha_observacion DATE NOT NULL,
  id_asignacion CHAR(6) NOT NULL,
- id_descrip_observacion CHAR(6) NOT NULL,
- id_estado_observacion CHAR(6) NOT NULL,
- PRIMARY KEY (id_observacion),
+ Id_descrip_observacion CHAR(6) NOT NULL,
+ Id_estado_observacion CHAR(6) NOT NULL,
+ PRIMARY KEY (Id_observacion),
  FOREIGN KEY (id_asignacion) REFERENCES asignacion_actividad(id_asignacion),
- FOREIGN KEY (id_descrip_observacion) REFERENCES descripcion_observacion(id_descrip_observacion),
- FOREIGN KEY (id_estado_observacion) REFERENCES estado_observacion(id_estado_observacion)
+ FOREIGN KEY (Id_descrip_observacion) REFERENCES Descripcion_observacion(Id_descrip_observacion),
+ FOREIGN KEY (Id_estado_observacion) REFERENCES Estado_Observacion(Id_estado_observacion)
 );
 
 CREATE TABLE Reporte_reclamo
@@ -431,3 +455,18 @@ CREATE TRIGGER trg_adjust_seq_solicitud
 BEFORE INSERT ON solicitud_herramienta
 FOR EACH ROW
 EXECUTE FUNCTION adjust_seq_solicitud();
+
+CREATE SEQUENCE asignacion_seq;
+CREATE OR REPLACE FUNCTION asignacion_id_trigger() RETURNS TRIGGER AS $$
+BEGIN
+    NEW.id_asignacion := gen_id('ASI', 'asignacion_seq');
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER before_insert_asignacion
+BEFORE INSERT ON asignacion_actividad
+FOR EACH ROW
+EXECUTE FUNCTION asignacion_id_trigger();
+
+
