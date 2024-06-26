@@ -4,6 +4,8 @@ Video del Módulo Registro de Actividades:
 
 Video del Módulo Gestión de Herramientas:
 
+[![Video](https://img.youtube.com/vi/HSj6_YuUY34/0.jpg)](https://youtu.be/HSj6_YuUY34)
+
 Video del Módulo Registro de Calidad:
 
 Video del Módulo Reportes Y Módulo de Remuneración:
