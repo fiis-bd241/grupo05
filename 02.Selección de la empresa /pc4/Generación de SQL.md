@@ -1,4 +1,4 @@
-```java
+```SQL
 	-- Eliminar tablas si existen
 DROP TABLE IF EXISTS herramienta CASCADE;
 DROP TABLE IF EXISTS gestor_produccion CASCADE;
