@@ -1443,6 +1443,18 @@ INSERT INTO Tipo_deduccion (Id_tipo_deduccion, Nom_tipo_deduccion) VALUES
 ('DED003', 'Adelanto Salarial'),
 ('DED004', 'Multa');
 
+INSERT INTO Estado_Reclamo (Id_estado_reclamo, Nom_estado_reclamo) VALUES
+('EST001', 'Pendiente'),
+('EST002', 'En Proceso'),
+('EST003', 'Resuelto'),
+('EST004', 'Cerrado');
+
+INSERT INTO Descripcion_reclamo (Id_descrip_reclamo, Nom_descrip_reclamo) VALUES
+('DES001', 'Producto Defectuoso'),
+('DES002', 'Entrega Tardía'),
+('DES003', 'Mala Atención'),
+('DES004', 'Otros');
+
 	insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC257', '02-08-2023', 'OPE962', 'DES004', 'EST003');
 	insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC149', '27-08-2023', 'OPE815', 'DES001', 'EST002');
 	insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC409', '29-04-2024', 'OPE729', 'DES002', 'EST004');
