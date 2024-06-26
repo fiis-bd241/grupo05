@@ -1,3 +1,5 @@
+```SQL
+
 -- Eliminar función y trigger si existen
 DROP FUNCTION IF EXISTS adjust_seq_solicitud();
 DROP TRIGGER IF EXISTS trg_adjust_seq_solicitud ON solicitud_herramienta;
