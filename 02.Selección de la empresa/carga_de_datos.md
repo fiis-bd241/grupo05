@@ -1407,7 +1407,29 @@
       insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC124', '16-11-2023', 'OPE751', 'DES003', 'EST002');
 
 
+## ESTADO OBSERVACION
+||
+  |-------------------------------------|
+  |  codigo: 
+  
+    INSERT INTO Estado_Observacion (id_estado_observacion, nom_estado_observacion) VALUES
+    ('EST001', 'Pendiente'),
+    ('EST002', 'En Proceso'),
+    ('EST003', 'Resuelta'),
+    ('EST004', 'Cerrada');
 
+## DESCRIPCIÓN OBSERVACION
+||
+  |-------------------------------------|
+  |  codigo: 
+  
+    INSERT INTO Descripcion_observacion (id_descrip_reclamo, Nom_descrip_observacion) VALUES
+    ('DES001', 'Producto Defectuoso'),
+    ('DES002', 'Entrega Tardía'),
+    ('DES003', 'Mala Atención'),
+    ('DES004', 'Otros');
+
+    
 ## REPORTE
 ||
   |-------------------------------------|
