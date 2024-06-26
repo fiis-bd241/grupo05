@@ -1,4 +1,4 @@
--- Eliminar tablas si existen
+	-- Eliminar tablas si existen
 DROP TABLE IF EXISTS herramienta CASCADE;
 DROP TABLE IF EXISTS gestor_produccion CASCADE;
 DROP TABLE IF EXISTS actividad CASCADE;
@@ -29,9 +29,12 @@ DROP TABLE IF EXISTS Estado_Observacion CASCADE;
 DROP TABLE IF EXISTS Descripcion_observacion CASCADE;
 DROP TABLE IF EXISTS observacion CASCADE;
 DROP TABLE IF EXISTS fallo CASCADE;
-DROP TABLE IF EXISTS estandar_de_Calidad CASCADE;
+DROP TABLE IF EXISTS estandar_de_calidad CASCADE;
 DROP TABLE IF EXISTS mantenimiento_maquinaria CASCADE;
-
+DROP TABLE IF EXISTS Transporte CASCADE;
+DROP TABLE IF EXISTS Solicitud_insumo CASCADE;
+DROP TABLE IF EXISTS Transportista CASCADE;
+DROP TABLE IF EXISTS Tipo_vehiculo CASCADE;
 
 
 -- Eliminar secuencia si existe
@@ -66,9 +69,9 @@ $$ LANGUAGE plpgsql;
 
 CREATE TABLE herramienta (
     id_herramienta VARCHAR(6) PRIMARY KEY,
-    nombre_herramienta VARCHAR(50),
-    modelo VARCHAR(50),
-    nombre_proveedor VARCHAR(50),
+    nombre_herramienta VARCHAR(100),
+    modelo VARCHAR(100),
+    nombre_proveedor VARCHAR(100),
 	disponible BOOLEAN DEFAULT TRUE
 );
 
@@ -96,14 +99,6 @@ CREATE TABLE lote
   fecha_produccion DATE NOT NULL,
   cant_prod INT NOT NULL,
   PRIMARY KEY (id_lote)
-);
-
-CREATE TABLE gestor_produccion_telefono
-(
-  telefono VARCHAR(9) NOT NULL,
-  id_gestor CHAR(6) NOT NULL,
-  PRIMARY KEY (telefono, id_gestor),
-  FOREIGN KEY (id_gestor) REFERENCES gestor_produccion(id_gestor)
 );
 
 CREATE TABLE categoria_taller
@@ -161,13 +156,6 @@ CREATE TABLE asignacion_actividad
   FOREIGN KEY (id_est_asignacion) REFERENCES estado_asignacion(id_est_asignacion)
 );
 
-CREATE TABLE operario_telefono
-(
-  telefono CHAR(9) NOT NULL,
-  id_operario CHAR(6) NOT NULL,
-  PRIMARY KEY (telefono, id_operario),
-  FOREIGN KEY (id_operario) REFERENCES operario(id_operario)
-);
 CREATE TABLE estado_soli_herra(
 	id_est_soli_herra VARCHAR(6) PRIMARY KEY,
 	nom_est_soli_herra VARCHAR(50) DEFAULT 'Pendiente'
@@ -184,17 +172,7 @@ CREATE TABLE solicitud_herramienta (
     FOREIGN KEY (id_gestor) REFERENCES gestor_produccion(id_gestor),
 	FOREIGN KEY (id_est_soli_herra) REFERENCES estado_soli_herra(id_est_soli_herra)
 );
-	
 
-CREATE TABLE mantenimiento_herramienta (
-    id_mantenimiento_herramienta VARCHAR(6) PRIMARY KEY,
-    tipo_mantenimiento VARCHAR(50),
-    fecha_mantenimiento DATE NOT NULL,
-    estado VARCHAR(50),
-    descripcion_mantenimiento TEXT,
-    id_herramienta VARCHAR(6) NOT NULL,
-    FOREIGN KEY (id_herramienta) REFERENCES herramienta(id_herramienta)
-);
 CREATE TABLE Estado_Reclamo
 (
  Id_estado_reclamo CHAR(6) NOT NULL,
@@ -385,20 +363,58 @@ CREATE TABLE fallo (
 
 CREATE TABLE estandar_de_calidad ( 
 	id_calidad CHAR(6) PRIMARY KEY, 
-	tipo_estandar VARCHAR(20), 
-	descripcion_estandar VARCHAR(50) );
+	tipo_estandar VARCHAR(200), 
+	descripcion_estandar VARCHAR(200) );
 
-
-CREATE TABLE mantenimiento_maquinaria ( 
+CREATE TABLE mantenimiento_herramienta( 
 	id_mantenimiento CHAR(6) PRIMARY KEY, 
 	tipo_mantenimiento CHAR(2), 
 	estado_mantenimiento VARCHAR(15), 
 	fecha_mantenimiento DATE NOT NULL, 
-	id_responsable CHAR(6), id_calidad CHAR(6), 
-	id_fallo CHAR(6), descripcion_mantenimiento VARCHAR(70), 
+	id_responsable CHAR(6),
+	id_calidad CHAR(6), 
+	id_fallo CHAR(6), 
+	descripcion_mantenimiento VARCHAR(200), 
 	FOREIGN KEY (id_responsable) REFERENCES operario(id_operario), 
 	FOREIGN KEY (id_calidad) REFERENCES estandar_de_calidad(id_calidad), 
-	FOREIGN KEY (id_fallo) REFERENCES fallo(id_fallo) );
+	FOREIGN KEY (id_fallo) REFERENCES fallo(id_fallo));
+	
+CREATE TABLE Tipo_vehiculo (
+    id_tipo_vehiculo CHAR(6) NOT NULL,
+    nombre_tipo_vehiculo VARCHAR(50) NOT NULL,
+    PRIMARY KEY (id_tipo_vehiculo)
+);
+	
+CREATE TABLE Transportista (
+    id_Transportista CHAR(6) PRIMARY KEY,
+    nombre_transportista VARCHAR(50),
+    disponibilidad VARCHAR(20) DEFAULT 'DISPONIBLE',
+    ruta VARCHAR(50) DEFAULT NULL
+);
+
+CREATE TABLE Solicitud_insumo (
+    id_solicitud_insumo VARCHAR(10) NOT NULL,
+    fecha_solicitud VARCHAR(10) NOT NULL,
+    id_gestor CHAR(6) NOT NULL,
+	tipo_insumo VARCHAR(50) NOT NULL,
+	cantidad_insumo INT NOT NULL,
+	Nombre_provedor VARCHAR(50), 
+    PRIMARY KEY (id_solicitud_insumo),
+    FOREIGN KEY (id_gestor) REFERENCES gestor_produccion(id_gestor)
+);
+	
+CREATE TABLE Transporte (
+    id_transporte CHAR(6) NOT NULL,
+    id_operario CHAR(6) NOT NULL,
+    fecha_transporte CHAR(10) NOT NULL,
+    id_tipo_vehiculo CHAR(6) NOT NULL,
+	id_solicitud_insumo VARCHAR(10) NOT NULL,
+	id_Transportista CHAR(6) ,
+    PRIMARY KEY (id_transporte),
+    FOREIGN KEY (id_solicitud_insumo) REFERENCES Solicitud_insumo(id_solicitud_insumo),
+    FOREIGN KEY (id_Transportista) REFERENCES Transportista(id_Transportista),
+    FOREIGN KEY (id_tipo_vehiculo) REFERENCES Tipo_vehiculo(id_tipo_vehiculo)
+);
 
 CREATE OR REPLACE FUNCTION adjust_seq_solicitud() RETURNS TRIGGER AS $$
 BEGIN
