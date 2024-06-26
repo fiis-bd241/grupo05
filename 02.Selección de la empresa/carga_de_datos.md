@@ -1206,20 +1206,20 @@
   |  codigo:
 
   insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC257', '02-08-2023', 'OPE962', 'DES004', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC149', '27-08-2023', 'OPE815', 'DES001', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC409', '29-04-2024', 'OPE729', 'DES002', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC742', '31-03-2024', 'OPE191', 'DES001', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC298', '08-09-2023', 'OPE982', 'DES001', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC197', '10-04-2024', 'OPE512', 'DES003', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC345', '28-04-2024', 'OPE775', 'DES002', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC277', '25-03-2024', 'OPE527', 'DES002', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC516', '01-01-2024', 'OPE358', 'DES003', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC494', '14-03-2024', 'OPE342', 'DES001', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC897', '22-06-2024', 'OPE941', 'DES002', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC168', '16-07-2023', 'OPE594', 'DES002', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC020', '23-03-2024', 'OPE020', 'DES002', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC577', '29-08-2023', 'OPE590', 'DES002', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC465', '18-03-2024', 'OPE378', 'DES001', 'EST002');
+  insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC149', '27-08-2023', 'OPE815', 'DES001', 'EST002');
+  insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC409', '29-04-2024', 'OPE729', 'DES002', 'EST004');
+  insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC742', '31-03-2024', 'OPE191', 'DES001', 'EST001');
+  insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC298', '08-09-2023', 'OPE982', 'DES001', 'EST003');
+  insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC197', '10-04-2024', 'OPE512', 'DES003', 'EST003');
+  insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC345', '28-04-2024', 'OPE775', 'DES002', 'EST001');
+  insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC277', '25-03-2024', 'OPE527', 'DES002', 'EST002');
+  insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC516', '01-01-2024', 'OPE358', 'DES003', 'EST002');
+  insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC494', '14-03-2024', 'OPE342', 'DES001', 'EST003');
+  insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC897', '22-06-2024', 'OPE941', 'DES002', 'EST004');
+  insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC168', '16-07-2023', 'OPE594', 'DES002', 'EST002');
+  insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC020', '23-03-2024', 'OPE020', 'DES002', 'EST001');
+  insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC577', '29-08-2023', 'OPE590', 'DES002', 'EST003');
+  insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC465', '18-03-2024', 'OPE378', 'DES001', 'EST002');
 insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC321', '24-08-2023', 'OPE768', 'DES001', 'EST003');
 insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC406', '31-05-2024', 'OPE337', 'DES004', 'EST002');
 insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC310', '07-11-2023', 'OPE396', 'DES001', 'EST001');
