@@ -1,3 +1,4 @@
+```SQL
 CREATE OR REPLACE FUNCTION adjust_seq_solicitud() RETURNS TRIGGER AS $$
 BEGIN
     IF NEW.id_solicitud IS NOT NULL THEN
