@@ -14,6 +14,7 @@ Video del Módulo Solicitud de Pedidos de Insumos:
 
 Video del Módulo Reclamos y Observaciones:
 
+[![Video](https://img.youtube.com/vi/ffb16lxfUac/0.jpg)](https://youtu.be/ffb16lxfUac)
 
 [Ver otros videos](Videos.md)
 
