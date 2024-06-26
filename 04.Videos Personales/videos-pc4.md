@@ -2,6 +2,8 @@
 
 Video del Módulo Registro de Actividades:
 
+https://youtu.be/jVEUsAtvEN4
+
 Video del Módulo Gestión de Herramientas:
 
 [![Video](https://img.youtube.com/vi/HSj6_YuUY34/0.jpg)](https://youtu.be/HSj6_YuUY34)
