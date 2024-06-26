@@ -8,6 +8,8 @@ Video del Módulo Registro de Calidad:
 
 Video del Módulo Reportes Y Módulo de Remuneración:
 
+[![Video](https://img.youtube.com/vi/jvsZUz12UXM?si=ElBE5Y0Peikfuley/0.jpg)](https://youtu.be//jvsZUz12UXM?si=ElBE5Y0Peikfuley)
+
 Video del Módulo Solicitud de Pedidos de Insumos:
 
 Video del Módulo Reclamos y Observaciones:
