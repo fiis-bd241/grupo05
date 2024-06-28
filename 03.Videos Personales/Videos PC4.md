@@ -10,6 +10,8 @@ Video del Módulo Gestión de Herramientas:
 
 Video del Módulo Registro de Calidad:
 
+[![Video](https://img.youtube.com/vi/JvCQAhBdreo/0.jpg)](https://youtu.be/JvCQAhBdreo)
+
 Video del Módulo Reportes Y Módulo de Remuneración:
 
 [![Video](https://img.youtube.com/vi/jvsZUz12UXM/0.jpg)](https://youtu.be/jvsZUz12UXM)
