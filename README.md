@@ -1,6 +1,6 @@
 # Proyecto del Curso - Grupo 5
 
-Bienvenidos al repositorio del Proyecto del Curso Diseño de Base de Datos del Grupo 5. Aquí encontrarán toda la documentación y archivos relevantes para nuestro proyecto.
+Bienvenidos al repositorio del proyecto del grupo 5 para el curso de Diseño de Base de Datos. Aquí encontrarán toda la documentación necesaria, así como los archivos relevantes para nuestro proyecto.
 
 ## Índice
 
@@ -8,8 +8,4 @@ Bienvenidos al repositorio del Proyecto del Curso Diseño de Base de Datos del G
 
 2. [Selección de la empresa](02.Selección%20de%20la%20empresa/SeleccionEmpresa.md)
 
-3. [Entrevistas](03.Entrevistas/Entrevistas.md)
-
-4. [Videos Personales](04.Videos%20Personales/Videos.md)
-   
-5. Otra sección
+3. [Videos Personales](03.Videos%20Personales/Videos.md)
