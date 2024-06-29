@@ -1,9 +1,10 @@
+# Sentencias SQL
 
 # Prototipo 1: Interfaz de Registro de Solicitudes de Herramientas por Operario
 ### Código Requerimiento: R-001
 ### Código Interfaz: I-001
 ### Imagen Interfaz: (imagen ilustrativa) 
-<img src="Group 3.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+<img src="Group 3.png" alt="PC3" style="width: 120%; height: auto;" />
  
 ### Descripción: Esta interfaz permite a un operario registrar una nueva solicitud de herramienta.
 ## Sentencias SQL
@@ -48,7 +49,7 @@ SELECT nombre_herramienta FROM herramienta;
 ### Código Requerimiento: R-002
 ### Código Interfaz: I-002
 ### Imagen Interfaz:  (imagen ilustrativa)
-<img src="Group 4.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+<img src="Group 4.png" alt="PC3" style="width: 120%; height: auto;" />
 
 ### Descripción: Esta interfaz permite a un operario visualizar todas sus solicitudes y las herramientas disponibles.
 ## Sentencias SQL
@@ -82,7 +83,7 @@ SELECT nombre_herramienta FROM herramienta;
 ### Código Requerimiento: R-003
 ### Código Interfaz: I-003
 ### Imagen Interfaz:  (imagen ilustrativa)
-<img src="interfaz 10.1.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+<img src="interfaz 10.1.png" alt="PC3" style="width: 120%; height: auto;" />
  
 ### Descripción: Esta interfaz permite a un gestor ver las solicitudes pendientes y aprobar o rechazar las solicitudes.
 
@@ -208,7 +209,7 @@ SELECT monto_deduccion FROM deduccion;
 ### Código Requerimiento: R-007
 ### Código Interfaz: I-007
 ### Imagen Interfaz: (imagen ilustrativa)
-<img src="asig.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+<img src="asig.png" alt="PC3" style="width: 120%; height: auto;" />
 
 ### Descripción: Esta interfaz permite a un operario visualizar el proceso para asignar una actividad a un operario.
 
@@ -234,7 +235,7 @@ SELECT monto_deduccion FROM deduccion;
 ### Código Requerimiento: R-008
 ### Código Interfaz: I-008
 ### Imagen Interfaz: (imagen ilustrativa)
-<img src="veri.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+<img src="veri.png" alt="PC3" style="width: 120%; height: auto;" />
 
 ### Descripción: Esta interfaz permitir a un operario enviar una verificación de una actividad al gestor de producción para su revisión.
 
@@ -284,8 +285,8 @@ SELECT monto_deduccion FROM deduccion;
 ### Código Requerimiento: R-009
 ### Código Interfaz: I-009
 ### Imagen Interfaz: (imagen ilustrativa)
-<img src="audi.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
-<img src="rehacer.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+<img src="audi.png" alt="PC3" style="width: 120%; height: auto;" />
+<img src="rehacer.png" alt="PC3" style="width: 120%; height: auto;" />
 
 ### Descripción: Esta interfaz permitir a un gestor de producción dar un visto bueno a una actividad para indicar que ha sido realizada correctamente por un operario.
 
@@ -333,8 +334,8 @@ SELECT monto_deduccion FROM deduccion;
 ### Código Requerimiento: R-010
 ### Código Interfaz: I-010
 ### Imagen Interfaz: (imagen ilustrativa) 
-<img src="interfaz reclamos op1 mejorado.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
-<img src="interfaz reclamos op2 mejorado.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+<img src="InterfazReclamosOp1.png" alt="PC3" style="width: 120%; height: auto;" />
+<img src="InterfazReclamosOp2.png" alt="PC3" style="width: 120%; height: auto;" />
 
 ### Descripción: Esta interfaz permite a un operario registrar un reclamo.
 
@@ -356,7 +357,7 @@ SELECT monto_deduccion FROM deduccion;
 ### Código Requerimiento: R-011
 ### Código Interfaz: I-011
 ### Imagen Interfaz: (imagen ilustrativa) 
-<img src="interfaz reclamos gp1.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+<img src="InterfazReclamosGp.png" alt="PC3" style="width: 120%; height: auto;" />
 
 ### Descripción: Esta interfaz permite al gestor de producción visualizar los reclamos realizados por los operarios.
 
@@ -415,7 +416,7 @@ SELECT id_estado_reclamo FROM reclamo;
 ### Código Requerimiento: R-012
 ### Código Interfaz: I-012
 ### Imagen Interfaz: (imagen ilustrativa) 
-<img src="interfaz observaciones1.png" alt="02.Selección de la empresa" style="width: 120%; height: auto;" />
+<img src="InterfazObservaciones.png" alt="PC3" style="width: 120%; height: auto;" />
 
 ### Descripción: Esta interfaz permite al gestor de producción visualizar el total de observaciones realizadas.
 
