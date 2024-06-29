@@ -226,7 +226,7 @@ SELECT monto_deduccion FROM deduccion;
   |-------------------------------------|
   |  codigo:  
       INSERT INTO asignacion_actividad (fecha_asig, hora_inicio, hora_fin, id_asignacion, id_gestor, id_lote, id_actividad, id_operario, id_est_actividad)
-      VALUES (<1>, <2>, 'ASI1' , <3>, <4>, <5>, <6>, <7>, 'EST4');
+      VALUES (<1>, <2>, 'ASI1' , <3>, <4>, <5>, <6>, <7>, 'EST1');
 |Donde:|
 |--------------------------------------------|
 |<1> es el fecha de elaborar la actividad.|
