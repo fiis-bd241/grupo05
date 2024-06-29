@@ -31,3 +31,8 @@
 # MÓDULO DE CALIDAD DE HERRAMIENTAS
 
 # MÓDULO DE REMUNERACIÓN DEL OPERARIO
+![image](https://github.com/fiis-bd241/grupo05/blob/main/04.%20Monograf%C3%ADa/im%C3%A1genes/bonificacion_final.PNG)
+
+![image](https://github.com/fiis-bd241/grupo05/blob/main/04.%20Monograf%C3%ADa/im%C3%A1genes/deducci%C3%B3n%20final.PNG)
+
+
