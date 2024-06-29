@@ -33,7 +33,7 @@ ScyllaDB es un software de gestión de bases de datos NoSQL distribuido y de có
 
 ## DESCRIPCION DEL USO DEL MOTOR SCYLLA EN NUESTRO TRABAJO
 
-
+----grijalva----
 
 
 ### SECUENCIA DE PASOS 
