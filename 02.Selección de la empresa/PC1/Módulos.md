@@ -120,8 +120,8 @@ Utiliza la información de los reportes para definir las bonificaciones y las de
 
 
 # DIAGRAMA UML
-<img src="UML.png" alt="Modelos" style="width: 100%; height: auto;" />
+<img src="UML.png" alt="PC1" style="width: 100%; height: auto;" />
 
-[Selección de la empresa](../../02.Selección%20de%20la%20empresa/SeleccionEmpresa.md)
+[Selección de la empresa](../SeleccionEmpresa.md)
 
 [Regresar al índice](../../README.md)
