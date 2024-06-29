@@ -1,412 +1,162 @@
-# Capítulo 08: SENTENCIAS SQL POR MÓDULO
-```
--- Para el trigger que marca arreglado_fallo como TRUE
-DROP TRIGGER IF EXISTS trigger_update_arreglado_fallo_true ON mantenimiento_herramienta;
-DROP FUNCTION IF EXISTS update_arreglado_fallo_true();
+# Sentencias SQL
 
--- Para el trigger que marca arreglado_fallo como FALSE
-DROP TRIGGER IF EXISTS trigger_update_arreglado_fallo_false ON mantenimiento_herramienta;
-DROP FUNCTION IF EXISTS update_arreglado_fallo_false();
+# Prototipo 1: Interfaz de Registro de Solicitudes de Herramientas por Operario
+### Código Requerimiento: R-001
+### Código Interfaz: I-001
+### Imagen Interfaz: (imagen ilustrativa) 
 
-CREATE OR REPLACE FUNCTION update_arreglado_fallo_true() 
-RETURNS TRIGGER AS $$
-BEGIN
-    IF NEW.id_estado_mantenimiento = 'ESTM02' THEN
-        UPDATE fallo
-        SET arreglado_fallo = TRUE
-        WHERE id_fallo = NEW.id_fallo;
-    END IF;
-    RETURN NEW;
-END;
-$$ LANGUAGE plpgsql;
+![image](https://github.com/fiis-bd241/grupo05/assets/164263389/07b588b8-4c82-4303-b251-ade0f1059cd8)
 
-CREATE TRIGGER trigger_update_arreglado_fallo_true
-AFTER UPDATE ON mantenimiento_herramienta
-FOR EACH ROW
-EXECUTE FUNCTION update_arreglado_fallo_true();
+ 
+### Descripción: Esta interfaz permite a un operario registrar una nueva solicitud de herramienta.
+## Sentencias SQL
+### Eventos
+### 1- Carga de Página: Se llenará la lista de herramientas por código de herramienta o nombre de herramienta para seleccionar.
+### Por código de herramienta :
+SELECT id_herramienta FROM herramienta; 
+### Por nombre de herramienta:
+SELECT nombre_herramienta FROM herramienta; 
+### 2-Boton buscar:  Cuando el usuario oprima el botón buscar se llenará la grilla de resultados utilizando la siguiente sentencia
+### Por código de herramienta :
+||
+  |-------------------------------------|
+  |  codigo:  
+      SELECT id_herramienta, nombre_herramienta, modelo, nombre_proveedor
+      FROM herramienta
+      WHERE id_herramienta = <3> AND disponible = TRUE;
+      
+### Por nombre de herramienta:
+||
+  |-------------------------------------|
+  |  codigo:  
+      SELECT id_herramienta, nombre_herramienta, modelo, nombre_proveedor
+      FROM herramienta
+      WHERE nombre_herramienta ILIKE '%' || <3> || '%' AND disponible = TRUE;
+      
+### 3-Botón Registrar Solicitud: Agregar una nueva solicitud de herramienta.
+||
+  |-------------------------------------|
+  |  codigo:  
+     INSERT INTO solicitud_herramienta (id_est_soli_herra, fecha_solicitud, id_operario,id_herramienta)
+     VALUES ('EHE1', CURRENT_TIMESTAMP, <1> ,<2>);
 
-CREATE OR REPLACE FUNCTION update_arreglado_fallo_false() 
-RETURNS TRIGGER AS $$
-BEGIN
-    IF NEW.id_estado_mantenimiento = 'ESTM01' THEN
-        UPDATE fallo
-        SET arreglado_fallo = FALSE
-        WHERE id_fallo = NEW.id_fallo;
-    END IF;
-    RETURN NEW;
-END;
-$$ LANGUAGE plpgsql;
+|Donde:|
+|--------------------------------------------|
+|<1> es el ID del operario que realiza la solicitud. |
+|<2> es el ID de la herramienta seleccionada. |
+|<3> es el nombre de la herramienta seleccionada. |
 
-CREATE TRIGGER trigger_update_arreglado_fallo_false
-AFTER UPDATE ON mantenimiento_herramienta
-FOR EACH ROW
-EXECUTE FUNCTION update_arreglado_fallo_false();
-```
+ 
+## Prototipo 2: Interfaz de Visualización de Herramientas y Solicitudes por Operario
+### Código Requerimiento: R-002
+### Código Interfaz: I-002
+### Imagen Interfaz:  (imagen ilustrativa)
 
-# MÓDULO DE GESTION DE HERRAMIENTAS Y MAQUINARIAS
-
-```
-CREATE OR REPLACE FUNCTION adjust_seq_solicitud() RETURNS TRIGGER AS $$
-BEGIN
-    IF NEW.id_solicitud IS NOT NULL THEN
-        PERFORM setval('seq_solicitud', GREATEST((SELECT MAX(CAST(SUBSTRING(id_solicitud, 4) AS INTEGER)) FROM solicitud_herramienta), nextval('seq_solicitud')-1));
-    END IF;
-    RETURN NEW;
-END;
-$$ LANGUAGE plpgsql;
-
--- Crear el Trigger
-CREATE TRIGGER trg_adjust_seq_solicitud
-BEFORE INSERT ON solicitud_herramienta
-FOR EACH ROW
-EXECUTE FUNCTION adjust_seq_solicitud();
-```
-
-# MÓDULO DE REGISTRO DE ACTIVIDADES
-
-```
-DROP TRIGGER IF EXISTS before_insert_asignacion ON asignacion_actividad;
-DROP FUNCTION IF EXISTS asignacion_id_trigger;
-DROP SEQUENCE IF EXISTS asignacion_seq;
-
-CREATE SEQUENCE asignacion_seq;
-CREATE OR REPLACE FUNCTION asignacion_id_trigger() RETURNS TRIGGER AS $$
-BEGIN
-    NEW.id_asignacion := gen_id('ASI', 'asignacion_seq');
-    RETURN NEW;
-END;
-$$ LANGUAGE plpgsql;
-
--- Trigger for 'id_asignacion'
-CREATE TRIGGER before_insert_asignacion
-BEFORE INSERT ON asignacion_actividad
-FOR EACH ROW
-EXECUTE FUNCTION asignacion_id_trigger();
-```
-
-# MÓDULO DE SOLICITUD DE PEDIDOS DE INSUMOS
-
-```
-DROP TRIGGER IF EXISTS before_insert_solicitud_insumo ON Solicitud_insumo;
-DROP FUNCTION IF EXISTS solicitud_insumo_id_trigger();
-DROP SEQUENCE IF EXISTS seq_id_solicitud_insumo;
-
-CREATE SEQUENCE seq_id_solicitud_insumo;
-CREATE OR REPLACE FUNCTION solicitud_insumo_id_trigger() RETURNS TRIGGER AS $$
-BEGIN
-    NEW.id_solicitud_insumo := 'ISI' || LPAD(nextval('seq_id_solicitud_insumo')::TEXT, 3, '0');
-    RETURN NEW;
-END;
-$$ LANGUAGE plpgsql;
--- Trigger for 'id_solicitud_insumo'
-CREATE TRIGGER before_insert_solicitud_insumo
-BEFORE INSERT ON Solicitud_insumo
-FOR EACH ROW
-EXECUTE FUNCTION solicitud_insumo_id_trigger();
-```
-
-# MÓDULO DE REPORTES
-
-```
-CREATE VIEW Reporte_Reclamos_Por_Fecha AS
-SELECT Fecha_reclamo, COUNT(*) AS Numero_de_Reclamos
-FROM Reclamo
-GROUP BY Fecha_reclamo;
-```
-
-```
-CREATE VIEW Reporte_Reclamos_Por_Estado AS
-SELECT E.Nom_estado_reclamo, COUNT(*) AS Numero_de_Reclamos
-FROM Reclamo R
-JOIN Estado_Reclamo E ON R.Id_estado_reclamo = E.Id_estado_reclamo
-GROUP BY E.Nom_estado_reclamo;
-```
-```
-CREATE VIEW Reporte_Reclamos_Por_Operario AS
-SELECT O.Id_operario, COUNT(*) AS Numero_de_Reclamos
-FROM Reclamo R
-JOIN Operario O ON R.Id_operario = O.Id_operario
-GROUP BY O.Id_operario;
-```
-
-```
-INSERT INTO Reporte_herramienta (categoria, valor, cantidad)
-SELECT 'Nombre de herramienta' AS categoria, nombre_herramienta AS valor, COUNT(*) AS cantidad
-FROM herramienta
-GROUP BY nombre_herramienta;
-INSERT INTO Reporte_herramienta (categoria, valor, cantidad)
-SELECT 'Proveedor de herramienta' AS categoria, nombre_proveedor AS valor, COUNT(*) AS cantidad
-FROM herramienta
-GROUP BY nombre_proveedor;
-INSERT INTO Reporte_herramienta (categoria, valor, cantidad)
-SELECT 'Modelo de herramienta' AS categoria, modelo AS valor, COUNT(*) AS cantidad
-FROM herramienta
-GROUP BY modelo;
-```
-
-# MÓDULO DE RECLAMOS
-
-```
-DROP TRIGGER IF EXISTS before_insert_reclamo ON Reclamo;
-DROP FUNCTION IF EXISTS reclamo_id_trigger();
-DROP SEQUENCE IF EXISTS seq_id_reclamo;
-
-CREATE SEQUENCE seq_id_reclamo;
-CREATE OR REPLACE FUNCTION reclamo_id_trigger() RETURNS TRIGGER AS $$
-BEGIN
-    NEW.Id_reclamo := 'REC' || LPAD(nextval('seq_id_reclamo')::TEXT, 3, '0');
-    RETURN NEW;
-END;
-$$ LANGUAGE plpgsql;
-
--- Trigger for 'id_reclamo'
-CREATE TRIGGER before_insert_reclamo
-BEFORE INSERT ON Reclamo
-FOR EACH ROW
-EXECUTE FUNCTION reclamo_id_trigger();
-```
-
-# MÓDULO DE CALIDAD DE HERRAMIENTAS Y MAQUINARIA
-```
-DROP TRIGGER IF EXISTS before_insert_mantenimiento ON mantenimiento_herramienta;
-DROP FUNCTION IF EXISTS mantenimiento_id_trigger();
-DROP SEQUENCE IF EXISTS seq_id_mantenimiento;
-
-CREATE SEQUENCE seq_id_mantenimiento;
-CREATE OR REPLACE FUNCTION mantenimiento_id_trigger() RETURNS TRIGGER AS $$
-BEGIN
-    NEW.id_mantenimiento := 'MNT' || LPAD(nextval('seq_id_mantenimiento')::TEXT, 3, '0');
-    RETURN NEW;
-END;
-$$ LANGUAGE plpgsql;
--- Trigger for 'id_mantenimiento'
-CREATE TRIGGER before_insert_mantenimiento
-BEFORE INSERT ON mantenimiento_herramienta
-FOR EACH ROW
-EXECUTE FUNCTION mantenimiento_id_trigger();
-```
-
-```
-
-DROP TRIGGER IF EXISTS before_insert_fallo ON fallo;
-DROP TRIGGER IF EXISTS before_insert_fallo ON fallo;
-DROP SEQUENCE IF EXISTS seq_id_fallo CASCADE;
-
-CREATE SEQUENCE seq_id_fallo;
-CREATE OR REPLACE FUNCTION fallo_id_trigger()
-RETURNS TRIGGER AS $$
-BEGIN
-    NEW.id_fallo := 'FL' || LPAD(nextval('seq_id_fallo')::TEXT, 3, '0');
-    RETURN NEW;
-END;
-$$ LANGUAGE plpgsql;
--- Trigger for 'id_fallo'
-CREATE TRIGGER before_insert_fallo
-BEFORE INSERT ON fallo
-FOR EACH ROW
-EXECUTE FUNCTION fallo_id_trigger();
-```
-
-```
--- TRIGGERS PARA FALLOS Y HERRAMIENTA---
-
-DROP TRIGGER IF EXISTS trigger_update_herramienta_after_insert ON fallo;
-DROP FUNCTION IF EXISTS update_herramienta_disponible_after_insert();
-DROP TRIGGER IF EXISTS trigger_update_herramienta_after_update ON fallo;
-DROP FUNCTION IF EXISTS update_herramienta_disponible_after_update();
-DROP TRIGGER IF EXISTS trigger_update_herramienta_after_delete ON fallo;
-DROP FUNCTION IF EXISTS update_herramienta_disponible_after_delete();
-
-CREATE OR REPLACE FUNCTION update_herramienta_disponible_after_insert() 
-RETURNS TRIGGER AS $$
-BEGIN
-    IF NEW.arreglado_fallo = FALSE THEN
-        UPDATE herramienta
-        SET disponible = FALSE
-        WHERE id_herramienta = NEW.id_herramienta;
-    END IF;
-    RETURN NEW;
-END;
-$$ LANGUAGE plpgsql;
-
-CREATE TRIGGER trigger_update_herramienta_after_insert
-AFTER INSERT ON fallo
-FOR EACH ROW
-EXECUTE FUNCTION update_herramienta_disponible_after_insert();
-
-CREATE OR REPLACE FUNCTION update_herramienta_disponible_after_update() 
-RETURNS TRIGGER AS $$
-BEGIN
-    IF NEW.arreglado_fallo = TRUE THEN
-        -- Verificar si hay otros fallos no arreglados
-        IF NOT EXISTS (
-            SELECT 1
-            FROM fallo
-            WHERE id_herramienta = NEW.id_herramienta AND arreglado_fallo = FALSE
-        ) THEN
-            UPDATE herramienta
-            SET disponible = TRUE
-            WHERE id_herramienta = NEW.id_herramienta;
-        END IF;
-    ELSE
-        -- Si un fallo no está arreglado, marcar herramienta como no disponible
-        UPDATE herramienta
-        SET disponible = FALSE
-        WHERE id_herramienta = NEW.id_herramienta;
-    END IF;
-    RETURN NEW;
-END;
-$$ LANGUAGE plpgsql;
-
-CREATE TRIGGER trigger_update_herramienta_after_update
-AFTER UPDATE ON fallo
-FOR EACH ROW
-EXECUTE FUNCTION update_herramienta_disponible_after_update();
-
-CREATE OR REPLACE FUNCTION update_herramienta_disponible_after_delete() 
-RETURNS TRIGGER AS $$
-BEGIN
-    IF NOT EXISTS (
-        SELECT 1
-        FROM fallo
-        WHERE id_herramienta = OLD.id_herramienta AND arreglado_fallo = FALSE
-    ) THEN
-        UPDATE herramienta
-        SET disponible = TRUE
-        WHERE id_herramienta = OLD.id_herramienta;
-    END IF;
-    RETURN OLD;
-END;
-$$ LANGUAGE plpgsql;
-
-CREATE TRIGGER trigger_update_herramienta_after_delete
-AFTER DELETE ON fallo
-FOR EACH ROW
-EXECUTE FUNCTION update_herramienta_disponible_after_delete();
-```
-```
--- TRIGGERS PARA MANTENIMIENTO Y FALLOS---
--- Para el trigger que marca arreglado_fallo como TRUE
-DROP TRIGGER IF EXISTS trigger_update_arreglado_fallo_true ON mantenimiento_herramienta;
-DROP FUNCTION IF EXISTS update_arreglado_fallo_true();
-
--- Para el trigger que marca arreglado_fallo como FALSE
-DROP TRIGGER IF EXISTS trigger_update_arreglado_fallo_false ON mantenimiento_herramienta;
-DROP FUNCTION IF EXISTS update_arreglado_fallo_false();
-
-CREATE OR REPLACE FUNCTION update_arreglado_fallo_true() 
-RETURNS TRIGGER AS $$
-BEGIN
-    IF NEW.id_estado_mantenimiento = 'ESTM02' THEN
-        UPDATE fallo
-        SET arreglado_fallo = TRUE
-        WHERE id_fallo = NEW.id_fallo;
-    END IF;
-    RETURN NEW;
-END;
-$$ LANGUAGE plpgsql;
-
-CREATE TRIGGER trigger_update_arreglado_fallo_true
-AFTER UPDATE ON mantenimiento_herramienta
-FOR EACH ROW
-EXECUTE FUNCTION update_arreglado_fallo_true();
-
-CREATE OR REPLACE FUNCTION update_arreglado_fallo_false() 
-RETURNS TRIGGER AS $$
-BEGIN
-    IF NEW.id_estado_mantenimiento = 'ESTM01' THEN
-        UPDATE fallo
-        SET arreglado_fallo = FALSE
-        WHERE id_fallo = NEW.id_fallo;
-    END IF;
-    RETURN NEW;
-END;
-$$ LANGUAGE plpgsql;
-
-CREATE TRIGGER trigger_update_arreglado_fallo_false
-AFTER UPDATE ON mantenimiento_herramienta
-FOR EACH ROW
-EXECUTE FUNCTION update_arreglado_fallo_false();
-```
+![image](https://github.com/fiis-bd241/grupo05/assets/164263389/031f2bf6-b653-4ccb-935d-a61d29d486ce)
 
 
-# MÓDULO DE REMUNERACIÓN DEL OPERARIO
+### Descripción: Esta interfaz permite a un operario visualizar todas sus solicitudes y las herramientas disponibles.
+## Sentencias SQL
+### Eventos
+### 1-Carga de Página: Mostrar solicitudes del operario.
 
-```
-UPDATE Nomina
-SET Total_pago = (
+  ||
+  |-------------------------------------|
+  |codigo:
     SELECT 
-        Tipo_Sueldo_Base.Monto_sueldo_base + 
-        Bonificacion.Monto_bonificacion - 
-        Deduccion.Monto_deducido
-    FROM 
-        Tipo_Sueldo_Base, Bonificacion, Deduccion
-    WHERE 
-        Nomina.Id_sueldo_base = Tipo_Sueldo_Base.Id_sueldo_base
-        AND Nomina.Id_bonificacion = Bonificacion.Id_bonificacion
-        AND Nomina.Id_deduccion = Deduccion.Id_deduccion
-);
-```
+     s.id_solicitud, 
+     s.fecha_solicitud, 
+     s.id_est_soli_herra, 
+     h.nombre_herramienta, 
+     h.modelo
+     FROM 
+      solicitud_herramienta s
+     JOIN 
+      herramienta h ON s.id_herramienta = h.id_herramienta
+     WHERE 
+       s.id_operario = <1>
+     ORDER BY 
+       s.fecha_solicitud DESC;
+    
+|Donde:|
+|-------------------------------------|
+| <1> es el ID del operario autenticado. |
 
-```
-DROP TRIGGER IF EXISTS before_insert_nomina ON Nomina;
-DROP FUNCTION IF EXISTS nomina_id_trigger();
-DROP SEQUENCE IF EXISTS seq_id_nomina CASCADE;
 
-CREATE SEQUENCE seq_id_nomina;
-CREATE OR REPLACE FUNCTION nomina_id_trigger() RETURNS TRIGGER AS $$
-BEGIN
-    NEW.id_nomina := 'NOM' || LPAD(nextval('seq_id_nomina')::TEXT, 3, '0');
-    RETURN NEW;
-END;
-$$ LANGUAGE plpgsql;
+ ## Prototipo 3: Interfaz de Aprobación de Solicitudes por Gestor
+### Código Requerimiento: R-003
+### Código Interfaz: I-003
+### Imagen Interfaz:  (imagen ilustrativa)
+![image](https://github.com/fiis-bd241/grupo05/assets/164263389/447514c4-6af7-40c3-8c78-8ca7b706fd6a)
 
--- Trigger for 'id_nomina'
-CREATE TRIGGER before_insert_nomina
-BEFORE INSERT ON Nomina
-FOR EACH ROW
-EXECUTE FUNCTION nomina_id_trigger();
-```
+ 
+### Descripción: Esta interfaz permite a un gestor ver las solicitudes pendientes y aprobar o rechazar las solicitudes.
 
-```
-DROP TRIGGER IF EXISTS before_insert_deduccion ON Deduccion;
-DROP FUNCTION IF EXISTS deduccion_id_trigger();
-DROP SEQUENCE IF EXISTS seq_id_deduccion;
+## Sentencias SQL:
+### Eventos
+### 1-Carga de Página: Mostrar solicitudes pendientes.
+||
+  |-------------------------------------|
+  |  codigo:  
+      SELECT 
+       s.id_solicitud, 
+       o.prim_nom_op || ' ' || o.seg_nom_op || ' ' || o.prim_ape_op || ' ' || o.seg_ape_op AS nombre_completo_operario,
+       h.modelo,
+       h.nombre_herramienta
+    
+      FROM 
+       solicitud_herramienta s
+      JOIN 
+       operario o ON s.id_operario = o.id_operario
+      JOIN 
+       herramienta h ON s.id_herramienta = h.id_herramienta
+      WHERE 
+       s.id_est_soli_herra = 'EHE1';
+    
+### 2-Botón Buscar: Buscar solicitudes por nombre y apellido del operario.
+||
+  |-------------------------------------|
+  |  codigo:  
+      SELECT 
+        s.id_solicitud, 
+        o.prim_nom_op || ' ' || o.seg_nom_op || ' ' || o.prim_ape_op || ' ' || o.seg_ape_op AS nombre_completo_operario,
+        h.modelo,
+        h.nombre_herramienta,
+        s.id_est_soli_herra
+      FROM 
+        solicitud_herramienta s
+      JOIN 
+       operario o ON s.id_operario = o.id_operario
+      JOIN 
+       herramienta h ON s.id_herramienta = h.id_herramienta
+      WHERE 
+       s.id_est_soli_herra = 'EHE1' AND
+      (o.prim_nom_op || ' ' || o.seg_nom_op || ' ' || o.prim_ape_op || ' ' || o.seg_ape_op) ILIKE '%' || <3> || '%';
 
-CREATE SEQUENCE seq_id_deduccion;
-CREATE OR REPLACE FUNCTION deduccion_id_trigger() RETURNS TRIGGER AS $$
-BEGIN
-    NEW.Id_deduccion := 'DER' || LPAD(nextval('seq_id_deduccion')::TEXT, 3, '0');
-    RETURN NEW;
-END;
-$$ LANGUAGE plpgsql;
 
--- Trigger for 'id_deduccion'
-CREATE TRIGGER before_insert_deduccion
-BEFORE INSERT ON Deduccion
-FOR EACH ROW
-EXECUTE FUNCTION deduccion_id_trigger();
-```
+|Donde:|
+|--------------------------------------------|
+|<1> es la cadena de búsqueda ingresada por el gestor (nombre y apellido del operario).|
 
-```
-DROP TRIGGER IF EXISTS before_insert_bonificacion ON Bonificacion;
-DROP FUNCTION IF EXISTS bonificacion_id_trigger();
-DROP SEQUENCE IF EXISTS seq_id_bonificacion;
+### 3-Botón Aprobar Solicitud: Aprobar una solicitud pendiente.
+||
+  |-------------------------------------|
+  |  codigo:  
+      UPDATE solicitud_herramienta
+      SET id_est_soli_herra = 'EHE2', fecha_solicitud = CURRENT_TIMESTAMP, id_gestor = <1>
+      WHERE id_solicitud = <2>;
 
-CREATE SEQUENCE seq_id_bonificacion;
-CREATE OR REPLACE FUNCTION bonificacion_id_trigger()
-RETURNS TRIGGER AS $$
-BEGIN
-    NEW.id_bonificacion := 'BOD' || LPAD(nextval('seq_id_bonificacion')::TEXT, 3, '0');
-    RETURN NEW;
-END;
-$$ LANGUAGE plpgsql;
-CREATE TRIGGER before_insert_bonificacion
-BEFORE INSERT ON Bonificacion
-FOR EACH ROW
-EXECUTE FUNCTION bonificacion_id_trigger();
-```
-
+### 4-Botón Rechazar Solicitud: Rechazar una solicitud pendiente.
+||
+  |-------------------------------------|
+  |  codigo:  
+      UPDATE solicitud_herramienta
+      SET id_est_soli_herra = 'EHE3', fecha_solicitud = CURRENT_TIMESTAMP, id_gestor = <1>
+      WHERE id_solicitud = <2>;
+|Donde:|
+|--------------------------------------------|
+|<1> es el ID del gestor que toma la acción.|
+|<2> es el ID de la solicitud seleccionada.|
 
 
 
