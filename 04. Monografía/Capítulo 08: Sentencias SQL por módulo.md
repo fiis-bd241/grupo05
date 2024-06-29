@@ -422,7 +422,7 @@ SELECT id_estado_reclamo FROM reclamo;
 ### Código Requerimiento: R-012
 ### Código Interfaz: I-012
 ### Imagen Interfaz: (imagen ilustrativa) 
-<img src="InterfazObservaciones.png" alt="PC3" style="width: 120%; height: auto;" />
+<img src="../02.Selección de la empresa/PC3/InterfazObservaciones.png" alt="PC3" style="width: 120%; height: auto;" />
 
 ### Descripción: Esta interfaz permite al gestor de producción visualizar el total de observaciones realizadas.
 
