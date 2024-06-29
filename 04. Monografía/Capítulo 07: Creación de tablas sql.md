@@ -2,7 +2,7 @@
 
 
 -Tabla: HERRAMIENTA
-```
+``` SQL
 CREATE TABLE herramienta (
     id_herramienta VARCHAR(6) PRIMARY KEY,
     nombre_herramienta VARCHAR(100),
@@ -10,9 +10,9 @@ CREATE TABLE herramienta (
     nombre_proveedor VARCHAR(100),
 	disponible BOOLEAN DEFAULT TRUE
 );
-```
+``` 
 -Tabla: GESTOR DE LA PRODUCCIÓN
-```
+``` SQL
 CREATE TABLE gestor_produccion
 (
   id_gestor CHAR(6) NOT NULL,
@@ -26,7 +26,7 @@ CREATE TABLE gestor_produccion
 );
 ```
 -Tabla: ACTIVIDAD
-```
+``` SQL
 CREATE TABLE actividad
 (
   id_actividad CHAR(6) NOT NULL,
@@ -35,7 +35,7 @@ CREATE TABLE actividad
 );
 ```
 -Tabla: LOTE
-```
+``` SQL
 CREATE TABLE lote
 (
   id_lote CHAR(6) NOT NULL,
@@ -45,7 +45,7 @@ CREATE TABLE lote
 );
 ```
 -Tabla: CATEGORÍA DEL TALLER
-```
+``` SQL
 CREATE TABLE categoria_taller
 (
   id_cate_taller CHAR(6) NOT NULL,
@@ -54,7 +54,7 @@ CREATE TABLE categoria_taller
 );
 ```
 -Tabla: ESTADO DE LA ASIGNACIÓN
-```
+``` SQL
 CREATE TABLE estado_asignacion
 (
   id_est_asignacion CHAR(6) NOT NULL,
@@ -63,7 +63,7 @@ CREATE TABLE estado_asignacion
 );
 ```
 -Tabla: TALLER
-```
+``` SQL
 CREATE TABLE taller
 (
   id_taller CHAR(6) NOT NULL,
@@ -74,7 +74,7 @@ CREATE TABLE taller
 );
 ```
 -Tabla: OPERARIO
-```
+``` SQL
 CREATE TABLE operario
 (
   id_operario CHAR(6) NOT NULL,
@@ -90,7 +90,7 @@ CREATE TABLE operario
 );
 ```
 -Tabla: ASIGNACIÓN DE ACTIVIDAD
-```
+``` SQL
 CREATE TABLE asignacion_actividad
 (
   id_asignacion CHAR(6) NOT NULL,
@@ -111,14 +111,14 @@ CREATE TABLE asignacion_actividad
 );
 ```
 -Tabla: ESTADO DE LA SOLICITUD DE LA HERRAMIENTA
-```
+``` SQL
 CREATE TABLE estado_soli_herra(
 	id_est_soli_herra VARCHAR(6) PRIMARY KEY,
 	nom_est_soli_herra VARCHAR(50) DEFAULT 'Pendiente'
 );
 ```
 -Tabla: SOLICITUD DE LA HERRAMIENTA
-```
+``` SQL
 CREATE TABLE solicitud_herramienta (
     id_solicitud VARCHAR(10) PRIMARY KEY DEFAULT gen_id('SOL', 'seq_solicitud'),
     fecha_solicitud TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -133,7 +133,7 @@ CREATE TABLE solicitud_herramienta (
 );
 ```
 -Tabla: ESTADO DEL RECLAMO
-```
+``` SQL
 CREATE TABLE Estado_Reclamo
 (
  Id_estado_reclamo CHAR(6) NOT NULL,
@@ -142,7 +142,7 @@ CREATE TABLE Estado_Reclamo
 );
 ```
 -Tabla: RECLAMO
-```
+``` SQL
 CREATE TABLE Reclamo
 (
  Id_reclamo CHAR(6) NOT NULL,
@@ -156,7 +156,7 @@ CREATE TABLE Reclamo
 );
 ```
 -Tabla: REPORTE DEL RECLAMO
-```
+``` SQL
 CREATE TABLE Reporte_reclamo
 (
     Id_reporte CHAR(9) NOT NULL,
@@ -168,7 +168,7 @@ CREATE TABLE Reporte_reclamo
 );
 ```
 -Tabla: REPORTE DE LA HERRAMIENTA
-```
+``` SQL
 CREATE TABLE Reporte_herramienta (
     id_reporte SERIAL PRIMARY KEY,
     categoria VARCHAR(50),
@@ -177,7 +177,7 @@ CREATE TABLE Reporte_herramienta (
 );
 ```
 -Tabla: EMPRESA
-```
+``` SQL
 CREATE TABLE Empresa(
 	id_empresa SERIAL PRIMARY KEY NOT NULL,
 	ruc NUMERIC(12) NOT NULL,
@@ -191,7 +191,7 @@ CREATE TABLE Empresa(
 );
 ```
 -Tabla: TIPO DE DEDUCCIÓN
-```
+``` SQL
 CREATE TABLE Tipo_deduccion
 (
  Id_tipo_deduccion CHAR(6) NOT NULL,
@@ -200,7 +200,7 @@ CREATE TABLE Tipo_deduccion
 );
 ```
 -Tabla: DEDUCCIÓN
-```
+``` SQL
 CREATE TABLE Deduccion
 (
  Id_deduccion CHAR(6) NOT NULL,
@@ -211,7 +211,7 @@ CREATE TABLE Deduccion
 );
 ```
 -Tabla: TIPO DE SUELDO BASE
-```
+``` SQL
 CREATE TABLE Tipo_Sueldo_Base
 (
     Id_sueldo_base CHAR(6) NOT NULL,
@@ -221,7 +221,7 @@ CREATE TABLE Tipo_Sueldo_Base
 
 ```
 -Tabla: TIPO DE BONIFICACIÓN
-```
+``` SQL
 CREATE TABLE Tipo_Bonificacion
 (
  Id_tipo_boni CHAR(6) NOT NULL,
@@ -230,7 +230,7 @@ CREATE TABLE Tipo_Bonificacion
 );
 ```
 -Tabla: BONIFICACIÓN
-```
+``` SQL
 CREATE TABLE Bonificacion
 (
  Id_bonificacion CHAR(6) NOT NULL,
@@ -242,7 +242,7 @@ CREATE TABLE Bonificacion
 
 ```
 -Tabla: PERIODO DE PAGO 
-```
+``` SQL
 CREATE TABLE Periodo_pago
 (
  Id_periodo_pago CHAR(6) NOT NULL,
@@ -251,7 +251,7 @@ CREATE TABLE Periodo_pago
 );
 ```
 -Tabla: NÓMINA
-```
+``` SQL
 CREATE TABLE Nomina
 (
     Id_nomina CHAR(6) NOT NULL,
@@ -271,14 +271,14 @@ CREATE TABLE Nomina
 );
 ```
 -Tabla: TIPO DE FALLO
-```
+``` SQL
 CREATE TABLE tipo_fallo (
     id_tipo_fallo CHAR(6) PRIMARY KEY,
     nom_tipo_fallo VARCHAR(50) NOT NULL
 );
 ```
 -Tabla: FALLO 
-```
+``` SQL
 CREATE TABLE fallo (
     id_fallo CHAR(6) PRIMARY KEY,
     id_tipo_fallo CHAR(6) NOT NULL,
@@ -291,28 +291,28 @@ CREATE TABLE fallo (
 );
 ```
 -Tabla: TIPO DE ESTÁNDAR
-```
+``` SQL
 CREATE TABLE tipo_estandar (
     id_tipo_estandar CHAR(6) PRIMARY KEY,
     nom_tipo_estandar VARCHAR(200) NOT NULL
 );
 ```
 -Tabla: ESTADO DEL MANTENIMIENTO
-```
+``` SQL
 CREATE TABLE estado_mantenimiento (
     id_estado_mantenimiento CHAR(6) PRIMARY KEY,
     nom_estado_mantenimiento VARCHAR(15) NOT NULL
 );
 ```
 -Tabla: TIPO DE MANTENIMIENTO
-```
+``` SQL
 CREATE TABLE tipo_mantenimiento (
     id_tipo_mantenimiento CHAR(6) PRIMARY KEY,
     nom_tipo_mantenimiento VARCHAR(200)
 );
 ```
 -Tabla: MANTENIMIENTO DE LA HERRAMIENTA
-```
+``` SQL
 CREATE TABLE mantenimiento_herramienta (
     id_mantenimiento CHAR(6) PRIMARY KEY,
     id_tipo_mantenimiento CHAR(6) NOT NULL,
@@ -330,7 +330,7 @@ CREATE TABLE mantenimiento_herramienta (
 );
 ```
 -Tabla: TIPO DE INSUMO
-```
+``` SQL
 CREATE TABLE tipo_insumo (
     id_tipo_insumo CHAR(6) PRIMARY KEY,
     nom_tipo_insumo VARCHAR(50) NOT NULL
@@ -338,7 +338,7 @@ CREATE TABLE tipo_insumo (
 
 ```
 -Tabla: SOLICITUD DE INSUMO
-```
+``` SQL
 CREATE TABLE Solicitud_insumo (
     id_solicitud_insumo VARCHAR(10) NOT NULL,
     fecha_solicitud VARCHAR(10) NOT NULL,
@@ -351,8 +351,6 @@ CREATE TABLE Solicitud_insumo (
     FOREIGN KEY (id_tipo_insumo) REFERENCES tipo_insumo(id_tipo_insumo)
 );
 ```
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/GEN%20TAB.png?raw=true)
-
 
 
 
