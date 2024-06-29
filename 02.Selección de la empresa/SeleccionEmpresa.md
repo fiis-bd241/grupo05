@@ -11,10 +11,6 @@
 1. [Práctica 1](PC1)
 
 2. [Práctica 2](PC2)
-
-4. [Proceso de Producción](procesodeproduccion.md)
-   
-5. [Módulos del sistema](Modelados/Modulo.md)
    
 6. [Requerimientos del Sistema](Requerimientos.md)
 
