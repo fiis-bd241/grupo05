@@ -16,7 +16,7 @@ Capítulo 06: [Modelado lógico](Capítulo%2006%3A%20Modelado%20lógico.md)
 
 Capítulo 07: [Creación de tablas SQL](Capítulo%2007%3A%20Creación%20de%20tablas%20sql.md)
 
-Capítulo 08: [Sentencias SQL por módulo](Capítulo%2008%3A%20Sentencias%20sql%20por%20módulo.md)
+Capítulo 08: [Sentencias SQL por módulo](Capítulo%2008%3A%20Sentencias%20SQL%20por%20módulo.md)
 
 Capítulo 09: [Carga de datos](Capítulo%2009%3A%20Carga%20de%20datos%20por%20módulo.md)
 
