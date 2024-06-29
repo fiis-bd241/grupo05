@@ -319,6 +319,6 @@ Estándares de calidad definidos y asociados a cada herramienta y maquinaria.. |
 ### 3. Restricciones
 * El Backend del sistema se implementará en PostgreSQL
        
-[Selección de la empresa](SeleccionEmpresa.md)
+[Selección de la empresa](../SeleccionEmpresa.md)
 
 [Regresar al índice](../README.md)
