@@ -34,13 +34,13 @@ Este módulo se encarga de brindar información sobre las actividades concluidas
 3. Generación de reportes de cada herramienta y maquinaria
 4. Notificar cuando una herramienta o maquinaria presenta un número alto de usos
 
-## MÓDULO DE RECLAMOS Y OBSERVACIONES 
-Este módulo permite a los empleados registrar y gestionar reclamos, quejas, sugerencias y observaciones relacionadas con diversos aspectos de su experiencia laboral, como el entorno de trabajo, las condiciones de trabajo, las imperfecciones de algún producto o problemas con herramientas y maquinarias. Este módulo está diseñado para facilitar la comunicación entre los empleados y la empresa, así como para identificar áreas de mejora y promover un ambiente laboral saludable y productivo.
-1. Registro de reclamos y observaciones del empleado
-2. Asignación del personal responsable para la gestión de los reclamos y observaciones
+## MÓDULO DE RECLAMOS
+Este módulo permite a los empleados registrar y gestionar reclamos, quejas y sugerencias relacionadas con diversos aspectos de su experiencia laboral, como el entorno de trabajo, las condiciones de trabajo, las imperfecciones de algún producto o problemas con herramientas y maquinarias. Este módulo está diseñado para facilitar la comunicación entre los empleados y la empresa, así como para identificar áreas de mejora y promover un ambiente laboral saludable y productivo.
+1. Registro de reclamos del empleado
+2. Asignación del personal responsable para la gestión de los reclamos
 3. Seguimiento de los reclamos
 4. Comunicación interna al empleado
-5. Generación de informes relacionados al módulo
+5. Generación de informes relacionados a los reclamos efectuados
 
 ## MÓDULO DE CALIDAD DE HERRAMIENTAS Y MAQUINARIA
 Este módulo tiene por función garantizar la calidad de las herramientas y maquinarias utilizadas en la producción textil.
@@ -55,22 +55,6 @@ Este módulo tiene por función garantizar la calidad de las herramientas y maqu
 4. Reportes de Estado y Uso:
    Generación de informes sobre el estado, uso y mantenimiento de las herramientas y maquinarias.
 
-## MÓDULO DE CALIDAD DE PROCESOS
-Este módulo posee como objetivo asegurar la calidad de los procesos de producción textil, desde la selección de materiales hasta el acabado del producto final.
-1. Definición de Estándares de Calidad:
-   Establecimiento y registro de los estándares de calidad para los productos textiles.
-2. Inspecciones de Producto:
-   Realización de inspecciones periódicas a los productos textiles para verificar su calidad y conformidad con los 
-   estándares establecidos.
-3. Control de Calidad en Procesos:
-   Registro y seguimiento de la calidad de los procesos de producción, incluyendo la calidad de las materias primas, 
-   eficiencia de los procesos y satisfacción del cliente.
-4. Análisis y Mejora Continua:
-   Análisis de datos recopilados para identificar áreas de mejora y implementar acciones correctivas y preventivas.
-5. Reportes de Calidad:
-   Generación de informes sobre la calidad de los procesos y productos, incluyendo estadísticas, tendencias y análisis 
-   comparativos.
-   
 ## MÓDULO DE REMUNERACIÓN DEL OPERARIO
 Este módulo se encarga de llevar el conteo de todos los datos, tales como deducciones o bonificaciones, que modifican el sueldo de un operario o un gestor de la producción mediante nóminas semanales, para finalmente presentar el resultado de sus sueldos correspondientes.
 1. Generar las bonificaciones y deducciones a partir de los reportes
@@ -83,8 +67,8 @@ Este módulo se encarga de llevar el conteo de todos los datos, tales como deduc
 ## MODULO DE REGISTRO DE HERRAMIENTAS Y MAQUINARIA CON MODULO DE INICIO DE SESION Y REGISTRO DE ACTIVIDADES 
 El Módulo de Registro de Herramientas y Maquinarias requiere la autenticación de usuarios para acceder a las funciones relacionadas con el registro y la gestión de herramientas y maquinarias. Los usuarios (operarios y gestores de producción) deben iniciar sesión en el sistema para realizar solicitudes, validar solicitudes pendientes y acceder a la información relacionada con el registro de herramientas y maquinarias.
 
-## MODULO DE REGISTRO DE HERRAMIENTAS Y MAQUINARIA CON MODULO RECLAMOS Y OBSERVACIONES
-Estos módulos estan relacionados en aquellos casos donde los empleados reporten problemas o deficiencias relacionadas con herramientas y maquinarias. Por ejemplo, si un operario encuentra una herramienta defectuosa, puede registrar un reclamo o una observación en el sistema, lo que desencadenaría en acciones para su reparación o reemplazo.
+## MODULO DE REGISTRO DE HERRAMIENTAS Y MAQUINARIA CON MODULO DE RECLAMOS
+Estos módulos estan relacionados en aquellos casos donde los empleados reporten problemas o deficiencias relacionadas con herramientas y maquinarias. Por ejemplo, si un operario encuentra una herramienta defectuosa, puede registrar un reclamo en el sistema, lo que desencadenaría en acciones para su reparación o reemplazo.
 
 ## MÓDULO DE REGISTRO DE ACTIVIDADES CON MÓDULO DE REGISTRO DE CALIDAD
 Estos módulos están en constante comunicación para proporcionar información sobre el personal asignado a ciertas tareas de inspección o control (qué gestor de producción fue asignado a tal control).
@@ -107,8 +91,8 @@ Estos módulos interactúan cuando se proporciona información sobre el estado y
 ## MÓDULO DE CALIDAD DE HERRAMIENTAS Y MAQUINARIA CON MÓDULO DE SOLICITUD DE PEDIDIOS DE INSUMOS
 Estos módulos interactúan cuando se solicitan herramientas y maquinarias específicas que cumplen con los estándares de calidad establecidos.
 
-## MÓDULO DE REPORTES CON MÓDULO DE RECLAMOS Y OBSERVACIONES
-Estos módulos interactúan cuando se utiliza la información de las observaciones para generar un reporte de los incidentes ocurridos.
+## MÓDULO DE REPORTES CON MÓDULO DE RECLAMOS
+Estos módulos interactúan cuando se utiliza la información de los reclamos para generar un reporte de los incidentes ocurridos.
 
 ## MÓDULO DE REMUNERACIÓN CON MÓDULO DE REPORTES
 Estos módulos interactúan cuando se utiliza la información de los reportes para definir las bonificaciones y las deducciones.
