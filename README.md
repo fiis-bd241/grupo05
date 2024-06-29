@@ -9,3 +9,5 @@ Bienvenidos al repositorio del proyecto del grupo 5 para el curso de Diseño de 
 2. [Selección de la empresa](02.Selección%20de%20la%20empresa/SeleccionEmpresa.md)
 
 3. [Videos Personales](03.Videos%20Personales/Videos.md)
+
+4. [Monografía](04.Monografía/Monografía.md)
