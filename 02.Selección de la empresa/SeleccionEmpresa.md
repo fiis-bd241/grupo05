@@ -1,14 +1,14 @@
 # Selección de la Empresa
 
-**Empresa elegida**: TOPITOP
+**Empresa elegida**: TOPITOP S.A.
 
 **Proceso elegido**: Confección de prendas
 
 **Contacto y su cargo**: Daniel Macavilca, Jefe de ingeniería
 
-## Otros aparcados
+## Entregables del curso:
 
-1. [Acerca de Empresa](AcercaEmpresa.md)
+1. [Práctica 1](PC1)
 
 2. [Proceso de Producción](procesodeproduccion.md)
    
