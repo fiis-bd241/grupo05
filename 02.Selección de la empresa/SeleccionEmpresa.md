@@ -29,5 +29,6 @@
 10. [Funcionalidades primarias por modulo](funcionalidades_primaria.md)
 
 12. [Stack tecnológico](stack_tecnologico.md)
+13. [Práctica 4](PC4)
 
 [Regresar al índice](../README.md)
