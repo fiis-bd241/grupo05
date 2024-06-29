@@ -10,25 +10,27 @@
 
 1. [Práctica 1](PC1)
 
-2. [Proceso de Producción](procesodeproduccion.md)
+2. [Práctica 2](PC2)
+
+4. [Proceso de Producción](procesodeproduccion.md)
    
-3. [Módulos del sistema](Modelados/Modulo.md)
+5. [Módulos del sistema](Modelados/Modulo.md)
    
-4. [Requerimientos del Sistema](Requerimientos.md)
+6. [Requerimientos del Sistema](Requerimientos.md)
 
-5. [Prototipo de la aplicación](Prototipos/prototipo.md)
+7. [Prototipo de la aplicación](Prototipos/prototipo.md)
    
-6. [Modelado Conceptual y Lógico](Modelados/Modelos.md)
+8. [Modelado Conceptual y Lógico](Modelados/Modelos.md)
 
-7. [Comandos de SQL](data-sql.md)
+9. [Comandos de SQL](data-sql.md)
 
-8. [Secuencias SQL por prototipo](SentenciasSQLprototipo.md)
+10. [Secuencias SQL por prototipo](SentenciasSQLprototipo.md)
    
-9. [Carga de datos](carga_de_datos.md)
+11. [Práctica 3](PC3)
 
-10. [Funcionalidades primarias por modulo](funcionalidades_primaria.md)
+12. [Funcionalidades primarias por modulo](funcionalidades_primaria.md)
 
-12. [Stack tecnológico](stack_tecnologico.md)
-13. [Práctica 4](PC4)
+13. [Stack tecnológico](stack_tecnologico.md)
+14. [Práctica 4](PC4)
 
 [Regresar al índice](../README.md)
