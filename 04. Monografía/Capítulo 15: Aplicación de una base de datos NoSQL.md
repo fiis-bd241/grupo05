@@ -41,6 +41,11 @@ ScyllaDB es un software de gestión de bases de datos NoSQL distribuido y de có
 ### INICIO DE SESION
 Ingresamos a la pagina de oficial de scylladb cuyo link es la siguiente : https://www.scylladb.com/onboard/ donde nos dejara utilizar la aplicacion por un periodo de tiempo , donde para ello se debio crear un usuario 
 
+<img src="Captura de pantalla 2024-06-29 170231.png"  style="width: 100%; height: auto;" />
+
+<img src="Captura de pantalla 2024-06-29 170323.png"  style="width: 100%; height: auto;" />
+
+
 
 
 
