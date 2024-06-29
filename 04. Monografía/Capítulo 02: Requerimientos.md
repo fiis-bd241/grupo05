@@ -2,7 +2,7 @@
 
 ## USUARIOS DEL SISTEMA
 
-- **Gerente de producción**: Este tipo de usuario es un usuario paramétrico, va a poder registrar la información necesaria según los que requieran ciertos módulos, analiza los reportes para asignar la gestión adecuada según los criterios validados que este mismo posea y solicitará el mantenimiento de maquinaria o herramientas.
+- **Gestor de producción**: Este tipo de usuario es un usuario paramétrico, va a poder registrar la información necesaria según los que requieran ciertos módulos, analiza los reportes para asignar la gestión adecuada según los criterios validados que este mismo posea y solicitará el mantenimiento de maquinaria o herramientas.
 
 - **Operario**: Este tipo de usuario también es paramétrico, se caracteriza porque el propio sistema es enfocado a su continuo uso, los requerimientos planteados son en su mayoría con base a lo requerido por este tipo de usuario durante el desempeño de sus labores, sobre todo le va a ayudar a automatizar los procesos de categorización de calidad, notificar el uso de herramientas o maquinarias para llevar un histórico o presentar reclamos u observaciones.
 
@@ -16,11 +16,11 @@
 |------|--------|
 | **Descripción:** | El responsable de mantenimiento accederá al sistema y seleccionará la opción de "Mantenimiento Preventivo". Se mostrará una lista de herramientas y maquinarias que requieren mantenimiento. El responsable seleccionará una herramienta o maquinaria y programará la fecha del próximo mantenimiento. | 
 | **Actor Primario:** | Responsable de mantenimiento |
-| **Actor Secundario:** | Gerente de producción | 
+| **Actor Secundario:** | Gestor de producción | 
 | **Precondiciones:** | Existencia de herramientas y maquinarias registradas en el sistema que requieran mantenimiento| 
 | Paso | Acción |
-| 1    |El responsable de mantenimiento ingresa al sistema.|
-| 2    |Accede al apartado "Mantenimiento Preventivo".|
+| 1    | El responsable de mantenimiento ingresa al sistema.|
+| 2    | Accede al apartado "Mantenimiento Preventivo".|
 | 3    | Se monitorean y controlan los procesos de fabricación para asegurar que se cumplan los estándares de calidad establecidos. Esto puede incluir la implementación de controles en línea durante la producción para detectar y corregir posibles problemas de calidad de manera oportuna.|
 | 4    | Selecciona una herramienta o maquinaria |
 | 5    | Programa la fecha del próximo mantenimiento.|
@@ -32,7 +32,7 @@
 | **Objetivo:** |Identificar áreas de mejora en los procesos de producción a través del análisis de datos recopilados.|
 |------|--------|
 | **Descripción:** |	El sistema deberá analizar los datos de calidad recopilados durante las inspecciones y el control de calidad en procesos para identificar posibles áreas de mejora.| 
-| **Actor:** | Gerente de producción | 
+| **Actor:** | Gestor de producción | 
 | **Precondiciones:** || 
 | 1   |Definición de Estándares de Calidad: Opción para establecer y modificar estándares de calidad.|
 |    |Campos para especificar criterios como dimensiones, materiales y procesos.
@@ -51,7 +51,7 @@
 | **Objetivo:** |Identificar áreas de mejora en los procesos de producción a través del análisis de datos recopilados.|
 |------|--------|
 | **Descripción:** |	El sistema deberá analizar los datos de calidad recopilados durante las inspecciones y el control de calidad en procesos para identificar posibles áreas de mejora.| 
-| **Actor:** | Gerente de producción | 
+| **Actor:** | Gestor de producción | 
 | **Precondiciones:** || 
 | 1   |Definición de Estándares de Calidad: Opción para establecer y modificar estándares de calidad.|
 |    |Campos para especificar criterios como dimensiones, materiales y procesos.
@@ -72,14 +72,14 @@
 | **Objetivo:** | Generar informes detallados sobre la calidad de los procesos y productos textiles. |
 |------|--------|
 | **Descripción:** | El sistema permitirá a los usuarios generar informes de calidad que incluyan estadísticas, tendencias y análisis comparativos para evaluar la calidad de los productos y procesos textiles.| 
-| **Actor:** | Gerente de producción | 
+| **Actor:** | Gestor de producción | 
 | **Precondiciones:** | Existencia de datos de calidad recopilados en el sistema. | 
 | Paso | Acción |
 | 1    | El usuario autorizado ingresa al sistema. |
 | 2    | El usuario accede al apartado "Reportes de Calidad". |
 | 3    | El sistema presenta opciones para seleccionar el tipo de informe deseado: calidad de insumos, calidad de operarios o calidad de confecciones.|
-| 4    |El usuario selecciona el tipo de informe que desea generar.|
-| 5    |El sistema genera el informe de calidad según las especificaciones del usuario.|
+| 4    | El usuario selecciona el tipo de informe que desea generar.|
+| 5    | El sistema genera el informe de calidad según las especificaciones del usuario.|
 | 6    | Finaliza el caso.  |
 
 *MÓDULO DE GESTION DE HERRAMIENTAS Y MAQUINARIAS
@@ -88,12 +88,12 @@
 
 | **Objetivo:** | Permitir al operario solicitar herramientas y maquinarias necesarias para llevar a cabo una actividad específica. |
 |------|--------|
-| **Descripción:** |  El operario ingresará al sistema y accederá al apartado de "Solicitar de herramienta". Luego de ello, podrá buscar la herramienta deseada por su nombre o código y especificar la actividad que va a realizar. Posteriormente, se dara su busqueda.
+| **Descripción:** |  El usuario ingresará al sistema y accederá al apartado de "Solicitar de herramienta". Luego de ello, podrá buscar la herramienta deseada por su nombre o código y especificar la actividad que va a realizar. Posteriormente, se dará su búsqueda.
 | **Actor Primario:** | Operario | 
 | **Actor Secundario :** | Gestor de producción. | 
 | **Precondiciones:** | Las herramientas y maquinarias deben estar registradas en la base de datos del sistema. | 
 | Paso | Acción |
-| 1    | El operario ingresa al sistema.. |
+| 1    | El operario ingresa al sistema. |
 | 2    | El operario accede al apartado "Solicitar herramienta". |
 | 3    | El operario busca la herramienta deseada por su nombre o código. |
 | 4    | El operario especifica la actividad que va a realizar. |
@@ -102,7 +102,7 @@
 | 7    | El operario selecciona la herramienta deseada. |
 | 8    | El operario hace clic en "Enviar solicitud". |
 | 9    | El sistema envía la solicitud al gestor de producción para su validación. |
-| 10    | Caso terminado. |
+| 10    | Finaliza el caso. |
 
 #### **Caso de uso N°6: Visualización de Histórico de Mantenimientos **
 
@@ -122,84 +122,90 @@ Estándares de calidad definidos y asociados a cada herramienta y maquinaria.. |
 | 5    |Visualiza los detalles de los mantenimientos realizados, incluyendo fechas, tipo de |
 |      |mantenimiento, cumplimiento de estándares y comentarios adicionales. |
 | 6    |Puede realizar búsquedas o filtrados adicionales según sea necesario.|
-| 7    | Caso terminado. |
+| 7    | Finaliza el caso. |
 
 * MÓDULO DE RECLAMOS Y OBSERVACIONES
 
 #### **Caso de uso N°7: Reclamo del operario**
 | **Objetivo:** |Permitir a los operarios registrar reclamos sobre condiciones laborales, problemas de seguridad, sugerencias de mejora u otras preocupaciones relacionadas con su experiencia laboral.|
 |------|--------|
-| **Descripción:** |Los operarios puedan presentar reclamos a través del sistema digital, facilitando la comunicación y la gestión eficiente de problemas en el lugar de trabajo.|
-| **Actor Primario:** |operario| 
-| **Actor Secundario :** |gerente de producción| 
+| **Descripción:** |Los usuarios puedan presentar reclamos a través del sistema digital, facilitando la comunicación y la gestión eficiente de problemas en el lugar de trabajo.|
+| **Actor Primario:** |Operario| 
+| **Actor Secundario :** |Gestor de producción| 
 | **Precondiciones:** |El operario debe estar registrado en el sistema y una preocupación o problema laboral que desee registrar como reclamo|
 | Paso | Acción |
-| 1    |Dirigirse a la sección de quejas y reclamos del sistema|
-| 2    |Seleccionar la opción para registrar un nuevo reclamo y completar los campos requeridos|
-| 3    |Envío del reclamo al sistema para su registro|
-| 4    |Durante el proceso de resolución, el sistema permite la comunicación entre el operario y el responsable de la gestión del reclamo, facilitando cualquier intercambio de información o feedback|
-| 5    |Una vez que se resuelve el reclamo, el sistema notifica al operario sobre las acciones tomadas y cierra el reclamo|
+| 1    |Dirigirse a la sección de quejas y reclamos del sistema. |
+| 2    |Seleccionar la opción para registrar un nuevo reclamo y completar los campos requeridos. |
+| 3    |Envío del reclamo al sistema para su registro. |
+| 4    |Durante el proceso de resolución, el sistema permite la comunicación entre el operario y el responsable de la gestión del reclamo, facilitando cualquier intercambio de información o feedback. |
+| 5    |Una vez que se resuelve el reclamo, el sistema notifica al operario sobre las acciones tomadas y cierra el reclamo. |
+| 6    | Finaliza el caso. |
 
 * MÓDULO DE REPORTES
 
 ### **Caso de uso N°8: Reportes por operarios**
 | **Objetivo:** |Permitir al jefe de producción analizar las actividades concluidas por un operario|
 |------|--------|
-| **Descripción:** | el jefe de producción se encarga de rellenar la información de las actividades de cada empleado
-| **Actor Primario:** |jefe de producción| 
+| **Descripción:** | El jefe de producción se encarga de rellenar la información de las actividades de cada empleado.|
+| **Actor Primario:** |Jefe de producción| 
 | **Actor Secundario :** |no hay actor secundario| 
 | **Precondiciones:** |no hay precondiciones vigentes|
 | Paso | Acción |
 | 1    |Seleccionar el reporte de los operarios|
 | 2    |Ingresar el código del empleado e la cuadrícula|
-| 3    |Visualizar el reporte| 
+| 3    |Visualizar el reporte|
+| 4    |Finalizar el caso|
 
 #### **Caso de uso N°9: Reportes por supervisor**
 | **Objetivo:** |Permitir al jefe de producción analizar las actividades concluidas por los operarios de un cierto supervisor|
 |------|--------|
-| **Descripción:** |A partir de la información obtenida en el registro de tareas se concluye aquí la revisión de todos los operarios por supervisor|
-| **Actor Primario:** |jefe de producción| 
+| **Descripción:** |A partir de la información obtenida en el registro de tareas, se concluye aquí la revisión de todos los operarios por supervisor|
+| **Actor Primario:** |Jefe de producción| 
 | **Actor Secundario :** |no hay actor secundario| 
 | **Precondiciones:** |no hay precondiciones vigentes|
 | Paso | Acción |
 | 1    |Seleccionar el reporte por supervisor|
 | 2    |Ingresar el código del supervisor en la cuadrícula|
-| 3    |Visualizar el reporte| 
+| 3    |Visualizar el reporte|
+| 4    |Finalizar el caso|
 
 #### **Caso de uso N°10: Reportes por Herramienta**
 | **Objetivo:** |Permitir al jefe de producción analizar los estados de las herramientas durante el trabajo|
 |------|--------|
-| **Descripción:** |A partir de la información obtenida en el registro de herramientas y maquinarias se concluye aquí la revisión de todas las herramientas|
-| **Actor Primario:** |jefe de producción| 
+| **Descripción:** |A partir de la información obtenida en el registro de herramientas y maquinarias, se concluye aquí la revisión de todas las herramientas|
+| **Actor Primario:** |Jefe de producción| 
 | **Actor Secundario :** |no hay actor secundario| 
 | **Precondiciones:** |Datos ya creados desde el registro de herramientas y maquinarias|
 | Paso | Acción |
 | 1    |Seleccionar el reporte de herramientas|
 | 2    |Ingresar el código de la heramienta en la cuadrícula|
-| 3    |Visualizar el reporte| 
+| 3    |Visualizar el reporte|
+| 4    |Finalizar el caso|
 
 #### **Caso de uso N°11: Reportes por Maquinarias**
 | **Objetivo:** |Permitir al jefe de producción analizar los estados de las maquinarias durante el trabajo|
 |------|--------|
-| **Descripción:** |A partir de la información obtenida en el registro de herramientas y maquinarias se concluye aquí la revisión de todas las maquinarias|
-| **Actor Primario:** |jefe de producción| 
+| **Descripción:** |A partir de la información obtenida en el registro de herramientas y maquinarias, se concluye aquí la revisión de todas las maquinarias|
+| **Actor Primario:** |Jefe de producción| 
 | **Actor Secundario :** |no hay actor secundario| 
 | **Precondiciones:** |Datos ya creados desde el registro de herramientas y maquinarias|
 | Paso | Acción |
 | 1    |Seleccionar el reporte de maquinarias|
 | 2    |Ingresar el código de la maquinaria en la cuadrícula|
-| 3    |Visualizar el reporte| 
+| 3    |Visualizar el reporte|
+| 4    |Finalizar el caso|
 
 #### **Caso de uso N°12: Reportes por operario**
 | **Objetivo:** |Permitir al operario analizar sus propias actividades para conocer su paga semanal|
 |------|--------|
-| **Descripción:** |A partir de la información obtenida en el registro de tareas se concluye aquí la revisión de todas las actividades realizadas por el operario|
-| **Actor Primario:** |operario| 
-| **Actor Secundario :** |no hay actor secundario| 
+| **Descripción:** |A partir de la información obtenida en el registro de tareas, se concluye aquí la revisión de todas las actividades realizadas por el operario|
+| **Actor Primario:** |Operario| 
+| **Actor Secundario :** |No hay actor secundario| 
 | **Precondiciones:** |Datos ya creados desde el registro de tareas|
 | Paso | Acción |
 | 1    |Seleccionar el reporte por operario|
 | 2    |Visualizar el reporte|
+| 3    |Finalizar el caso|
 
 * MÓDULO DE SOLICITUD DE PEDIDOS DE INSUMOS
 
@@ -250,7 +256,7 @@ Estándares de calidad definidos y asociados a cada herramienta y maquinaria.. |
 | 3    | El operario selecciona la actividad que desea verificar y envía una solicitud de verificación al gestor de producción. |
 | 4    | El sistema notifica al gestor de producción sobre la solicitud de verificación. |
 | 5    | El gestor de producción recibe la notificación y accede a la lista de verificaciones pendientes. |
-| 6  | Finaliza el caso. |
+| 6    | Finaliza el caso. |
 
 #### **Caso de uso N°16: Auditar Actividades**
 
