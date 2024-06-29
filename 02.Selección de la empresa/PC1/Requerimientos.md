@@ -27,7 +27,6 @@
 | 6    | Confirma y guarda la programación del mantenimiento.|
 | 7    | Caso terminado.|
 
-
 #### **Caso de uso N°2: Reporte de Calidad de herramientas y maquinaria**
 
 | **Objetivo:** |Identificar áreas de mejora en los procesos de producción a través del análisis de datos recopilados.|
@@ -46,8 +45,6 @@
 | |Análisis y Mejora Continua|
 | 6   |Análisis de datos para identificar áreas de mejora.|
 | |Implementación de acciones correctivas y preventivas.|
-
-
 
 #### **Caso de uso N°3: Reporte de Calidad de herramientas y maquinaria**
 
@@ -107,7 +104,6 @@
 | 9    | El sistema envía la solicitud al gestor de producción para su validación. |
 | 10    | Caso terminado. |
 
-
 #### **Caso de uso N°6: Visualización de Histórico de Mantenimientos **
 
 | **Objetivo:** | Visualizar el histórico de todos los mantenimientos realizados a las herramientas y maquinarias. |
@@ -144,25 +140,9 @@ Estándares de calidad definidos y asociados a cada herramienta y maquinaria.. |
 | 4    |Durante el proceso de resolución, el sistema permite la comunicación entre el operario y el responsable de la gestión del reclamo, facilitando cualquier intercambio de información o feedback|
 | 5    |Una vez que se resuelve el reclamo, el sistema notifica al operario sobre las acciones tomadas y cierra el reclamo|
 
-* MÓDULO DE RECLAMOS Y OBSERVACIONES
-
-#### **Caso de uso N°8: Reclamo del operario**
-| **Objetivo:** |Permitir a los operarios registrar reclamos sobre condiciones laborales, problemas de seguridad, sugerencias de mejora u otras preocupaciones relacionadas con su experiencia laboral.|
-|------|--------|
-| **Descripción:** |Los operarios puedan presentar reclamos a través del sistema digital, facilitando la comunicación y la gestión eficiente de problemas en el lugar de trabajo.|
-| **Actor Primario:** |operario| 
-| **Actor Secundario :** |gerente de producción| 
-| **Precondiciones:** |El operario debe estar registrado en el sistema y una preocupación o problema laboral que desee registrar como reclamo|
-| Paso | Acción |
-| 1    |Dirigirse a la sección de quejas y reclamos del sistema|
-| 2    |Seleccionar la opción para registrar un nuevo reclamo y completar los campos requeridos|
-| 3    |Envío del reclamo al sistema para su registro|
-| 4    |Durante el proceso de resolución, el sistema permite la comunicación entre el operario y el responsable de la gestión del reclamo, facilitando cualquier intercambio de información o feedback|
-| 5    |Una vez que se resuelve el reclamo, el sistema notifica al operario sobre las acciones tomadas y cierra el reclamo|
-
 * MÓDULO DE REPORTES
 
-### **Caso de uso N°9: Reportes por operarios**
+### **Caso de uso N°8: Reportes por operarios**
 | **Objetivo:** |Permitir al jefe de producción analizar las actividades concluidas por un operario|
 |------|--------|
 | **Descripción:** | el jefe de producción se encarga de rellenar la información de las actividades de cada empleado
@@ -174,7 +154,7 @@ Estándares de calidad definidos y asociados a cada herramienta y maquinaria.. |
 | 2    |Ingresar el código del empleado e la cuadrícula|
 | 3    |Visualizar el reporte| 
 
-#### **Caso de uso N°10: Reportes por supervisor**
+#### **Caso de uso N°9: Reportes por supervisor**
 | **Objetivo:** |Permitir al jefe de producción analizar las actividades concluidas por los operarios de un cierto supervisor|
 |------|--------|
 | **Descripción:** |A partir de la información obtenida en el registro de tareas se concluye aquí la revisión de todos los operarios por supervisor|
@@ -186,7 +166,7 @@ Estándares de calidad definidos y asociados a cada herramienta y maquinaria.. |
 | 2    |Ingresar el código del supervisor en la cuadrícula|
 | 3    |Visualizar el reporte| 
 
-#### **Caso de uso N°11: Reportes por Herramienta**
+#### **Caso de uso N°10: Reportes por Herramienta**
 | **Objetivo:** |Permitir al jefe de producción analizar los estados de las herramientas durante el trabajo|
 |------|--------|
 | **Descripción:** |A partir de la información obtenida en el registro de herramientas y maquinarias se concluye aquí la revisión de todas las herramientas|
@@ -198,8 +178,7 @@ Estándares de calidad definidos y asociados a cada herramienta y maquinaria.. |
 | 2    |Ingresar el código de la heramienta en la cuadrícula|
 | 3    |Visualizar el reporte| 
 
-
-#### **Caso de uso N°12: Reportes por Maquinarias**
+#### **Caso de uso N°11: Reportes por Maquinarias**
 | **Objetivo:** |Permitir al jefe de producción analizar los estados de las maquinarias durante el trabajo|
 |------|--------|
 | **Descripción:** |A partir de la información obtenida en el registro de herramientas y maquinarias se concluye aquí la revisión de todas las maquinarias|
@@ -211,8 +190,7 @@ Estándares de calidad definidos y asociados a cada herramienta y maquinaria.. |
 | 2    |Ingresar el código de la maquinaria en la cuadrícula|
 | 3    |Visualizar el reporte| 
 
-
-#### **Caso de uso N°13: Reportes por operario**
+#### **Caso de uso N°12: Reportes por operario**
 | **Objetivo:** |Permitir al operario analizar sus propias actividades para conocer su paga semanal|
 |------|--------|
 | **Descripción:** |A partir de la información obtenida en el registro de tareas se concluye aquí la revisión de todas las actividades realizadas por el operario|
@@ -225,7 +203,7 @@ Estándares de calidad definidos y asociados a cada herramienta y maquinaria.. |
 
 * MÓDULO DE SOLICITUD DE PEDIDOS DE INSUMOS
 
-#### **Caso de uso N°14: Abastecimiento de insumos**
+#### **Caso de uso N°13: Abastecimiento de insumos**
 
 | **Objetivo:** | Coordinar y gestionar el flujo de materiales desde el almacén hasta las líneas de producción, asegurando que se satisfagan las necesidades de producción de manera oportuna y eficiente. |
 |------|--------|
@@ -243,7 +221,7 @@ Estándares de calidad definidos y asociados a cada herramienta y maquinaria.. |
 
 * MÓDULO DE REGISTRO DE ACTIVIDADES
 
-#### **Caso de uso N°15: Asignación de Actividades**
+#### **Caso de uso N°14: Asignación de Actividades**
 
 | **Objetivo:** | Permitir a un gestor de producción asignar actividades a los operarios dentro del sistema web. |
 |------|--------|
@@ -259,7 +237,7 @@ Estándares de calidad definidos y asociados a cada herramienta y maquinaria.. |
 | 6    | El sistema registra la actividad asignada y notifica al operario. |
 | 7    | Finaliza el caso. |
 
-#### **Caso de uso N°16: Envío de Verificación de Actividad**
+#### **Caso de uso N°15: Envío de Verificación de Actividad**
 
 | **Objetivo:** | Permitir a un operario enviar una verificación de una actividad al gestor de producción para su revisión. |
 |------|--------|
@@ -274,8 +252,7 @@ Estándares de calidad definidos y asociados a cada herramienta y maquinaria.. |
 | 5    | El gestor de producción recibe la notificación y accede a la lista de verificaciones pendientes. |
 | 6  | Finaliza el caso. |
 
-
-#### **Caso de uso N°17: Auditar Actividades**
+#### **Caso de uso N°16: Auditar Actividades**
 
 | **Objetivo:** | Permitir a un gestor de producción dar un visto bueno a una actividad para indicar que ha sido realizada correctamente por un operario. |
 |------|--------|
@@ -294,7 +271,7 @@ Estándares de calidad definidos y asociados a cada herramienta y maquinaria.. |
 | 9    | El sistema notifica al operario sobre el resultado de la auditoría. |
 | 10   | Finaliza el caso. |
 
-#### **Caso de uso N°18: Historial de Actividades**
+#### **Caso de uso N°17: Historial de Actividades**
 
 | **Objetivo:** | Permitir a los usuarios revisar el historial de actividades realizadas en el sistema. |
 |------|--------|
