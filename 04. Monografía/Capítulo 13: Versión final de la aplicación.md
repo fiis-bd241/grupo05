@@ -10,3 +10,4 @@ En esa imagen se aprecia cómo es antes del filtro y posteriormente al filtro:
 Entonces, tenemos las mismas funcionalidades para lo que vendrá a ser la bonificación y la deducción:
 ![](https://github.com/fiis-bd241/grupo05/blob/main/04.%20Monograf%C3%ADa/im%C3%A1genes/bonificacion-abc.PNG)
 ![](https://github.com/fiis-bd241/grupo05/blob/main/04.%20Monograf%C3%ADa/im%C3%A1genes/deduccion-abc.PNG)
+![](https://raw.githubusercontent.com/fiis-bd241/grupo05/main/04.%20Monograf%C3%ADa/im%C3%A1genes/Imagen%20de%20WhatsApp%202024-06-29%20a%20las%2018.56.46_9f4c1d2f.jpg)
