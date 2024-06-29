@@ -12,21 +12,8 @@
 
 2. [Práctica 2](PC2)
    
-6. [Requerimientos del Sistema](Requerimientos.md)
+3. [Práctica 3](PC3)
 
-7. [Prototipo de la aplicación](Prototipos/prototipo.md)
-   
-8. [Modelado Conceptual y Lógico](Modelados/Modelos.md)
-
-9. [Comandos de SQL](data-sql.md)
-
-10. [Secuencias SQL por prototipo](SentenciasSQLprototipo.md)
-   
-11. [Práctica 3](PC3)
-
-12. [Funcionalidades primarias por modulo](funcionalidades_primaria.md)
-
-13. [Stack tecnológico](stack_tecnologico.md)
-14. [Práctica 4](PC4)
+4. [Práctica 4](PC4)
 
 [Regresar al índice](../README.md)
