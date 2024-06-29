@@ -340,8 +340,8 @@ SELECT monto_deduccion FROM deduccion;
 ### Código Requerimiento: R-010
 ### Código Interfaz: I-010
 ### Imagen Interfaz: (imagen ilustrativa) 
-<img src="InterfazReclamosOp1.png" alt="PC3" style="width: 120%; height: auto;" />
-<img src="InterfazReclamosOp2.png" alt="PC3" style="width: 120%; height: auto;" />
+<img src="../02.Selección de la empresa/PC3/InterfazReclamosOp1.png" alt="PC3" style="width: 120%; height: auto;" />
+<img src="../02.Selección de la empresa/PC3/InterfazReclamosOp2.png" alt="PC3" style="width: 120%; height: auto;" />
 
 ### Descripción: Esta interfaz permite a un operario registrar un reclamo.
 
@@ -363,7 +363,7 @@ SELECT monto_deduccion FROM deduccion;
 ### Código Requerimiento: R-011
 ### Código Interfaz: I-011
 ### Imagen Interfaz: (imagen ilustrativa) 
-<img src="InterfazReclamosGp.png" alt="PC3" style="width: 120%; height: auto;" />
+<img src="../02.Selección de la empresa/PC3/InterfazReclamosGp.png" alt="PC3" style="width: 120%; height: auto;" />
 
 ### Descripción: Esta interfaz permite al gestor de producción visualizar los reclamos realizados por los operarios.
 
