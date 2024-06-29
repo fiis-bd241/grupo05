@@ -24,7 +24,7 @@ Capítulo 10: [Funcionalidad primaria](Capítulo%2010%3A%20Funcionalidad%20prima
 
 Capítulo 11: [PL_pgSQL, Proceso batch](Capítulo%2011%3A%20PL%5FpgSQL%2C%20Proceso%20batch.md)
 
-Capítulo 12: [Arquitectura de la aplicación](Capítulo%2012%3A%2Arquitectura%20de%20la%20aplicación.md)
+Capítulo 12: [Arquitectura de la aplicación](Capítulo%2012%3A%20Arquitectura%20de%20la%20aplicación.md)
 
 Capítulo 13: [Versión final de la aplicación](Capítulo%2013%3A%20Versión%20final%20de%20la%20aplicación.md)
 
