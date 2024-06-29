@@ -1,4 +1,5 @@
-# MODULOS 
+# MÓDULOS
+
 ## MÓDULO DE GESTION DE HERRAMIENTAS Y MAQUINARIAS
 Este módulo se encarga de gestionar y mantener un registro detallado de las herramientas y maquinarias utilizadas por los operarios en las actividades diarias de producción. Su objetivo es garantizar un uso eficiente de los recursos y un seguimiento preciso de su disponibilidad y estado. El módulo consiste en lo siguiente:
 
@@ -27,15 +28,13 @@ Este módulo está diseñado para gestionar la solicitud de insumos necesarios p
 6. Seguimiento de Pedidos: Permite monitorear el estado de los pedidos, desde su solicitud hasta su entrega.
 
 ## MÓDULO DE REPORTES 
-
-Este módulo se encarga de dar información sobre las actividades concluidas por cada empleado, el estado de las herramientas o el estado de las maquinarias, en forma de reportes; también se encarga de brindar a los empleados su avance en medidas de producción; un último uso que puede brindar es un reporte macro para analizar cómo van los trabajadores de cierto supervisor o de Topitop en general
+Este módulo se encarga de brindar información sobre las actividades concluidas por cada empleado, el estado de las herramientas o el estado de las maquinarias, en forma de reportes; también se encarga de brindar a los empleados su avance en medidas de producción; un último uso que puede brindar es un reporte macro para analizar cómo van los trabajadores de cierto supervisor o de Topitop en general
 1. Tomar información del módulo de herramientas y maquinarias, también de registro de tareas para concretar los reportes
 2. Generación de reportes individuales de cada empleado
 3. Generación de reportes de cada herramienta y maquinaria
 4. Notificar cuando una herramienta o maquinaria presenta un número alto de usos
 
 ## MÓDULO DE RECLAMOS Y OBSERVACIONES 
-
 Este módulo permite a los empleados registrar y gestionar reclamos, quejas, sugerencias y observaciones relacionadas con diversos aspectos de su experiencia laboral, como el entorno de trabajo, las condiciones de trabajo, las imperfecciones de algún producto o problemas con herramientas y maquinarias. Este módulo está diseñado para facilitar la comunicación entre los empleados y la empresa, así como para identificar áreas de mejora y promover un ambiente laboral saludable y productivo.
 1. Registro de reclamos y observaciones del empleado
 2. Asignación del personal responsable para la gestión de los reclamos y observaciones
@@ -44,7 +43,7 @@ Este módulo permite a los empleados registrar y gestionar reclamos, quejas, sug
 5. Generación de informes relacionados al módulo
 
 ## MÓDULO DE CALIDAD DE HERRAMIENTAS Y MAQUINARIA
-Garantizar la calidad de las herramientas y maquinarias utilizadas en la producción textil.
+Este módulo tiene por función garantizar la calidad de las herramientas y maquinarias utilizadas en la producción textil.
 1. Registro de Herramientas y Maquinarias:
    Catálogo detallado de herramientas y maquinarias con información como nombre, descripción, número de serie, ubicación y 
    estado.
@@ -57,7 +56,7 @@ Garantizar la calidad de las herramientas y maquinarias utilizadas en la producc
    Generación de informes sobre el estado, uso y mantenimiento de las herramientas y maquinarias.
 
 ## MÓDULO DE CALIDAD DE PROCESOS
-Asegurar la calidad de los procesos de producción textil desde la selección de materiales hasta el acabado del producto final.
+Este módulo posee como objetivo asegurar la calidad de los procesos de producción textil, desde la selección de materiales hasta el acabado del producto final.
 1. Definición de Estándares de Calidad:
    Establecimiento y registro de los estándares de calidad para los productos textiles.
 2. Inspecciones de Producto:
@@ -73,7 +72,7 @@ Asegurar la calidad de los procesos de producción textil desde la selección de
    comparativos.
    
 ## MÓDULO DE REMUNERACIÓN DEL OPERARIO
-Llevar el conteo de todos los datos como deducciones o bonificaciones que modifican el sueldo de un operario o un gestor de la producción mediante nóminas semanales y finalmente presentar el resultado de sus sueldos correspondientes.
+Este módulo se encarga de llevar el conteo de todos los datos, tales como deducciones o bonificaciones, que modifican el sueldo de un operario o un gestor de la producción mediante nóminas semanales, para finalmente presentar el resultado de sus sueldos correspondientes.
 1. Generar las bonificaciones y deducciones a partir de los reportes
 2. Generar las bonificaciones y las deducciones como información en las nóminas
 3. Usar las nóminas para concretar el pago del gestor de la producción a los operarios
@@ -85,31 +84,31 @@ Llevar el conteo de todos los datos como deducciones o bonificaciones que modifi
 El Módulo de Registro de Herramientas y Maquinarias requiere la autenticación de usuarios para acceder a las funciones relacionadas con el registro y la gestión de herramientas y maquinarias. Los usuarios (operarios y gestores de producción) deben iniciar sesión en el sistema para realizar solicitudes, validar solicitudes pendientes y acceder a la información relacionada con el registro de herramientas y maquinarias.
 
 ## MODULO DE REGISTRO DE HERRAMIENTAS Y MAQUINARIA CON MODULO RECLAMOS Y OBSERVACIONES
-Estos modulos estan relacionados en casos en los que los empleados reporten problemas o deficiencias relacionadas con herramientas y maquinarias. Por ejemplo, si un operario encuentra una herramienta defectuosa, puede registrar un reclamo o una observación en el sistema, lo que desencadenaría acciones para su reparación o reemplazo.
+Estos módulos estan relacionados en aquellos casos donde los empleados reporten problemas o deficiencias relacionadas con herramientas y maquinarias. Por ejemplo, si un operario encuentra una herramienta defectuosa, puede registrar un reclamo o una observación en el sistema, lo que desencadenaría en acciones para su reparación o reemplazo.
 
 ## MÓDULO DE REGISTRO DE ACTIVIDADES CON MÓDULO DE REGISTRO DE CALIDAD
-Estos módulos están en constante comunicación para proporcionar información sobre el personal asignado a ciertas tareas de inspección o control(que gestor de producción fue asignado a tal control).
+Estos módulos están en constante comunicación para proporcionar información sobre el personal asignado a ciertas tareas de inspección o control (qué gestor de producción fue asignado a tal control).
 
 ## MÓDULO DE REPORTES CON MÓDULO DE REGISTRO DE ACTIVIDADES
-Estos módulos estan relación pues el módulo de registro de actividades le brinda la información de las actividades de los usuarios para que este pueda sintetisarlo y exportarlo mediante un archivo pdf de reporte manual.
+Estos módulos estan relaciónados, puesto que el módulo de registro de actividades brinda la información de las actividades de los usuarios para que éste pueda sintetizarlo y exportarlo mediante un archivo pdf de reporte manual.
 
 ## MÓDULO DE REPORTES CON MÓDULO DE REGISTRO DE HERRAMIENTAS Y MAQUINARIAS
 Estos módulos tienen conexión directa, debido a que conforme se soliciten herramientas y maquinarias, se va a llevar un historial por cada artículo, esta información se registra directamente en los reportes, listos para mostrar el estado de cada artículo.
 
 ## MÓDULO DE CALIDAD DE HERRAMIENTAS Y MAQUINARIA CON MÓDULO DE REGISTRO DE HERRAMIENTAS Y MAQUINARIA
-Comparte información de herramientas y maquinarias para gestionar su calidad y mantenimiento.
+La interacción entre estos módulos consiste en compartir información de herramientas y maquinarias para gestionar su calidad y mantenimiento.
 
 ## MÓDULO DE CALIDAD DE HERRAMIENTAS Y MAQUINARIA CON MÓDULO DE REGISTRO DE ACTIVIDADES
-Utiliza datos sobre las herramientas y maquinarias asignadas a los operarios para asegurar que se utilicen adecuadamente en las actividades registradas.
+La interacción entre estos módulos sucede cuando se utilizan datos sobre las herramientas y maquinarias asignadas a los operarios para asegurar que se utilicen adecuadamente en las actividades registradas.
 
 ## MÓDULO DE CALIDAD DE HERRAMIENTAS Y MAQUINARIA CON MÓDULO DE RESPORTES
-Proporciona información sobre el estado y uso de las herramientas y maquinarias para la generación de informes de calidad.
+Estos módulos interactúan cuando se proporciona información sobre el estado y uso de las herramientas y maquinarias para la generación de informes de calidad.
 
 ## MÓDULO DE CALIDAD DE HERRAMIENTAS Y MAQUINARIA CON MÓDULO DE SOLICITUD DE PEDIDIOS DE INSUMOS
-Solicita herramientas y maquinarias específicas que cumplen con los estándares de calidad establecidos.
+Estos módulos interactúan cuando se solicitan herramientas y maquinarias específicas que cumplen con los estándares de calidad establecidos.
 
 ## MÓDULO DE REPORTES CON MÓDULO DE RECLAMOS Y OBSERVACIONES
-Utiliza la información de las observaciones para generar un reporte de los incidentes ocurridos
+Estos módulos interactúan cuando se utiliza la información de las observaciones para generar un reporte de los incidentes ocurridos.
 
 ## MÓDULO DE REMUNERACIÓN CON MÓDULO DE REPORTES
-Utiliza la información de los reportes para definir las bonificaciones y las deducciones
+Estos módulos interactúan cuando se utiliza la información de los reportes para definir las bonificaciones y las deducciones.
