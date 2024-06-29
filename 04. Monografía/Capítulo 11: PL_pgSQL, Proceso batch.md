@@ -1,7 +1,7 @@
 ## Explicación Detallada del Proceso Batch:
 
 - El proceso batch presentado es una función en PL/pgSQL para calcular el total a pagar en una tabla de nómina. Se procede a brindar una explicación paso a paso de cómo funciona este proceso:
-- 
+  
 ```
 CREATE OR REPLACE FUNCTION calcular_total_pago() RETURNS VOID AS $$
 ```
