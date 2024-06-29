@@ -31,3 +31,27 @@ ScyllaDB es un software de gestión de bases de datos NoSQL distribuido y de có
   
 - **Costos reducidos:** Ofrece una solución rentable al reducir el tiempo de administración y optimizar el uso de recursos, lo que se traduce en menores costos operativos.
 
+## DESCRIPCION DEL USO DEL MOTOR SCYLLA EN NUESTRO TRABAJO
+
+
+
+
+### SECUENCIA DE PASOS 
+
+### INICIO DE SESION
+Ingresamos a la pagina de oficial de scylladb cuyo link es la siguiente : https://www.scylladb.com/onboard/ donde nos dejara utilizar la aplicacion por un periodo de tiempo , donde para ello se debio crear un usuario 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
