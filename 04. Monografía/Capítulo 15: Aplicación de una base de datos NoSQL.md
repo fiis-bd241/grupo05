@@ -39,6 +39,9 @@ Ingresamos a la pagina de oficial de scylladb cuyo link es la siguiente : https:
 
 
 ### CONFIGURACION 
+Para configurar este motor de base de datos NOSQL y poder hacerlo correr dentro de esta pagina se debe hacer una seguidilla de pasos los cuales viene de manera intuitiva en la parte derecha de la pantalla donde nos facilita la opcion de hacer "run" los codigos  
+### 1) <img src="Captura de pantalla 2024-06-29 174120.png"  style="width: 100%; height: auto;" />
+
 
 
 
