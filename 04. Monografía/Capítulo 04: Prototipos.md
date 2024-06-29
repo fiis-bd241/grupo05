@@ -22,7 +22,7 @@
 
 
 # MÓDULO DE SOLICITUD DE PEDIDOS DE INSUMOS
-![image](https://github.com/fiis-bd241/grupo05/blob/main/02.Selecci%C3%B3n%20de%20la%20empresa/PC1/Solicitud%20de%20Insumo)
+![image](https://raw.githubusercontent.com/fiis-bd241/grupo05/main/02.Selecci%C3%B3n%20de%20la%20empresa/PC1/Solicitud%20de%20Insumo.png)
 
 # MÓDULO DE REPORTES
 
