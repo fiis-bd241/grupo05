@@ -1,5 +1,34 @@
 # Capítulo 11: PL_pgSQL, Proceso batch.
+
+# MODULO DE ASIGNACION DE ACTIVIDADES (CREACION DE ID_ASIGNACION)
+``` SQL
+DROP TRIGGER IF EXISTS before_insert_asignacion ON asignacion_actividad;
+DROP FUNCTION IF EXISTS asignacion_id_trigger;
+DROP SEQUENCE IF EXISTS asignacion_seq;
+
+CREATE SEQUENCE asignacion_seq;
+CREATE OR REPLACE FUNCTION asignacion_id_trigger() RETURNS TRIGGER AS $$
+BEGIN
+    NEW.id_asignacion := gen_id('ASI', 'asignacion_seq');
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+-- Trigger for 'id_asignacion'
+CREATE TRIGGER before_insert_asignacion
+BEFORE INSERT ON asignacion_actividad
+FOR EACH ROW
+EXECUTE FUNCTION asignacion_id_trigger();
+
+
+DROP TRIGGER IF EXISTS before_insert_nomina ON Nomina;
+DROP FUNCTION IF EXISTS nomina_id_trigger();
+DROP SEQUENCE IF EXISTS seq_id_nomina CASCADE;
 ```
+
+
+# CAMBIO DE ESTADO ENTRE FALLO, MANTEMINIMIENTO DE HERRAMIENTA Y HERRAMIENTA EN SUS ESTADOS
+``` SQL
 -- Para el trigger que marca arreglado_fallo como TRUE
 DROP TRIGGER IF EXISTS trigger_update_arreglado_fallo_true ON mantenimiento_herramienta;
 DROP FUNCTION IF EXISTS update_arreglado_fallo_true();
@@ -45,7 +74,7 @@ EXECUTE FUNCTION update_arreglado_fallo_false();
 
 # MÓDULO DE GESTION DE HERRAMIENTAS Y MAQUINARIAS
 
-```
+``` SQL
 CREATE OR REPLACE FUNCTION adjust_seq_solicitud() RETURNS TRIGGER AS $$
 BEGIN
     IF NEW.id_solicitud IS NOT NULL THEN
@@ -64,7 +93,7 @@ EXECUTE FUNCTION adjust_seq_solicitud();
 
 # MÓDULO DE REGISTRO DE ACTIVIDADES
 
-```
+``` SQL
 DROP TRIGGER IF EXISTS before_insert_asignacion ON asignacion_actividad;
 DROP FUNCTION IF EXISTS asignacion_id_trigger;
 DROP SEQUENCE IF EXISTS asignacion_seq;
@@ -86,7 +115,7 @@ EXECUTE FUNCTION asignacion_id_trigger();
 
 # MÓDULO DE SOLICITUD DE PEDIDOS DE INSUMOS
 
-```
+``` SQL
 DROP TRIGGER IF EXISTS before_insert_solicitud_insumo ON Solicitud_insumo;
 DROP FUNCTION IF EXISTS solicitud_insumo_id_trigger();
 DROP SEQUENCE IF EXISTS seq_id_solicitud_insumo;
@@ -107,21 +136,21 @@ EXECUTE FUNCTION solicitud_insumo_id_trigger();
 
 # MÓDULO DE REPORTES
 
-```
+``` SQL
 CREATE VIEW Reporte_Reclamos_Por_Fecha AS
 SELECT Fecha_reclamo, COUNT(*) AS Numero_de_Reclamos
 FROM Reclamo
 GROUP BY Fecha_reclamo;
 ```
 
-```
+``` SQL
 CREATE VIEW Reporte_Reclamos_Por_Estado AS
 SELECT E.Nom_estado_reclamo, COUNT(*) AS Numero_de_Reclamos
 FROM Reclamo R
 JOIN Estado_Reclamo E ON R.Id_estado_reclamo = E.Id_estado_reclamo
 GROUP BY E.Nom_estado_reclamo;
 ```
-```
+``` SQL
 CREATE VIEW Reporte_Reclamos_Por_Operario AS
 SELECT O.Id_operario, COUNT(*) AS Numero_de_Reclamos
 FROM Reclamo R
@@ -129,7 +158,7 @@ JOIN Operario O ON R.Id_operario = O.Id_operario
 GROUP BY O.Id_operario;
 ```
 
-```
+``` SQL
 INSERT INTO Reporte_herramienta (categoria, valor, cantidad)
 SELECT 'Nombre de herramienta' AS categoria, nombre_herramienta AS valor, COUNT(*) AS cantidad
 FROM herramienta
@@ -146,7 +175,7 @@ GROUP BY modelo;
 
 # MÓDULO DE RECLAMOS
 
-```
+``` SQL
 DROP TRIGGER IF EXISTS before_insert_reclamo ON Reclamo;
 DROP FUNCTION IF EXISTS reclamo_id_trigger();
 DROP SEQUENCE IF EXISTS seq_id_reclamo;
@@ -167,7 +196,7 @@ EXECUTE FUNCTION reclamo_id_trigger();
 ```
 
 # MÓDULO DE CALIDAD DE HERRAMIENTAS Y MAQUINARIA
-```
+``` SQL
 DROP TRIGGER IF EXISTS before_insert_mantenimiento ON mantenimiento_herramienta;
 DROP FUNCTION IF EXISTS mantenimiento_id_trigger();
 DROP SEQUENCE IF EXISTS seq_id_mantenimiento;
@@ -348,7 +377,7 @@ SET Total_pago = (
 );
 ```
 
-```
+``` SQL
 DROP TRIGGER IF EXISTS before_insert_nomina ON Nomina;
 DROP FUNCTION IF EXISTS nomina_id_trigger();
 DROP SEQUENCE IF EXISTS seq_id_nomina CASCADE;
@@ -368,7 +397,7 @@ FOR EACH ROW
 EXECUTE FUNCTION nomina_id_trigger();
 ```
 
-```
+``` SQL
 DROP TRIGGER IF EXISTS before_insert_deduccion ON Deduccion;
 DROP FUNCTION IF EXISTS deduccion_id_trigger();
 DROP SEQUENCE IF EXISTS seq_id_deduccion;
@@ -388,7 +417,7 @@ FOR EACH ROW
 EXECUTE FUNCTION deduccion_id_trigger();
 ```
 
-```
+``` SQL
 DROP TRIGGER IF EXISTS before_insert_bonificacion ON Bonificacion;
 DROP FUNCTION IF EXISTS bonificacion_id_trigger();
 DROP SEQUENCE IF EXISTS seq_id_bonificacion;
@@ -411,13 +440,13 @@ EXECUTE FUNCTION bonificacion_id_trigger();
 
 - El proceso batch presentado es una función en PL/pgSQL para calcular el total a pagar en una tabla de nómina. Se procede a brindar una explicación paso a paso de cómo funciona este proceso:
   
-```
+``` SQL
 CREATE OR REPLACE FUNCTION calcular_total_pago() RETURNS VOID AS $$
 ```
 
 1. Creación de la función:  Esta línea crea o reemplaza una función llamada calcular_total_pago que no devuelve ningún valor (RETURNS VOID).
   
-```
+``` SQL
 DECLARE
     rec RECORD;
     sueldo_base FLOAT;
@@ -429,7 +458,7 @@ DECLARE
 
 2. Declaración de las variables:
 
-```
+``` SQL
 DECLARE
     rec RECORD;
     sueldo_base FLOAT;
@@ -444,7 +473,7 @@ sueldo_base, total_bonificaciones, total_deducciones, total_pago: Variables para
 
 3. Inicio del Bloque de Código
 
-```
+``` SQL
    BEGIN
 ```
 Inicia el bloque de código de la función.
@@ -452,7 +481,7 @@ Inicia el bloque de código de la función.
 
 4. Cursor para Iterar sobre la Tabla nomina
 
-```
+``` SQL
 FOR rec IN SELECT * FROM nomina LOOP
 
 ```
@@ -461,7 +490,7 @@ Se utiliza un cursor para iterar sobre todos los registros de la tabla nomina.
 
 5. Obtener el Sueldo Base
 
-```
+``` SQL
 SELECT monto_sueldo_base INTO sueldo_base
 FROM tipo_sueldo_base
 WHERE id_sueldo_base = rec.id_sueldo_base;
@@ -471,7 +500,7 @@ Para cada registro en la tabla nomina, se obtiene el monto_sueldo_base de la tab
 
 6. Obtener el Total de Bonificaciones
 
-```
+``` SQL
 SELECT SUM(monto_bonificacion) INTO total_bonificaciones
 FROM bonificacion
 WHERE id_bonificacion = rec.id_bonificacion;
@@ -481,7 +510,7 @@ Se calcula la suma de todas las bonificaciones asociadas al id_bonificacion del 
 
 7. Obtener el Total de Deducciones
 
-```
+``` SQL
 SELECT SUM(monto_deducido) INTO total_deducciones
 FROM deduccion
 WHERE id_deduccion = rec.id_deduccion;
@@ -492,7 +521,7 @@ Se calcula la suma de todas las deducciones asociadas al id_deduccion del regist
 8. Calcular el Total a Pagar
 
 
-```
+``` SQL
 total_pago = sueldo_base + total_bonificaciones - total_deducciones;
 
 ```
@@ -501,7 +530,7 @@ Se calcula el total a pagar sumando el sueldo base y las bonificaciones, y resta
 
 9. Actualizar la Tabla nomina
 
-```
+``` SQL
 UPDATE nomina
 SET total_pago = total_pago
 WHERE id_nomina = rec.id_nomina;
@@ -512,7 +541,7 @@ Se actualiza el campo total_pago de la tabla nomina con el valor calculado para 
 
 10. Fin del Bucle
 
-```
+``` SQL
 END LOOP;
 END;
 $$ LANGUAGE plpgsql;
@@ -523,7 +552,7 @@ Se cierra el bucle y se finaliza el bloque de código de la función.
 
 11. Ejecutar la Función
 
-```
+``` SQL
 SELECT calcular_total_pago();
 
 ```
