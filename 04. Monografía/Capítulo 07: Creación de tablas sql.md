@@ -39,7 +39,7 @@ CREATE TABLE actividad
 CREATE TABLE lote
 (
   id_lote CHAR(6) NOT NULL,
-  fecha_produccion DATE NOT NULL,
+  fecha_produccion DATE DEFAULT CURRENT_DATE,
   cant_prod INT NOT NULL,
   PRIMARY KEY (id_lote)
 );
@@ -94,7 +94,7 @@ CREATE TABLE operario
 CREATE TABLE asignacion_actividad
 (
   id_asignacion CHAR(6) NOT NULL,
-  fecha_asig DATE NOT NULL,
+  fecha_asig DATE DEFAULT CURRENT_DATE,
   hora_inicio TIME NOT NULL,
   hora_fin TIME NOT NULL,
   id_gestor CHAR(6) NOT NULL,
@@ -146,7 +146,7 @@ CREATE TABLE Estado_Reclamo
 CREATE TABLE Reclamo
 (
  Id_reclamo CHAR(6) NOT NULL,
- Fecha_reclamo DATE NOT NULL,
+ Fecha_reclamo DATE DEFAULT CURRENT_DATE,
  Id_operario CHAR(6) NOT NULL,
  descrip_reclamo VARCHAR(100),
  Id_estado_reclamo CHAR(6) NOT NULL,
@@ -160,7 +160,7 @@ CREATE TABLE Reclamo
 CREATE TABLE Reporte_reclamo
 (
     Id_reporte CHAR(9) NOT NULL,
-    Fecha_reporte DATE NOT NULL,
+    Fecha_reporte DATE DEFAULT CURRENT_DATE,
     Hora_reporte TIME NOT NULL,
     Id_gestor CHAR(6) NOT NULL,
     PRIMARY KEY (id_reporte),
@@ -256,7 +256,7 @@ CREATE TABLE Nomina
 (
     Id_nomina CHAR(6) NOT NULL,
     Total_pago FLOAT,
-    Fecha_emision DATE NOT NULL,
+    Fecha_emision DATE DEFAULT CURRENT_DATE,
     Id_periodo_pago CHAR(6) NOT NULL,
     Id_gestor CHAR(6) NOT NULL,
     Id_bonificacion CHAR(6) NOT NULL,
@@ -284,7 +284,7 @@ CREATE TABLE fallo (
     id_tipo_fallo CHAR(6) NOT NULL,
     id_herramienta CHAR(6) NOT NULL,
     descripcion_fallo VARCHAR(50),
-    fecha_fallo DATE NOT NULL,
+    fecha_fallo DATE DEFAULT CURRENT_DATE,
 	arreglado_fallo BOOLEAN DEFAULT FALSE,
     FOREIGN KEY (id_tipo_fallo) REFERENCES tipo_fallo(id_tipo_fallo),
     FOREIGN KEY (id_herramienta) REFERENCES herramienta(id_herramienta)
@@ -317,7 +317,7 @@ CREATE TABLE mantenimiento_herramienta (
     id_mantenimiento CHAR(6) PRIMARY KEY,
     id_tipo_mantenimiento CHAR(6) NOT NULL,
     id_estado_mantenimiento CHAR(6) NOT NULL,
-    fecha_mantenimiento DATE NOT NULL,
+    fecha_mantenimiento DATE DEFAULT CURRENT_DATE,
     id_responsable CHAR(6),
     id_calidad CHAR(6) NOT NULL,
     id_fallo CHAR(6),
@@ -341,7 +341,7 @@ CREATE TABLE tipo_insumo (
 ``` SQL
 CREATE TABLE Solicitud_insumo (
     id_solicitud_insumo VARCHAR(10) NOT NULL,
-    fecha_solicitud VARCHAR(10) NOT NULL,
+    fecha_solicitud DATE DEFAULT CURRENT_DATE,
     id_gestor CHAR(6) NOT NULL,
     id_tipo_insumo CHAR(6) NOT NULL,
     cantidad_insumo INT NOT NULL,
