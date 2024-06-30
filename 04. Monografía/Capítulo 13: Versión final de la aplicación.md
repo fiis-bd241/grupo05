@@ -1,4 +1,8 @@
 El repositorio con los códigos del desarrollo de la aplicación se encuentran en el siguiente repositorio:
+# Módulo de Registro de Actividades
+Para la parte de un historial de actividades se muestra los avance:
+![image](https://github.com/fiis-bd241/grupo05/assets/164263409/80471056-dfe7-4a83-a5d5-aebe7b16ab5f)
+
 
 ## Módulo de Remuneración
 Para la parte de remuneración se ha presentado los siguientes avances:
