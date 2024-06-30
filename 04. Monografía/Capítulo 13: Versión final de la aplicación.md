@@ -20,3 +20,6 @@ Entonces, tenemos las mismas funcionalidades para lo que vendrá a ser la bonifi
 ![](https://github.com/fiis-bd241/grupo05/blob/main/04.%20Monograf%C3%ADa/im%C3%A1genes/mantenimiento1.png)
 En la siguiente imagen se muestra una carga en el sistema para la programacion de la fecha de mantenimiento
 ![](https://github.com/fiis-bd241/grupo05/blob/main/04.%20Monograf%C3%ADa/im%C3%A1genes/mantenimiento2.png)
+
+## Módulo de Reclamos:
+
