@@ -22,4 +22,5 @@ En la siguiente imagen se muestra una carga en el sistema para la programacion d
 ![](https://github.com/fiis-bd241/grupo05/blob/main/04.%20Monograf%C3%ADa/im%C3%A1genes/mantenimiento2.png)
 
 ## Módulo de Reclamos:
-
+![image](https://github.com/fiis-bd241/grupo05/blob/main/04.%20Monograf%C3%ADa/im%C3%A1genes/Reclamos1.png)
+![image](https://github.com/fiis-bd241/grupo05/blob/main/04.%20Monograf%C3%ADa/im%C3%A1genes/Reclamos2.png)
