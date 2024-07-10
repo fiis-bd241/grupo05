@@ -1,5 +1,5 @@
 ```SQL
-	-- Eliminar tablas si existen
+		-- Eliminar tablas si existen
 DROP TABLE IF EXISTS herramienta CASCADE;
 DROP TABLE IF EXISTS gestor_produccion CASCADE;
 DROP TABLE IF EXISTS actividad CASCADE;
@@ -45,28 +45,8 @@ DROP FUNCTION IF EXISTS asignacion_id_trigger;
 -- Eliminar la secuencia
 DROP SEQUENCE IF EXISTS asignacion_seq;
 
--- Eliminar la función para generar el ID
-DROP FUNCTION IF EXISTS gen_id;
-
 -- Eliminar la tabla asignacion_actividad
 DROP TABLE IF EXISTS asignacion_actividad;
-
-
-CREATE OR REPLACE FUNCTION gen_id(prefix TEXT, seq_name TEXT) RETURNS TEXT AS $$
-DECLARE
-    seq_val BIGINT;
-BEGIN
-    EXECUTE format('SELECT nextval(''%s'')', seq_name) INTO seq_val;
-    RETURN prefix || LPAD(seq_val::TEXT, 3, '0');
-END;
-$$ LANGUAGE plpgsql;
-
-
--- Eliminar secuencia si existe
-DROP SEQUENCE IF EXISTS seq_solicitud;
-
--- Eliminar función si existe
-DROP FUNCTION IF EXISTS gen_id(prefix TEXT, seq_name TEXT);
 
 -- Eliminar vistas si existen
 DROP VIEW IF EXISTS Reporte_Reclamos_Por_Fecha;
@@ -74,13 +54,20 @@ DROP VIEW IF EXISTS Reporte_Reclamos_Por_Descripcion;
 DROP VIEW IF EXISTS Reporte_Reclamos_Por_Estado;
 DROP VIEW IF EXISTS Reporte_Reclamos_Por_Operario;
 
--- Eliminar función y trigger si existen
-DROP FUNCTION IF EXISTS adjust_seq_solicitud();
-DROP TRIGGER IF EXISTS trg_adjust_seq_solicitud ON solicitud_herramienta;
+-- Eliminar la secuencia
+DROP SEQUENCE IF EXISTS solicitud_id_seq;
+-- Eliminar el trigger
+DROP TRIGGER IF EXISTS set_solicitud_id ON solicitud_herramienta;
+
+-- Eliminar la función
+DROP FUNCTION IF EXISTS generate_solicitud_id();
 
 
--- Creación de la secuencia para solicitud_herramienta
-CREATE SEQUENCE seq_solicitud START 1;
+
+CREATE SEQUENCE solicitud_id_seq
+    START WITH 1
+    INCREMENT BY 1;
+
 
 -- Función para generar IDs alfanuméricos
 CREATE OR REPLACE FUNCTION gen_id(prefix TEXT, seq_name TEXT) RETURNS TEXT AS $$
@@ -186,17 +173,18 @@ CREATE TABLE estado_soli_herra(
 	nom_est_soli_herra VARCHAR(50) DEFAULT 'Pendiente'
 );
 CREATE TABLE solicitud_herramienta (
-    id_solicitud VARCHAR(10) PRIMARY KEY DEFAULT gen_id('SOL', 'seq_solicitud'),
+    id_solicitud VARCHAR(10) PRIMARY KEY DEFAULT 'DEFAULT',
     fecha_solicitud TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     id_est_soli_herra VARCHAR(6) NOT NULL,
     id_operario VARCHAR(6) NOT NULL,
     id_gestor VARCHAR(6),
-	id_herramienta VARCHAR(6) NOT NULL,
+    id_herramienta VARCHAR(6) NOT NULL,
     FOREIGN KEY (id_operario) REFERENCES operario(id_operario),
-	FOREIGN KEY (id_herramienta) REFERENCES herramienta(id_herramienta),
+    FOREIGN KEY (id_herramienta) REFERENCES herramienta(id_herramienta),
     FOREIGN KEY (id_gestor) REFERENCES gestor_produccion(id_gestor),
-	FOREIGN KEY (id_est_soli_herra) REFERENCES estado_soli_herra(id_est_soli_herra)
+    FOREIGN KEY (id_est_soli_herra) REFERENCES estado_soli_herra(id_est_soli_herra)
 );
+
 
 CREATE TABLE Estado_Reclamo
 (
@@ -441,21 +429,6 @@ CREATE TABLE Transporte (
     FOREIGN KEY (id_tipo_vehiculo) REFERENCES Tipo_vehiculo(id_tipo_vehiculo)
 );
 
-CREATE OR REPLACE FUNCTION adjust_seq_solicitud() RETURNS TRIGGER AS $$
-BEGIN
-    IF NEW.id_solicitud IS NOT NULL THEN
-        PERFORM setval('seq_solicitud', GREATEST((SELECT MAX(CAST(SUBSTRING(id_solicitud, 4) AS INTEGER)) FROM solicitud_herramienta), nextval('seq_solicitud')-1));
-    END IF;
-    RETURN NEW;
-END;
-$$ LANGUAGE plpgsql;
-
--- Crear el Trigger
-CREATE TRIGGER trg_adjust_seq_solicitud
-BEFORE INSERT ON solicitud_herramienta
-FOR EACH ROW
-EXECUTE FUNCTION adjust_seq_solicitud();
-
 CREATE SEQUENCE asignacion_seq;
 CREATE OR REPLACE FUNCTION asignacion_id_trigger() RETURNS TRIGGER AS $$
 BEGIN
@@ -464,9 +437,28 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+
 CREATE TRIGGER before_insert_asignacion
 BEFORE INSERT ON asignacion_actividad
 FOR EACH ROW
 EXECUTE FUNCTION asignacion_id_trigger();
+
+
+CREATE OR REPLACE FUNCTION generate_solicitud_id()
+RETURNS TRIGGER AS $$
+DECLARE
+    new_id VARCHAR(10);
+BEGIN
+    SELECT 'SOL' || LPAD(nextval('solicitud_id_seq')::TEXT, 3, '0')
+    INTO new_id;
+    NEW.id_solicitud := new_id;
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER set_solicitud_id
+BEFORE INSERT ON solicitud_herramienta
+FOR EACH ROW
+EXECUTE FUNCTION generate_solicitud_id();
 
 
