@@ -902,7 +902,7 @@ insert into asignacion_actividad (id_asignacion, fecha_asig, hora_inicio, hora_f
 
 insert into estado_soli_herra(id_est_soli_herra,nom_est_soli_herra ) values ('EHE1','Pendiente');
 insert into estado_soli_herra(id_est_soli_herra,nom_est_soli_herra ) values ('EHE2','Aprobado');
-insert into estado_soli_herra(id_est_soli_herra,nom_est_soli_herra ) values ('EHE3','Pendiente');
+insert into estado_soli_herra(id_est_soli_herra,nom_est_soli_herra ) values ('EHE3','Rechazado');
 insert into solicitud_herramienta (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values
 ('06-03-2024', 'EHE2', 'OPE76 ', 'GES103', 'HERR30'),
 ('28-01-2024', 'EHE3', 'OPE87 ', 'GES44 ', 'HERR22'),
