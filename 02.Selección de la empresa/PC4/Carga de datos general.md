@@ -1,5 +1,5 @@
-```SQL
- INSERT INTO herramienta (id_herramienta, nombre_herramienta, modelo, nombre_proveedor) VALUES
+```SQL 
+INSERT INTO herramienta (id_herramienta, nombre_herramienta, modelo, nombre_proveedor) VALUES
   ('HERR01', 'Máquina de coser recta', 'Industrial 2000', 'Maquinarias Textiles S.A.'),
   ('HERR02', 'Máquina overlock', 'Speedy Stitcher', 'Maquinarias Textiles S.A.'),
   ('HERR03', 'Máquina de bordar', 'Embroider Pro 5000', 'Embroidery Supplies Inc.'),
@@ -903,540 +903,507 @@ insert into asignacion_actividad (id_asignacion, fecha_asig, hora_inicio, hora_f
 insert into estado_soli_herra(id_est_soli_herra,nom_est_soli_herra ) values ('EHE1','Pendiente');
 insert into estado_soli_herra(id_est_soli_herra,nom_est_soli_herra ) values ('EHE2','Aprobado');
 insert into estado_soli_herra(id_est_soli_herra,nom_est_soli_herra ) values ('EHE3','Rechazado');
-insert into solicitud_herramienta (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values
-('06-03-2024', 'EHE2', 'OPE76 ', 'GES103', 'HERR30'),
-('28-01-2024', 'EHE3', 'OPE87 ', 'GES44 ', 'HERR22'),
-('18-02-2024', 'EHE1', 'OPE55 ', null, 'HERR23'),
-('27-03-2024', 'EHE3', 'OPE8  ', 'GES25 ', 'HERR09'),
-('22-07-2023', 'EHE1', 'OPE40 ', null, 'HERR12'),
-('28-08-2023', 'EHE2', 'OPE75 ', 'GES45', 'HERR28'),
-('06-06-2023', 'EHE3', 'OPE34 ', 'GES78', 'HERR14'),
-('18-05-2024', 'EHE3', 'OPE16 ', 'GES36 ', 'HERR09'),
-('14-10-2023', 'EHE2', 'OPE75 ', 'GES89', 'HERR26'),
-('08-05-2024', 'EHE3', 'OPE66 ', 'GES121', 'HERR19'),
-('31-10-2023', 'EHE2', 'OPE75 ', 'GES67', 'HERR24'),
-('05-10-2023', 'EHE1', 'OPE47 ', null, 'HERR04'),
-('19-11-2023', 'EHE2', 'OPE94 ', 'GES57', 'HERR27'),
-('25-02-2024', 'EHE1', 'OPE21 ', null, 'HERR20'),
-('27-09-2023', 'EHE2', 'OPE56 ', 'GES84', 'HERR30'),
-('27-07-2023', 'EHE2', 'OPE14 ', 'GES91', 'HERR14'),
-('02-03-2024', 'EHE1', 'OPE96 ', null, 'HERR15'),
-('11-08-2023', 'EHE1', 'OPE82 ', null, 'HERR19'),
-('30-12-2023', 'EHE1', 'OPE32 ', null, 'HERR25'),
-('06-09-2023', 'EHE3', 'OPE99 ', 'GES69 ', 'HERR28'),
-('23-07-2023', 'EHE1', 'OPE15 ', null, 'HERR12'),
-('08-12-2023', 'EHE3', 'OPE29 ', 'GES31 ', 'HERR23'),
-('13-05-2024', 'EHE3', 'OPE64 ', 'GES116', 'HERR02'),
-('23-06-2023', 'EHE1', 'OPE92 ', null, 'HERR29'),
-('10-02-2024', 'EHE1', 'OPE24 ', null, 'HERR28'),
-('30-10-2023', 'EHE1', 'OPE16 ', null, 'HERR15'),
-('22-04-2024', 'EHE2', 'OPE14 ', 'GES64 ', 'HERR21'),
-('29-08-2023', 'EHE1', 'OPE88 ', null, 'HERR03'),
-('02-10-2023', 'EHE3', 'OPE10 ', 'GES23 ', 'HERR04'),
-('15-12-2023', 'EHE2', 'OPE87 ', 'GES96', 'HERR14'),
-('19-06-2023', 'EHE1', 'OPE91 ', null, 'HERR30'),
-('04-11-2023', 'EHE1', 'OPE34 ', null, 'HERR01'),
-('28-01-2024', 'EHE3', 'OPE16 ', 'GES111', 'HERR14'),
-('12-09-2023', 'EHE1', 'OPE99 ', null, 'HERR14'),
-('17-04-2024', 'EHE1', 'OPE3  ', null, 'HERR12'),
-('12-06-2023', 'EHE2', 'OPE81 ', 'GES108', 'HERR26'),
-('07-12-2023', 'EHE3', 'OPE79 ', 'GES50 ', 'HERR20'),
-('14-01-2024', 'EHE1', 'OPE33 ', null, 'HERR11'),
-('04-05-2024', 'EHE1', 'OPE61 ', null, 'HERR13'),
-('23-02-2024', 'EHE1', 'OPE13 ', null, 'HERR13'),
-('02-01-2024', 'EHE2', 'OPE86 ', 'GES93', 'HERR19'),
-('16-03-2024', 'EHE2', 'OPE80 ', 'GES31 ', 'HERR30'),
-('13-05-2024', 'EHE1', 'OPE40 ', null, 'HERR24'),
-('20-09-2023', 'EHE2', 'OPE20 ', 'GES132', 'HERR13'),
-('20-12-2023', 'EHE2', 'OPE22 ', 'GES73', 'HERR24'),
-('26-04-2024', 'EHE3', 'OPE25 ', 'GES88', 'HERR12'),
-('26-08-2023', 'EHE2', 'OPE73 ', 'GES115', 'HERR15'),
-('30-07-2023', 'EHE2', 'OPE2  ', 'GES153', 'HERR13'),
-('30-10-2023', 'EHE1', 'OPE79 ', null, 'HERR26'),
-('04-04-2024', 'EHE2', 'OPE78 ', 'GES114', 'HERR25'),
-('29-02-2024', 'EHE3', 'OPE41 ', 'GES168', 'HERR14'),
-('22-04-2024', 'EHE1', 'OPE58 ', null, 'HERR06'),
-('31-07-2023', 'EHE3', 'OPE82 ', 'GES69 ', 'HERR11'),
-('17-10-2023', 'EHE2', 'OPE17 ', 'GES186', 'HERR08'),
-('26-04-2024', 'EHE1', 'OPE32 ', null, 'HERR28'),
-('02-05-2024', 'EHE3', 'OPE19 ', 'GES162', 'HERR23'),
-('21-06-2023', 'EHE3', 'OPE51 ', 'GES159', 'HERR28'),
-('24-06-2023', 'EHE2', 'OPE62 ', 'GES105', 'HERR25'),
-('17-12-2023', 'EHE1', 'OPE32 ', null, 'HERR05'),
-('30-12-2023', 'EHE1', 'OPE37 ', null, 'HERR06'),
-('26-02-2024', 'EHE3', 'OPE54 ', 'GES121', 'HERR26'),
-('26-05-2024', 'EHE2', 'OPE66 ', 'GES183', 'HERR11'),
-('13-11-2023', 'EHE1', 'OPE67 ', null, 'HERR24'),
-('30-07-2023', 'EHE3', 'OPE16 ', 'GES5  ', 'HERR07'),
-('10-06-2023', 'EHE2', 'OPE76 ', 'GES37 ', 'HERR14'),
-('29-03-2024', 'EHE2', 'OPE49 ', 'GES109', 'HERR04'),
-('10-06-2023', 'EHE2', 'OPE69 ', 'GES140', 'HERR10'),
-('27-03-2024', 'EHE1', 'OPE46 ', null, 'HERR12'),
-('29-07-2023', 'EHE1', 'OPE81 ', null, 'HERR14'),
-('03-04-2024', 'EHE1', 'OPE48 ', null, 'HERR25'),
-('11-10-2023', 'EHE3', 'OPE46 ', 'GES137', 'HERR28'),
-('02-08-2023', 'EHE1', 'OPE44 ', null, 'HERR28'),
-('30-12-2023', 'EHE2', 'OPE33 ', 'GES55 ', 'HERR23'),
-('11-11-2023', 'EHE1', 'OPE49 ', null, 'HERR05'),
-('19-12-2023', 'EHE2', 'OPE38 ', 'GES46 ', 'HERR25'),
-('04-06-2024', 'EHE3', 'OPE94 ', 'GES111', 'HERR07'),
-('30-07-2023', 'EHE2', 'OPE72 ', 'GES35 ', 'HERR21'),
-('11-11-2023', 'EHE3', 'OPE21 ', 'GES36 ', 'HERR10'),
-('29-07-2023', 'EHE2', 'OPE39 ', 'GES38 ', 'HERR18'),
-('25-02-2024', 'EHE3', 'OPE99 ', 'GES45 ', 'HERR01'),
-('24-08-2023', 'EHE2', 'OPE60 ', 'GES11 ', 'HERR21'),
-('16-04-2024', 'EHE3', 'OPE57 ', 'GES36 ', 'HERR20'),
-('15-05-2024', 'EHE3', 'OPE50 ', 'GES88 ', 'HERR23'),
-('17-05-2024', 'EHE2', 'OPE83 ', 'GES43 ', 'HERR13'),
-('13-12-2023', 'EHE2', 'OPE71 ', 'GES39 ', 'HERR30'),
-('01-02-2024', 'EHE3', 'OPE76 ', 'GES98 ', 'HERR12'),
-('21-02-2024', 'EHE2', 'OPE21 ', 'GES98 ', 'HERR20'),
-('02-06-2023', 'EHE1', 'OPE72 ', null, 'HERR18'),
-('01-06-2024', 'EHE1', 'OPE36 ', null, 'HERR06'),
-('27-01-2024', 'EHE3', 'OPE94 ', 'GES16 ', 'HERR12'),
-('08-05-2024', 'EHE3', 'OPE88 ', 'GES42 ', 'HERR14'),
-('22-09-2023', 'EHE3', 'OPE80 ', 'GES26 ', 'HERR21'),
-('01-12-2023', 'EHE1', 'OPE4  ', null, 'HERR04'),
-('02-01-2024', 'EHE1', 'OPE79 ', null, 'HERR09'),
-('10-01-2024', 'EHE2', 'OPE26 ', 'GES56 ', 'HERR05'),
-('27-10-2023', 'EHE3', 'OPE93 ', 'GES44 ', 'HERR01'),
-('12-01-2024', 'EHE3', 'OPE1  ', 'GES12 ', 'HERR12'),
-('10-02-2024', 'EHE1', 'OPE17 ', null, 'HERR25'),
-('28-10-2023', 'EHE1', 'OPE8  ', null, 'HERR14'),
-('01-03-2024', 'EHE2', 'OPE68 ', 'GES29 ', 'HERR29'),
-('17-06-2023', 'EHE2', 'OPE96 ', 'GES47 ', 'HERR27'),
-('17-03-2024', 'EHE3', 'OPE45 ', 'GES10 ', 'HERR21'),
-('10-12-2023', 'EHE3', 'OPE75 ', 'GES41 ', 'HERR22'),
-('02-02-2024', 'EHE2', 'OPE96 ', 'GES16 ', 'HERR19'),
-('20-05-2024', 'EHE3', 'OPE28 ', 'GES86 ', 'HERR04'),
-('24-07-2023', 'EHE2', 'OPE92 ', 'GES10 ', 'HERR19'),
-('10-08-2023', 'EHE1', 'OPE24 ', null, 'HERR13'),
-('21-02-2024', 'EHE3', 'OPE69 ', 'GES81 ', 'HERR26'),
-('19-08-2023', 'EHE3', 'OPE66 ', 'GES2  ', 'HERR10'),
-('04-10-2023', 'EHE2', 'OPE58 ', 'GES30 ', 'HERR21'),
-('05-11-2023', 'EHE1', 'OPE97 ', null, 'HERR18'),
-('04-07-2023', 'EHE1', 'OPE23 ', null, 'HERR01'),
-('01-07-2023', 'EHE1', 'OPE5  ', null, 'HERR30'),
-('25-02-2024', 'EHE3', 'OPE8  ', 'GES43 ', 'HERR10'),
-('19-08-2023', 'EHE2', 'OPE57 ', 'GES42 ', 'HERR30'),
-('12-07-2023', 'EHE2', 'OPE89 ', 'GES79 ', 'HERR14'),
-('01-02-2024', 'EHE1', 'OPE37 ', null, 'HERR28'),
-('12-12-2023', 'EHE2', 'OPE85 ', 'GES7  ', 'HERR04'),
-('24-06-2023', 'EHE3', 'OPE84 ', 'GES62 ', 'HERR02'),
-('10-10-2023', 'EHE3', 'OPE26 ', 'GES33 ', 'HERR23'),
-('17-08-2023', 'EHE1', 'OPE6  ', null, 'HERR14'),
-('30-06-2023', 'EHE1', 'OPE16 ', null, 'HERR27'),
-('21-04-2024', 'EHE3', 'OPE70 ', 'GES22 ', 'HERR19'),
-('15-12-2023', 'EHE1', 'OPE43 ', null, 'HERR15'),
-('09-11-2023', 'EHE2', 'OPE52 ', 'GES6  ', 'HERR28'),
-('30-05-2024', 'EHE1', 'OPE86 ', null, 'HERR01'),
-('01-06-2023', 'EHE3', 'OPE24 ', 'GES20 ', 'HERR20'),
-('28-11-2023', 'EHE3', 'OPE67 ', 'GES47 ', 'HERR24'),
-('09-01-2024', 'EHE3', 'OPE20 ', 'GES9  ', 'HERR25'),
-('17-08-2023', 'EHE2', 'OPE66 ', 'GES59 ', 'HERR19'),
-('14-05-2024', 'EHE2', 'OPE35 ', 'GES37 ', 'HERR28'),
-('14-10-2023', 'EHE2', 'OPE65 ', 'GES33 ', 'HERR25'),
-('14-08-2023', 'EHE1', 'OPE15 ', null, 'HERR01'),
-('08-07-2023', 'EHE1', 'OPE94 ', null, 'HERR30'),
-('22-01-2024', 'EHE2', 'OPE45 ', 'GES32 ', 'HERR20'),
-('06-04-2024', 'EHE1', 'OPE20 ', null, 'HERR28'),
-('28-01-2024', 'EHE1', 'OPE41 ', null, 'HERR07'),
-('23-05-2024', 'EHE3', 'OPE10 ', 'GES23 ', 'HERR24'),
-('10-05-2024', 'EHE3', 'OPE95 ', 'GES89 ', 'HERR18'),
-('02-04-2024', 'EHE2', 'OPE43 ', 'GES27 ', 'HERR25'),
-('16-06-2023', 'EHE2', 'OPE98 ', 'GES55 ', 'HERR30'),
-('06-12-2023', 'EHE2', 'OPE43 ', 'GES16 ', 'HERR10'),
-('26-08-2023', 'EHE1', 'OPE90 ', null, 'HERR02'),
-('08-04-2024', 'EHE1', 'OPE54 ', null, 'HERR09'),
-('28-03-2024', 'EHE2', 'OPE36 ', 'GES49 ', 'HERR29'),
-('01-01-2024', 'EHE2', 'OPE51 ', 'GES21 ', 'HERR05'),
-('30-05-2024', 'EHE1', 'OPE99 ', null, 'HERR02'),
-('09-09-2023', 'EHE1', 'OPE24 ', null, 'HERR29'),
-('22-06-2023', 'EHE3', 'OPE28 ', 'GES47 ', 'HERR23'),
-('14-02-2024', 'EHE1', 'OPE98 ', null, 'HERR19'),
-('02-12-2023', 'EHE1', 'OPE89 ', null, 'HERR27'),
-('16-08-2023', 'EHE3', 'OPE15 ', 'GES61 ', 'HERR12'),
-('25-05-2024', 'EHE1', 'OPE87 ', null, 'HERR21'),
-('30-03-2024', 'EHE2', 'OPE99 ', 'GES97 ', 'HERR20'),
-('21-10-2023', 'EHE1', 'OPE10 ', null, 'HERR30'),
-('16-12-2023', 'EHE1', 'OPE97 ', null, 'HERR04'),
-('17-08-2023', 'EHE3', 'OPE39 ', 'GES4  ', 'HERR07'),
-('25-05-2024', 'EHE3', 'OPE76 ', 'GES23 ', 'HERR23'),
-('19-08-2023', 'EHE1', 'OPE79 ', null, 'HERR07'),
-('30-09-2023', 'EHE1', 'OPE80 ', null, 'HERR19'),
-('23-06-2023', 'EHE2', 'OPE98 ', 'GES24 ', 'HERR12'),
-('04-01-2024', 'EHE2', 'OPE52 ', 'GES48 ', 'HERR15'),
-('02-08-2023', 'EHE1', 'OPE49 ', null, 'HERR30'),
-('04-12-2023', 'EHE1', 'OPE48 ', null, 'HERR11'),
-('27-11-2023', 'EHE1', 'OPE21 ', null, 'HERR07'),
-('22-01-2024', 'EHE3', 'OPE69 ', 'GES9  ', 'HERR10'),
-('30-06-2023', 'EHE1', 'OPE43 ', null, 'HERR20'),
-('22-06-2023', 'EHE1', 'OPE16 ', null, 'HERR21'),
-('13-06-2023', 'EHE3', 'OPE46 ', 'GES14 ', 'HERR23'),
-('20-06-2023', 'EHE3', 'OPE99 ', 'GES64 ', 'HERR23'),
-('01-11-2023', 'EHE2', 'OPE63 ', 'GES20 ', 'HERR07'),
-('21-04-2024', 'EHE1', 'OPE66 ', null, 'HERR05'),
-('21-04-2024', 'EHE1', 'OPE49 ', null, 'HERR23'),
-('08-07-2023', 'EHE3', 'OPE32 ', 'GES64 ', 'HERR28'),
-('10-11-2023', 'EHE2', 'OPE45 ', 'GES23 ', 'HERR29'),
-('25-11-2023', 'EHE1', 'OPE77 ', null, 'HERR02'),
-('01-02-2024', 'EHE3', 'OPE62 ', 'GES23 ', 'HERR04'),
-('17-01-2024', 'EHE1', 'OPE78 ', null, 'HERR18'),
-('23-02-2024', 'EHE1', 'OPE79 ', null, 'HERR13'),
-('12-12-2023', 'EHE3', 'OPE80 ', 'GES20 ', 'HERR11'),
-('01-07-2023', 'EHE2', 'OPE75 ', 'GES7  ', 'HERR02'),
-('22-06-2023', 'EHE2', 'OPE97 ', 'GES33 ', 'HERR04'),
-('01-01-2024', 'EHE2', 'OPE77 ', 'GES64 ', 'HERR18'),
-('27-03-2024', 'EHE1', 'OPE74 ', null, 'HERR30'),
-('23-01-2024', 'EHE2', 'OPE52 ', 'GES20 ', 'HERR02'),
-('19-04-2024', 'EHE3', 'OPE66 ', 'GES44 ', 'HERR19'),
-('16-06-2023', 'EHE1', 'OPE69 ', null, 'HERR29'),
-('22-08-2023', 'EHE1', 'OPE77 ', null, 'HERR23'),
-('21-04-2024', 'EHE3', 'OPE78 ', 'GES61 ', 'HERR29'),
-('06-08-2023', 'EHE1', 'OPE87 ', null, 'HERR01'),
-('20-02-2024', 'EHE1', 'OPE52 ', null, 'HERR15'),
-('11-08-2023', 'EHE2', 'OPE97 ', 'GES37 ', 'HERR21'),
-('06-09-2023', 'EHE3', 'OPE38 ', 'GES1  ', 'HERR07'),
-('22-06-2023', 'EHE1', 'OPE34 ', null, 'HERR09'),
-('20-05-2024', 'EHE3', 'OPE65 ', 'GES24 ', 'HERR30'),
-('21-05-2024', 'EHE3', 'OPE97 ', 'GES11 ', 'HERR30'),
-('11-05-2024', 'EHE3', 'OPE67 ', 'GES68 ', 'HERR30'),
-('11-06-2023', 'EHE1', 'OPE90 ', null, 'HERR19'),
-('06-10-2023', 'EHE1', 'OPE60 ', null, 'HERR02'),
-('12-07-2023', 'EHE2', 'OPE48 ', 'GES6  ', 'HERR12'),
-('01-07-2023', 'EHE2', 'OPE56 ', 'GES4  ', 'HERR28'),
-('17-07-2023', 'EHE3', 'OPE32 ', 'GES17 ', 'HERR07'),
-('06-02-2024', 'EHE1', 'OPE40 ', null, 'HERR27'),
-('22-11-2023', 'EHE1', 'OPE67 ', null, 'HERR02'),
-('23-05-2024', 'EHE1', 'OPE32 ', null, 'HERR06'),
-('26-02-2024', 'EHE1', 'OPE98 ', null, 'HERR06'),
-('26-02-2024', 'EHE2', 'OPE48 ', 'GES24 ', 'HERR25'),
-('16-07-2023', 'EHE1', 'OPE72 ', null, 'HERR20'),
-('01-05-2024', 'EHE2', 'OPE62 ', 'GES31 ', 'HERR14'),
-('30-11-2023', 'EHE1', 'OPE21 ', null, 'HERR14'),
-('01-03-2024', 'EHE1', 'OPE57 ', null, 'HERR23'),
-('16-04-2024', 'EHE3', 'OPE56 ', 'GES10 ', 'HERR19'),
-('01-02-2024', 'EHE1', 'OPE97 ', null, 'HERR11'),
-('23-02-2024', 'EHE3', 'OPE80 ', 'GES61 ', 'HERR14'),
-('23-04-2024', 'EHE2', 'OPE80 ', 'GES45 ', 'HERR14'),
-('30-01-2024', 'EHE3', 'OPE26 ', 'GES29 ', 'HERR20'),
-('24-10-2023', 'EHE3', 'OPE16 ', 'GES6  ', 'HERR28'),
-('21-01-2024', 'EHE2', 'OPE97 ', 'GES1  ', 'HERR27'),
-('01-05-2024', 'EHE3', 'OPE30 ', 'GES32 ', 'HERR09'),
-('25-01-2024', 'EHE1', 'OPE17 ', null, 'HERR29'),
-('26-01-2024', 'EHE1', 'OPE62 ', null, 'HERR27'),
-('26-10-2023', 'EHE2', 'OPE96 ', 'GES18 ', 'HERR04'),
-('26-04-2024', 'EHE2', 'OPE1  ', 'GES20 ', 'HERR30'),
-('08-08-2023', 'EHE1', 'OPE28 ', null, 'HERR14'),
-('10-02-2024', 'EHE3', 'OPE85 ', 'GES6  ', 'HERR23'),
-('17-06-2023', 'EHE1', 'OPE35 ', null, 'HERR07'),
-('21-01-2024', 'EHE1', 'OPE7  ', null, 'HERR11'),
-('17-07-2023', 'EHE1', 'OPE16 ', null, 'HERR10'),
-('24-04-2024', 'EHE3', 'OPE52 ', 'GES91 ', 'HERR20'),
-('06-03-2024', 'EHE2', 'OPE9  ', 'GES75 ', 'HERR24'),
-('06-01-2024', 'EHE1', 'OPE13 ', NULL, 'HERR10'),
-('23-06-2023', 'EHE3', 'OPE43 ', 'GES43 ', 'HERR28'),
-('31-03-2024', 'EHE2', 'OPE5  ', 'GES62 ', 'HERR21'),
-('18-02-2024', 'EHE3', 'OPE59 ', 'GES78 ', 'HERR26'),
-('29-02-2024', 'EHE2', 'OPE93 ', 'GES119', 'HERR08'),
-('12-12-2023', 'EHE1', 'OPE30 ', NULL, 'HERR05'),
-('15-07-2023', 'EHE3', 'OPE34 ', 'GES116', 'HERR10'),
-('21-05-2024', 'EHE2', 'OPE16 ', 'GES36 ', 'HERR18'),
-('23-12-2023', 'EHE2', 'OPE76 ', 'GES70 ', 'HERR18'),
-('02-05-2024', 'EHE2', 'OPE46 ', 'GES5  ', 'HERR02'),
-('16-08-2023', 'EHE1', 'OPE51 ', NULL, 'HERR11'),
-('27-02-2024', 'EHE1', 'OPE66 ', NULL, 'HERR12'),
-('24-07-2023', 'EHE3', 'OPE79 ', 'GES108', 'HERR11'),
-('17-09-2023', 'EHE3', 'OPE83 ', 'GES115', 'HERR18'),
-('05-11-2023', 'EHE2', 'OPE30 ', 'GES40 ', 'HERR26'),
-('04-04-2024', 'EHE3', 'OPE16 ', 'GES5  ', 'HERR05'),
-('17-05-2024', 'EHE2', 'OPE73 ', 'GES44 ', 'HERR18'),
-('09-02-2024', 'EHE3', 'OPE4  ', 'GES4  ', 'HERR07'),
-('19-08-2023', 'EHE1', 'OPE70 ', NULL, 'HERR01'),
-('30-05-2024', 'EHE1', 'OPE61 ', NULL, 'HERR05'),
-('04-08-2023', 'EHE3', 'OPE74 ', 'GES47 ', 'HERR25'),
-('29-02-2024', 'EHE2', 'OPE51 ', 'GES77 ', 'HERR05'),
-('02-04-2024', 'EHE2', 'OPE26 ', 'GES65 ', 'HERR30'),
-('10-04-2024', 'EHE2', 'OPE74 ', 'GES122', 'HERR20'),
-('06-08-2023', 'EHE1', 'OPE40 ', NULL, 'HERR04'),
-('05-01-2024', 'EHE1', 'OPE78 ', NULL, 'HERR18'),
-('13-05-2024', 'EHE2', 'OPE22 ', 'GES102', 'HERR13'),
-('28-06-2023', 'EHE2', 'OPE72 ', 'GES193', 'HERR27'),
-('30-03-2024', 'EHE2', 'OPE70 ', 'GES55 ', 'HERR10'),
-('22-03-2024', 'EHE1', 'OPE92 ', NULL, 'HERR29'),
-('03-04-2024', 'EHE2', 'OPE13 ', 'GES12 ', 'HERR13'),
-('26-07-2023', 'EHE1', 'OPE33 ', NULL, 'HERR01'),
-('26-09-2023', 'EHE3', 'OPE84 ', 'GES197', 'HERR25'),
-('29-04-2024', 'EHE3', 'OPE72 ', 'GES109', 'HERR21'),
-('07-05-2024', 'EHE1', 'OPE98 ', NULL, 'HERR08'),
-('30-07-2023', 'EHE2', 'OPE55 ', 'GES91 ', 'HERR22'),
-('12-01-2024', 'EHE3', 'OPE65 ', 'GES10 ', 'HERR26'),
-('28-05-2024', 'EHE3', 'OPE60 ', 'GES71 ', 'HERR15'),
-('03-10-2023', 'EHE3', 'OPE59 ', 'GES35 ', 'HERR07'),
-('09-09-2023', 'EHE2', 'OPE99 ', 'GES29 ', 'HERR13'),
-('19-02-2024', 'EHE1', 'OPE64 ', NULL, 'HERR02'),
-('31-05-2024', 'EHE3', 'OPE17 ', 'GES46 ', 'HERR10'),
-('14-03-2024', 'EHE3', 'OPE73 ', 'GES183', 'HERR20'),
-('09-02-2024', 'EHE3', 'OPE98 ', 'GES90 ', 'HERR05'),
-('03-04-2024', 'EHE3', 'OPE23 ', 'GES33 ', 'HERR21'),
-('30-11-2023', 'EHE2', 'OPE85 ', 'GES68 ', 'HERR29'),
-('08-04-2024', 'EHE2', 'OPE57 ', 'GES151', 'HERR18'),
-('30-08-2023', 'EHE2', 'OPE35 ', 'GES54 ', 'HERR19'),
-('29-09-2023', 'EHE3', 'OPE96 ', 'GES192', 'HERR18'),
-('07-10-2023', 'EHE3', 'OPE53 ', 'GES26 ', 'HERR03'),
-('22-09-2023', 'EHE3', 'OPE50 ', 'GES17 ', 'HERR22'),
-('04-12-2023', 'EHE1', 'OPE42 ', NULL, 'HERR12'),
-('10-11-2023', 'EHE3', 'OPE58 ', 'GES158', 'HERR13'),
-('28-08-2023', 'EHE2', 'OPE31 ', 'GES95 ', 'HERR02'),
-('15-03-2024', 'EHE1', 'OPE69 ', NULL, 'HERR18'),
-('29-06-2023', 'EHE3', 'OPE56 ', 'GES198', 'HERR19'),
-('24-12-2023', 'EHE1', 'OPE88 ', NULL, 'HERR07'),
-('28-04-2024', 'EHE2', 'OPE11 ', 'GES48 ', 'HERR29'),
-('11-06-2023', 'EHE1', 'OPE24 ', NULL, 'HERR02'),
-('20-06-2023', 'EHE2', 'OPE58 ', 'GES91 ', 'HERR13'),
-('15-11-2023', 'EHE3', 'OPE40 ', 'GES82 ', 'HERR07'),
-('22-12-2023', 'EHE2', 'OPE53 ', 'GES45 ', 'HERR10'),
-('15-12-2023', 'EHE2', 'OPE87 ', 'GES117', 'HERR19'),
-('22-04-2024', 'EHE2', 'OPE57 ', 'GES125', 'HERR12'),
-('11-04-2024', 'EHE2', 'OPE51 ', 'GES93 ', 'HERR23'),
-('21-04-2024', 'EHE3', 'OPE31 ', 'GES180', 'HERR06'),
-('15-08-2023', 'EHE2', 'OPE12 ', 'GES101', 'HERR30'),
-('02-04-2024', 'EHE2', 'OPE90 ', 'GES138', 'HERR20'),
-('05-04-2024', 'EHE1', 'OPE42 ', NULL, 'HERR10'),
-('27-12-2023', 'EHE1', 'OPE30 ', NULL, 'HERR12'),
-('07-08-2023', 'EHE2', 'OPE54 ', 'GES125', 'HERR24'),
-('13-06-2023', 'EHE3', 'OPE44 ', 'GES170', 'HERR23'),
-('23-11-2023', 'EHE3', 'OPE82 ', 'GES146', 'HERR17'),
-('29-02-2024', 'EHE2', 'OPE17 ', 'GES140', 'HERR18'),
-('06-12-2023', 'EHE1', 'OPE7  ', NULL, 'HERR03'),
-('12-09-2023', 'EHE1', 'OPE1  ', NULL, 'HERR24'),
-('06-08-2023', 'EHE1', 'OPE13 ', NULL, 'HERR23'),
-('09-08-2023', 'EHE3', 'OPE17 ', 'GES195', 'HERR29'),
-('30-01-2024', 'EHE1', 'OPE63 ', NULL, 'HERR17'),
-('18-11-2023', 'EHE1', 'OPE84 ', NULL, 'HERR11'),
-('05-01-2024', 'EHE1', 'OPE23 ', NULL, 'HERR04'),
-('21-02-2024', 'EHE2', 'OPE6  ', 'GES134', 'HERR11'),
-('05-11-2023', 'EHE3', 'OPE25 ', 'GES11 ', 'HERR11'),
-('11-11-2023', 'EHE2', 'OPE29 ', 'GES74 ', 'HERR25'),
-('24-02-2024', 'EHE3', 'OPE66 ', 'GES47 ', 'HERR11'),
-('23-05-2024', 'EHE2', 'OPE73 ', 'GES91 ', 'HERR22'),
-('15-09-2023', 'EHE2', 'OPE21 ', 'GES99 ', 'HERR16'),
-('20-04-2024', 'EHE2', 'OPE97 ', 'GES29 ', 'HERR04'),
-('01-08-2023', 'EHE2', 'OPE17 ', 'GES9  ', 'HERR28'),
-('21-02-2024', 'EHE2', 'OPE21 ', 'GES21 ', 'HERR21'),
-('15-03-2024', 'EHE3', 'OPE46 ', 'GES63 ', 'HERR24'),
-('17-06-2023', 'EHE1', 'OPE69 ', NULL, 'HERR28'),
-('05-04-2024', 'EHE1', 'OPE3  ', NULL, 'HERR23'),
-('28-09-2023', 'EHE3', 'OPE76 ', 'GES171', 'HERR26'),
-('08-06-2023', 'EHE2', 'OPE11 ', 'GES64 ', 'HERR24'),
-('21-02-2024', 'EHE2', 'OPE5  ', 'GES35 ', 'HERR24'),
-('06-04-2024', 'EHE1', 'OPE7  ', NULL, 'HERR22'),
-('23-02-2024', 'EHE3', 'OPE12 ', 'GES168', 'HERR14'),
-('18-04-2024', 'EHE1', 'OPE1  ', NULL, 'HERR09'),
-('14-07-2023', 'EHE2', 'OPE60 ', 'GES71 ', 'HERR09'),
-('29-11-2023', 'EHE1', 'OPE89 ', NULL, 'HERR11'),
-('11-02-2024', 'EHE1', 'OPE28 ', NULL, 'HERR29'),
-('08-09-2023', 'EHE3', 'OPE2  ', 'GES193', 'HERR05'),
-('10-12-2023', 'EHE3', 'OPE43 ', 'GES17 ', 'HERR11'),
-('10-04-2024', 'EHE1', 'OPE89 ', NULL, 'HERR17'),
-('01-06-2023', 'EHE3', 'OPE71 ', 'GES100', 'HERR26'),
-('02-08-2023', 'EHE3', 'OPE99 ', 'GES27 ', 'HERR20'),
-('01-03-2024', 'EHE1', 'OPE98 ', NULL, 'HERR05'),
-('14-03-2024', 'EHE3', 'OPE77 ', 'GES31 ', 'HERR06'),
-('27-12-2023', 'EHE1', 'OPE70 ', NULL, 'HERR03'),
-('02-05-2024', 'EHE3', 'OPE25 ', 'GES25 ', 'HERR25'),
-('28-08-2023', 'EHE3', 'OPE19 ', 'GES51 ', 'HERR12'),
-('15-03-2024', 'EHE1', 'OPE1  ', NULL, 'HERR16'),
-('13-07-2023', 'EHE1', 'OPE47 ', NULL, 'HERR30'),
-('14-04-2024', 'EHE1', 'OPE9  ', NULL, 'HERR02'),
-('29-07-2023', 'EHE2', 'OPE48 ', 'GES153', 'HERR11'),
-('28-11-2023', 'EHE3', 'OPE57 ', 'GES1  ', 'HERR14'),
-('28-04-2024', 'EHE1', 'OPE84 ', NULL, 'HERR04'),
-('19-09-2023', 'EHE1', 'OPE20 ', NULL, 'HERR02'),
-('24-03-2024', 'EHE2', 'OPE10 ', 'GES56 ', 'HERR27'),
-('24-01-2024', 'EHE1', 'OPE30 ', NULL, 'HERR10'),
-('16-05-2024', 'EHE2', 'OPE16 ', 'GES5  ', 'HERR29'),
-('08-02-2024', 'EHE2', 'OPE8  ', 'GES83 ', 'HERR23'),
-('29-09-2023', 'EHE2', 'OPE6  ', 'GES74 ', 'HERR14'),
-('12-02-2024', 'EHE1', 'OPE55 ', NULL, 'HERR21'),
-('06-02-2024', 'EHE2', 'OPE32 ', 'GES92 ', 'HERR17'),
-('15-03-2024', 'EHE2', 'OPE98 ', 'GES67 ', 'HERR12'),
-('17-04-2024', 'EHE3', 'OPE27 ', 'GES58 ', 'HERR18'),
-('12-07-2023', 'EHE1', 'OPE98 ', NULL, 'HERR23'),
-('07-09-2023', 'EHE1', 'OPE75 ', NULL, 'HERR01'),
-('25-04-2024', 'EHE3', 'OPE63 ', 'GES17 ', 'HERR02'),
-('10-08-2023', 'EHE2', 'OPE7  ', 'GES99 ', 'HERR19'),
-('25-11-2023', 'EHE3', 'OPE27 ', 'GES78 ', 'HERR18'),
-('13-04-2024', 'EHE3', 'OPE18 ', 'GES45 ', 'HERR27'),
-('11-08-2023', 'EHE3', 'OPE95 ', 'GES109', 'HERR01'),
-('27-04-2024', 'EHE2', 'OPE71 ', 'GES80 ', 'HERR16'),
-('30-08-2023', 'EHE3', 'OPE91 ', 'GES37 ', 'HERR26'),
-('05-08-2023', 'EHE2', 'OPE6  ', 'GES78 ', 'HERR17'),
-('05-04-2024', 'EHE3', 'OPE63 ', 'GES37 ', 'HERR12'),
-('23-07-2023', 'EHE1', 'OPE21 ', NULL, 'HERR27'),
-('14-07-2023', 'EHE1', 'OPE5  ', NULL, 'HERR19'),
-('08-07-2023', 'EHE2', 'OPE27 ', 'GES35 ', 'HERR25'),
-('29-08-2023', 'EHE1', 'OPE84 ', NULL, 'HERR29'),
-('29-08-2023', 'EHE1', 'OPE41 ', NULL, 'HERR14'),
-('24-02-2024', 'EHE2', 'OPE38 ', 'GES43 ', 'HERR06'),
-('06-01-2024', 'EHE1', 'OPE7  ', NULL, 'HERR04'),
-('05-06-2023', 'EHE1', 'OPE8  ', NULL, 'HERR09'),
-('23-07-2023', 'EHE1', 'OPE90 ', NULL, 'HERR02'),
-('21-04-2024', 'EHE3', 'OPE14 ', 'GES48 ', 'HERR26'),
-('19-07-2023', 'EHE3', 'OPE89 ', 'GES11 ', 'HERR03'),
-('25-06-2023', 'EHE2', 'OPE13 ', 'GES98 ', 'HERR11'),
-('24-09-2023', 'EHE1', 'OPE15 ', NULL, 'HERR04'),
-('19-08-2023', 'EHE1', 'OPE7  ', NULL, 'HERR21'),
-('11-11-2023', 'EHE3', 'OPE96 ', 'GES36 ', 'HERR27'),
-('04-11-2023', 'EHE3', 'OPE30 ', 'GES85 ', 'HERR14'),
-('20-02-2024', 'EHE2', 'OPE93 ', 'GES64 ', 'HERR04'),
-('25-10-2023', 'EHE3', 'OPE66 ', 'GES36 ', 'HERR21'),
-('09-07-2023', 'EHE1', 'OPE5  ', NULL, 'HERR12'),
-('09-03-2024', 'EHE1', 'OPE80 ', NULL, 'HERR26'),
-('05-06-2023', 'EHE1', 'OPE9  ', NULL, 'HERR23'),
-('11-02-2024', 'EHE2', 'OPE20 ', 'GES34 ', 'HERR25'),
-('08-11-2023', 'EHE3', 'OPE79 ', 'GES62 ', 'HERR11'),
-('11-01-2024', 'EHE2', 'OPE70 ', 'GES33 ', 'HERR17'),
-('26-09-2023', 'EHE1', 'OPE61 ', NULL, 'HERR24'),
-('28-04-2024', 'EHE3', 'OPE73 ', 'GES145', 'HERR04'),
-('27-02-2024', 'EHE1', 'OPE5  ', NULL, 'HERR25'),
-('11-06-2023', 'EHE3', 'OPE61 ', 'GES98 ', 'HERR29'),
-('22-09-2023', 'EHE2', 'OPE7  ', 'GES32 ', 'HERR12'),
-('18-10-2023', 'EHE1', 'OPE75 ', NULL, 'HERR09'),
-('14-04-2024', 'EHE2', 'OPE5  ', 'GES91 ', 'HERR02'),
-('12-01-2024', 'EHE2', 'OPE9  ', 'GES49 ', 'HERR29'),
-('09-08-2023', 'EHE2', 'OPE30 ', 'GES12 ', 'HERR01'),
-('28-02-2024', 'EHE3', 'OPE43 ', 'GES28 ', 'HERR11'),
-('06-06-2023', 'EHE2', 'OPE20 ', 'GES49 ', 'HERR11'),
-('19-09-2023', 'EHE3', 'OPE5  ', 'GES46 ', 'HERR16'),
-('27-02-2024', 'EHE1', 'OPE97 ', NULL, 'HERR22'),
-('17-02-2024', 'EHE1', 'OPE92 ', NULL, 'HERR14'),
-('21-04-2024', 'EHE2', 'OPE67 ', 'GES24 ', 'HERR12'),
-('11-07-2023', 'EHE2', 'OPE39 ', 'GES27 ', 'HERR16'),
-('14-12-2023', 'EHE1', 'OPE90 ', NULL, 'HERR29'),
-('19-09-2023', 'EHE3', 'OPE84 ', 'GES15 ', 'HERR23'),
-('02-03-2024', 'EHE1', 'OPE99 ', NULL, 'HERR05'),
-('11-03-2024', 'EHE3', 'OPE5  ', 'GES40 ', 'HERR09'),
-('01-08-2023', 'EHE1', 'OPE14 ', NULL, 'HERR02'),
-('01-07-2023', 'EHE2', 'OPE73 ', 'GES29 ', 'HERR01'),
-('02-08-2023', 'EHE1', 'OPE83 ', NULL, 'HERR10'),
-('06-07-2023', 'EHE3', 'OPE84 ', 'GES65 ', 'HERR04'),
-('29-05-2024', 'EHE2', 'OPE24 ', 'GES51 ', 'HERR10'),
-('29-06-2023', 'EHE3', 'OPE83 ', 'GES19 ', 'HERR17'),
-('13-10-2023', 'EHE1', 'OPE9  ', NULL, 'HERR04'),
-('22-01-2024', 'EHE3', 'OPE90 ', 'GES87 ', 'HERR30'),
-('22-08-2023', 'EHE2', 'OPE77 ', 'GES70 ', 'HERR20'),
-('20-12-2023', 'EHE1', 'OPE39 ', NULL, 'HERR09'),
-('01-02-2024', 'EHE1', 'OPE67 ', NULL, 'HERR16'),
-('02-12-2023', 'EHE2', 'OPE94 ', 'GES21 ', 'HERR06'),
-('29-08-2023', 'EHE1', 'OPE22 ', NULL, 'HERR06'),
-('02-09-2023', 'EHE1', 'OPE16 ', NULL, 'HERR22'),
-('24-08-2023', 'EHE3', 'OPE1  ', 'GES14 ', 'HERR25'),
-('05-08-2023', 'EHE1', 'OPE84 ', NULL, 'HERR19'),
-('05-06-2023', 'EHE1', 'OPE95 ', NULL, 'HERR16'),
-('06-07-2023', 'EHE2', 'OPE87 ', 'GES47 ', 'HERR02'),
-('09-09-2023', 'EHE2', 'OPE95 ', 'GES34 ', 'HERR16'),
-('12-04-2024', 'EHE2', 'OPE31 ', 'GES40 ', 'HERR17'),
-('05-02-2024', 'EHE1', 'OPE58 ', NULL, 'HERR21'),
-('21-06-2023', 'EHE3', 'OPE97 ', 'GES32 ', 'HERR06'),
-('06-10-2023', 'EHE1', 'OPE36 ', NULL, 'HERR22'),
-('22-02-2024', 'EHE2', 'OPE89 ', 'GES22 ', 'HERR16'),
-('22-02-2024', 'EHE1', 'OPE80 ', NULL, 'HERR11'),
-('08-06-2023', 'EHE2', 'OPE65 ', 'GES84 ', 'HERR16'),
-('18-04-2024', 'EHE1', 'OPE92 ', NULL, 'HERR17'),
-('06-03-2024', 'EHE1', 'OPE30 ', NULL, 'HERR10'),
-('10-06-2023', 'EHE1', 'OPE89 ', NULL, 'HERR10'),
-('21-07-2023', 'EHE2', 'OPE11 ', 'GES80 ', 'HERR18'),
-('29-08-2023', 'EHE2', 'OPE30 ', 'GES60 ', 'HERR25'),
-('27-02-2024', 'EHE1', 'OPE7  ', NULL, 'HERR10'),
-('24-04-2024', 'EHE1', 'OPE58 ', NULL, 'HERR01'),
-('24-04-2024', 'EHE1', 'OPE7  ', NULL, 'HERR16'),
-('06-12-2023', 'EHE3', 'OPE61 ', 'GES53 ', 'HERR02'),
-('02-12-2023', 'EHE2', 'OPE18 ', 'GES87 ', 'HERR22'),
-('28-09-2023', 'EHE3', 'OPE98 ', 'GES21 ', 'HERR20'),
-('12-02-2024', 'EHE1', 'OPE83 ', NULL, 'HERR06'),
-('18-03-2024', 'EHE3', 'OPE75 ', 'GES88 ', 'HERR20'),
-('17-07-2023', 'EHE2', 'OPE12 ', 'GES25 ', 'HERR02'),
-('21-08-2023', 'EHE1', 'OPE6  ', NULL, 'HERR02'),
-('24-06-2023', 'EHE3', 'OPE99 ', 'GES31 ', 'HERR03'),
-('01-10-2023', 'EHE2', 'OPE61 ', 'GES18 ', 'HERR27'),
-('09-06-2023', 'EHE3', 'OPE68 ', 'GES69 ', 'HERR20'),
-('14-04-2024', 'EHE2', 'OPE61 ', 'GES22 ', 'HERR06'),
-('14-02-2024', 'EHE3', 'OPE43 ', 'GES75 ', 'HERR04'),
-('06-12-2023', 'EHE3', 'OPE29 ', 'GES22 ', 'HERR21'),
-('29-09-2023', 'EHE2', 'OPE96 ', 'GES79 ', 'HERR14'),
-('25-07-2023', 'EHE2', 'OPE7  ', 'GES37 ', 'HERR03'),
-('21-08-2023', 'EHE3', 'OPE80 ', 'GES10 ', 'HERR20'),
-('01-12-2023', 'EHE3', 'OPE19 ', 'GES61 ', 'HERR23'),
-('25-06-2023', 'EHE1', 'OPE75 ', NULL, 'HERR25'),
-('19-09-2023', 'EHE3', 'OPE2  ', 'GES51 ', 'HERR01'),
-('17-11-2023', 'EHE1', 'OPE34 ', NULL, 'HERR12'),
-('01-08-2023', 'EHE3', 'OPE24 ', 'GES56 ', 'HERR23'),
-('11-03-2024', 'EHE1', 'OPE91 ', NULL, 'HERR10'),
-('10-02-2024', 'EHE1', 'OPE49 ', NULL, 'HERR01'),
-('01-07-2023', 'EHE1', 'OPE67 ', NULL, 'HERR30'),
-('11-04-2024', 'EHE2', 'OPE43 ', 'GES93 ', 'HERR26'),
-('12-09-2023', 'EHE2', 'OPE89 ', 'GES100', 'HERR03'),
-('09-09-2023', 'EHE2', 'OPE89 ', 'GES84 ', 'HERR03'),
-('09-07-2023', 'EHE2', 'OPE27 ', 'GES48 ', 'HERR01'),
-('18-04-2024', 'EHE2', 'OPE86 ', 'GES88 ', 'HERR10'),
-('12-01-2024', 'EHE1', 'OPE34 ', NULL, 'HERR04'),
-('17-01-2024', 'EHE2', 'OPE79 ', 'GES58 ', 'HERR06'),
-('21-06-2023', 'EHE2', 'OPE77 ', 'GES25 ', 'HERR06'),
-('29-07-2023', 'EHE1', 'OPE2  ', NULL, 'HERR25'),
-('29-08-2023', 'EHE2', 'OPE30 ', 'GES67 ', 'HERR29'),
-('19-09-2023', 'EHE1', 'OPE61 ', NULL, 'HERR25'),
-('18-02-2024', 'EHE1', 'OPE99 ', NULL, 'HERR29'),
-('06-06-2023', 'EHE2', 'OPE23 ', 'GES31 ', 'HERR03'),
-('29-11-2023', 'EHE3', 'OPE90 ', 'GES36 ', 'HERR12'),
-('09-09-2023', 'EHE1', 'OPE55 ', NULL, 'HERR10'),
-('08-06-2023', 'EHE3', 'OPE68 ', 'GES56 ', 'HERR14'),
-('10-12-2023', 'EHE1', 'OPE7  ', NULL, 'HERR17'),
-('17-06-2023', 'EHE1', 'OPE18 ', NULL, 'HERR29'),
-('22-07-2023', 'EHE3', 'OPE83 ', 'GES58 ', 'HERR01'),
-('10-09-2023', 'EHE1', 'OPE9  ', NULL, 'HERR09'),
-('28-07-2023', 'EHE3', 'OPE87 ', 'GES99 ', 'HERR20'),
-('13-10-2023', 'EHE3', 'OPE4  ', 'GES96 ', 'HERR02'),
-('05-06-2023', 'EHE3', 'OPE63 ', 'GES36 ', 'HERR17'),
-('28-06-2023', 'EHE2', 'OPE20 ', 'GES26 ', 'HERR09'),
-('09-02-2024', 'EHE1', 'OPE39 ', NULL, 'HERR21'),
-('29-06-2023', 'EHE2', 'OPE3  ', 'GES88 ', 'HERR21'),
-('17-10-2023', 'EHE3', 'OPE50 ', 'GES27 ', 'HERR27'),
-('22-06-2023', 'EHE1', 'OPE73 ', NULL, 'HERR03'),
-('08-01-2024', 'EHE2', 'OPE4  ', 'GES10 ', 'HERR27'),
-('28-01-2024', 'EHE1', 'OPE6  ', NULL, 'HERR02'),
-('23-06-2023', 'EHE3', 'OPE79 ', 'GES15 ', 'HERR17'),
-('06-11-2023', 'EHE2', 'OPE15 ', 'GES38 ', 'HERR11'),
-('28-06-2023', 'EHE3', 'OPE87 ', 'GES90 ', 'HERR04'),
-('19-11-2023', 'EHE2', 'OPE86 ', 'GES99 ', 'HERR14'),
-('10-11-2023', 'EHE3', 'OPE63 ', 'GES98 ', 'HERR19'),
-('13-02-2024', 'EHE3', 'OPE2  ', 'GES89 ', 'HERR12'),
-('06-09-2023', 'EHE3', 'OPE8  ', 'GES16 ', 'HERR25'),
-('17-06-2023', 'EHE3', 'OPE80 ', 'GES48 ', 'HERR04'),
-('05-12-2023', 'EHE1', 'OPE1  ', NULL, 'HERR18'),
-('12-08-2023', 'EHE2', 'OPE66 ', 'GES14 ', 'HERR27'),
-('13-12-2023', 'EHE2', 'OPE27 ', 'GES30 ', 'HERR03'),
-('02-04-2024', 'EHE2', 'OPE47 ', 'GES91 ', 'HERR23'),
-('02-10-2023', 'EHE2', 'OPE34 ', 'GES81 ', 'HERR03'),
-('06-04-2024', 'EHE3', 'OPE67 ', 'GES89 ', 'HERR22'),
-('06-09-2023', 'EHE1', 'OPE89 ', NULL, 'HERR18'),
-('05-02-2024', 'EHE2', 'OPE17 ', 'GES78 ', 'HERR10'),
-('10-11-2023', 'EHE1', 'OPE77 ', NULL, 'HERR25'),
-('24-07-2023', 'EHE2', 'OPE97 ', 'GES39 ', 'HERR30'),
-('14-03-2024', 'EHE1', 'OPE75 ', NULL, 'HERR20'),
-('06-01-2024', 'EHE1', 'OPE30 ', NULL, 'HERR23'),
-('09-09-2023', 'EHE2', 'OPE48 ', 'GES91 ', 'HERR26'),
-('13-09-2023', 'EHE3', 'OPE91 ', 'GES90 ', 'HERR12'),
-('27-06-2023', 'EHE1', 'OPE60 ', NULL, 'HERR25'),
-('01-04-2024', 'EHE3', 'OPE95 ', 'GES78 ', 'HERR10'),
-('06-04-2024', 'EHE2', 'OPE91 ', 'GES26 ', 'HERR19'),
-('01-06-2023', 'EHE2', 'OPE71 ', 'GES77 ', 'HERR22'),
-('05-03-2024', 'EHE1', 'OPE15 ', NULL, 'HERR14'),
-('09-11-2023', 'EHE3', 'OPE6  ', 'GES46 ', 'HERR18'),
-('02-01-2024', 'EHE2', 'OPE41 ', 'GES46 ', 'HERR22'),
-('19-10-2023', 'EHE1', 'OPE67 ', NULL, 'HERR29'),
-('29-08-2023', 'EHE2', 'OPE11 ', 'GES21 ', 'HERR29'),
-('06-03-2024', 'EHE1', 'OPE60 ', NULL, 'HERR17');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-16 07:33:37', 'EHE1', 'OPE56', 'GES89', 'HERR30');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-09 10:53:47', 'EHE3', 'OPE14', 'GES57', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-19 04:29:03', 'EHE2', 'OPE14', 'GES36', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-02 16:57:11', 'EHE3', 'OPE82', 'GES25', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-21 08:37:23', 'EHE3', 'OPE34', 'GES84', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-11-02 09:03:47', 'EHE3', 'OPE47', 'GES44', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-04 13:21:28', 'EHE1', 'OPE16', 'GES103', 'HERR27');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-27 15:12:44', 'EHE1', 'OPE40', 'GES89', 'HERR30');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-16 00:17:43', 'EHE3', 'OPE21', 'GES103', 'HERR02');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-14 21:02:04', 'EHE1', 'OPE32', 'GES57', 'HERR26');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-15 21:16:47', 'EHE1', 'OPE24', 'GES36', 'HERR04');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-02-01 11:35:53', 'EHE3', 'OPE24', 'GES91', 'HERR22');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-02 22:12:46', 'EHE2', 'OPE14', 'GES36', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-28 21:17:22', 'EHE3', 'OPE47', 'GES25', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-11 20:47:40', 'EHE1', 'OPE75', 'GES121', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-15 05:37:08', 'EHE3', 'OPE21', 'GES57', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-21 15:11:33', 'EHE3', 'OPE94', 'GES89', 'HERR22');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-15 03:10:51', 'EHE2', 'OPE64', 'GES67', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-21 10:13:44', 'EHE1', 'OPE14', 'GES103', 'HERR15');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-13 01:43:08', 'EHE2', 'OPE82', 'GES91', 'HERR12');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-02 09:12:28', 'EHE1', 'OPE96', 'GES31', 'HERR15');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-11-24 13:06:13', 'EHE1', 'OPE15', 'GES103', 'HERR04');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-01 11:46:30', 'EHE2', 'OPE29', 'GES36', 'HERR02');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-03 06:25:32', 'EHE3', 'OPE16', 'GES25', 'HERR04');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-11-30 23:08:24', 'EHE1', 'OPE82', 'GES103', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-17 02:42:58', 'EHE3', 'OPE47', 'GES78', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-19 23:07:01', 'EHE3', 'OPE14', 'GES103', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-11 08:22:06', 'EHE1', 'OPE47', 'GES67', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-10 14:47:06', 'EHE3', 'OPE94', 'GES67', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-16 09:10:12', 'EHE2', 'OPE76', 'GES89', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-04-26 20:41:21', 'EHE2', 'OPE14', 'GES69', 'HERR15');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-22 21:45:24', 'EHE1', 'OPE14', 'GES25', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-27 06:45:52', 'EHE1', 'OPE16', 'GES116', 'HERR30');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-04 16:21:38', 'EHE1', 'OPE66', 'GES57', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-08 10:59:06', 'EHE3', 'OPE92', 'GES67', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-08 16:55:19', 'EHE2', 'OPE87', 'GES116', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-03 05:19:14', 'EHE2', 'OPE40', 'GES78', 'HERR24');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-10 19:50:10', 'EHE3', 'OPE24', 'GES116', 'HERR27');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-15 17:31:23', 'EHE3', 'OPE34', 'GES103', 'HERR04');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-02-02 07:13:23', 'EHE3', 'OPE82', 'GES69', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-22 05:29:14', 'EHE1', 'OPE75', 'GES121', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-19 11:08:32', 'EHE3', 'OPE56', 'GES103', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-08 04:20:25', 'EHE3', 'OPE66', 'GES25', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-30 02:45:31', 'EHE2', 'OPE94', 'GES25', 'HERR02');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-14 23:18:18', 'EHE2', 'OPE24', 'GES45', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-02 03:42:58', 'EHE2', 'OPE47', 'GES67', 'HERR26');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-26 05:16:19', 'EHE2', 'OPE34', 'GES121', 'HERR26');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-28 14:58:46', 'EHE3', 'OPE82', 'GES25', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-10 11:11:49', 'EHE3', 'OPE99', 'GES57', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-03 11:20:26', 'EHE1', 'OPE87', 'GES69', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-06 22:53:42', 'EHE3', 'OPE94', 'GES103', 'HERR27');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-13 13:00:17', 'EHE1', 'OPE40', 'GES31', 'HERR24');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-09 05:53:01', 'EHE3', 'OPE21', 'GES89', 'HERR30');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-31 07:12:10', 'EHE2', 'OPE75', 'GES89', 'HERR30');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-20 13:21:18', 'EHE2', 'OPE75', 'GES116', 'HERR22');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-05-06 00:55:57', 'EHE1', 'OPE29', 'GES103', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-30 01:07:13', 'EHE3', 'OPE64', 'GES67', 'HERR27');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-10 17:19:19', 'EHE1', 'OPE24', 'GES44', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-11 23:38:39', 'EHE1', 'OPE64', 'GES44', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-06 14:56:16', 'EHE3', 'OPE21', 'GES44', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-26 16:23:27', 'EHE2', 'OPE29', 'GES91', 'HERR27');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-26 19:04:37', 'EHE2', 'OPE24', 'GES89', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-08 14:34:37', 'EHE2', 'OPE99', 'GES36', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-11-21 02:39:57', 'EHE2', 'OPE32', 'GES25', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-30 02:40:38', 'EHE2', 'OPE32', 'GES45', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-11-12 02:33:32', 'EHE3', 'OPE92', 'GES25', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-10 11:44:31', 'EHE2', 'OPE34', 'GES116', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-23 03:59:23', 'EHE3', 'OPE40', 'GES103', 'HERR15');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-30 16:35:58', 'EHE3', 'OPE32', 'GES78', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-05-13 05:32:21', 'EHE3', 'OPE56', 'GES84', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-02 21:23:50', 'EHE3', 'OPE21', 'GES121', 'HERR22');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-31 02:24:34', 'EHE3', 'OPE94', 'GES78', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-05-03 03:35:29', 'EHE3', 'OPE94', 'GES57', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-04-25 10:17:35', 'EHE3', 'OPE75', 'GES91', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-21 13:27:43', 'EHE1', 'OPE64', 'GES44', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-10 17:02:15', 'EHE3', 'OPE32', 'GES25', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-26 11:37:56', 'EHE2', 'OPE47', 'GES91', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-01 20:05:19', 'EHE3', 'OPE99', 'GES84', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-11 16:11:23', 'EHE2', 'OPE99', 'GES103', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-21 01:35:48', 'EHE1', 'OPE29', 'GES36', 'HERR12');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-26 21:55:37', 'EHE2', 'OPE47', 'GES121', 'HERR24');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-20 08:16:07', 'EHE1', 'OPE34', 'GES57', 'HERR27');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-31 14:34:36', 'EHE3', 'OPE66', 'GES89', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-21 08:15:49', 'EHE2', 'OPE87', 'GES103', 'HERR12');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-05 03:10:02', 'EHE2', 'OPE56', 'GES69', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-01 22:21:00', 'EHE2', 'OPE29', 'GES91', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-05-13 18:08:29', 'EHE1', 'OPE34', 'GES78', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-23 00:09:16', 'EHE2', 'OPE21', 'GES69', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-02-22 03:47:34', 'EHE1', 'OPE94', 'GES116', 'HERR22');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-16 01:24:04', 'EHE3', 'OPE99', 'GES103', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-18 07:24:28', 'EHE3', 'OPE56', 'GES67', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-02-07 11:45:19', 'EHE2', 'OPE40', 'GES36', 'HERR15');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-29 03:28:11', 'EHE1', 'OPE40', 'GES69', 'HERR12');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-19 21:18:39', 'EHE2', 'OPE29', 'GES69', 'HERR22');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-15 03:47:50', 'EHE3', 'OPE32', 'GES84', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-04 04:18:01', 'EHE2', 'OPE47', 'GES44', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-10 05:32:31', 'EHE1', 'OPE76', 'GES25', 'HERR22');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-13 17:03:02', 'EHE2', 'OPE34', 'GES91', 'HERR02');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-22 03:16:25', 'EHE3', 'OPE64', 'GES57', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-02-15 03:36:47', 'EHE2', 'OPE34', 'GES116', 'HERR02');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-05-07 11:15:17', 'EHE3', 'OPE56', 'GES78', 'HERR26');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-05-07 16:35:04', 'EHE2', 'OPE14', 'GES44', 'HERR27');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-04 05:47:12', 'EHE3', 'OPE75', 'GES121', 'HERR04');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-04-29 15:06:06', 'EHE2', 'OPE16', 'GES69', 'HERR02');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-19 12:48:38', 'EHE2', 'OPE29', 'GES45', 'HERR22');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-15 06:01:43', 'EHE1', 'OPE92', 'GES84', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-25 20:20:27', 'EHE2', 'OPE94', 'GES78', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-30 05:32:06', 'EHE2', 'OPE94', 'GES36', 'HERR22');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-15 07:42:32', 'EHE1', 'OPE75', 'GES69', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-24 01:22:40', 'EHE2', 'OPE14', 'GES89', 'HERR12');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-25 08:14:31', 'EHE1', 'OPE47', 'GES121', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-08 08:52:38', 'EHE3', 'OPE21', 'GES84', 'HERR26');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-09 12:22:35', 'EHE2', 'OPE40', 'GES25', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-11-20 22:07:48', 'EHE2', 'OPE64', 'GES44', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-28 09:51:51', 'EHE2', 'OPE96', 'GES89', 'HERR30');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-15 23:06:17', 'EHE3', 'OPE92', 'GES116', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-18 02:34:27', 'EHE2', 'OPE94', 'GES116', 'HERR02');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-22 02:08:58', 'EHE3', 'OPE94', 'GES36', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-19 18:31:27', 'EHE3', 'OPE76', 'GES45', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-07 11:07:35', 'EHE2', 'OPE76', 'GES89', 'HERR02');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-02 22:06:00', 'EHE2', 'OPE76', 'GES31', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-05 14:51:21', 'EHE1', 'OPE29', 'GES69', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-16 09:00:08', 'EHE3', 'OPE47', 'GES103', 'HERR27');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-02-26 23:28:11', 'EHE3', 'OPE34', 'GES89', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-15 09:29:56', 'EHE2', 'OPE34', 'GES78', 'HERR02');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-27 01:38:21', 'EHE1', 'OPE92', 'GES78', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-09 08:01:43', 'EHE2', 'OPE82', 'GES91', 'HERR04');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-10 01:54:16', 'EHE2', 'OPE92', 'GES121', 'HERR04');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-10 23:32:11', 'EHE1', 'OPE32', 'GES45', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-09 17:46:01', 'EHE2', 'OPE87', 'GES89', 'HERR12');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-06 19:00:18', 'EHE1', 'OPE29', 'GES44', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-26 00:36:32', 'EHE2', 'OPE87', 'GES67', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-01 04:05:04', 'EHE1', 'OPE56', 'GES84', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-30 17:41:07', 'EHE2', 'OPE32', 'GES45', 'HERR12');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-30 01:25:48', 'EHE3', 'OPE24', 'GES78', 'HERR24');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-24 00:42:43', 'EHE3', 'OPE94', 'GES78', 'HERR22');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-24 09:49:14', 'EHE3', 'OPE94', 'GES31', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-21 04:23:54', 'EHE2', 'OPE76', 'GES31', 'HERR15');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-06 17:36:50', 'EHE1', 'OPE21', 'GES57', 'HERR02');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-30 04:41:17', 'EHE1', 'OPE47', 'GES57', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-16 22:53:30', 'EHE1', 'OPE34', 'GES31', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-02-13 21:02:18', 'EHE2', 'OPE66', 'GES67', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-07 06:12:26', 'EHE1', 'OPE29', 'GES116', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-02 14:42:00', 'EHE1', 'OPE14', 'GES89', 'HERR24');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-09 13:15:56', 'EHE1', 'OPE16', 'GES36', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-04-29 18:24:13', 'EHE1', 'OPE15', 'GES69', 'HERR26');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-24 23:43:51', 'EHE1', 'OPE94', 'GES84', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-17 05:04:10', 'EHE1', 'OPE94', 'GES78', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-30 09:45:15', 'EHE2', 'OPE15', 'GES67', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-01 01:37:36', 'EHE1', 'OPE21', 'GES103', 'HERR24');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-20 11:48:20', 'EHE3', 'OPE24', 'GES67', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-11-23 16:02:54', 'EHE2', 'OPE94', 'GES36', 'HERR12');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-09 21:16:24', 'EHE2', 'OPE14', 'GES36', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-29 17:43:26', 'EHE2', 'OPE24', 'GES67', 'HERR27');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-11-14 21:40:11', 'EHE2', 'OPE92', 'GES103', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-23 07:35:24', 'EHE1', 'OPE76', 'GES84', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-10 02:59:48', 'EHE3', 'OPE40', 'GES44', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-10 02:06:02', 'EHE1', 'OPE56', 'GES31', 'HERR22');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-03 08:41:08', 'EHE1', 'OPE16', 'GES91', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-05-02 21:50:50', 'EHE2', 'OPE16', 'GES121', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-12 16:29:27', 'EHE3', 'OPE47', 'GES57', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-20 15:29:09', 'EHE1', 'OPE96', 'GES116', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-05 19:12:45', 'EHE3', 'OPE87', 'GES25', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-19 23:27:57', 'EHE2', 'OPE76', 'GES44', 'HERR26');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-25 14:51:07', 'EHE1', 'OPE40', 'GES91', 'HERR15');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-23 17:18:33', 'EHE2', 'OPE16', 'GES57', 'HERR24');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-13 10:28:28', 'EHE2', 'OPE96', 'GES67', 'HERR26');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-24 12:29:55', 'EHE2', 'OPE56', 'GES45', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-13 10:00:06', 'EHE2', 'OPE34', 'GES116', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-02-23 02:09:20', 'EHE1', 'OPE99', 'GES69', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-02 16:50:47', 'EHE2', 'OPE21', 'GES57', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-23 08:21:34', 'EHE2', 'OPE47', 'GES57', 'HERR04');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-02-02 20:17:21', 'EHE2', 'OPE24', 'GES121', 'HERR02');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-22 12:03:23', 'EHE1', 'OPE75', 'GES89', 'HERR26');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-08 18:16:10', 'EHE1', 'OPE56', 'GES121', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-20 04:37:48', 'EHE3', 'OPE24', 'GES84', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-12 14:53:31', 'EHE3', 'OPE56', 'GES89', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-02 08:02:05', 'EHE1', 'OPE75', 'GES57', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-11-01 01:57:09', 'EHE2', 'OPE92', 'GES67', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-10 13:40:59', 'EHE2', 'OPE87', 'GES31', 'HERR27');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-09 02:43:29', 'EHE3', 'OPE92', 'GES116', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-23 08:17:33', 'EHE3', 'OPE56', 'GES91', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-25 14:22:32', 'EHE1', 'OPE16', 'GES69', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-18 21:30:48', 'EHE1', 'OPE56', 'GES116', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-05-07 10:44:12', 'EHE1', 'OPE29', 'GES44', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-29 18:36:53', 'EHE3', 'OPE64', 'GES89', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-18 05:03:48', 'EHE3', 'OPE94', 'GES89', 'HERR12');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-20 00:07:25', 'EHE2', 'OPE29', 'GES103', 'HERR04');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-01 02:59:47', 'EHE3', 'OPE92', 'GES121', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-31 20:59:43', 'EHE1', 'OPE56', 'GES69', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-13 00:56:27', 'EHE1', 'OPE64', 'GES31', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-29 23:52:34', 'EHE3', 'OPE87', 'GES45', 'HERR02');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-29 14:59:02', 'EHE2', 'OPE24', 'GES116', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-11-12 12:10:11', 'EHE2', 'OPE56', 'GES103', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-27 16:36:18', 'EHE3', 'OPE75', 'GES78', 'HERR30');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-18 09:48:20', 'EHE3', 'OPE64', 'GES36', 'HERR30');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-30 23:38:55', 'EHE3', 'OPE64', 'GES69', 'HERR04');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-01 05:09:14', 'EHE3', 'OPE16', 'GES121', 'HERR04');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-04-30 03:16:38', 'EHE3', 'OPE21', 'GES31', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-04 02:33:35', 'EHE1', 'OPE82', 'GES67', 'HERR04');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-10 09:06:48', 'EHE2', 'OPE87', 'GES103', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-05 13:44:49', 'EHE3', 'OPE16', 'GES78', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-25 22:46:14', 'EHE3', 'OPE34', 'GES121', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-12 08:13:39', 'EHE2', 'OPE76', 'GES31', 'HERR04');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-15 23:26:30', 'EHE2', 'OPE99', 'GES116', 'HERR27');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-18 05:24:49', 'EHE1', 'OPE32', 'GES45', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-11-27 07:58:37', 'EHE2', 'OPE21', 'GES103', 'HERR26');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-30 11:28:10', 'EHE3', 'OPE34', 'GES67', 'HERR30');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-30 14:15:14', 'EHE3', 'OPE92', 'GES103', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-25 21:31:21', 'EHE3', 'OPE66', 'GES91', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-24 12:03:34', 'EHE3', 'OPE94', 'GES31', 'HERR04');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-21 14:35:06', 'EHE3', 'OPE92', 'GES89', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-14 14:51:22', 'EHE1', 'OPE29', 'GES116', 'HERR26');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-19 11:49:38', 'EHE1', 'OPE64', 'GES116', 'HERR12');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-09 19:51:27', 'EHE1', 'OPE76', 'GES89', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-10 19:14:46', 'EHE3', 'OPE92', 'GES44', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-31 13:34:11', 'EHE2', 'OPE34', 'GES45', 'HERR02');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-10 14:58:58', 'EHE2', 'OPE92', 'GES25', 'HERR30');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-02-14 17:08:56', 'EHE1', 'OPE24', 'GES36', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-02-25 09:42:17', 'EHE2', 'OPE21', 'GES69', 'HERR27');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-01 16:58:53', 'EHE1', 'OPE21', 'GES103', 'HERR22');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-06 16:24:12', 'EHE3', 'OPE47', 'GES25', 'HERR12');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-04-22 05:35:26', 'EHE3', 'OPE99', 'GES69', 'HERR24');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-19 09:40:03', 'EHE2', 'OPE82', 'GES57', 'HERR24');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-06 19:09:54', 'EHE2', 'OPE64', 'GES67', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-04 21:06:32', 'EHE1', 'OPE94', 'GES121', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-23 20:21:08', 'EHE2', 'OPE75', 'GES44', 'HERR12');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-28 15:12:45', 'EHE2', 'OPE76', 'GES116', 'HERR24');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-18 22:19:22', 'EHE1', 'OPE21', 'GES31', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-11-13 12:11:06', 'EHE3', 'OPE96', 'GES116', 'HERR04');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-16 15:05:51', 'EHE3', 'OPE32', 'GES116', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-05 03:02:41', 'EHE1', 'OPE29', 'GES36', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-12 09:39:00', 'EHE2', 'OPE75', 'GES121', 'HERR12');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-28 00:01:54', 'EHE3', 'OPE96', 'GES36', 'HERR30');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-21 06:15:51', 'EHE2', 'OPE87', 'GES84', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-12 10:37:21', 'EHE2', 'OPE24', 'GES45', 'HERR27');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-18 13:01:50', 'EHE3', 'OPE21', 'GES91', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-02 03:14:44', 'EHE1', 'OPE15', 'GES44', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-14 15:11:03', 'EHE3', 'OPE47', 'GES57', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-15 11:58:20', 'EHE3', 'OPE92', 'GES103', 'HERR26');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-04 18:58:13', 'EHE3', 'OPE40', 'GES121', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-10 00:30:00', 'EHE2', 'OPE40', 'GES44', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-27 02:57:27', 'EHE1', 'OPE32', 'GES69', 'HERR12');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-17 08:45:37', 'EHE3', 'OPE64', 'GES44', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-14 16:20:05', 'EHE2', 'OPE24', 'GES44', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-05 21:47:17', 'EHE1', 'OPE87', 'GES44', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-23 23:54:33', 'EHE1', 'OPE14', 'GES116', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-25 03:51:54', 'EHE3', 'OPE99', 'GES84', 'HERR27');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-11 11:10:51', 'EHE1', 'OPE32', 'GES57', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-25 15:24:41', 'EHE3', 'OPE66', 'GES67', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-11 02:19:16', 'EHE2', 'OPE66', 'GES67', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-11-30 02:38:32', 'EHE1', 'OPE34', 'GES91', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-22 18:40:50', 'EHE2', 'OPE40', 'GES44', 'HERR24');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-27 05:39:03', 'EHE2', 'OPE99', 'GES44', 'HERR30');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-11-22 07:09:30', 'EHE3', 'OPE99', 'GES36', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-05-02 13:22:51', 'EHE3', 'OPE47', 'GES89', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-19 21:41:38', 'EHE3', 'OPE96', 'GES67', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-17 05:48:36', 'EHE1', 'OPE21', 'GES89', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-26 01:49:00', 'EHE1', 'OPE64', 'GES69', 'HERR15');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-04 13:52:31', 'EHE1', 'OPE76', 'GES89', 'HERR26');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-15 20:03:10', 'EHE1', 'OPE96', 'GES103', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-21 08:42:21', 'EHE2', 'OPE47', 'GES67', 'HERR04');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-02-22 01:50:51', 'EHE3', 'OPE47', 'GES121', 'HERR12');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-13 01:47:13', 'EHE2', 'OPE82', 'GES78', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-01 11:07:45', 'EHE2', 'OPE34', 'GES78', 'HERR02');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-02-02 14:46:21', 'EHE1', 'OPE32', 'GES36', 'HERR24');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-02-06 06:38:13', 'EHE1', 'OPE96', 'GES67', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-05 01:43:15', 'EHE3', 'OPE16', 'GES44', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-25 11:23:00', 'EHE1', 'OPE94', 'GES69', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-05-07 14:25:56', 'EHE3', 'OPE87', 'GES25', 'HERR15');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-29 11:59:35', 'EHE1', 'OPE75', 'GES69', 'HERR24');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-24 04:11:26', 'EHE3', 'OPE34', 'GES78', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-05-04 02:47:34', 'EHE2', 'OPE76', 'GES57', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-19 21:11:57', 'EHE1', 'OPE94', 'GES84', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-10 05:44:42', 'EHE1', 'OPE66', 'GES103', 'HERR30');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-19 05:54:05', 'EHE3', 'OPE94', 'GES89', 'HERR04');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-29 18:28:38', 'EHE3', 'OPE34', 'GES78', 'HERR02');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-15 17:12:43', 'EHE1', 'OPE64', 'GES67', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-30 23:40:54', 'EHE1', 'OPE21', 'GES116', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-02-18 06:38:32', 'EHE1', 'OPE15', 'GES25', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-02-24 21:05:39', 'EHE3', 'OPE99', 'GES57', 'HERR24');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-17 05:09:00', 'EHE2', 'OPE94', 'GES69', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-12 17:41:04', 'EHE3', 'OPE21', 'GES84', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-19 18:09:13', 'EHE1', 'OPE47', 'GES67', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-02-20 20:42:47', 'EHE2', 'OPE75', 'GES84', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-29 13:02:47', 'EHE1', 'OPE14', 'GES44', 'HERR24');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-12 20:38:27', 'EHE3', 'OPE66', 'GES103', 'HERR22');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-05-04 16:43:32', 'EHE2', 'OPE75', 'GES57', 'HERR30');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-11-23 07:54:56', 'EHE1', 'OPE16', 'GES89', 'HERR26');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-14 03:15:58', 'EHE1', 'OPE99', 'GES89', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-18 07:19:03', 'EHE2', 'OPE47', 'GES91', 'HERR02');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-13 01:12:49', 'EHE3', 'OPE64', 'GES67', 'HERR15');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-06 01:23:23', 'EHE1', 'OPE15', 'GES69', 'HERR02');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-11 23:20:07', 'EHE2', 'OPE24', 'GES44', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-05 21:36:18', 'EHE1', 'OPE21', 'GES103', 'HERR27');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-02 01:48:46', 'EHE3', 'OPE56', 'GES78', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-30 17:48:00', 'EHE1', 'OPE29', 'GES78', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-11-18 15:15:36', 'EHE2', 'OPE76', 'GES25', 'HERR27');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-18 21:15:32', 'EHE1', 'OPE75', 'GES78', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-27 21:59:19', 'EHE1', 'OPE99', 'GES78', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-15 22:30:01', 'EHE3', 'OPE15', 'GES67', 'HERR04');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-05-10 09:27:42', 'EHE1', 'OPE92', 'GES67', 'HERR15');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-10 19:37:48', 'EHE2', 'OPE21', 'GES89', 'HERR26');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-13 08:05:34', 'EHE1', 'OPE96', 'GES69', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-18 10:54:30', 'EHE2', 'OPE96', 'GES36', 'HERR02');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-09 15:43:48', 'EHE3', 'OPE32', 'GES45', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-21 05:38:58', 'EHE2', 'OPE56', 'GES89', 'HERR30');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-05-07 01:31:44', 'EHE1', 'OPE14', 'GES103', 'HERR04');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-25 23:53:04', 'EHE1', 'OPE40', 'GES84', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-13 20:35:22', 'EHE2', 'OPE92', 'GES89', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-07 20:10:07', 'EHE3', 'OPE92', 'GES121', 'HERR15');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-11 15:39:28', 'EHE1', 'OPE99', 'GES67', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-05-09 17:45:09', 'EHE1', 'OPE40', 'GES89', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-21 13:22:17', 'EHE2', 'OPE94', 'GES116', 'HERR12');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-29 13:11:36', 'EHE3', 'OPE99', 'GES31', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-16 05:24:45', 'EHE1', 'OPE40', 'GES57', 'HERR22');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-01 08:08:55', 'EHE2', 'OPE15', 'GES84', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-02-01 03:40:29', 'EHE1', 'OPE15', 'GES121', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-30 11:16:04', 'EHE3', 'OPE87', 'GES45', 'HERR30');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-30 10:34:16', 'EHE2', 'OPE47', 'GES121', 'HERR30');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-25 06:11:09', 'EHE2', 'OPE29', 'GES69', 'HERR24');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-26 09:58:05', 'EHE3', 'OPE29', 'GES121', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-11-28 11:24:11', 'EHE2', 'OPE29', 'GES69', 'HERR27');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-27 18:34:47', 'EHE1', 'OPE96', 'GES91', 'HERR26');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-09 06:43:49', 'EHE3', 'OPE75', 'GES103', 'HERR26');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-10 13:42:09', 'EHE3', 'OPE99', 'GES57', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-11-21 05:43:53', 'EHE2', 'OPE32', 'GES31', 'HERR15');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-04 05:07:27', 'EHE1', 'OPE92', 'GES67', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-05 20:21:40', 'EHE1', 'OPE15', 'GES67', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-02 09:04:53', 'EHE1', 'OPE94', 'GES121', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-31 05:38:39', 'EHE1', 'OPE64', 'GES44', 'HERR12');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-04 03:34:33', 'EHE2', 'OPE32', 'GES78', 'HERR04');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-04 22:54:35', 'EHE2', 'OPE75', 'GES121', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-13 06:32:40', 'EHE3', 'OPE56', 'GES45', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-27 07:15:33', 'EHE1', 'OPE56', 'GES103', 'HERR12');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-04-28 03:59:36', 'EHE1', 'OPE82', 'GES67', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-04-30 00:18:53', 'EHE2', 'OPE15', 'GES116', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-30 22:35:11', 'EHE2', 'OPE15', 'GES91', 'HERR24');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-01 22:26:02', 'EHE2', 'OPE56', 'GES84', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-02-26 14:30:49', 'EHE2', 'OPE99', 'GES103', 'HERR02');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-04-23 23:34:33', 'EHE3', 'OPE16', 'GES25', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-17 01:54:07', 'EHE1', 'OPE64', 'GES91', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-01 07:47:14', 'EHE2', 'OPE76', 'GES57', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-07 13:27:59', 'EHE1', 'OPE82', 'GES45', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-27 19:57:13', 'EHE3', 'OPE75', 'GES31', 'HERR15');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-23 19:24:05', 'EHE1', 'OPE32', 'GES67', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-04-29 17:00:40', 'EHE1', 'OPE92', 'GES57', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-29 04:17:16', 'EHE1', 'OPE75', 'GES57', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-02-24 07:59:27', 'EHE3', 'OPE14', 'GES103', 'HERR02');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-11-15 13:32:47', 'EHE1', 'OPE99', 'GES25', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-22 12:17:11', 'EHE1', 'OPE40', 'GES116', 'HERR04');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-02-06 09:24:39', 'EHE1', 'OPE75', 'GES121', 'HERR12');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-10 06:52:33', 'EHE1', 'OPE24', 'GES57', 'HERR04');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-24 23:55:48', 'EHE2', 'OPE99', 'GES44', 'HERR15');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-02-26 08:48:59', 'EHE2', 'OPE64', 'GES25', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-02-14 15:04:35', 'EHE1', 'OPE47', 'GES78', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-29 17:43:46', 'EHE3', 'OPE14', 'GES78', 'HERR04');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-04 17:01:26', 'EHE3', 'OPE94', 'GES116', 'HERR27');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-05-07 07:33:39', 'EHE1', 'OPE99', 'GES89', 'HERR15');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-01 04:53:26', 'EHE3', 'OPE29', 'GES25', 'HERR27');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-14 20:05:39', 'EHE2', 'OPE40', 'GES116', 'HERR22');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-02-02 06:00:29', 'EHE3', 'OPE56', 'GES57', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-14 11:10:25', 'EHE1', 'OPE66', 'GES84', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-11-11 15:48:54', 'EHE3', 'OPE32', 'GES31', 'HERR30');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-29 18:43:05', 'EHE2', 'OPE16', 'GES31', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-19 13:26:17', 'EHE1', 'OPE99', 'GES121', 'HERR27');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-23 21:33:38', 'EHE2', 'OPE94', 'GES116', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-19 22:56:20', 'EHE2', 'OPE16', 'GES57', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-06 03:30:41', 'EHE3', 'OPE92', 'GES44', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-14 11:07:55', 'EHE3', 'OPE96', 'GES36', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-29 18:48:26', 'EHE1', 'OPE76', 'GES121', 'HERR24');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-02-06 17:07:01', 'EHE3', 'OPE15', 'GES25', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-13 07:55:29', 'EHE1', 'OPE32', 'GES31', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-11 01:59:52', 'EHE2', 'OPE16', 'GES78', 'HERR24');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-16 05:07:45', 'EHE1', 'OPE47', 'GES31', 'HERR26');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-16 01:57:44', 'EHE2', 'OPE99', 'GES121', 'HERR04');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-31 08:10:35', 'EHE1', 'OPE87', 'GES69', 'HERR12');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-14 15:55:14', 'EHE3', 'OPE40', 'GES44', 'HERR12');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-27 00:07:52', 'EHE1', 'OPE94', 'GES103', 'HERR04');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-02 09:31:33', 'EHE3', 'OPE64', 'GES116', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-02 00:47:09', 'EHE2', 'OPE87', 'GES103', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-04 05:46:40', 'EHE2', 'OPE96', 'GES25', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-04-27 00:41:00', 'EHE1', 'OPE15', 'GES78', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-11 20:40:31', 'EHE2', 'OPE96', 'GES116', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-29 18:33:25', 'EHE3', 'OPE40', 'GES36', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-11-03 19:43:46', 'EHE1', 'OPE14', 'GES103', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-22 11:15:11', 'EHE3', 'OPE87', 'GES84', 'HERR24');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-16 18:19:09', 'EHE2', 'OPE92', 'GES78', 'HERR12');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-24 16:46:59', 'EHE1', 'OPE75', 'GES91', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-20 04:38:23', 'EHE1', 'OPE96', 'GES67', 'HERR02');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-06 11:21:57', 'EHE2', 'OPE21', 'GES57', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-18 18:56:00', 'EHE2', 'OPE56', 'GES67', 'HERR12');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-12 11:08:32', 'EHE1', 'OPE96', 'GES69', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-13 19:52:48', 'EHE2', 'OPE21', 'GES84', 'HERR22');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-25 03:36:22', 'EHE2', 'OPE47', 'GES45', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-16 01:38:20', 'EHE3', 'OPE87', 'GES45', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-12 20:59:31', 'EHE3', 'OPE21', 'GES89', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-28 01:11:47', 'EHE3', 'OPE87', 'GES78', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-10 12:13:19', 'EHE3', 'OPE82', 'GES116', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-11-22 06:54:36', 'EHE2', 'OPE16', 'GES44', 'HERR22');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-04 13:35:33', 'EHE3', 'OPE14', 'GES103', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-22 09:58:53', 'EHE1', 'OPE64', 'GES45', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-29 03:43:33', 'EHE2', 'OPE87', 'GES84', 'HERR26');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-02-02 17:23:11', 'EHE3', 'OPE75', 'GES25', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-10 07:44:04', 'EHE3', 'OPE76', 'GES84', 'HERR24');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-09 02:55:20', 'EHE1', 'OPE94', 'GES45', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-16 03:13:33', 'EHE2', 'OPE34', 'GES36', 'HERR30');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-02-17 00:20:34', 'EHE3', 'OPE76', 'GES44', 'HERR12');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-12 14:49:40', 'EHE1', 'OPE34', 'GES44', 'HERR26');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-27 04:35:28', 'EHE2', 'OPE96', 'GES67', 'HERR02');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-05-13 18:41:28', 'EHE2', 'OPE16', 'GES103', 'HERR02');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-05-06 11:31:45', 'EHE3', 'OPE92', 'GES67', 'HERR15');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-04-22 14:50:39', 'EHE2', 'OPE47', 'GES121', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-09 17:23:39', 'EHE2', 'OPE14', 'GES25', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-05-03 00:54:28', 'EHE2', 'OPE14', 'GES116', 'HERR15');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-06 04:23:21', 'EHE1', 'OPE21', 'GES103', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-05-04 15:56:39', 'EHE2', 'OPE87', 'GES57', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-09 06:01:54', 'EHE1', 'OPE76', 'GES31', 'HERR12');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-28 20:44:27', 'EHE1', 'OPE24', 'GES44', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-28 11:15:10', 'EHE3', 'OPE66', 'GES116', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-04 13:32:00', 'EHE2', 'OPE56', 'GES57', 'HERR30');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-12 07:42:07', 'EHE2', 'OPE76', 'GES57', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-21 07:10:20', 'EHE2', 'OPE94', 'GES57', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-05-03 02:19:31', 'EHE2', 'OPE92', 'GES36', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-14 07:47:25', 'EHE1', 'OPE15', 'GES89', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-02-13 16:58:38', 'EHE2', 'OPE24', 'GES103', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-29 07:17:39', 'EHE3', 'OPE87', 'GES57', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-17 07:55:56', 'EHE3', 'OPE34', 'GES103', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-12 16:16:04', 'EHE1', 'OPE94', 'GES116', 'HERR02');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-11-15 14:05:22', 'EHE1', 'OPE96', 'GES25', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-12 22:31:05', 'EHE1', 'OPE15', 'GES45', 'HERR24');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-27 06:44:50', 'EHE2', 'OPE34', 'GES45', 'HERR04');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-03 19:04:57', 'EHE3', 'OPE34', 'GES45', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-05 02:29:30', 'EHE2', 'OPE15', 'GES45', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-29 10:13:31', 'EHE1', 'OPE82', 'GES57', 'HERR12');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-25 17:19:08', 'EHE2', 'OPE99', 'GES36', 'HERR26');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-02 08:45:12', 'EHE1', 'OPE94', 'GES31', 'HERR27');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-06 10:21:17', 'EHE1', 'OPE75', 'GES25', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-02-22 04:42:22', 'EHE1', 'OPE34', 'GES57', 'HERR12');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-26 06:12:19', 'EHE1', 'OPE96', 'GES78', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-05 23:32:40', 'EHE3', 'OPE76', 'GES57', 'HERR24');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-08 20:15:28', 'EHE2', 'OPE56', 'GES116', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-09 00:18:15', 'EHE3', 'OPE21', 'GES31', 'HERR30');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-05 14:42:25', 'EHE2', 'OPE96', 'GES84', 'HERR24');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-02-03 01:35:46', 'EHE1', 'OPE34', 'GES69', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-05-07 04:56:30', 'EHE2', 'OPE32', 'GES84', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-13 14:57:39', 'EHE3', 'OPE56', 'GES69', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-09 03:28:13', 'EHE3', 'OPE66', 'GES78', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-27 11:57:05', 'EHE2', 'OPE87', 'GES36', 'HERR24');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-24 03:58:54', 'EHE3', 'OPE99', 'GES84', 'HERR14');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-23 13:14:50', 'EHE3', 'OPE14', 'GES69', 'HERR24');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-19 05:47:06', 'EHE3', 'OPE96', 'GES116', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-09 19:18:03', 'EHE1', 'OPE32', 'GES84', 'HERR30');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-21 15:34:47', 'EHE1', 'OPE14', 'GES116', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-04 11:56:57', 'EHE2', 'OPE66', 'GES89', 'HERR02');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-06 23:16:59', 'EHE2', 'OPE29', 'GES89', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-13 20:07:09', 'EHE3', 'OPE24', 'GES25', 'HERR24');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-11 01:41:27', 'EHE2', 'OPE29', 'GES25', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-11 02:24:24', 'EHE3', 'OPE75', 'GES67', 'HERR15');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-04-24 06:02:29', 'EHE1', 'OPE94', 'GES36', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-04-02 19:25:12', 'EHE2', 'OPE64', 'GES67', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-18 13:01:37', 'EHE3', 'OPE47', 'GES57', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-06 00:16:33', 'EHE3', 'OPE34', 'GES121', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-09-15 15:07:59', 'EHE1', 'OPE24', 'GES57', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-12 03:34:32', 'EHE3', 'OPE96', 'GES69', 'HERR22');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-01 16:55:55', 'EHE2', 'OPE15', 'GES36', 'HERR27');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-01 04:14:21', 'EHE1', 'OPE40', 'GES44', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-29 14:53:33', 'EHE3', 'OPE96', 'GES121', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-23 13:36:47', 'EHE2', 'OPE14', 'GES91', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-04-27 23:50:04', 'EHE1', 'OPE29', 'GES69', 'HERR22');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-12 15:06:18', 'EHE1', 'OPE21', 'GES116', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-11-10 13:35:28', 'EHE3', 'OPE82', 'GES57', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-26 12:14:31', 'EHE2', 'OPE34', 'GES116', 'HERR02');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-12 13:49:41', 'EHE1', 'OPE66', 'GES116', 'HERR02');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-08 11:42:07', 'EHE2', 'OPE24', 'GES57', 'HERR19');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-03 03:37:39', 'EHE1', 'OPE15', 'GES121', 'HERR12');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-11-13 21:34:06', 'EHE3', 'OPE64', 'GES25', 'HERR24');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-10 03:22:40', 'EHE1', 'OPE92', 'GES36', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-03 23:30:48', 'EHE1', 'OPE16', 'GES121', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-08-27 18:18:01', 'EHE1', 'OPE87', 'GES121', 'HERR27');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-10-21 20:02:21', 'EHE1', 'OPE99', 'GES25', 'HERR23');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-20 05:54:54', 'EHE2', 'OPE24', 'GES116', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-11-15 08:56:46', 'EHE3', 'OPE76', 'GES31', 'HERR09');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-30 03:56:48', 'EHE2', 'OPE40', 'GES69', 'HERR20');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-12-16 22:16:56', 'EHE3', 'OPE15', 'GES45', 'HERR02');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-12 17:24:10', 'EHE1', 'OPE16', 'GES103', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-04 20:00:32', 'EHE2', 'OPE29', 'GES57', 'HERR27');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-06 07:57:52', 'EHE1', 'OPE40', 'GES57', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-26 02:37:40', 'EHE2', 'OPE92', 'GES69', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-05-01 02:09:55', 'EHE3', 'OPE82', 'GES103', 'HERR28');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-07-16 23:28:26', 'EHE2', 'OPE92', 'GES36', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-11-02 07:40:59', 'EHE1', 'OPE21', 'GES103', 'HERR29');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-25 11:27:55', 'EHE1', 'OPE56', 'GES69', 'HERR22');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-06-02 20:31:34', 'EHE1', 'OPE16', 'GES69', 'HERR22');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-11-12 23:39:35', 'EHE3', 'OPE96', 'GES91', 'HERR25');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-23 01:11:28', 'EHE1', 'OPE82', 'GES57', 'HERR26');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-01-20 10:38:51', 'EHE3', 'OPE75', 'GES84', 'HERR15');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-02-02 20:25:16', 'EHE3', 'OPE15', 'GES78', 'HERR22');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2024-03-09 10:40:14', 'EHE1', 'OPE34', 'GES67', 'HERR22');
+insert into SOLICITUD_HERRAMIENTA (fecha_solicitud, id_est_soli_herra, id_operario, id_gestor, id_herramienta) values ('2023-05-08 03:56:12', 'EHE2', 'OPE21', 'GES91', 'HERR09');
+
 
 INSERT INTO Tipo_deduccion (Id_tipo_deduccion, Nom_tipo_deduccion) VALUES
 ('DED001', 'Impuesto'),
@@ -1456,218 +1423,11 @@ INSERT INTO Descripcion_reclamo (Id_descrip_reclamo, Nom_descrip_reclamo) VALUES
 ('DES003', 'Mala Atención'),
 ('DES004', 'Otros');
 
-nsert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC257', '02-08-2023', 'OPE962', 'DES004', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC149', '27-08-2023', 'OPE815', 'DES001', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC409', '29-04-2024', 'OPE729', 'DES002', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC742', '31-03-2024', 'OPE191', 'DES001', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC298', '08-09-2023', 'OPE982', 'DES001', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC197', '10-04-2024', 'OPE512', 'DES003', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC345', '28-04-2024', 'OPE775', 'DES002', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC277', '25-03-2024', 'OPE527', 'DES002', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC516', '01-01-2024', 'OPE358', 'DES003', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC494', '14-03-2024', 'OPE342', 'DES001', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC897', '22-06-2024', 'OPE941', 'DES002', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC168', '16-07-2023', 'OPE594', 'DES002', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC020', '23-03-2024', 'OPE020', 'DES002', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC577', '29-08-2023', 'OPE590', 'DES002', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC465', '18-03-2024', 'OPE378', 'DES001', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC321', '24-08-2023', 'OPE768', 'DES001', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC406', '31-05-2024', 'OPE337', 'DES004', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC310', '07-11-2023', 'OPE396', 'DES001', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC478', '19-04-2024', 'OPE684', 'DES002', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC051', '12-05-2024', 'OPE118', 'DES003', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC389', '01-11-2023', 'OPE878', 'DES002', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC223', '01-01-2024', 'OPE795', 'DES001', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC430', '16-01-2024', 'OPE833', 'DES003', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC989', '21-10-2023', 'OPE380', 'DES002', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC794', '07-11-2023', 'OPE974', 'DES003', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC982', '05-10-2023', 'OPE158', 'DES004', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC900', '13-11-2023', 'OPE829', 'DES003', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC670', '28-11-2023', 'OPE288', 'DES004', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC524', '15-01-2024', 'OPE484', 'DES002', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC888', '06-01-2024', 'OPE204', 'DES002', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC746', '21-06-2024', 'OPE428', 'DES003', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC929', '11-09-2023', 'OPE504', 'DES001', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC009', '04-09-2023', 'OPE847', 'DES001', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC432', '17-07-2023', 'OPE977', 'DES003', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC441', '17-09-2023', 'OPE791', 'DES001', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC239', '20-09-2023', 'OPE769', 'DES004', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC608', '18-04-2024', 'OPE098', 'DES004', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC636', '07-10-2023', 'OPE328', 'DES002', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC830', '07-11-2023', 'OPE260', 'DES004', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC404', '16-09-2023', 'OPE842', 'DES002', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC107', '03-03-2024', 'OPE866', 'DES003', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC773', '16-06-2024', 'OPE022', 'DES001', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC065', '03-01-2024', 'OPE537', 'DES001', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC672', '29-12-2023', 'OPE447', 'DES002', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC687', '22-09-2023', 'OPE055', 'DES003', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC230', '23-09-2023', 'OPE629', 'DES002', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC151', '07-06-2024', 'OPE513', 'DES002', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC451', '28-02-2024', 'OPE559', 'DES004', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC615', '22-08-2023', 'OPE740', 'DES003', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC003', '27-09-2023', 'OPE318', 'DES001', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC181', '29-04-2024', 'OPE455', 'DES003', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC283', '18-07-2023', 'OPE883', 'DES002', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC226', '27-09-2023', 'OPE536', 'DES002', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC002', '21-01-2024', 'OPE522', 'DES002', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC139', '22-10-2023', 'OPE850', 'DES004', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC368', '23-08-2023', 'OPE835', 'DES001', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC931', '31-10-2023', 'OPE627', 'DES004', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC619', '20-04-2024', 'OPE175', 'DES003', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC510', '16-08-2023', 'OPE245', 'DES001', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC914', '18-05-2024', 'OPE015', 'DES003', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC224', '09-06-2024', 'OPE690', 'DES002', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC689', '19-12-2023', 'OPE260', 'DES002', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC006', '14-02-2024', 'OPE843', 'DES003', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC375', '20-07-2023', 'OPE216', 'DES003', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC735', '05-01-2024', 'OPE081', 'DES001', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC310', '05-08-2023', 'OPE607', 'DES001', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC290', '25-08-2023', 'OPE050', 'DES004', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC200', '14-07-2023', 'OPE039', 'DES003', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC094', '17-08-2023', 'OPE157', 'DES001', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC747', '04-10-2023', 'OPE720', 'DES003', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC056', '20-04-2024', 'OPE924', 'DES002', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC594', '07-12-2023', 'OPE903', 'DES004', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC474', '14-06-2024', 'OPE208', 'DES002', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC163', '01-01-2024', 'OPE905', 'DES003', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC396', '31-01-2024', 'OPE893', 'DES003', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC011', '16-09-2023', 'OPE098', 'DES001', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC099', '21-05-2024', 'OPE157', 'DES001', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC957', '09-06-2024', 'OPE001', 'DES002', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC002', '11-06-2024', 'OPE269', 'DES002', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC165', '04-02-2024', 'OPE262', 'DES004', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC590', '03-04-2024', 'OPE517', 'DES002', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC010', '10-05-2024', 'OPE950', 'DES003', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC748', '14-10-2023', 'OPE454', 'DES003', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC988', '26-01-2024', 'OPE329', 'DES002', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC585', '25-03-2024', 'OPE605', 'DES004', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC136', '02-09-2023', 'OPE877', 'DES002', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC313', '13-11-2023', 'OPE151', 'DES001', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC325', '18-04-2024', 'OPE998', 'DES001', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC340', '12-12-2023', 'OPE395', 'DES004', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC887', '17-08-2023', 'OPE578', 'DES003', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC579', '12-05-2024', 'OPE748', 'DES002', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC142', '18-04-2024', 'OPE552', 'DES001', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC130', '08-02-2024', 'OPE367', 'DES002', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC954', '18-04-2024', 'OPE327', 'DES002', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC344', '27-10-2023', 'OPE916', 'DES003', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC672', '30-11-2023', 'OPE176', 'DES001', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC751', '22-05-2024', 'OPE821', 'DES001', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC851', '21-05-2024', 'OPE586', 'DES002', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC924', '04-09-2023', 'OPE450', 'DES004', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC355', '14-05-2024', 'OPE646', 'DES004', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC544', '16-07-2023', 'OPE168', 'DES003', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC894', '14-12-2023', 'OPE091', 'DES001', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC033', '18-09-2023', 'OPE820', 'DES002', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC334', '10-11-2023', 'OPE198', 'DES002', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC013', '03-06-2024', 'OPE591', 'DES004', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC325', '08-05-2024', 'OPE692', 'DES003', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC813', '08-01-2024', 'OPE708', 'DES002', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC842', '01-12-2023', 'OPE443', 'DES004', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC929', '08-11-2023', 'OPE133', 'DES004', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC353', '25-09-2023', 'OPE719', 'DES002', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC169', '06-05-2024', 'OPE203', 'DES004', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC801', '20-06-2024', 'OPE948', 'DES002', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC925', '16-10-2023', 'OPE655', 'DES002', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC327', '09-06-2024', 'OPE630', 'DES001', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC544', '29-12-2023', 'OPE897', 'DES004', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC822', '07-08-2023', 'OPE732', 'DES002', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC708', '27-10-2023', 'OPE760', 'DES002', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC124', '19-07-2023', 'OPE651', 'DES002', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC284', '06-01-2024', 'OPE913', 'DES001', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC318', '07-04-2024', 'OPE374', 'DES001', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC598', '20-06-2024', 'OPE814', 'DES002', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC870', '22-05-2024', 'OPE730', 'DES002', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC501', '22-09-2023', 'OPE973', 'DES003', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC938', '18-06-2024', 'OPE224', 'DES001', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC343', '04-06-2024', 'OPE747', 'DES001', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC537', '26-08-2023', 'OPE706', 'DES003', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC814', '08-09-2023', 'OPE365', 'DES002', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC016', '15-11-2023', 'OPE533', 'DES004', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC239', '01-04-2024', 'OPE389', 'DES003', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC497', '19-03-2024', 'OPE307', 'DES001', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC968', '15-04-2024', 'OPE526', 'DES001', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC739', '10-09-2023', 'OPE772', 'DES002', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC013', '15-06-2024', 'OPE167', 'DES003', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC417', '19-12-2023', 'OPE245', 'DES004', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC357', '10-01-2024', 'OPE804', 'DES002', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC403', '23-01-2024', 'OPE762', 'DES004', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC807', '28-01-2024', 'OPE298', 'DES001', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC972', '13-12-2023', 'OPE130', 'DES001', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC110', '08-07-2023', 'OPE190', 'DES004', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC375', '08-03-2024', 'OPE985', 'DES003', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC594', '21-06-2024', 'OPE756', 'DES001', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC478', '11-12-2023', 'OPE058', 'DES002', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC875', '12-11-2023', 'OPE190', 'DES001', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC203', '28-03-2024', 'OPE148', 'DES004', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC273', '07-09-2023', 'OPE272', 'DES004', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC639', '01-06-2024', 'OPE223', 'DES001', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC205', '12-09-2023', 'OPE303', 'DES002', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC313', '28-07-2023', 'OPE614', 'DES004', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC547', '06-08-2023', 'OPE429', 'DES001', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC865', '05-10-2023', 'OPE673', 'DES001', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC826', '14-11-2023', 'OPE559', 'DES003', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC246', '13-06-2024', 'OPE626', 'DES002', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC265', '25-08-2023', 'OPE994', 'DES003', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC129', '18-09-2023', 'OPE874', 'DES001', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC480', '30-12-2023', 'OPE548', 'DES002', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC335', '01-05-2024', 'OPE141', 'DES002', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC153', '10-09-2023', 'OPE929', 'DES001', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC980', '06-10-2023', 'OPE727', 'DES003', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC877', '05-12-2023', 'OPE377', 'DES002', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC202', '28-09-2023', 'OPE491', 'DES004', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC933', '24-10-2023', 'OPE199', 'DES001', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC816', '23-03-2024', 'OPE379', 'DES003', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC215', '04-11-2023', 'OPE445', 'DES002', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC906', '17-01-2024', 'OPE464', 'DES001', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC261', '29-07-2023', 'OPE496', 'DES002', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC217', '13-05-2024', 'OPE229', 'DES004', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC291', '05-10-2023', 'OPE808', 'DES003', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC164', '11-01-2024', 'OPE492', 'DES001', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC897', '15-11-2023', 'OPE595', 'DES004', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC212', '15-03-2024', 'OPE670', 'DES004', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC978', '20-04-2024', 'OPE974', 'DES003', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC276', '03-07-2023', 'OPE849', 'DES001', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC633', '12-07-2023', 'OPE787', 'DES002', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC532', '12-03-2024', 'OPE902', 'DES001', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC378', '05-12-2023', 'OPE934', 'DES004', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC828', '10-11-2023', 'OPE266', 'DES002', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC773', '04-02-2024', 'OPE828', 'DES004', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC541', '16-08-2023', 'OPE455', 'DES001', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC426', '28-12-2023', 'OPE260', 'DES004', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC555', '22-09-2023', 'OPE329', 'DES003', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC462', '27-11-2023', 'OPE755', 'DES003', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC527', '12-02-2024', 'OPE662', 'DES001', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC687', '08-06-2024', 'OPE704', 'DES004', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC416', '10-09-2023', 'OPE456', 'DES003', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC916', '13-11-2023', 'OPE361', 'DES002', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC541', '31-05-2024', 'OPE115', 'DES003', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC945', '04-11-2023', 'OPE777', 'DES002', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC456', '22-02-2024', 'OPE852', 'DES003', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC995', '13-10-2023', 'OPE257', 'DES002', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC171', '29-07-2023', 'OPE217', 'DES002', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC768', '19-11-2023', 'OPE638', 'DES001', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC495', '18-05-2024', 'OPE336', 'DES004', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC457', '22-02-2024', 'OPE712', 'DES001', 'EST003');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC673', '31-08-2023', 'OPE876', 'DES003', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC825', '24-07-2023', 'OPE697', 'DES002', 'EST002');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC121', '28-10-2023', 'OPE177', 'DES004', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC825', '22-10-2023', 'OPE565', 'DES003', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC643', '18-02-2024', 'OPE760', 'DES001', 'EST004');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC873', '02-06-2024', 'OPE644', 'DES002', 'EST001');
-insert into reclamo (id_reclamo, fecha_reclamo, id_operario, id_descrip_reclamo, id_estado_reclamo) values ('REC124', '16-11-2023', 'OPE751', 'DES003', 'EST002');
-
 INSERT INTO Estado_Observacion (id_estado_observacion, nom_estado_observacion) VALUES
 ('EST001', 'Pendiente'),
 ('EST002', 'En Proceso'),
 ('EST003', 'Resuelta'),
 ('EST004', 'Cerrada');
-
-INSERT INTO Descripcion_observacion (id_descrip_reclamo, Nom_descrip_observacion) VALUES
-('DES001', 'Producto Defectuoso'),
-('DES002', 'Entrega Tardía'),
-('DES003', 'Mala Atención'),
-('DES004', 'Otros');
 
 insert into deduccion (Id_deduccion, Monto_deducido, Id_tipo_deduccion, Id_nomina) values ('DER1', 74, 'DED003', 'NOM1');
 insert into deduccion (Id_deduccion, Monto_deducido, Id_tipo_deduccion, Id_nomina) values ('DER2', 67, 'DED003', 'NOM2');
@@ -2842,3 +2602,11 @@ insert into Transporte (id_transporte, id_operario, fecha_transporte, id_tipo_ve
 insert into Transporte (id_transporte, id_operario, fecha_transporte, id_tipo_vehiculo, id_solicitud_insumo, id_transportista) values ('TRA198', 'OPE87', '17-02-2024', 'TV003', 'ISI198', 'TRAP7');
 insert into Transporte (id_transporte, id_operario, fecha_transporte, id_tipo_vehiculo, id_solicitud_insumo, id_transportista) values ('TRA199', 'OPE47', '29-06-2023', 'TV003', 'ISI102', 'TRAP26');
 insert into Transporte (id_transporte, id_operario, fecha_transporte, id_tipo_vehiculo, id_solicitud_insumo, id_transportista) values ('TRA200', 'OPE154', '07-01-2024', 'TV002', 'ISI41', 'TRAP28');
+
+
+update solicitud_herramienta 
+set id_gestor = null 
+where id_est_soli_herra ='EHE1'
+
+
+
