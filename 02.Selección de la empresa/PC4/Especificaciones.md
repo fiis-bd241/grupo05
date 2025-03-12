@@ -1,1 +1,0 @@
-- **Especificaciones PC4**: Los códigos de backend y frontend se encuentran dentro de los branch respectivos.
